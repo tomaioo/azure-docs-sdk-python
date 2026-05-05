@@ -1,7 +1,7 @@
 {
   "Name": "azure-mgmt-authorization",
-  "Version": "5.0.0b1",
-  "DevVersion": null,
+  "Version": "5.0.0a20260505001",
+  "DevVersion": "5.0.0a20260505001",
   "DirectoryPath": "sdk/authorization/azure-mgmt-authorization",
   "ServiceDirectory": "authorization",
   "ReadMePath": "sdk/authorization/azure-mgmt-authorization/README.md",
@@ -10,7 +10,7 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "azure-mgmt-authorization",
-  "ReleaseStatus": "2025-07-23",
+  "ReleaseStatus": "2026-04-14",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": [
     ""
@@ -25,6 +25,7 @@
   "CIParameters": {
     "CIMatrixConfigs": []
   },
+  "SpecProjectPath": "specification/authorization/resource-manager/Microsoft.Authorization/Authorization",
   "Namespaces": [
     "azure.mgmt.authorization"
   ]
