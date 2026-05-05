@@ -1,6 +1,6 @@
 ---
 title: 
-keywords: Azure, python, SDK, API, azure-mgmt-monitor, monitor
+keywords: Azure, python, SDK, API, azure-mgmt-monitorslis, monitor
 ms.date: 05/05/2026
 ms.topic: reference
 ms.devlang: python
@@ -8,8 +8,8 @@ ms.service: monitor
 ---
 # Microsoft Azure SDK for Python
 
-This is the Microsoft Azure Monitor Client Library.
-This package has been tested with Python 3.9+.
+This is the Microsoft Azure Monitorslis Management Client Library.
+This package has been tested with Python 3.10+.
 For a more complete view of Azure libraries, see the [azure sdk python release](https://aka.ms/azsdk/python/all).
 
 ## _Disclaimer_
@@ -20,13 +20,13 @@ _Azure SDK Python packages support for Python 2.7 has ended 01 January 2022. For
 
 ### Prerequisites
 
-- Python 3.9+ is required to use this package.
+- Python 3.10+ is required to use this package.
 - [Azure subscription](https://azure.microsoft.com/free/)
 
 ### Install the package
 
 ```bash
-pip install azure-mgmt-monitor
+pip install azure-mgmt-monitorslis
 pip install azure-identity
 ```
 
@@ -38,23 +38,19 @@ By default, [Azure Active Directory](https://aka.ms/awps/aad) token authenticati
 - `AZURE_TENANT_ID` for Azure tenant ID.
 - `AZURE_CLIENT_SECRET` for Azure client secret.
 
-In addition, Azure subscription ID can be configured via environment variable `AZURE_SUBSCRIPTION_ID`.
-
 With above configuration, client can be authenticated by following code:
 
 ```python
 from azure.identity import DefaultAzureCredential
-from azure.mgmt.monitor import MonitorManagementClient
-import os
+from azure.mgmt.monitorslis import MonitorSlisMgmtClient
 
-sub_id = os.getenv("AZURE_SUBSCRIPTION_ID")
-client = MonitorManagementClient(credential=DefaultAzureCredential(), subscription_id=sub_id)
+client = MonitorSlisMgmtClient(credential=DefaultAzureCredential())
 ```
 
 ## Examples
 
 Code samples for this package can be found at:
-- [Search Monitor](/samples/browse/?languages=python&term=Getting%20started%20-%20Managing&terms=Getting%20started%20-%20Managing) on docs.microsoft.com
+- [Search Monitorslis Management](/samples/browse/?languages=python&term=Getting%20started%20-%20Managing&terms=Getting%20started%20-%20Managing) on docs.microsoft.com
 - [Azure Python Mgmt SDK Samples Repo](https://aka.ms/azsdk/python/mgmt/samples)
 
 
