@@ -1,7 +1,7 @@
 {
   "Name": "azure-mgmt-peering",
-  "Version": "2.0.0b2",
-  "DevVersion": null,
+  "Version": "2.0.0a20260506001",
+  "DevVersion": "2.0.0a20260506001",
   "DirectoryPath": "sdk/peering/azure-mgmt-peering",
   "ServiceDirectory": "peering",
   "ReadMePath": "sdk/peering/azure-mgmt-peering/README.md",
@@ -19,8 +19,8 @@
     "triggeringPaths": [
       "/sdk/peering/ci.yml"
     ],
-    "name": "azure-mgmt-peering",
-    "safeName": "azuremgmtpeering"
+    "safeName": "azuremgmtpeering",
+    "name": "azure-mgmt-peering"
   },
   "CIParameters": {
     "CIMatrixConfigs": []
