@@ -1,7 +1,7 @@
 {
   "Name": "azure-mgmt-security",
-  "Version": "8.0.0b1",
-  "DevVersion": null,
+  "Version": "8.0.0a20260514001",
+  "DevVersion": "8.0.0a20260514001",
   "DirectoryPath": "sdk/security/azure-mgmt-security",
   "ServiceDirectory": "security",
   "ReadMePath": "sdk/security/azure-mgmt-security/README.md",
@@ -10,21 +10,22 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "azure-mgmt-security",
-  "ReleaseStatus": "2025-08-25",
+  "ReleaseStatus": "2026-05-11",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": [
     ""
   ],
   "ArtifactDetails": {
-    "safeName": "azuremgmtsecurity",
-    "name": "azure-mgmt-security",
     "triggeringPaths": [
       "/sdk/security/ci.yml"
-    ]
+    ],
+    "name": "azure-mgmt-security",
+    "safeName": "azuremgmtsecurity"
   },
   "CIParameters": {
     "CIMatrixConfigs": []
   },
+  "SpecProjectPath": "specification/security/resource-manager/Microsoft.Security/Security",
   "Namespaces": [
     "azure.mgmt.security"
   ]
