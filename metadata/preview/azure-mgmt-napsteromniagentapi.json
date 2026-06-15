@@ -1,0 +1,32 @@
+{
+  "Name": "azure-mgmt-napsteromniagentapi",
+  "Version": "1.0.0b1",
+  "DevVersion": null,
+  "DirectoryPath": "sdk/napsteromniagentapi/azure-mgmt-napsteromniagentapi",
+  "ServiceDirectory": "napsteromniagentapi",
+  "ReadMePath": "sdk/napsteromniagentapi/azure-mgmt-napsteromniagentapi/README.md",
+  "ChangeLogPath": "sdk/napsteromniagentapi/azure-mgmt-napsteromniagentapi/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "mgmt",
+  "IsNewSdk": true,
+  "ArtifactName": "azure-mgmt-napsteromniagentapi",
+  "ReleaseStatus": "2026-06-12",
+  "IncludedForValidation": false,
+  "AdditionalValidationPackages": [
+    ""
+  ],
+  "ArtifactDetails": {
+    "triggeringPaths": [
+      "/sdk/napsteromniagentapi/ci.yml"
+    ],
+    "name": "azure-mgmt-napsteromniagentapi",
+    "safeName": "azuremgmtnapsteromniagentapi"
+  },
+  "CIParameters": {
+    "CIMatrixConfigs": []
+  },
+  "SpecProjectPath": "specification/napster/Napster.CompanionAPI.Management",
+  "Namespaces": [
+    "azure.mgmt.napsteromniagentapi"
+  ]
+}
