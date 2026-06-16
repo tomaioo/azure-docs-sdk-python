@@ -1,6 +1,6 @@
 {
   "Name": "azure-mgmt-monitorslis",
-  "Version": "1.0.0b1",
+  "Version": "1.0.0b2",
   "DevVersion": null,
   "DirectoryPath": "sdk/monitor/azure-mgmt-monitorslis",
   "ServiceDirectory": "monitor",
@@ -10,7 +10,7 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "azure-mgmt-monitorslis",
-  "ReleaseStatus": "2026-04-27",
+  "ReleaseStatus": "2026-05-23",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": [
     ""
