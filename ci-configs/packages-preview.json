@@ -1887,7 +1887,7 @@
         "name": "azure-mgmt-computefleet",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==2.0.0b1"
+        "version": "==2.0.0b2"
       },
       "exclude_path": [
         "test*",
@@ -3344,6 +3344,20 @@
         "name": "azure-mgmt-monitorslis",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
+        "version": "==1.0.0b2"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
+        "name": "azure-mgmt-monitorworkspaces",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
         "version": "==1.0.0b1"
       },
       "exclude_path": [
@@ -4366,7 +4380,7 @@
         "name": "azure-mgmt-servicefabricmanagedclusters",
         "install_type": "pypi",
         "prefer_source_distribution": "true",
-        "version": "==2.1.0b5"
+        "version": "==3.1.0b1"
       },
       "exclude_path": [
         "test*",
