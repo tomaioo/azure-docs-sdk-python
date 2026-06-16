@@ -1,6 +1,6 @@
 {
   "Name": "azure-mgmt-computefleet",
-  "Version": "2.0.0b1",
+  "Version": "2.0.0b2",
   "DevVersion": null,
   "DirectoryPath": "sdk/computefleet/azure-mgmt-computefleet",
   "ServiceDirectory": "computefleet",
@@ -10,21 +10,22 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "azure-mgmt-computefleet",
-  "ReleaseStatus": "2025-08-21",
+  "ReleaseStatus": "2026-05-28",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": [
     ""
   ],
   "ArtifactDetails": {
+    "safeName": "azuremgmtcomputefleet",
     "triggeringPaths": [
       "/sdk/computefleet/ci.yml"
     ],
-    "name": "azure-mgmt-computefleet",
-    "safeName": "azuremgmtcomputefleet"
+    "name": "azure-mgmt-computefleet"
   },
   "CIParameters": {
     "CIMatrixConfigs": []
   },
+  "SpecProjectPath": "specification/azurefleet/resource-manager/Microsoft.AzureFleet/AzureFleet",
   "Namespaces": [
     "azure.mgmt.computefleet"
   ]
