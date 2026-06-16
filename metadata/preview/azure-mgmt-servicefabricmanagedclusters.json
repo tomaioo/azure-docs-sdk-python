@@ -1,6 +1,6 @@
 {
   "Name": "azure-mgmt-servicefabricmanagedclusters",
-  "Version": "2.1.0b5",
+  "Version": "3.1.0b1",
   "DevVersion": null,
   "DirectoryPath": "sdk/servicefabricmanagedclusters/azure-mgmt-servicefabricmanagedclusters",
   "ServiceDirectory": "servicefabricmanagedclusters",
@@ -10,21 +10,22 @@
   "SdkType": "mgmt",
   "IsNewSdk": true,
   "ArtifactName": "azure-mgmt-servicefabricmanagedclusters",
-  "ReleaseStatus": "2025-11-10",
+  "ReleaseStatus": "2026-05-19",
   "IncludedForValidation": false,
   "AdditionalValidationPackages": [
     ""
   ],
   "ArtifactDetails": {
-    "name": "azure-mgmt-servicefabricmanagedclusters",
     "safeName": "azuremgmtservicefabricmanagedclusters",
     "triggeringPaths": [
       "/sdk/servicefabricmanagedclusters/ci.yml"
-    ]
+    ],
+    "name": "azure-mgmt-servicefabricmanagedclusters"
   },
   "CIParameters": {
     "CIMatrixConfigs": []
   },
+  "SpecProjectPath": "specification/servicefabricmanagedclusters/resource-manager/Microsoft.ServiceFabric/ServiceFabricManagedClusters",
   "Namespaces": [
     "azure.mgmt.servicefabricmanagedclusters"
   ],
