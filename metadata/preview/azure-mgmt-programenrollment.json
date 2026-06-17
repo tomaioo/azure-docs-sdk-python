@@ -1,0 +1,32 @@
+{
+  "Name": "azure-mgmt-programenrollment",
+  "Version": "1.0.0b1",
+  "DevVersion": null,
+  "DirectoryPath": "sdk/programenrollment/azure-mgmt-programenrollment",
+  "ServiceDirectory": "programenrollment",
+  "ReadMePath": "sdk/programenrollment/azure-mgmt-programenrollment/README.md",
+  "ChangeLogPath": "sdk/programenrollment/azure-mgmt-programenrollment/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "mgmt",
+  "IsNewSdk": true,
+  "ArtifactName": "azure-mgmt-programenrollment",
+  "ReleaseStatus": "2026-06-17",
+  "IncludedForValidation": false,
+  "AdditionalValidationPackages": [
+    ""
+  ],
+  "ArtifactDetails": {
+    "name": "azure-mgmt-programenrollment",
+    "triggeringPaths": [
+      "/sdk/programenrollment/ci.yml"
+    ],
+    "safeName": "azuremgmtprogramenrollment"
+  },
+  "CIParameters": {
+    "CIMatrixConfigs": []
+  },
+  "SpecProjectPath": "specification/programenrollment/resource-manager/Microsoft.ProgramEnrollment/ProgramEnrollment",
+  "Namespaces": [
+    "azure.mgmt.programenrollment"
+  ]
+}
