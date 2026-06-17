@@ -22,7 +22,7 @@
         href: ~/docs-ref-services/{moniker}/mgmt-agricultureplatform-readme.md
         children:
         - azure.mgmt.agricultureplatform
-  - name: AgriFood
+  - name: Agrifood
     href: ~/docs-ref-services/{moniker}/agrifood.md
     landingPageType: Service
     items:
@@ -1092,6 +1092,16 @@
         href: ~/docs-ref-services/{moniker}/mgmt-disconnectedoperations-readme.md
         children:
         - azure.mgmt.disconnectedoperations
+  - name: Discovery
+    href: ~/docs-ref-services/{moniker}/discovery.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Discovery
+        href: ~/docs-ref-services/{moniker}/mgmt-discovery-readme.md
+        children:
+        - azure.mgmt.discovery
   - name: DNS
     href: ~/docs-ref-services/{moniker}/dns.md
     landingPageType: Service
@@ -2010,6 +2020,16 @@
         href: ~/docs-ref-services/{moniker}/mgmt-monitor-readme.md
         children:
         - azure.mgmt.monitor
+  - name: Monitorworkspaces
+    href: ~/docs-ref-services/{moniker}/monitorworkspaces.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Monitorworkspaces
+        href: ~/docs-ref-services/{moniker}/mgmt-monitorworkspaces-readme.md
+        children:
+        - azure.mgmt.monitorworkspaces
   - name: MySQL Flexible Servers
     href: ~/docs-ref-services/{moniker}/mysql-flexible-servers.md
     landingPageType: Service
@@ -2020,6 +2040,16 @@
         href: ~/docs-ref-services/{moniker}/mgmt-mysqlflexibleservers-readme.md
         children:
         - azure.mgmt.mysqlflexibleservers
+  - name: Napsteromniagentapi
+    href: ~/docs-ref-services/{moniker}/napsteromniagentapi.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Napsteromniagentapi
+        href: ~/docs-ref-services/{moniker}/mgmt-napsteromniagentapi-readme.md
+        children:
+        - azure.mgmt.napsteromniagentapi
   - name: Neon Postgres
     href: ~/docs-ref-services/{moniker}/neon-postgres.md
     landingPageType: Service
@@ -2306,6 +2336,16 @@
         href: ~/docs-ref-services/{moniker}/mgmt-privatedns-readme.md
         children:
         - azure.mgmt.privatedns
+  - name: Programenrollment
+    href: ~/docs-ref-services/{moniker}/programenrollment.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Programenrollment
+        href: ~/docs-ref-services/{moniker}/mgmt-programenrollment-readme.md
+        children:
+        - azure.mgmt.programenrollment
   - name: Purestorageblock
     href: ~/docs-ref-services/{moniker}/purestorageblock.md
     landingPageType: Service
@@ -3097,9 +3137,17 @@
     landingPageType: Service
     items:
     - name: unknown
+      href: ~/docs-ref-services/{moniker}/ai-agentserver-optimization-readme.md
+      children:
+      - azure.ai.agentserver.optimization
+    - name: unknown
       href: ~/docs-ref-services/{moniker}/ai-agentserver-responses-readme.md
       children:
       - azure.ai.agentserver
+    - name: unknown
+      href: ~/docs-ref-services/{moniker}/ai-discovery-readme.md
+      children:
+      - azure.ai.discovery
     - name: unknown
       href: ~/docs-ref-services/{moniker}/postgresql-auth-readme.md
       children:

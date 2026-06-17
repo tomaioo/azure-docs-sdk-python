@@ -1,6 +1,8 @@
 | Reference | Package | Source |
 |---|---|---|
+|[unknown](ai-agentserver-optimization-readme.md)|[azure-ai-agentserver-optimization](https://pypi.org/project/azure-ai-agentserver-optimization)|[GitHub](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/agentserver/azure-ai-agentserver-optimization)|
 |[unknown](ai-agentserver-responses-readme.md)|[azure-ai-agentserver-responses](https://pypi.org/project/azure-ai-agentserver-responses)|[GitHub](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/agentserver/azure-ai-agentserver-responses)|
+|[unknown](ai-discovery-readme.md)|[azure-ai-discovery](https://pypi.org/project/azure-ai-discovery)|[GitHub](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/discovery/azure-ai-discovery)|
 |[unknown](mgmt-appnetwork-readme.md)|[azure-mgmt-appnetwork](https://pypi.org/project/azure-mgmt-appnetwork)|[GitHub](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/appnetwork/azure-mgmt-appnetwork)|
 |[unknown](mgmt-certificateregistration-readme.md)|[azure-mgmt-certificateregistration](https://pypi.org/project/azure-mgmt-certificateregistration)|[GitHub](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/certificateregistration/azure-mgmt-certificateregistration)|
 |[unknown](mgmt-containerregistrytasks-readme.md)|[azure-mgmt-containerregistrytasks](https://pypi.org/project/azure-mgmt-containerregistrytasks)|[GitHub](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/containerregistry/azure-mgmt-containerregistrytasks)|

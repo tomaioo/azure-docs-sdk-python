@@ -569,6 +569,20 @@
     },
     {
       "package_info": {
+        "name": "azure-mgmt-changeanalysis",
+        "install_type": "pypi",
+        "prefer_source_distribution": "true",
+        "version": "==1.0.2"
+      },
+      "exclude_path": [
+        "test*",
+        "example*",
+        "sample*",
+        "doc*"
+      ]
+    },
+    {
+      "package_info": {
         "name": "azure-mgmt-edgegateway",
         "install_type": "pypi",
         "prefer_source_distribution": false,
