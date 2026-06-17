@@ -1,0 +1,28 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.UpdateAdministrativeStateResponseProperties
+name: UpdateAdministrativeStateResponseProperties
+fullName: azure.mgmt.managednetworkfabric.models.UpdateAdministrativeStateResponseProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Update Administrative State Response Properties.
+constructor:
+  syntax: 'UpdateAdministrativeStateResponseProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: 'List of ARM Resource IDs for which the given action applied
+
+    successfully.'
+  name: successful_resources
+  types:
+  - <xref:list>[<xref:str>]
+- description: List of ARM Resource IDs for which the given action failed to apply.
+  name: failed_resources
+  types:
+  - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.UpdateAdministrativeStateResponseProperties.failed_resources
+  name: failed_resources
+  summary: List of ARM Resource IDs for which the given action failed to apply.
+  signature: 'failed_resources: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.UpdateAdministrativeStateResponseProperties.successful_resources
+  name: successful_resources
+  summary: List of ARM Resource IDs for which the given action applied successfully.
+  signature: 'successful_resources: list[str] | None'

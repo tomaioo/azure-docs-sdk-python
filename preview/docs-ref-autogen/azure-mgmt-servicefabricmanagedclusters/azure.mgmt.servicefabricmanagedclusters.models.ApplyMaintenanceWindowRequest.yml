@@ -1,0 +1,60 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.servicefabricmanagedclusters.models.ApplyMaintenanceWindowRequest
+name: ApplyMaintenanceWindowRequest
+fullName: azure.mgmt.servicefabricmanagedclusters.models.ApplyMaintenanceWindowRequest
+module: azure.mgmt.servicefabricmanagedclusters.models
+summary: Describes the request to apply a maintenance window on a Service Fabric Managed
+  Cluster.
+constructor:
+  syntax: 'ApplyMaintenanceWindowRequest(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Effective start date of the maintenance window in yyyy-MM-dd HH:mm
+
+    format. If not provided, defaults to the current time.'
+  name: start_date_time
+  types:
+  - <xref:str>
+- description: 'Duration of the maintenance window in hh:mm format. If not provided,
+    defaults
+
+    to 5 hours. Example: 08:30 for 8 and a half hours.'
+  name: duration
+  types:
+  - <xref:str>
+- description: 'Name of the timezone. List of timezones can be obtained by executing
+
+    [System.TimeZoneInfo]::GetSystemTimeZones() in PowerShell. If not provided, defaults
+    to UTC.
+
+    Example: Pacific Standard Time, UTC, W. Europe Standard Time, Korea Standard Time,
+    Central
+
+    Australia Standard Time.'
+  name: time_zone
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.servicefabricmanagedclusters.models.ApplyMaintenanceWindowRequest.duration
+  name: duration
+  summary: 'mm format. If not provided, defaults to 5 hours.
+
+    Example: 08:30 for 8 and a half hours.'
+  signature: 'duration: str | None'
+- uid: azure.mgmt.servicefabricmanagedclusters.models.ApplyMaintenanceWindowRequest.start_date_time
+  name: start_date_time
+  summary: 'mm format. If not provided,
+
+    defaults to the current time.'
+  signature: 'start_date_time: str | None'
+- uid: azure.mgmt.servicefabricmanagedclusters.models.ApplyMaintenanceWindowRequest.time_zone
+  name: time_zone
+  summary: 'Name of the timezone. List of timezones can be obtained by executing
+
+    [System.TimeZoneInfo]::GetSystemTimeZones() in PowerShell. If not provided, defaults
+    to UTC.
+
+    Example: Pacific Standard Time, UTC, W. Europe Standard Time, Korea Standard Time,
+    Central
+
+    Australia Standard Time.'
+  signature: 'time_zone: str | None'

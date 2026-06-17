@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.CommitBatchDetails
+name: CommitBatchDetails
+fullName: azure.mgmt.managednetworkfabric.models.CommitBatchDetails
+module: azure.mgmt.managednetworkfabric.models
+summary: Commit Batch Details.
+constructor:
+  syntax: 'CommitBatchDetails(*args: Any, **kwargs: Any)'
+variables:
+- description: List of devices for which the commit operation failed.
+  name: failed_devices
+  types:
+  - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.CommitBatchDetails.failed_devices
+  name: failed_devices
+  summary: List of devices for which the commit operation failed.
+  signature: 'failed_devices: list[str] | None'

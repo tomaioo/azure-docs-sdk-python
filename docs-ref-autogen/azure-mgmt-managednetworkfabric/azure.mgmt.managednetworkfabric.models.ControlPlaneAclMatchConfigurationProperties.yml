@@ -1,0 +1,42 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclMatchConfigurationProperties
+name: ControlPlaneAclMatchConfigurationProperties
+fullName: azure.mgmt.managednetworkfabric.models.ControlPlaneAclMatchConfigurationProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Control Plane Access Control List (ACL) match configurations properties.
+constructor:
+  syntax: 'ControlPlaneAclMatchConfigurationProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: The name of the match configuration.
+  name: match_configuration_name
+  types:
+  - <xref:str>
+- description: Sequence Number of the match configuration.
+  name: sequence_number
+  types:
+  - <xref:int>
+- description: Match conditions.
+  name: match_condition
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ControlPlaneAclMatchCondition>
+- description: Action that need to be performed for the matched conditions.
+  name: action
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ControlPlaneAclAction>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclMatchConfigurationProperties.action
+  name: action
+  summary: Action that need to be performed for the matched conditions.
+  signature: 'action: _models.ControlPlaneAclAction | None'
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclMatchConfigurationProperties.match_condition
+  name: match_condition
+  summary: Match conditions.
+  signature: 'match_condition: _models.ControlPlaneAclMatchCondition | None'
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclMatchConfigurationProperties.match_configuration_name
+  name: match_configuration_name
+  summary: The name of the match configuration.
+  signature: 'match_configuration_name: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclMatchConfigurationProperties.sequence_number
+  name: sequence_number
+  summary: Sequence Number of the match configuration.
+  signature: 'sequence_number: int | None'

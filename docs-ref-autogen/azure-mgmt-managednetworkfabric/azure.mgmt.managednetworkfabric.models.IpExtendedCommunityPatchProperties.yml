@@ -3,29 +3,25 @@ uid: azure.mgmt.managednetworkfabric.models.IpExtendedCommunityPatchProperties
 name: IpExtendedCommunityPatchProperties
 fullName: azure.mgmt.managednetworkfabric.models.IpExtendedCommunityPatchProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'IP Extended Community patchable properties.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: IP Extended Community patchable properties.
 constructor:
-  syntax: 'IpExtendedCommunityPatchProperties(*, ip_extended_community_rules: List[_models.IpExtendedCommunityRule],
-    annotation: str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: ip_extended_community_rules
-    description: List of IP Extended Community Rules. Required.
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.IpExtendedCommunityRule>]
+  syntax: 'IpExtendedCommunityPatchProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: Switch configuration description.
   name: annotation
   types:
   - <xref:str>
-- description: List of IP Extended Community Rules. Required.
+- description: List of IP Extended Community Rules.
   name: ip_extended_community_rules
   types:
   - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.IpExtendedCommunityRule>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.IpExtendedCommunityPatchProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.IpExtendedCommunityPatchProperties.ip_extended_community_rules
+  name: ip_extended_community_rules
+  summary: List of IP Extended Community Rules.
+  signature: 'ip_extended_community_rules: list[''_models.IpExtendedCommunityRule'']
+    | None'

@@ -1,0 +1,40 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NeighborAddressBgpAdministrativeStatus
+name: NeighborAddressBgpAdministrativeStatus
+fullName: azure.mgmt.managednetworkfabric.models.NeighborAddressBgpAdministrativeStatus
+module: azure.mgmt.managednetworkfabric.models
+summary: Neighbor Address BGP Administrative Status.
+constructor:
+  syntax: 'NeighborAddressBgpAdministrativeStatus(*args: Any, **kwargs: Any)'
+variables:
+- description: 'NeighborAddress - Input should be either All or Specific Ipv4 Address
+
+    or Specific Ipv6 Address.'
+  name: neighbor_address
+  types:
+  - <xref:str>
+- description: 'BGP Administrative state. Known values are: "Enabled" and
+
+    "Disabled".'
+  name: administrative_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BgpAdministrativeState>
+- description: Error message.
+  name: error
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NeighborAddressBgpAdministrativeStatus.administrative_state
+  name: administrative_state
+  summary: '"Enabled" and "Disabled".'
+  signature: 'administrative_state: str | _models.BgpAdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NeighborAddressBgpAdministrativeStatus.error
+  name: error
+  summary: Error message.
+  signature: 'error: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NeighborAddressBgpAdministrativeStatus.neighbor_address
+  name: neighbor_address
+  summary: NeighborAddress - Input should be either All or Specific Ipv4 Address or
+    Specific Ipv6 Address.
+  signature: 'neighbor_address: str | None'

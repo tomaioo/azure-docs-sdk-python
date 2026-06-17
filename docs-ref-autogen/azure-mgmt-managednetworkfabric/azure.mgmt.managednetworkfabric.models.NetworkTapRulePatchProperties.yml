@@ -5,40 +5,12 @@ fullName: azure.mgmt.managednetworkfabric.models.NetworkTapRulePatchProperties
 module: azure.mgmt.managednetworkfabric.models
 summary: Network Tap Rule Patch properties.
 constructor:
-  syntax: 'NetworkTapRulePatchProperties(*, configuration_type: str | _models.ConfigurationType
-    | None = None, tap_rules_url: str | None = None, match_configurations: List[_models.NetworkTapRuleMatchConfiguration]
-    | None = None, dynamic_match_configurations: List[_models.CommonDynamicMatchConfiguration]
-    | None = None, annotation: str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: configuration_type
-    description: 'Input method to configure Network Tap Rule. Known values are:
-
-      "File" and "Inline".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationType>
-  - name: tap_rules_url
-    description: Network Tap Rules file URL.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: match_configurations
-    description: List of match configurations.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfiguration>]
-  - name: dynamic_match_configurations
-    description: List of dynamic match configurations.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfiguration>]
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'NetworkTapRulePatchProperties(*args: Any, **kwargs: Any)'
 variables:
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
 - description: 'Input method to configure Network Tap Rule. Known values are: "File"
 
     and "Inline".'
@@ -53,12 +25,53 @@ variables:
 - description: List of match configurations.
   name: match_configurations
   types:
-  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfiguration>]
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfigurationPatch>]
 - description: List of dynamic match configurations.
   name: dynamic_match_configurations
   types:
-  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfiguration>]
-- description: Switch configuration description.
-  name: annotation
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfigurationPatch>]
+- description: 'The selection of the managed identity to use with this storage
+
+    account. The identity type must be either system assigned or user assigned.'
+  name: identity_selector
   types:
-  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.IdentitySelectorPatch>
+- description: Global network tap rule actions.
+  name: global_network_tap_rule_actions
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.GlobalNetworkTapRuleActionPatchProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRulePatchProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRulePatchProperties.configuration_type
+  name: configuration_type
+  summary: '"File" and "Inline".'
+  signature: 'configuration_type: str | _models.ConfigurationType | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRulePatchProperties.dynamic_match_configurations
+  name: dynamic_match_configurations
+  summary: List of dynamic match configurations.
+  signature: 'dynamic_match_configurations: list[''_models.CommonDynamicMatchConfigurationPatch'']
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRulePatchProperties.global_network_tap_rule_actions
+  name: global_network_tap_rule_actions
+  summary: Global network tap rule actions.
+  signature: 'global_network_tap_rule_actions: _models.GlobalNetworkTapRuleActionPatchProperties
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRulePatchProperties.identity_selector
+  name: identity_selector
+  summary: 'The selection of the managed identity to use with this storage account.
+    The identity type must
+
+    be either system assigned or user assigned.'
+  signature: 'identity_selector: _models.IdentitySelectorPatch | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRulePatchProperties.match_configurations
+  name: match_configurations
+  summary: List of match configurations.
+  signature: 'match_configurations: list[''_models.NetworkTapRuleMatchConfigurationPatch'']
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRulePatchProperties.tap_rules_url
+  name: tap_rules_url
+  summary: Network Tap Rules file URL.
+  signature: 'tap_rules_url: str | None'

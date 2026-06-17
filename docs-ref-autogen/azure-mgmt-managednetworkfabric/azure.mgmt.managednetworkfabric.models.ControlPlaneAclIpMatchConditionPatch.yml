@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclIpMatchConditionPatch
+name: ControlPlaneAclIpMatchConditionPatch
+fullName: azure.mgmt.managednetworkfabric.models.ControlPlaneAclIpMatchConditionPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: Control Plane Access Control List (ACL) IP condition patch properties.
+constructor:
+  syntax: 'ControlPlaneAclIpMatchConditionPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: List of the source IP addresses that need to be matched.
+  name: source_ip_prefix
+  types:
+  - <xref:str>
+- description: List of the destination IP addresses that need to be matched.
+  name: destination_ip_prefix
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclIpMatchConditionPatch.destination_ip_prefix
+  name: destination_ip_prefix
+  summary: List of the destination IP addresses that need to be matched.
+  signature: 'destination_ip_prefix: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclIpMatchConditionPatch.source_ip_prefix
+  name: source_ip_prefix
+  summary: List of the source IP addresses that need to be matched.
+  signature: 'source_ip_prefix: str | None'

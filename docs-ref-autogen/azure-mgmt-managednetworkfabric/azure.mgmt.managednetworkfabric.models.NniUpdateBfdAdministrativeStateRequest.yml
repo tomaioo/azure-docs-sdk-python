@@ -1,0 +1,35 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NniUpdateBfdAdministrativeStateRequest
+name: NniUpdateBfdAdministrativeStateRequest
+fullName: azure.mgmt.managednetworkfabric.models.NniUpdateBfdAdministrativeStateRequest
+module: azure.mgmt.managednetworkfabric.models
+summary: NNI Bidirectional Forwarding Detection (BFD) Administrative State request.
+constructor:
+  syntax: 'NniUpdateBfdAdministrativeStateRequest(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Route Type. Choose either Static or OptionA. Known values are: "Static"
+    and
+
+    "OptionA".'
+  name: route_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.RouteType>
+- description: 'State. Select either enable or disable. Known values are:
+
+    "Enabled", "Disabled", "MAT", and "RMA".'
+  name: administrative_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BfdAdministrativeState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NniUpdateBfdAdministrativeStateRequest.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT",
+
+    and "RMA".'
+  signature: 'administrative_state: str | _models.BfdAdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NniUpdateBfdAdministrativeStateRequest.route_type
+  name: route_type
+  summary: '"Static" and "OptionA".'
+  signature: 'route_type: str | _models.RouteType | None'

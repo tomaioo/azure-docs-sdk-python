@@ -1,0 +1,34 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.ActionIpCommunityPatchProperties
+name: ActionIpCommunityPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.ActionIpCommunityPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: IP Community Properties.
+constructor:
+  syntax: 'ActionIpCommunityPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: List of IP Community IDs.
+  name: add
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.IpCommunityIdList>
+- description: List of IP Community IDs.
+  name: delete
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.IpCommunityIdList>
+- description: List of IP Community IDs.
+  name: set
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.IpCommunityIdList>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ActionIpCommunityPatchProperties.add
+  name: add
+  summary: List of IP Community IDs.
+  signature: 'add: _models.IpCommunityIdList | None'
+- uid: azure.mgmt.managednetworkfabric.models.ActionIpCommunityPatchProperties.delete
+  name: delete
+  summary: List of IP Community IDs.
+  signature: 'delete: _models.IpCommunityIdList | None'
+- uid: azure.mgmt.managednetworkfabric.models.ActionIpCommunityPatchProperties.set
+  name: set
+  summary: List of IP Community IDs.
+  signature: 'set: _models.IpCommunityIdList | None'

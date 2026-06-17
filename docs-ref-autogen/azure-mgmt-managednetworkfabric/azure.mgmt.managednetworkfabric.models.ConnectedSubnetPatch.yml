@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.ConnectedSubnetPatch
+name: ConnectedSubnetPatch
+fullName: azure.mgmt.managednetworkfabric.models.ConnectedSubnetPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: Connected Subnet properties.
+constructor:
+  syntax: 'ConnectedSubnetPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
+- description: Prefix of the Connected Subnet. Required.
+  name: prefix
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ConnectedSubnetPatch.prefix
+  name: prefix
+  summary: Prefix of the Connected Subnet. Required.
+  signature: 'prefix: str'

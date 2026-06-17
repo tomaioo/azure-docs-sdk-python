@@ -11,10 +11,7 @@ constructor:
 methods:
 - uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkDevicesOperations.begin_create
   name: begin_create
-  summary: 'Create Network Device.
-
-
-    Create a Network Device resource.'
+  summary: Create a Network Device resource.
   signature: 'async begin_create(resource_group_name: str, network_device_name: str,
     body: _models.NetworkDevice, *, content_type: str = ''application/json'', **kwargs:
     Any) -> AsyncLROPoller[_models.NetworkDevice]'
@@ -32,58 +29,27 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: Request payload. Is either a NetworkDevice type or a IO type. Required.
+    description: 'Request payload. Is one of the following types: NetworkDevice, JSON,
+      IO[bytes]
+
+      Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.NetworkDevice>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be AsyncARMPolling. Pass in
-      False for
-
-      this operation to not poll, or pass in your own initialized polling object for
-      a personal
-
-      polling strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.AsyncPollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of AsyncLROPoller that returns either NetworkDevice
-      or the result of
+    description: 'An instance of AsyncLROPoller that returns NetworkDevice. The NetworkDevice
+      is
 
-      cls(response)'
+      compatible with MutableMapping'
     types:
     - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkDevice>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkDevicesOperations.begin_delete
   name: begin_delete
-  summary: 'Deletes a Network Device.
-
-
-    Delete the Network Device resource.'
+  summary: Delete the Network Device resource.
   signature: 'async begin_delete(resource_group_name: str, network_device_name: str,
     **kwargs: Any) -> AsyncLROPoller[None]'
   parameters:
@@ -99,48 +65,18 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be AsyncARMPolling. Pass in
-      False for
-
-      this operation to not poll, or pass in your own initialized polling object for
-      a personal
-
-      polling strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.AsyncPollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
   return:
-    description: An instance of AsyncLROPoller that returns either None or the result
-      of cls(response)
+    description: An instance of AsyncLROPoller that returns None
     types:
     - <xref:azure.core.polling.AsyncLROPoller>[<xref:None>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkDevicesOperations.begin_reboot
   name: begin_reboot
-  summary: 'Implements the operation to the underlying resources.
-
-
-    Reboot the Network Device.'
+  summary: Reboot the Network Device.
   signature: 'async begin_reboot(resource_group_name: str, network_device_name: str,
     body: _models.RebootProperties, *, content_type: str = ''application/json'', **kwargs:
-    Any) -> AsyncLROPoller[_models.CommonPostActionResponseForStateUpdate]'
+    Any) -> AsyncLROPoller[_models.OperationStatusResult]'
   parameters:
   - name: resource_group_name
     description: 'The name of the resource group. The name is case insensitive.
@@ -155,60 +91,29 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: Request payload. Is either a RebootProperties type or a IO type.
-      Required.
+    description: 'Request payload. Is one of the following types: RebootProperties,
+      JSON, IO[bytes]
+
+      Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.RebootProperties>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be AsyncARMPolling. Pass in
-      False for
-
-      this operation to not poll, or pass in your own initialized polling object for
-      a personal
-
-      polling strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.AsyncPollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of AsyncLROPoller that returns either
+    description: 'An instance of AsyncLROPoller that returns OperationStatusResult.
+      The
 
-      CommonPostActionResponseForStateUpdate or the result of cls(response)'
+      OperationStatusResult is compatible with MutableMapping'
     types:
-    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForStateUpdate>]
+    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.OperationStatusResult>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkDevicesOperations.begin_refresh_configuration
   name: begin_refresh_configuration
-  summary: 'Implements the operation to the underlying resources.
-
-
-    Refreshes the configuration the Network Device.'
+  summary: Refreshes the configuration the Network Device.
   signature: 'async begin_refresh_configuration(resource_group_name: str, network_device_name:
-    str, **kwargs: Any) -> AsyncLROPoller[CommonPostActionResponseForStateUpdate]'
+    str, **kwargs: Any) -> AsyncLROPoller[NetworkDeviceRefreshConfigurationResponse]'
   parameters:
   - name: resource_group_name
     description: 'The name of the resource group. The name is case insensitive.
@@ -222,46 +127,166 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
+  return:
+    description: 'An instance of AsyncLROPoller that returns NetworkDeviceRefreshConfigurationResponse.
+
+      The NetworkDeviceRefreshConfigurationResponse is compatible with MutableMapping'
     types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
+    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkDeviceRefreshConfigurationResponse>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkDevicesOperations.begin_resync_certificates
+  name: begin_resync_certificates
+  summary: 'Resync the latest certificates to the Network Device.
+
+
+    Updates the Network Device to use the latest certificates. Does not generate new
+    certificates.
+
+    Allows network devices missed during a previous certificate rotation to be brought
+    back into
+
+    sync.'
+  signature: 'async begin_resync_certificates(resource_group_name: str, network_device_name:
+    str, **kwargs: Any) -> AsyncLROPoller[NetworkFabricResyncCertificatesResponse]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
     types:
     - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be AsyncARMPolling. Pass in
-      False for
-
-      this operation to not poll, or pass in your own initialized polling object for
-      a personal
-
-      polling strategy.'
+  - name: network_device_name
+    description: Name of the Network Device. Required.
+    isRequired: true
     types:
-    - <xref:bool>
-    - <xref:azure.core.polling.AsyncPollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:str>
   return:
-    description: 'An instance of AsyncLROPoller that returns either
+    description: 'An instance of AsyncLROPoller that returns NetworkFabricResyncCertificatesResponse.
 
-      CommonPostActionResponseForStateUpdate or the result of cls(response)'
+      The NetworkFabricResyncCertificatesResponse is compatible with MutableMapping'
     types:
-    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForStateUpdate>]
+    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkFabricResyncCertificatesResponse>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkDevicesOperations.begin_resync_passwords
+  name: begin_resync_passwords
+  summary: 'Resync the latest passwords to the Network Device.
+
+
+    Updates the Network Device to use the latest passwords. Does not generate new
+    passwords. Allows
+
+    network devices missed during a previous password rotation to be brought back
+    into sync.'
+  signature: 'async begin_resync_passwords(resource_group_name: str, network_device_name:
+    str, **kwargs: Any) -> AsyncLROPoller[NetworkDeviceResyncPasswordsResponse]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_device_name
+    description: Name of the Network Device. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: 'An instance of AsyncLROPoller that returns NetworkDeviceResyncPasswordsResponse.
+      The
+
+      NetworkDeviceResyncPasswordsResponse is compatible with MutableMapping'
+    types:
+    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkDeviceResyncPasswordsResponse>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkDevicesOperations.begin_run_ro_command
+  name: begin_run_ro_command
+  summary: Run the RO Command on the Network Device.
+  signature: 'async begin_run_ro_command(resource_group_name: str, network_device_name:
+    str, body: _models.DeviceRoCommand, *, content_type: str = ''application/json'',
+    **kwargs: Any) -> AsyncLROPoller[_models.CommonPostActionResponseForDeviceROCommandsOperationStatusResult]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_device_name
+    description: Name of the Network Device. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: body
+    description: 'Request the command. Is one of the following types: DeviceRoCommand,
+      JSON,
+
+      IO[bytes] Required.'
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.managednetworkfabric.models.DeviceRoCommand>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
+  return:
+    description: 'An instance of AsyncLROPoller that returns
+
+      CommonPostActionResponseForDeviceROCommandsOperationStatusResult. The
+
+      CommonPostActionResponseForDeviceROCommandsOperationStatusResult is compatible
+      with
+
+      MutableMapping'
+    types:
+    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForDeviceROCommandsOperationStatusResult>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkDevicesOperations.begin_run_rw_command
+  name: begin_run_rw_command
+  summary: Run the RW Command on the Network Device.
+  signature: 'async begin_run_rw_command(resource_group_name: str, network_device_name:
+    str, body: _models.DeviceRwCommand, *, content_type: str = ''application/json'',
+    **kwargs: Any) -> AsyncLROPoller[_models.NetworkDeviceRunRwCommandResponse]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_device_name
+    description: Name of the Network Device. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: body
+    description: 'Request the command. Is one of the following types: DeviceRwCommand,
+      JSON,
+
+      IO[bytes] Required.'
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.managednetworkfabric.models.DeviceRwCommand>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
+  return:
+    description: 'An instance of AsyncLROPoller that returns NetworkDeviceRunRwCommandResponse.
+      The
+
+      NetworkDeviceRunRwCommandResponse is compatible with MutableMapping'
+    types:
+    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkDeviceRunRwCommandResponse>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkDevicesOperations.begin_update
   name: begin_update
-  summary: 'Updates a Network Device.
-
-
-    Update certain properties of the Network Device resource.'
+  summary: Update certain properties of the Network Device resource.
   signature: 'async begin_update(resource_group_name: str, network_device_name: str,
     body: _models.NetworkDevicePatchParameters, *, content_type: str = ''application/json'',
     **kwargs: Any) -> AsyncLROPoller[_models.NetworkDevice]'
@@ -279,64 +304,29 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: 'Network Device properties to update. Is either a NetworkDevicePatchParameters
-      type
+    description: 'Network Device properties to update. Is one of the following types:
 
-      or a IO type. Required.'
+      NetworkDevicePatchParameters, JSON, IO[bytes] Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.NetworkDevicePatchParameters>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be AsyncARMPolling. Pass in
-      False for
-
-      this operation to not poll, or pass in your own initialized polling object for
-      a personal
-
-      polling strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.AsyncPollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of AsyncLROPoller that returns either NetworkDevice
-      or the result of
+    description: 'An instance of AsyncLROPoller that returns NetworkDevice. The NetworkDevice
+      is
 
-      cls(response)'
+      compatible with MutableMapping'
     types:
     - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkDevice>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkDevicesOperations.begin_update_administrative_state
   name: begin_update_administrative_state
-  summary: 'Implements the operation to the underlying resources.
-
-
-    Updates the Administrative state of the Network Device.'
+  summary: Updates the Administrative state of the Network Device.
   signature: 'async begin_update_administrative_state(resource_group_name: str, network_device_name:
     str, body: _models.UpdateDeviceAdministrativeState, *, content_type: str = ''application/json'',
-    **kwargs: Any) -> AsyncLROPoller[_models.CommonPostActionResponseForStateUpdate]'
+    **kwargs: Any) -> AsyncLROPoller[_models.NetworkDeviceUpdateAdministrativeStateResponse]'
   parameters:
   - name: resource_group_name
     description: 'The name of the resource group. The name is case insensitive.
@@ -351,63 +341,30 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: 'Request payload. Is either a UpdateDeviceAdministrativeState type
-      or a IO type.
+    description: 'Request payload. Is one of the following types: UpdateDeviceAdministrativeState,
 
-      Required.'
+      JSON, IO[bytes] Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.UpdateDeviceAdministrativeState>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be AsyncARMPolling. Pass in
-      False for
-
-      this operation to not poll, or pass in your own initialized polling object for
-      a personal
-
-      polling strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.AsyncPollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of AsyncLROPoller that returns either
+    description: 'An instance of AsyncLROPoller that returns
 
-      CommonPostActionResponseForStateUpdate or the result of cls(response)'
+      NetworkDeviceUpdateAdministrativeStateResponse. The
+
+      NetworkDeviceUpdateAdministrativeStateResponse is compatible with MutableMapping'
     types:
-    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForStateUpdate>]
+    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkDeviceUpdateAdministrativeStateResponse>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkDevicesOperations.begin_upgrade
   name: begin_upgrade
-  summary: 'Implements the operation to the underlying resources.
-
-
-    Upgrades the version of the Network Device.'
+  summary: Upgrades the version of the Network Device.
   signature: 'async begin_upgrade(resource_group_name: str, network_device_name: str,
-    body: _models.UpdateVersion, *, content_type: str = ''application/json'', **kwargs:
-    Any) -> AsyncLROPoller[_models.CommonPostActionResponseForStateUpdate]'
+    body: _models.NetworkDeviceUpgradeRequest, *, content_type: str = ''application/json'',
+    **kwargs: Any) -> AsyncLROPoller[_models.NetworkDeviceUpgradeResponse]'
   parameters:
   - name: resource_group_name
     description: 'The name of the resource group. The name is case insensitive.
@@ -422,57 +379,27 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: Request payload. Is either a UpdateVersion type or a IO type. Required.
+    description: 'Request payload. Is one of the following types: NetworkDeviceUpgradeRequest,
+      JSON,
+
+      IO[bytes] Required.'
     isRequired: true
     types:
-    - <xref:azure.mgmt.managednetworkfabric.models.UpdateVersion>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be AsyncARMPolling. Pass in
-      False for
-
-      this operation to not poll, or pass in your own initialized polling object for
-      a personal
-
-      polling strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.AsyncPollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:azure.mgmt.managednetworkfabric.models.NetworkDeviceUpgradeRequest>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of AsyncLROPoller that returns either
+    description: 'An instance of AsyncLROPoller that returns NetworkDeviceUpgradeResponse.
+      The
 
-      CommonPostActionResponseForStateUpdate or the result of cls(response)'
+      NetworkDeviceUpgradeResponse is compatible with MutableMapping'
     types:
-    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForStateUpdate>]
+    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkDeviceUpgradeResponse>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkDevicesOperations.get
   name: get
-  summary: 'Gets a Network Device.
-
-
-    Gets the Network Device resource details.'
+  summary: Gets the Network Device resource details.
   signature: 'async get(resource_group_name: str, network_device_name: str, **kwargs:
     Any) -> NetworkDevice'
   parameters:
@@ -488,24 +415,16 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
   return:
-    description: NetworkDevice or the result of cls(response)
+    description: NetworkDevice. The NetworkDevice is compatible with MutableMapping
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.NetworkDevice>
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkDevicesOperations.list_by_resource_group
   name: list_by_resource_group
-  summary: 'List NetworkDevices by resource group.
-
-
-    List all the Network Device resources in a given resource group.'
-  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> AsyncIterable[NetworkDevice]'
+  summary: List all the Network Device resources in a given resource group.
+  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> AsyncItemPaged[NetworkDevice]'
   parameters:
   - name: resource_group_name
     description: 'The name of the resource group. The name is case insensitive.
@@ -514,38 +433,19 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
   return:
-    description: An iterator like instance of either NetworkDevice or the result of
-      cls(response)
+    description: An iterator like instance of NetworkDevice
     types:
     - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.mgmt.managednetworkfabric.models.NetworkDevice>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkDevicesOperations.list_by_subscription
   name: list_by_subscription
-  summary: 'List NetworkDevices by subscription.
-
-
-    List all the Network Device resources in a given subscription.'
-  signature: 'list_by_subscription(**kwargs: Any) -> AsyncIterable[NetworkDevice]'
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
+  summary: List all the Network Device resources in a given subscription.
+  signature: 'list_by_subscription(**kwargs: Any) -> AsyncItemPaged[NetworkDevice]'
   return:
-    description: An iterator like instance of either NetworkDevice or the result of
-      cls(response)
+    description: An iterator like instance of NetworkDevice
     types:
     - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.mgmt.managednetworkfabric.models.NetworkDevice>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
-attributes:
-- uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkDevicesOperations.models
-  name: models
-  signature: models = <module 'azure.mgmt.managednetworkfabric.models' from 'C:\\ToolCache\\Python\\3.12.10\\x64\\Lib\\site-packages\\py2docfx\\venv\\venv171\\Lib\\site-packages\\azure\\mgmt\\managednetworkfabric\\models\\__init__.py'>

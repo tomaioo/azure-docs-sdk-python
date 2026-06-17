@@ -1,0 +1,11 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.NNIDerivedUniqueRouteDistinguisherConfigurationState
+name: NNIDerivedUniqueRouteDistinguisherConfigurationState
+fullName: azure.mgmt.managednetworkfabric.models.NNIDerivedUniqueRouteDistinguisherConfigurationState
+summary: NNI Derived Unique Route Distinguisher Configuration State.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: DISABLED
+  uid: azure.mgmt.managednetworkfabric.models.NNIDerivedUniqueRouteDistinguisherConfigurationState.DISABLED
+- name: ENABLED
+  uid: azure.mgmt.managednetworkfabric.models.NNIDerivedUniqueRouteDistinguisherConfigurationState.ENABLED

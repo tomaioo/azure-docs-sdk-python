@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.AggregateRoutePatchConfiguration
+name: AggregateRoutePatchConfiguration
+fullName: azure.mgmt.managednetworkfabric.models.AggregateRoutePatchConfiguration
+module: azure.mgmt.managednetworkfabric.models
+summary: List of IPv4 and IPv6 aggregate routes.
+constructor:
+  syntax: 'AggregateRoutePatchConfiguration(*args: Any, **kwargs: Any)'
+variables:
+- description: List of IPv4 Route prefixes.
+  name: ipv4_routes
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.AggregateRoute>]
+- description: List of Ipv6Routes prefixes.
+  name: ipv6_routes
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.AggregateRoute>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.AggregateRoutePatchConfiguration.ipv4_routes
+  name: ipv4_routes
+  summary: List of IPv4 Route prefixes.
+  signature: 'ipv4_routes: list[''_models.AggregateRoute''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.AggregateRoutePatchConfiguration.ipv6_routes
+  name: ipv6_routes
+  summary: List of Ipv6Routes prefixes.
+  signature: 'ipv6_routes: list[''_models.AggregateRoute''] | None'

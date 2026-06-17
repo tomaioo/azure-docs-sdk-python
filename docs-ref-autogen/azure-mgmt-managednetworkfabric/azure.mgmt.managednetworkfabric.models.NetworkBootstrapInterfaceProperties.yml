@@ -1,0 +1,131 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapInterfaceProperties
+name: NetworkBootstrapInterfaceProperties
+fullName: azure.mgmt.managednetworkfabric.models.NetworkBootstrapInterfaceProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Network Bootstrap Interface Properties defines the properties of the resource.
+constructor:
+  syntax: 'NetworkBootstrapInterfaceProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
+- description: 'Provisioning state of the resource. Known values are: "Accepted",
+
+    "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
+  name: provisioning_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
+- description: 'Administrative state of the resource. Known values are: "Enabled",
+
+    "Disabled", "MAT", "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  name: administrative_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+- description: 'Configuration state of the resource. Known values are: "Succeeded",
+
+    "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
+
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
+  name: configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationState>
+- description: Physical identifier of the device.
+  name: physical_identifier
+  types:
+  - <xref:str>
+- description: Connected to information of the device.
+  name: connected_to
+  types:
+  - <xref:str>
+- description: 'Type of the interface. Known values are: "Management" and "Data".'
+  name: interface_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.InterfaceType>
+- description: Description of the interface.
+  name: description
+  types:
+  - <xref:str>
+- description: Additional description of the interface.
+  name: additional_description
+  types:
+  - <xref:str>
+- description: IPv4Address of the interface.
+  name: ipv4_address
+  types:
+  - <xref:str>
+- description: IPv6Address of the interface.
+  name: ipv6_address
+  types:
+  - <xref:str>
+- description: 'Serial number of the interface. Format of serial Number -
+
+    Make;Model;HardwareRevisionId;SerialNumber.'
+  name: serial_number
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapInterfaceProperties.additional_description
+  name: additional_description
+  summary: Additional description of the interface.
+  signature: 'additional_description: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapInterfaceProperties.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT",
+
+    "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  signature: 'administrative_state: str | _models.AdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapInterfaceProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapInterfaceProperties.connected_to
+  name: connected_to
+  summary: Connected to information of the device.
+  signature: 'connected_to: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapInterfaceProperties.description
+  name: description
+  summary: Description of the interface.
+  signature: 'description: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapInterfaceProperties.interface_type
+  name: interface_type
+  summary: '"Management" and "Data".'
+  signature: 'interface_type: str | _models.InterfaceType | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapInterfaceProperties.ipv4_address
+  name: ipv4_address
+  summary: IPv4Address of the interface.
+  signature: 'ipv4_address: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapInterfaceProperties.ipv6_address
+  name: ipv6_address
+  summary: IPv6Address of the interface.
+  signature: 'ipv6_address: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapInterfaceProperties.physical_identifier
+  name: physical_identifier
+  summary: Physical identifier of the device.
+  signature: 'physical_identifier: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapInterfaceProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapInterfaceProperties.serial_number
+  name: serial_number
+  summary: 'Serial number of the interface. Format of serial Number -
+
+    Make;Model;HardwareRevisionId;SerialNumber.'
+  signature: 'serial_number: str | None'

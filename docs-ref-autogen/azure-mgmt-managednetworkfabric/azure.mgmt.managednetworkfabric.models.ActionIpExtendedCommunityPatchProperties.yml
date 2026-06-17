@@ -1,0 +1,34 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.ActionIpExtendedCommunityPatchProperties
+name: ActionIpExtendedCommunityPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.ActionIpExtendedCommunityPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: IP Extended Community Properties.
+constructor:
+  syntax: 'ActionIpExtendedCommunityPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: List of IP Extended Community IDs.
+  name: add
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.IpExtendedCommunityIdList>
+- description: List of IP Extended Community IDs.
+  name: delete
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.IpExtendedCommunityIdList>
+- description: List of IP Extended Community IDs.
+  name: set
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.IpExtendedCommunityIdList>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ActionIpExtendedCommunityPatchProperties.add
+  name: add
+  summary: List of IP Extended Community IDs.
+  signature: 'add: _models.IpExtendedCommunityIdList | None'
+- uid: azure.mgmt.managednetworkfabric.models.ActionIpExtendedCommunityPatchProperties.delete
+  name: delete
+  summary: List of IP Extended Community IDs.
+  signature: 'delete: _models.IpExtendedCommunityIdList | None'
+- uid: azure.mgmt.managednetworkfabric.models.ActionIpExtendedCommunityPatchProperties.set
+  name: set
+  summary: List of IP Extended Community IDs.
+  signature: 'set: _models.IpExtendedCommunityIdList | None'

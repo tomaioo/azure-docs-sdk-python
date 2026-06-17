@@ -1,0 +1,32 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.BurstSize
+name: BurstSize
+fullName: azure.mgmt.managednetworkfabric.models.BurstSize
+module: azure.mgmt.managednetworkfabric.models
+summary: Burst size in packets.
+constructor:
+  syntax: 'BurstSize(*args: Any, **kwargs: Any)'
+variables:
+- description: Burst size.
+  name: size
+  types:
+  - <xref:int>
+- description: 'Burst size unit. Known values are: "Bytes", "KBytes", "MBytes", "GBytes",
+    and
+
+    "Packets".'
+  name: unit
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BurstSizeUnit>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.BurstSize.size
+  name: size
+  summary: Burst size.
+  signature: 'size: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.BurstSize.unit
+  name: unit
+  summary: '"Bytes", "KBytes", "MBytes", "GBytes", and
+
+    "Packets".'
+  signature: 'unit: str | _models.BurstSizeUnit | None'

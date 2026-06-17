@@ -1,0 +1,9 @@
+### YamlMime:PythonPackage
+uid: azure.mgmt.napsteromniagentapi.operations
+name: operations
+fullName: azure.mgmt.napsteromniagentapi.operations
+type: import
+classes:
+- azure.mgmt.napsteromniagentapi.operations.Operations
+- azure.mgmt.napsteromniagentapi.operations.OrganizationsOperations
+- azure.mgmt.napsteromniagentapi.operations.SaaSOperationGroupOperations

@@ -21,6 +21,7 @@ classes:
 - azure.mgmt.servicefabricmanagedclusters.models.ApplicationUpdateParametersProperties
 - azure.mgmt.servicefabricmanagedclusters.models.ApplicationUpgradePolicy
 - azure.mgmt.servicefabricmanagedclusters.models.ApplicationUserAssignedIdentity
+- azure.mgmt.servicefabricmanagedclusters.models.ApplyMaintenanceWindowRequest
 - azure.mgmt.servicefabricmanagedclusters.models.AvailableOperationDisplay
 - azure.mgmt.servicefabricmanagedclusters.models.AveragePartitionLoadScalingTrigger
 - azure.mgmt.servicefabricmanagedclusters.models.AverageServiceLoadScalingTrigger
@@ -42,8 +43,9 @@ classes:
 - azure.mgmt.servicefabricmanagedclusters.models.FaultSimulationDetails
 - azure.mgmt.servicefabricmanagedclusters.models.FaultSimulationIdContent
 - azure.mgmt.servicefabricmanagedclusters.models.FrontendConfiguration
-- azure.mgmt.servicefabricmanagedclusters.models.IPConfigurationPublicIPAddressConfiguration
+- azure.mgmt.servicefabricmanagedclusters.models.HostEndpointSettings
 - azure.mgmt.servicefabricmanagedclusters.models.IpConfiguration
+- azure.mgmt.servicefabricmanagedclusters.models.IpConfigurationPublicIPAddressConfiguration
 - azure.mgmt.servicefabricmanagedclusters.models.IpTag
 - azure.mgmt.servicefabricmanagedclusters.models.LoadBalancingRule
 - azure.mgmt.servicefabricmanagedclusters.models.LongRunningOperationResult
@@ -71,6 +73,7 @@ classes:
 - azure.mgmt.servicefabricmanagedclusters.models.OperationResult
 - azure.mgmt.servicefabricmanagedclusters.models.Partition
 - azure.mgmt.servicefabricmanagedclusters.models.PartitionInstanceCountScaleMechanism
+- azure.mgmt.servicefabricmanagedclusters.models.ProxyAgentSettings
 - azure.mgmt.servicefabricmanagedclusters.models.ProxyResource
 - azure.mgmt.servicefabricmanagedclusters.models.Resource
 - azure.mgmt.servicefabricmanagedclusters.models.ResourceAzStatus
@@ -82,6 +85,7 @@ classes:
 - azure.mgmt.servicefabricmanagedclusters.models.RuntimeRollingUpgradeUpdateMonitoringPolicy
 - azure.mgmt.servicefabricmanagedclusters.models.RuntimeServiceTypeHealthPolicy
 - azure.mgmt.servicefabricmanagedclusters.models.RuntimeUpdateApplicationUpgradeParameters
+- azure.mgmt.servicefabricmanagedclusters.models.ScaleInPolicy
 - azure.mgmt.servicefabricmanagedclusters.models.ScalingMechanism
 - azure.mgmt.servicefabricmanagedclusters.models.ScalingPolicy
 - azure.mgmt.servicefabricmanagedclusters.models.ScalingTrigger
@@ -156,6 +160,7 @@ enums:
 - azure.mgmt.servicefabricmanagedclusters.models.RuntimeFailureAction
 - azure.mgmt.servicefabricmanagedclusters.models.RuntimeRollingUpgradeMode
 - azure.mgmt.servicefabricmanagedclusters.models.RuntimeUpgradeKind
+- azure.mgmt.servicefabricmanagedclusters.models.ScaleInPolicyMode
 - azure.mgmt.servicefabricmanagedclusters.models.SecurityEncryptionType
 - azure.mgmt.servicefabricmanagedclusters.models.SecurityType
 - azure.mgmt.servicefabricmanagedclusters.models.ServiceCorrelationScheme

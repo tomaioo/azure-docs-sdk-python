@@ -1,0 +1,11 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.ExtendedVlan
+name: ExtendedVlan
+fullName: azure.mgmt.managednetworkfabric.models.ExtendedVlan
+summary: Extended VLAN status.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: DISABLED
+  uid: azure.mgmt.managednetworkfabric.models.ExtendedVlan.DISABLED
+- name: ENABLED
+  uid: azure.mgmt.managednetworkfabric.models.ExtendedVlan.ENABLED

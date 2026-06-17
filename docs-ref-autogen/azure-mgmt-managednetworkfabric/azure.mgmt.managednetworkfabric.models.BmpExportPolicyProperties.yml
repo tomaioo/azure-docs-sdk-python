@@ -1,0 +1,20 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.BmpExportPolicyProperties
+name: BmpExportPolicyProperties
+fullName: azure.mgmt.managednetworkfabric.models.BmpExportPolicyProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: BMP Export Policy Configuration properties.
+constructor:
+  syntax: 'BmpExportPolicyProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Export Policy for the BGP Monitoring Protocol (BMP) Configuration.
+  name: export_policies
+  types:
+  - <xref:list>[<xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BmpExportPolicy>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.BmpExportPolicyProperties.export_policies
+  name: export_policies
+  summary: Export Policy for the BGP Monitoring Protocol (BMP) Configuration.
+  signature: 'export_policies: list[typing.Union[str, ForwardRef(''_models.BmpExportPolicy'')]]
+    | None'

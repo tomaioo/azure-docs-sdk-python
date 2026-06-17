@@ -2,7 +2,7 @@
 uid: azure.mgmt.managednetworkfabric.models.EncapsulationType
 name: EncapsulationType
 fullName: azure.mgmt.managednetworkfabric.models.EncapsulationType
-summary: Encapsulation Type.
+summary: Encapsulation Type that needs to be matched.
 module: azure.mgmt.managednetworkfabric.models
 fields:
 - name: GT_PV1

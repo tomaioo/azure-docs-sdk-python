@@ -3,73 +3,15 @@ uid: azure.mgmt.managednetworkfabric.models.TerminalServerConfiguration
 name: TerminalServerConfiguration
 fullName: azure.mgmt.managednetworkfabric.models.TerminalServerConfiguration
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Network and credentials configuration currently applied to terminal server.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.'
+summary: Network and credentials configuration currently applied to terminal server.
 constructor:
-  syntax: 'TerminalServerConfiguration(*, primary_ipv4_prefix: str | None = None,
-    primary_ipv6_prefix: str | None = None, secondary_ipv4_prefix: str | None = None,
-    secondary_ipv6_prefix: str | None = None, username: str | None = None, password:
-    str | None = None, serial_number: str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: primary_ipv4_prefix
-    description: IPv4 Address Prefix.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: primary_ipv6_prefix
-    description: IPv6 Address Prefix.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: secondary_ipv4_prefix
-    description: Secondary IPv4 Address Prefix.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: secondary_ipv6_prefix
-    description: Secondary IPv6 Address Prefix.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: username
-    description: Username for the terminal server connection.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: password
-    description: Password for the terminal server connection.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: serial_number
-    description: Serial Number of Terminal server.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'TerminalServerConfiguration(*args: Any, **kwargs: Any)'
 variables:
-- description: IPv4 Address Prefix.
-  name: primary_ipv4_prefix
-  types:
-  - <xref:str>
-- description: IPv6 Address Prefix.
-  name: primary_ipv6_prefix
-  types:
-  - <xref:str>
-- description: Secondary IPv4 Address Prefix.
-  name: secondary_ipv4_prefix
-  types:
-  - <xref:str>
-- description: Secondary IPv6 Address Prefix.
-  name: secondary_ipv6_prefix
-  types:
-  - <xref:str>
-- description: Username for the terminal server connection.
+- description: Username for the terminal server connection. Required.
   name: username
   types:
   - <xref:str>
-- description: Password for the terminal server connection.
+- description: Password for the terminal server connection. Required.
   name: password
   types:
   - <xref:str>
@@ -77,7 +19,64 @@ variables:
   name: serial_number
   types:
   - <xref:str>
+- description: IPv4 Address Prefix. Required.
+  name: primary_ipv4_prefix
+  types:
+  - <xref:str>
+- description: IPv6 Address Prefix.
+  name: primary_ipv6_prefix
+  types:
+  - <xref:str>
+- description: Secondary IPv4 Address Prefix. Required.
+  name: secondary_ipv4_prefix
+  types:
+  - <xref:str>
+- description: Secondary IPv6 Address Prefix.
+  name: secondary_ipv6_prefix
+  types:
+  - <xref:str>
 - description: ARM Resource ID used for the NetworkDevice.
   name: network_device_id
   types:
   - <xref:str>
+- description: Secret rotation status for the terminal server's secrets.
+  name: secret_rotation_status
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.SecretRotationStatus>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.TerminalServerConfiguration.network_device_id
+  name: network_device_id
+  summary: ARM Resource ID used for the NetworkDevice.
+  signature: 'network_device_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.TerminalServerConfiguration.password
+  name: password
+  summary: Password for the terminal server connection. Required.
+  signature: 'password: str'
+- uid: azure.mgmt.managednetworkfabric.models.TerminalServerConfiguration.primary_ipv4_prefix
+  name: primary_ipv4_prefix
+  summary: IPv4 Address Prefix. Required.
+  signature: 'primary_ipv4_prefix: str'
+- uid: azure.mgmt.managednetworkfabric.models.TerminalServerConfiguration.primary_ipv6_prefix
+  name: primary_ipv6_prefix
+  summary: IPv6 Address Prefix.
+  signature: 'primary_ipv6_prefix: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.TerminalServerConfiguration.secondary_ipv4_prefix
+  name: secondary_ipv4_prefix
+  summary: Secondary IPv4 Address Prefix. Required.
+  signature: 'secondary_ipv4_prefix: str'
+- uid: azure.mgmt.managednetworkfabric.models.TerminalServerConfiguration.secondary_ipv6_prefix
+  name: secondary_ipv6_prefix
+  summary: Secondary IPv6 Address Prefix.
+  signature: 'secondary_ipv6_prefix: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.TerminalServerConfiguration.secret_rotation_status
+  name: secret_rotation_status
+  summary: Secret rotation status for the terminal server's secrets.
+  signature: 'secret_rotation_status: list[''_models.SecretRotationStatus''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.TerminalServerConfiguration.serial_number
+  name: serial_number
+  summary: Serial Number of Terminal server.
+  signature: 'serial_number: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.TerminalServerConfiguration.username
+  name: username
+  summary: Username for the terminal server connection. Required.
+  signature: 'username: str'

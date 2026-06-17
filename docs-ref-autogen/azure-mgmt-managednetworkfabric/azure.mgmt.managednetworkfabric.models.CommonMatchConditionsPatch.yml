@@ -1,0 +1,34 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.CommonMatchConditionsPatch
+name: CommonMatchConditionsPatch
+fullName: azure.mgmt.managednetworkfabric.models.CommonMatchConditionsPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: Defines the common match conditions of the ACL and Network Tap Rule.
+constructor:
+  syntax: 'CommonMatchConditionsPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: List of the protocols that need to be matched.
+  name: protocol_types
+  types:
+  - <xref:list>[<xref:str>]
+- description: Vlan match condition that needs to be matched.
+  name: vlan_match_condition
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.VlanMatchConditionPatch>
+- description: IP condition that needs to be matched.
+  name: ip_condition
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.IpMatchConditionPatch>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.CommonMatchConditionsPatch.ip_condition
+  name: ip_condition
+  summary: IP condition that needs to be matched.
+  signature: 'ip_condition: _models.IpMatchConditionPatch | None'
+- uid: azure.mgmt.managednetworkfabric.models.CommonMatchConditionsPatch.protocol_types
+  name: protocol_types
+  summary: List of the protocols that need to be matched.
+  signature: 'protocol_types: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.CommonMatchConditionsPatch.vlan_match_condition
+  name: vlan_match_condition
+  summary: Vlan match condition that needs to be matched.
+  signature: 'vlan_match_condition: _models.VlanMatchConditionPatch | None'

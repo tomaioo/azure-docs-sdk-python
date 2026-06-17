@@ -14,7 +14,7 @@ variables:
 - description: 'Comparison operator used for uptime evaluation. Required. Known values
     are:
 
-    "<", ">", "<=", and ">=".'
+    "lt", "gt", "lte", and "gte".'
   name: comparator
   types:
   - <xref:str>
@@ -22,9 +22,9 @@ variables:
 attributes:
 - uid: azure.mgmt.monitorslis.models.WindowUptimeCriteria.comparator
   name: comparator
-  summary: '"<", ">",
+  summary: '"lt", "gt",
 
-    "<=", and ">=".'
+    "lte", and "gte".'
   signature: 'comparator: str | _models.WindowUptimeCriteriaComparator'
 - uid: azure.mgmt.monitorslis.models.WindowUptimeCriteria.target
   name: target

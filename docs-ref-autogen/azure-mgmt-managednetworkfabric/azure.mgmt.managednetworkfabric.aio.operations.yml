@@ -15,12 +15,15 @@ classes:
 - azure.mgmt.managednetworkfabric.aio.operations.L2IsolationDomainsOperations
 - azure.mgmt.managednetworkfabric.aio.operations.L3IsolationDomainsOperations
 - azure.mgmt.managednetworkfabric.aio.operations.NeighborGroupsOperations
+- azure.mgmt.managednetworkfabric.aio.operations.NetworkBootstrapDevicesOperations
+- azure.mgmt.managednetworkfabric.aio.operations.NetworkBootstrapInterfacesOperations
 - azure.mgmt.managednetworkfabric.aio.operations.NetworkDeviceSkusOperations
 - azure.mgmt.managednetworkfabric.aio.operations.NetworkDevicesOperations
 - azure.mgmt.managednetworkfabric.aio.operations.NetworkFabricControllersOperations
 - azure.mgmt.managednetworkfabric.aio.operations.NetworkFabricSkusOperations
 - azure.mgmt.managednetworkfabric.aio.operations.NetworkFabricsOperations
 - azure.mgmt.managednetworkfabric.aio.operations.NetworkInterfacesOperations
+- azure.mgmt.managednetworkfabric.aio.operations.NetworkMonitorsOperations
 - azure.mgmt.managednetworkfabric.aio.operations.NetworkPacketBrokersOperations
 - azure.mgmt.managednetworkfabric.aio.operations.NetworkRacksOperations
 - azure.mgmt.managednetworkfabric.aio.operations.NetworkTapRulesOperations

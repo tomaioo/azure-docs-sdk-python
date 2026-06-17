@@ -1,0 +1,121 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.BmpConfigurationProperties
+name: BmpConfigurationProperties
+fullName: azure.mgmt.managednetworkfabric.models.BmpConfigurationProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: BGP Monitoring Protocol (BMP) Configuration properties.
+constructor:
+  syntax: 'BmpConfigurationProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Enabling a station. Either True/False. Known values are:
+
+    "Enabled" and "Disabled".'
+  name: station_configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.StationConfigurationState>
+- description: Scope resource ARM Identifier.
+  name: scope_resource_id
+  types:
+  - <xref:str>
+- description: Name of the station.
+  name: station_name
+  types:
+  - <xref:str>
+- description: IP Address of the station.
+  name: station_ip
+  types:
+  - <xref:str>
+- description: Port of the station. Default value is 5000.
+  name: station_port
+  types:
+  - <xref:int>
+- description: 'Station Connection Mode. Known values are: "Active" and
+
+    "Passive".'
+  name: station_connection_mode
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.StationConnectionMode>
+- description: Station Connection Properties.
+  name: station_connection_properties
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.StationConnectionProperties>
+- description: Network of the station.
+  name: station_network
+  types:
+  - <xref:str>
+- description: The List of Network ID's that need to be monitored.
+  name: monitored_networks
+  types:
+  - <xref:list>[<xref:str>]
+- description: 'Export Policy for the BMP Configuration. Known values are: "Pre-Policy",
+
+    "Post-Policy", "All", and "LocalRib".'
+  name: export_policy
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BmpExportPolicy>
+- description: Export Policy configuration properties for the BMP.
+  name: export_policy_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.BmpExportPolicyProperties>
+- description: Monitored Address Families for the BMP Configuration.
+  name: monitored_address_families
+  types:
+  - <xref:list>[<xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BmpMonitoredAddressFamily>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.BmpConfigurationProperties.export_policy
+  name: export_policy
+  summary: '"Pre-Policy", "Post-Policy",
+
+    "All", and "LocalRib".'
+  signature: 'export_policy: str | _models.BmpExportPolicy | None'
+- uid: azure.mgmt.managednetworkfabric.models.BmpConfigurationProperties.export_policy_configuration
+  name: export_policy_configuration
+  summary: Export Policy configuration properties for the BMP.
+  signature: 'export_policy_configuration: _models.BmpExportPolicyProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.BmpConfigurationProperties.monitored_address_families
+  name: monitored_address_families
+  summary: Monitored Address Families for the BMP Configuration.
+  signature: 'monitored_address_families: list[typing.Union[str, ForwardRef(''_models.BmpMonitoredAddressFamily'')]]
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.BmpConfigurationProperties.monitored_networks
+  name: monitored_networks
+  summary: The List of Network ID's that need to be monitored.
+  signature: 'monitored_networks: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.BmpConfigurationProperties.scope_resource_id
+  name: scope_resource_id
+  summary: Scope resource ARM Identifier.
+  signature: 'scope_resource_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.BmpConfigurationProperties.station_configuration_state
+  name: station_configuration_state
+  summary: '"Enabled" and "Disabled".'
+  signature: 'station_configuration_state: str | _models.StationConfigurationState
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.BmpConfigurationProperties.station_connection_mode
+  name: station_connection_mode
+  summary: '"Active" and "Passive".'
+  signature: 'station_connection_mode: str | _models.StationConnectionMode | None'
+- uid: azure.mgmt.managednetworkfabric.models.BmpConfigurationProperties.station_connection_properties
+  name: station_connection_properties
+  summary: Station Connection Properties.
+  signature: 'station_connection_properties: _models.StationConnectionProperties |
+    None'
+- uid: azure.mgmt.managednetworkfabric.models.BmpConfigurationProperties.station_ip
+  name: station_ip
+  summary: IP Address of the station.
+  signature: 'station_ip: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.BmpConfigurationProperties.station_name
+  name: station_name
+  summary: Name of the station.
+  signature: 'station_name: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.BmpConfigurationProperties.station_network
+  name: station_network
+  summary: Network of the station.
+  signature: 'station_network: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.BmpConfigurationProperties.station_port
+  name: station_port
+  summary: Port of the station. Default value is 5000.
+  signature: 'station_port: int | None'

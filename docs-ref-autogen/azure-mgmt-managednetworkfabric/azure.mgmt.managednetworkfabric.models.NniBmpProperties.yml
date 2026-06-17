@@ -1,0 +1,23 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NniBmpProperties
+name: NniBmpProperties
+fullName: azure.mgmt.managednetworkfabric.models.NniBmpProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: BGP Monitoring Protocol (BMP) properties.
+constructor:
+  syntax: 'NniBmpProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: 'BGP Monitoring Protocol (BMP) Configuration State. Required. Known
+
+    values are: "Enabled" and "Disabled".'
+  name: configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BmpConfigurationState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NniBmpProperties.configuration_state
+  name: configuration_state
+  summary: '"Enabled" and
+
+    "Disabled".'
+  signature: 'configuration_state: str | _models.BmpConfigurationState'

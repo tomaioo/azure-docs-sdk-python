@@ -1,0 +1,35 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclPortCondition
+name: ControlPlaneAclPortCondition
+fullName: azure.mgmt.managednetworkfabric.models.ControlPlaneAclPortCondition
+module: azure.mgmt.managednetworkfabric.models
+summary: Control Plane Access Control List (ACL) Port Match conditions properties.
+constructor:
+  syntax: 'ControlPlaneAclPortCondition(*args: Any, **kwargs: Any)'
+variables:
+- description: 'List of the ports that need to be matched. Possible values: 1234,
+    1234-1235,
+
+    1234,1235,1236.'
+  name: ports
+  types:
+  - <xref:list>[<xref:str>]
+- description: 'Port match type. Example: eq | neq | gt | lt | range. Known values
+    are:
+
+    "eq", "neq", "gt", "lt", and "range".'
+  name: port_match_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ControlPlaneAclPortMatchType>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclPortCondition.port_match_type
+  name: port_match_type
+  summary: '"eq", "neq",
+
+    "gt", "lt", and "range".'
+  signature: 'port_match_type: str | _models.ControlPlaneAclPortMatchType | None'
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclPortCondition.ports
+  name: ports
+  summary: 1234, 1234-1235, 1234,1235,1236.
+  signature: 'ports: list[str] | None'

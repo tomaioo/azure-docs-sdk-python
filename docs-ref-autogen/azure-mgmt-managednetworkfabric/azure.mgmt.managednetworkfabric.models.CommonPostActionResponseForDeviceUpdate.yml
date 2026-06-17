@@ -3,32 +3,9 @@ uid: azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForDeviceUpd
 name: CommonPostActionResponseForDeviceUpdate
 fullName: azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForDeviceUpdate
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Common response for device updates.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.'
+summary: Common response for device updates.
 constructor:
-  syntax: 'CommonPostActionResponseForDeviceUpdate(*, error: _models.ErrorDetail |
-    None = None, successful_devices: List[str] | None = None, failed_devices: List[str]
-    | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: error
-    description: The error object.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ErrorDetail>
-  - name: successful_devices
-    description: 'List of ARM Resource IDs for which the given action applied
-
-      successfully.'
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>]
-  - name: failed_devices
-    description: List of ARM Resource IDs for which the given action failed to apply.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>]
+  syntax: 'CommonPostActionResponseForDeviceUpdate(*args: Any, **kwargs: Any)'
 variables:
 - description: The error object.
   name: error
@@ -38,7 +15,10 @@ variables:
 
     "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
 
-    "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
   name: configuration_state
   types:
   - <xref:str>
@@ -53,3 +33,22 @@ variables:
   name: failed_devices
   types:
   - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForDeviceUpdate.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForDeviceUpdate.failed_devices
+  name: failed_devices
+  summary: List of ARM Resource IDs for which the given action failed to apply.
+  signature: 'failed_devices: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForDeviceUpdate.successful_devices
+  name: successful_devices
+  summary: List of ARM Resource IDs for which the given action applied successfully.
+  signature: 'successful_devices: list[str] | None'

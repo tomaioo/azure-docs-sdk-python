@@ -5,35 +5,7 @@ fullName: azure.mgmt.managednetworkfabric.models.VpnConfigurationPatchableProper
 module: azure.mgmt.managednetworkfabric.models
 summary: Network and credential configuration currently applied on terminal server.
 constructor:
-  syntax: 'VpnConfigurationPatchableProperties(*, network_to_network_interconnect_id:
-    str | None = None, peering_option: str | _models.PeeringOption | None = None,
-    option_b_properties: _models.OptionBProperties | None = None, option_a_properties:
-    _models.VpnConfigurationPatchablePropertiesOptionAProperties | None = None, **kwargs:
-    Any)'
-  keywordOnlyParameters:
-  - name: network_to_network_interconnect_id
-    description: 'ARM Resource ID of the Network To Network
-
-      Interconnect.'
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: peering_option
-    description: 'Peering option list. Known values are: "OptionA" and "OptionB".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.PeeringOption>
-  - name: option_b_properties
-    description: option B properties.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.OptionBProperties>
-  - name: option_a_properties
-    description: option A properties.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.VpnConfigurationPatchablePropertiesOptionAProperties>
+  syntax: 'VpnConfigurationPatchableProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: 'ARM Resource ID of the Network To Network
 
@@ -49,8 +21,25 @@ variables:
 - description: option B properties.
   name: option_b_properties
   types:
-  - <xref:azure.mgmt.managednetworkfabric.models.OptionBProperties>
+  - <xref:azure.mgmt.managednetworkfabric.models.VpnOptionBPatchProperties>
 - description: option A properties.
   name: option_a_properties
   types:
-  - <xref:azure.mgmt.managednetworkfabric.models.VpnConfigurationPatchablePropertiesOptionAProperties>
+  - <xref:azure.mgmt.managednetworkfabric.models.VpnOptionAPatchProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.VpnConfigurationPatchableProperties.network_to_network_interconnect_id
+  name: network_to_network_interconnect_id
+  summary: ARM Resource ID of the Network To Network Interconnect.
+  signature: 'network_to_network_interconnect_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.VpnConfigurationPatchableProperties.option_a_properties
+  name: option_a_properties
+  summary: option A properties.
+  signature: 'option_a_properties: _models.VpnOptionAPatchProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.VpnConfigurationPatchableProperties.option_b_properties
+  name: option_b_properties
+  summary: option B properties.
+  signature: 'option_b_properties: _models.VpnOptionBPatchProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.VpnConfigurationPatchableProperties.peering_option
+  name: peering_option
+  summary: '"OptionA" and "OptionB".'
+  signature: 'peering_option: str | _models.PeeringOption | None'

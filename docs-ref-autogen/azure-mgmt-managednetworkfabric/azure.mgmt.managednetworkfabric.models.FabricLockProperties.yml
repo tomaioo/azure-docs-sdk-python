@@ -1,0 +1,30 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.FabricLockProperties
+name: FabricLockProperties
+fullName: azure.mgmt.managednetworkfabric.models.FabricLockProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Network Fabric Lock Configuration.
+constructor:
+  syntax: 'FabricLockProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: 'NetworkFabric Lock State. Known values are: "Enabled" and "Disabled".'
+  name: lock_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.LockConfigurationState>
+- description: 'NetworkFabric Lock Type. Known values are: "Administrative" and
+
+    "Configuration".'
+  name: lock_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.NetworkFabricLockType>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.FabricLockProperties.lock_state
+  name: lock_state
+  summary: '"Enabled" and "Disabled".'
+  signature: 'lock_state: str | _models.LockConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.FabricLockProperties.lock_type
+  name: lock_type
+  summary: '"Administrative" and "Configuration".'
+  signature: 'lock_type: str | _models.NetworkFabricLockType | None'

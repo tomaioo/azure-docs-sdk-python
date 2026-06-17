@@ -11,10 +11,7 @@ constructor:
 methods:
 - uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkRacksOperations.begin_create
   name: begin_create
-  summary: 'Create Network Rack.
-
-
-    Create Network Rack resource.'
+  summary: Create Network Rack resource.
   signature: 'async begin_create(resource_group_name: str, network_rack_name: str,
     body: _models.NetworkRack, *, content_type: str = ''application/json'', **kwargs:
     Any) -> AsyncLROPoller[_models.NetworkRack]'
@@ -32,58 +29,27 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: Request payload. Is either a NetworkRack type or a IO type. Required.
+    description: 'Request payload. Is one of the following types: NetworkRack, JSON,
+      IO[bytes]
+
+      Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.NetworkRack>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be AsyncARMPolling. Pass in
-      False for
-
-      this operation to not poll, or pass in your own initialized polling object for
-      a personal
-
-      polling strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.AsyncPollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of AsyncLROPoller that returns either NetworkRack or
-      the result of
+    description: 'An instance of AsyncLROPoller that returns NetworkRack. The NetworkRack
+      is compatible
 
-      cls(response)'
+      with MutableMapping'
     types:
     - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkRack>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkRacksOperations.begin_delete
   name: begin_delete
-  summary: 'Deletes a Network Rack.
-
-
-    Delete Network Rack resource.'
+  summary: Delete Network Rack resource.
   signature: 'async begin_delete(resource_group_name: str, network_rack_name: str,
     **kwargs: Any) -> AsyncLROPoller[None]'
   parameters:
@@ -99,47 +65,17 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be AsyncARMPolling. Pass in
-      False for
-
-      this operation to not poll, or pass in your own initialized polling object for
-      a personal
-
-      polling strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.AsyncPollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
   return:
-    description: An instance of AsyncLROPoller that returns either None or the result
-      of cls(response)
+    description: An instance of AsyncLROPoller that returns None
     types:
     - <xref:azure.core.polling.AsyncLROPoller>[<xref:None>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkRacksOperations.begin_update
   name: begin_update
-  summary: 'Updates a Network Rack.
-
-
-    Update certain properties of the Network Rack resource.'
+  summary: Update certain properties of the Network Rack resource.
   signature: 'async begin_update(resource_group_name: str, network_rack_name: str,
-    body: _models.TagsUpdate, *, content_type: str = ''application/json'', **kwargs:
+    body: _models.NetworkRackPatch, *, content_type: str = ''application/json'', **kwargs:
     Any) -> AsyncLROPoller[_models.NetworkRack]'
   parameters:
   - name: resource_group_name
@@ -155,61 +91,26 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: 'Network Rack properties to update. Is either a TagsUpdate type or
-      a IO type.
+    description: 'Network Rack properties to update. Is one of the following types:
 
-      Required.'
+      NetworkRackPatch, JSON, IO[bytes] Required.'
     isRequired: true
     types:
-    - <xref:azure.mgmt.managednetworkfabric.models.TagsUpdate>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be AsyncARMPolling. Pass in
-      False for
-
-      this operation to not poll, or pass in your own initialized polling object for
-      a personal
-
-      polling strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.AsyncPollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:azure.mgmt.managednetworkfabric.models.NetworkRackPatch>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of AsyncLROPoller that returns either NetworkRack or
-      the result of
+    description: 'An instance of AsyncLROPoller that returns NetworkRack. The NetworkRack
+      is compatible
 
-      cls(response)'
+      with MutableMapping'
     types:
     - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkRack>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkRacksOperations.get
   name: get
-  summary: 'Gets a Network Rack.
-
-
-    Get Network Rack resource details.'
+  summary: Get Network Rack resource details.
   signature: 'async get(resource_group_name: str, network_rack_name: str, **kwargs:
     Any) -> NetworkRack'
   parameters:
@@ -225,24 +126,16 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
   return:
-    description: NetworkRack or the result of cls(response)
+    description: NetworkRack. The NetworkRack is compatible with MutableMapping
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.NetworkRack>
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkRacksOperations.list_by_resource_group
   name: list_by_resource_group
-  summary: 'List Network Racks by resource group.
-
-
-    List all Network Rack resources in the given resource group.'
-  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> AsyncIterable[NetworkRack]'
+  summary: List all Network Rack resources in the given resource group.
+  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> AsyncItemPaged[NetworkRack]'
   parameters:
   - name: resource_group_name
     description: 'The name of the resource group. The name is case insensitive.
@@ -251,38 +144,19 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
   return:
-    description: An iterator like instance of either NetworkRack or the result of
-      cls(response)
+    description: An iterator like instance of NetworkRack
     types:
     - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.mgmt.managednetworkfabric.models.NetworkRack>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkRacksOperations.list_by_subscription
   name: list_by_subscription
-  summary: 'List Network Racks by subscription.
-
-
-    List all Network Rack resources in the given subscription.'
-  signature: 'list_by_subscription(**kwargs: Any) -> AsyncIterable[NetworkRack]'
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
+  summary: List all Network Rack resources in the given subscription.
+  signature: 'list_by_subscription(**kwargs: Any) -> AsyncItemPaged[NetworkRack]'
   return:
-    description: An iterator like instance of either NetworkRack or the result of
-      cls(response)
+    description: An iterator like instance of NetworkRack
     types:
     - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.mgmt.managednetworkfabric.models.NetworkRack>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
-attributes:
-- uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkRacksOperations.models
-  name: models
-  signature: models = <module 'azure.mgmt.managednetworkfabric.models' from 'C:\\ToolCache\\Python\\3.12.10\\x64\\Lib\\site-packages\\py2docfx\\venv\\venv171\\Lib\\site-packages\\azure\\mgmt\\managednetworkfabric\\models\\__init__.py'>

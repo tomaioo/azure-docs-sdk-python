@@ -3,83 +3,14 @@ uid: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerProperties
 name: NetworkFabricControllerProperties
 fullName: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'NetworkFabricControllerProperties defines the resource properties.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.'
+summary: NetworkFabricControllerProperties defines the resource properties.
 constructor:
-  syntax: 'NetworkFabricControllerProperties(*, infrastructure_express_route_connections:
-    List[_models.ExpressRouteConnectionInformation] | None = None, workload_express_route_connections:
-    List[_models.ExpressRouteConnectionInformation] | None = None, annotation: str
-    | None = None, managed_resource_group_configuration: _models.ManagedResourceGroupConfiguration
-    | None = None, is_workload_management_network_enabled: str | _models.IsWorkloadManagementNetworkEnabled
-    = ''True'', ipv4_address_space: str = ''10.0.0.0/19'', ipv6_address_space: str
-    = ''FC00::/59'', nfc_sku: str | _models.NfcSku = ''Standard'', **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: infrastructure_express_route_connections
-    description: 'As part of an update, the Infrastructure
-
-      ExpressRoute CircuitID should be provided to create and Provision a NFC. This
-      Express route is
-
-      dedicated for Infrastructure services. (This is a Mandatory attribute).'
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.ExpressRouteConnectionInformation>]
-  - name: workload_express_route_connections
-    description: 'As part of an update, the workload ExpressRoute
-
-      CircuitID should be provided to create and Provision a NFC. This Express route
-      is dedicated for
-
-      Workload services. (This is a Mandatory attribute).'
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.ExpressRouteConnectionInformation>]
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: managed_resource_group_configuration
-    description: Managed Resource Group configuration properties.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ManagedResourceGroupConfiguration>
-  - name: is_workload_management_network_enabled
-    description: 'A workload management network is required for
-
-      all the tenant (workload) traffic. This traffic is only dedicated for Tenant
-      workloads which
-
-      are required to access internet or any other MSFT/Public endpoints. Known values
-      are: "True"
-
-      and "False".'
-    defaultValue: 'True'
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.IsWorkloadManagementNetworkEnabled>
-  - name: ipv4_address_space
-    description: IPv4 Network Fabric Controller Address Space.
-    defaultValue: 10.0.0.0/19
-    types:
-    - <xref:str>
-  - name: ipv6_address_space
-    description: IPv6 Network Fabric Controller Address Space.
-    defaultValue: FC00::/59
-    types:
-    - <xref:str>
-  - name: nfc_sku
-    description: 'Network Fabric Controller SKU. Known values are: "Basic", "Standard",
-      and
-
-      "HighPerformance".'
-    defaultValue: Standard
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.NfcSku>
+  syntax: 'NetworkFabricControllerProperties(*args: Any, **kwargs: Any)'
 variables:
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
 - description: 'As part of an update, the Infrastructure
 
     ExpressRoute CircuitID should be provided to create and Provision a NFC. This
@@ -98,10 +29,6 @@ variables:
   name: workload_express_route_connections
   types:
   - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.ExpressRouteConnectionInformation>]
-- description: Switch configuration description.
-  name: annotation
-  types:
-  - <xref:str>
 - description: InfrastructureServices IP ranges.
   name: infrastructure_services
   types:
@@ -120,17 +47,6 @@ variables:
   name: network_fabric_ids
   types:
   - <xref:list>[<xref:str>]
-- description: 'A workload management network is required for all the tenant
-
-    (workload) traffic. This traffic is only dedicated for Tenant workloads which
-    are required to
-
-    access internet or any other MSFT/Public endpoints. This is used for the backward
-
-    compatibility.'
-  name: workload_management_network
-  types:
-  - <xref:bool>
 - description: 'A workload management network is required for all
 
     the tenant (workload) traffic. This traffic is only dedicated for Tenant workloads
@@ -164,6 +80,10 @@ variables:
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.NfcSku>
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
 - description: 'Provides you the latest status of the NFC service, whether it is
 
     Accepted, updating, Succeeded or Failed. During this process, the states keep
@@ -176,3 +96,95 @@ variables:
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerProperties.infrastructure_express_route_connections
+  name: infrastructure_express_route_connections
+  summary: 'As part of an update, the Infrastructure ExpressRoute CircuitID should
+    be provided to create
+
+    and Provision a NFC. This Express route is dedicated for Infrastructure services.
+    (This is a
+
+    Mandatory attribute).'
+  signature: 'infrastructure_express_route_connections: list[''_models.ExpressRouteConnectionInformation'']
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerProperties.infrastructure_services
+  name: infrastructure_services
+  summary: InfrastructureServices IP ranges.
+  signature: 'infrastructure_services: _models.ControllerServices | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerProperties.ipv4_address_space
+  name: ipv4_address_space
+  summary: IPv4 Network Fabric Controller Address Space.
+  signature: 'ipv4_address_space: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerProperties.ipv6_address_space
+  name: ipv6_address_space
+  summary: IPv6 Network Fabric Controller Address Space.
+  signature: 'ipv6_address_space: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerProperties.is_workload_management_network_enabled
+  name: is_workload_management_network_enabled
+  summary: 'A workload management network is required for all the tenant (workload)
+    traffic. This traffic
+
+    is only dedicated for Tenant workloads which are required to access internet or
+    any other
+
+    MSFT/Public endpoints. Known values are: "True" and "False".'
+  signature: 'is_workload_management_network_enabled: str | _models.IsWorkloadManagementNetworkEnabled
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerProperties.managed_resource_group_configuration
+  name: managed_resource_group_configuration
+  summary: Managed Resource Group configuration properties.
+  signature: 'managed_resource_group_configuration: _models.ManagedResourceGroupConfiguration
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerProperties.network_fabric_ids
+  name: network_fabric_ids
+  summary: 'The NF-ID will be an input parameter used by the NF to link and get associated
+    with the parent
+
+    NFC Service.'
+  signature: 'network_fabric_ids: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerProperties.nfc_sku
+  name: nfc_sku
+  summary: '"Basic", "Standard", and
+
+    "HighPerformance".'
+  signature: 'nfc_sku: str | _models.NfcSku | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerProperties.provisioning_state
+  name: provisioning_state
+  summary: 'Provides you the latest status of the NFC service, whether it is Accepted,
+    updating, Succeeded
+
+    or Failed. During this process, the states keep changing based on the status of
+    NFC
+
+    provisioning. Known values are: "Accepted", "Succeeded", "Updating", "Deleting",
+
+    "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerProperties.tenant_internet_gateway_ids
+  name: tenant_internet_gateway_ids
+  summary: List of tenant InternetGateway resource IDs.
+  signature: 'tenant_internet_gateway_ids: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerProperties.workload_express_route_connections
+  name: workload_express_route_connections
+  summary: 'As part of an update, the workload ExpressRoute CircuitID should be provided
+    to create and
+
+    Provision a NFC. This Express route is dedicated for Workload services. (This
+    is a Mandatory
+
+    attribute).'
+  signature: 'workload_express_route_connections: list[''_models.ExpressRouteConnectionInformation'']
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerProperties.workload_services
+  name: workload_services
+  summary: WorkloadServices IP ranges.
+  signature: 'workload_services: _models.ControllerServices | None'

@@ -1,0 +1,15 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.AclType
+name: AclType
+fullName: azure.mgmt.managednetworkfabric.models.AclType
+summary: Access Control List (ACL) Type.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: CONTROL_PLANE_ACL
+  uid: azure.mgmt.managednetworkfabric.models.AclType.CONTROL_PLANE_ACL
+- name: CP
+  uid: azure.mgmt.managednetworkfabric.models.AclType.CP
+- name: MANAGEMENT
+  uid: azure.mgmt.managednetworkfabric.models.AclType.MANAGEMENT
+- name: TENANT
+  uid: azure.mgmt.managednetworkfabric.models.AclType.TENANT

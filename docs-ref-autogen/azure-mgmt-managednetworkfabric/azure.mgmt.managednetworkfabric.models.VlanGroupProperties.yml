@@ -5,19 +5,7 @@ fullName: azure.mgmt.managednetworkfabric.models.VlanGroupProperties
 module: azure.mgmt.managednetworkfabric.models
 summary: Vlan group properties.
 constructor:
-  syntax: 'VlanGroupProperties(*, name: str | None = None, vlans: List[str] | None
-    = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: name
-    description: Vlan group name.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: vlans
-    description: List of vlans.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>]
+  syntax: 'VlanGroupProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: Vlan group name.
   name: name
@@ -27,3 +15,12 @@ variables:
   name: vlans
   types:
   - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.VlanGroupProperties.name
+  name: name
+  summary: Vlan group name.
+  signature: 'name: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.VlanGroupProperties.vlans
+  name: vlans
+  summary: List of vlans.
+  signature: 'vlans: list[str] | None'

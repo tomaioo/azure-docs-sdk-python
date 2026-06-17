@@ -1,0 +1,21 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.QosPatchProperties
+name: QosPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.QosPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: NetworkFabric QoS Patch Properties.
+constructor:
+  syntax: 'QosPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: 'QoS configuration state. Default is Disabled. Known values are:
+
+    "Disabled" and "Enabled".'
+  name: qos_configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.QosConfigurationState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.QosPatchProperties.qos_configuration_state
+  name: qos_configuration_state
+  summary: '"Disabled" and "Enabled".'
+  signature: 'qos_configuration_state: str | _models.QosConfigurationState | None'

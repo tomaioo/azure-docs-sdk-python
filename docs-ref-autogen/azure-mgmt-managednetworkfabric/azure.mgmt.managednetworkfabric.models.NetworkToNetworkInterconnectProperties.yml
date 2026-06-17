@@ -1,0 +1,192 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties
+name: NetworkToNetworkInterconnectProperties
+fullName: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Configuration used to setup CE-PE connectivity.
+constructor:
+  syntax: 'NetworkToNetworkInterconnectProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Type of NNI used. Example: CE | NPB. Known values are: "CE" and "NPB".'
+  name: nni_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.NniType>
+- description: 'Configuration to use NNI for Infrastructure Management. Example:
+
+    True/False. Known values are: "True" and "False".'
+  name: is_management_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.IsManagementType>
+- description: 'Based on this option layer3 parameters are mandatory. Example: True/False.
+
+    Required. Known values are: "True" and "False".'
+  name: use_option_b
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BooleanEnumProperty>
+- description: Common properties for Layer2 Configuration.
+  name: layer2_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.Layer2Configuration>
+- description: Common properties for Layer3Configuration.
+  name: option_b_layer3_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.OptionBLayer3Configuration>
+- description: NPB Static Route Configuration properties.
+  name: npb_static_route_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.NpbStaticRouteConfiguration>
+- description: Static Route Configuration.
+  name: static_route_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.NniStaticRouteConfiguration>
+- description: Import Route Policy information.
+  name: import_route_policy
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ImportRoutePolicyInformation>
+- description: Export Route Policy information.
+  name: export_route_policy
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ExportRoutePolicyInformation>
+- description: Egress Acl. ARM resource ID of Access Control Lists.
+  name: egress_acl_id
+  types:
+  - <xref:str>
+- description: Ingress Acl. ARM resource ID of Access Control Lists.
+  name: ingress_acl_id
+  types:
+  - <xref:str>
+- description: 'Micro Bidirectional Forwarding Detection (BFD) enabled/disabled state.
+
+    Known values are: "Enabled" and "Disabled".'
+  name: micro_bfd_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.MicroBfdState>
+- description: 'Conditional Default Route Configuration
+
+    properties.'
+  name: conditional_default_route_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ConditionalDefaultRouteProperties>
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
+- description: 'Configuration state of the resource. Known values are: "Succeeded",
+
+    "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
+
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
+  name: configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationState>
+- description: 'Provisioning state of the resource. Known values are: "Accepted",
+
+    "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
+  name: provisioning_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
+- description: 'Administrative state of the resource. Known values are: "Enabled",
+
+    "Disabled", "MAT", "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  name: administrative_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT",
+
+    "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  signature: 'administrative_state: str | _models.AdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties.conditional_default_route_configuration
+  name: conditional_default_route_configuration
+  summary: Conditional Default Route Configuration properties.
+  signature: 'conditional_default_route_configuration: _models.ConditionalDefaultRouteProperties
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties.egress_acl_id
+  name: egress_acl_id
+  summary: Egress Acl. ARM resource ID of Access Control Lists.
+  signature: 'egress_acl_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties.export_route_policy
+  name: export_route_policy
+  summary: Export Route Policy information.
+  signature: 'export_route_policy: _models.ExportRoutePolicyInformation | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties.import_route_policy
+  name: import_route_policy
+  summary: Import Route Policy information.
+  signature: 'import_route_policy: _models.ImportRoutePolicyInformation | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties.ingress_acl_id
+  name: ingress_acl_id
+  summary: Ingress Acl. ARM resource ID of Access Control Lists.
+  signature: 'ingress_acl_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties.is_management_type
+  name: is_management_type
+  summary: 'True/False. Known values are:
+
+    "True" and "False".'
+  signature: 'is_management_type: str | _models.IsManagementType | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties.layer2_configuration
+  name: layer2_configuration
+  summary: Common properties for Layer2 Configuration.
+  signature: 'layer2_configuration: _models.Layer2Configuration | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties.micro_bfd_state
+  name: micro_bfd_state
+  summary: 'Micro Bidirectional Forwarding Detection (BFD) enabled/disabled state.
+    Known values are:
+
+    "Enabled" and "Disabled".'
+  signature: 'micro_bfd_state: str | _models.MicroBfdState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties.nni_type
+  name: nni_type
+  summary: '"CE" and "NPB".'
+  signature: 'nni_type: str | _models.NniType | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties.npb_static_route_configuration
+  name: npb_static_route_configuration
+  summary: NPB Static Route Configuration properties.
+  signature: 'npb_static_route_configuration: _models.NpbStaticRouteConfiguration
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties.option_b_layer3_configuration
+  name: option_b_layer3_configuration
+  summary: Common properties for Layer3Configuration.
+  signature: 'option_b_layer3_configuration: _models.OptionBLayer3Configuration |
+    None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties.static_route_configuration
+  name: static_route_configuration
+  summary: Static Route Configuration.
+  signature: 'static_route_configuration: _models.NniStaticRouteConfiguration | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkToNetworkInterconnectProperties.use_option_b
+  name: use_option_b
+  summary: 'True/False. Required. Known
+
+    values are: "True" and "False".'
+  signature: 'use_option_b: str | _models.BooleanEnumProperty'

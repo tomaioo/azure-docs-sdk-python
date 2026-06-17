@@ -3,21 +3,9 @@ uid: azure.mgmt.managednetworkfabric.models.StaticRouteProperties
 name: StaticRouteProperties
 fullName: azure.mgmt.managednetworkfabric.models.StaticRouteProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Route Properties.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: Route Properties.
 constructor:
-  syntax: 'StaticRouteProperties(*, prefix: str, next_hop: List[str], **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: prefix
-    description: Prefix of the route. Required.
-    types:
-    - <xref:str>
-  - name: next_hop
-    description: List of next hop addresses. Required.
-    types:
-    - <xref:list>[<xref:str>]
+  syntax: 'StaticRouteProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: Prefix of the route. Required.
   name: prefix
@@ -27,3 +15,12 @@ variables:
   name: next_hop
   types:
   - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.StaticRouteProperties.next_hop
+  name: next_hop
+  summary: List of next hop addresses. Required.
+  signature: 'next_hop: list[str]'
+- uid: azure.mgmt.managednetworkfabric.models.StaticRouteProperties.prefix
+  name: prefix
+  summary: Prefix of the route. Required.
+  signature: 'prefix: str'

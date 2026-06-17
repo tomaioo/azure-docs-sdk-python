@@ -3,52 +3,30 @@ uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties
 name: NetworkDeviceProperties
 fullName: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Network Device Properties defines the properties of the resource.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.'
+summary: Network Device Properties defines the properties of the resource.
 constructor:
-  syntax: 'NetworkDeviceProperties(*, host_name: str | None = None, serial_number:
-    str | None = None, annotation: str | None = None, network_device_sku: str | None
-    = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: host_name
-    description: The host name of the device.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: serial_number
-    description: 'Serial number of the device. Format of serial Number -
-
-      Make;Model;HardwareRevisionId;SerialNumber.'
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: network_device_sku
-    description: Network Device SKU name.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'NetworkDeviceProperties(*args: Any, **kwargs: Any)'
 variables:
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
 - description: The host name of the device.
   name: host_name
   types:
   - <xref:str>
 - description: 'Serial number of the device. Format of serial Number -
 
-    Make;Model;HardwareRevisionId;SerialNumber.'
+    Make;Model;HardwareRevisionId;SerialNumber. Required.'
   name: serial_number
   types:
   - <xref:str>
-- description: Switch configuration description.
-  name: annotation
+- description: 'The selection of the managed identity to use with this storage
+
+    account. The identity type must be either system assigned or user assigned.'
+  name: identity_selector
   types:
-  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.IdentitySelector>
 - description: Current version of the device as defined in SKU.
   name: version
   types:
@@ -76,11 +54,24 @@ variables:
   name: management_ipv6_address
   types:
   - <xref:str>
+- description: 'User configured read-write configuration applied on the network
+
+    devices.'
+  name: rw_device_config
+  types:
+  - <xref:str>
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
 - description: 'Configuration state of the resource. Known values are: "Succeeded",
 
     "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
 
-    "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
   name: configuration_state
   types:
   - <xref:str>
@@ -94,8 +85,111 @@ variables:
   - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
 - description: 'Administrative state of the resource. Known values are: "Enabled",
 
-    "Disabled", "MAT", and "RMA".'
+    "Disabled", "MAT", "RMA", "UnderMaintenance", and "EnabledDegraded".'
   name: administrative_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+- description: Secret rotation status for the device's secrets.
+  name: secret_rotation_status
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.SecretRotationStatus>]
+- description: Certificate rotation status for the device's certificates.
+  name: certificate_rotation_status
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.CertificateRotationStatus>]
+- description: Associated Network Fabric Resource ID.
+  name: network_fabric_id
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT",
+
+    "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  signature: 'administrative_state: str | _models.AdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.certificate_rotation_status
+  name: certificate_rotation_status
+  summary: Certificate rotation status for the device's certificates.
+  signature: 'certificate_rotation_status: list[''_models.CertificateRotationStatus'']
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.host_name
+  name: host_name
+  summary: The host name of the device.
+  signature: 'host_name: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.identity_selector
+  name: identity_selector
+  summary: 'The selection of the managed identity to use with this storage account.
+    The identity type must
+
+    be either system assigned or user assigned.'
+  signature: 'identity_selector: _models.IdentitySelector | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.management_ipv4_address
+  name: management_ipv4_address
+  summary: Management IPv4 Address.
+  signature: 'management_ipv4_address: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.management_ipv6_address
+  name: management_ipv6_address
+  summary: Management IPv6 Address.
+  signature: 'management_ipv6_address: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.network_device_role
+  name: network_device_role
+  summary: 'CE | ToR. Known values are: "CE", "ToR",
+
+    "NPB", "TS", and "Management".'
+  signature: 'network_device_role: str | _models.NetworkDeviceRole | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.network_device_sku
+  name: network_device_sku
+  summary: Network Device SKU name.
+  signature: 'network_device_sku: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.network_fabric_id
+  name: network_fabric_id
+  summary: Associated Network Fabric Resource ID.
+  signature: 'network_fabric_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.network_rack_id
+  name: network_rack_id
+  summary: Reference to network rack resource id.
+  signature: 'network_rack_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.rw_device_config
+  name: rw_device_config
+  summary: User configured read-write configuration applied on the network devices.
+  signature: 'rw_device_config: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.secret_rotation_status
+  name: secret_rotation_status
+  summary: Secret rotation status for the device's secrets.
+  signature: 'secret_rotation_status: list[''_models.SecretRotationStatus''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.serial_number
+  name: serial_number
+  summary: 'Serial number of the device. Format of serial Number -
+
+    Make;Model;HardwareRevisionId;SerialNumber. Required.'
+  signature: 'serial_number: str'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceProperties.version
+  name: version
+  summary: Current version of the device as defined in SKU.
+  signature: 'version: str | None'

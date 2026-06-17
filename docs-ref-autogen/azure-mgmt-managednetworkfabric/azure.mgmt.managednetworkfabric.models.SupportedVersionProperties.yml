@@ -5,35 +5,7 @@ fullName: azure.mgmt.managednetworkfabric.models.SupportedVersionProperties
 module: azure.mgmt.managednetworkfabric.models
 summary: Supported version details of the network device.
 constructor:
-  syntax: 'SupportedVersionProperties(*, version: str | None = None, vendor_os_version:
-    str | None = None, vendor_firmware_version: str | None = None, is_default: str
-    | _models.BooleanEnumProperty | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: version
-    description: Operating system and firmware combined versions.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: vendor_os_version
-    description: Operating system version.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: vendor_firmware_version
-    description: Firmware version.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: is_default
-    description: 'If true newly provisioned Fabric will use this device version by
-      default
-
-      to bootstrap the network devices for the first time. Known values are: "True"
-      and "False".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.BooleanEnumProperty>
+  syntax: 'SupportedVersionProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: Operating system and firmware combined versions.
   name: version
@@ -56,3 +28,23 @@ variables:
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.BooleanEnumProperty>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.SupportedVersionProperties.is_default
+  name: is_default
+  summary: 'If true newly provisioned Fabric will use this device version by default
+    to bootstrap the
+
+    network devices for the first time. Known values are: "True" and "False".'
+  signature: 'is_default: str | _models.BooleanEnumProperty | None'
+- uid: azure.mgmt.managednetworkfabric.models.SupportedVersionProperties.vendor_firmware_version
+  name: vendor_firmware_version
+  summary: Firmware version.
+  signature: 'vendor_firmware_version: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.SupportedVersionProperties.vendor_os_version
+  name: vendor_os_version
+  summary: Operating system version.
+  signature: 'vendor_os_version: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.SupportedVersionProperties.version
+  name: version
+  summary: Operating system and firmware combined versions.
+  signature: 'version: str | None'

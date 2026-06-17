@@ -1,0 +1,52 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfigurationPatch
+name: NetworkTapRuleMatchConfigurationPatch
+fullName: azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfigurationPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: Defines the match configuration that are supported to filter the traffic.
+constructor:
+  syntax: 'NetworkTapRuleMatchConfigurationPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: The name of the match configuration.
+  name: match_configuration_name
+  types:
+  - <xref:str>
+- description: Sequence Number of the match configuration..
+  name: sequence_number
+  types:
+  - <xref:int>
+- description: 'Type of IP Address. IPv4 or IPv6. Known values are: "IPv4" and "IPv6".'
+  name: ip_address_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.IPAddressType>
+- description: List of the match conditions.
+  name: match_conditions
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConditionPatch>]
+- description: List of actions that need to be performed for the matched conditions.
+  name: actions
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NetworkTapRuleActionPatch>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfigurationPatch.actions
+  name: actions
+  summary: List of actions that need to be performed for the matched conditions.
+  signature: 'actions: list[''_models.NetworkTapRuleActionPatch''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfigurationPatch.ip_address_type
+  name: ip_address_type
+  summary: '"IPv4" and "IPv6".'
+  signature: 'ip_address_type: str | _models.IPAddressType | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfigurationPatch.match_conditions
+  name: match_conditions
+  summary: List of the match conditions.
+  signature: 'match_conditions: list[''_models.NetworkTapRuleMatchConditionPatch'']
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfigurationPatch.match_configuration_name
+  name: match_configuration_name
+  summary: The name of the match configuration.
+  signature: 'match_configuration_name: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfigurationPatch.sequence_number
+  name: sequence_number
+  summary: Sequence Number of the match configuration..
+  signature: 'sequence_number: int | None'

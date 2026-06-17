@@ -1,0 +1,11 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.RuleCondition
+name: RuleCondition
+fullName: azure.mgmt.managednetworkfabric.models.RuleCondition
+summary: Specify Rule condition.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: AND
+  uid: azure.mgmt.managednetworkfabric.models.RuleCondition.AND
+- name: OR
+  uid: azure.mgmt.managednetworkfabric.models.RuleCondition.OR

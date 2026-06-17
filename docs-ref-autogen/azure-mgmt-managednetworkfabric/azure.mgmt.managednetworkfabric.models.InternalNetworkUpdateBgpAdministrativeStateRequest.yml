@@ -1,0 +1,33 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.InternalNetworkUpdateBgpAdministrativeStateRequest
+name: InternalNetworkUpdateBgpAdministrativeStateRequest
+fullName: azure.mgmt.managednetworkfabric.models.InternalNetworkUpdateBgpAdministrativeStateRequest
+module: azure.mgmt.managednetworkfabric.models
+summary: Internal Network Administrative State Request.
+constructor:
+  syntax: 'InternalNetworkUpdateBgpAdministrativeStateRequest(*args: Any, **kwargs:
+    Any)'
+variables:
+- description: 'NeighborAddress - Input should be either All or Specific Ipv4 Address
+
+    or Specific Ipv6 Address.'
+  name: neighbor_address
+  types:
+  - <xref:str>
+- description: 'BGP Administrative state. Known values are: "Enabled" and
+
+    "Disabled".'
+  name: administrative_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BgpAdministrativeState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkUpdateBgpAdministrativeStateRequest.administrative_state
+  name: administrative_state
+  summary: '"Enabled" and "Disabled".'
+  signature: 'administrative_state: str | _models.BgpAdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkUpdateBgpAdministrativeStateRequest.neighbor_address
+  name: neighbor_address
+  summary: NeighborAddress - Input should be either All or Specific Ipv4 Address or
+    Specific Ipv6 Address.
+  signature: 'neighbor_address: str | None'

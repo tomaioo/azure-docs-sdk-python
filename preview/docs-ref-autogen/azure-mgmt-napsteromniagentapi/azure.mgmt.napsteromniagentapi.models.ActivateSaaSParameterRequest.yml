@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.napsteromniagentapi.models.ActivateSaaSParameterRequest
+name: ActivateSaaSParameterRequest
+fullName: azure.mgmt.napsteromniagentapi.models.ActivateSaaSParameterRequest
+module: azure.mgmt.napsteromniagentapi.models
+summary: SaaS guid & PublishedId for Activate and Validate SaaS Resource.
+constructor:
+  syntax: 'ActivateSaaSParameterRequest(*args: Any, **kwargs: Any)'
+variables:
+- description: SaaS guid for Activate and Validate SaaS Resource. Required.
+  name: saas_guid
+  types:
+  - <xref:str>
+- description: Publisher Id for Napster resource.
+  name: publisher_id
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.napsteromniagentapi.models.ActivateSaaSParameterRequest.publisher_id
+  name: publisher_id
+  summary: Publisher Id for Napster resource.
+  signature: 'publisher_id: str | None'
+- uid: azure.mgmt.napsteromniagentapi.models.ActivateSaaSParameterRequest.saas_guid
+  name: saas_guid
+  summary: SaaS guid for Activate and Validate SaaS Resource. Required.
+  signature: 'saas_guid: str'

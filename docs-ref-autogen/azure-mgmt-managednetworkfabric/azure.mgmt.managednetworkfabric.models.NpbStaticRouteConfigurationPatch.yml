@@ -1,0 +1,34 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NpbStaticRouteConfigurationPatch
+name: NpbStaticRouteConfigurationPatch
+fullName: azure.mgmt.managednetworkfabric.models.NpbStaticRouteConfigurationPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: NPB Static Route Configuration properties.
+constructor:
+  syntax: 'NpbStaticRouteConfigurationPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: BFD Configuration properties.
+  name: bfd_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.BfdPatchConfiguration>
+- description: List of IPv4 Routes.
+  name: ipv4_routes
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.StaticRoutePatchProperties>]
+- description: List of IPv6 Routes.
+  name: ipv6_routes
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.StaticRoutePatchProperties>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NpbStaticRouteConfigurationPatch.bfd_configuration
+  name: bfd_configuration
+  summary: BFD Configuration properties.
+  signature: 'bfd_configuration: _models.BfdPatchConfiguration | None'
+- uid: azure.mgmt.managednetworkfabric.models.NpbStaticRouteConfigurationPatch.ipv4_routes
+  name: ipv4_routes
+  summary: List of IPv4 Routes.
+  signature: 'ipv4_routes: list[''_models.StaticRoutePatchProperties''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NpbStaticRouteConfigurationPatch.ipv6_routes
+  name: ipv6_routes
+  summary: List of IPv6 Routes.
+  signature: 'ipv6_routes: list[''_models.StaticRoutePatchProperties''] | None'

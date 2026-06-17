@@ -3,49 +3,16 @@ uid: azure.mgmt.managednetworkfabric.models.InternetGatewayProperties
 name: InternetGatewayProperties
 fullName: azure.mgmt.managednetworkfabric.models.InternetGatewayProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Internet Gateway Properties defines the properties of the resource.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: Internet Gateway Properties defines the properties of the resource.
 constructor:
-  syntax: 'InternetGatewayProperties(*, type: str | _models.GatewayType, network_fabric_controller_id:
-    str, internet_gateway_rule_id: str | None = None, annotation: str | None = None,
-    **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: internet_gateway_rule_id
-    description: ARM Resource ID of the Internet Gateway Rule.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: type
-    description: 'Gateway Type of the resource. Required. Known values are: "Infrastructure"
-      and
-
-      "Workload".'
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.GatewayType>
-  - name: network_fabric_controller_id
-    description: 'ARM Resource ID of the Network Fabric Controller.
-
-      Required.'
-    types:
-    - <xref:str>
+  syntax: 'InternetGatewayProperties(*args: Any, **kwargs: Any)'
 variables:
-- description: ARM Resource ID of the Internet Gateway Rule.
-  name: internet_gateway_rule_id
-  types:
-  - <xref:str>
 - description: Switch configuration description.
   name: annotation
+  types:
+  - <xref:str>
+- description: ARM Resource ID of the Internet Gateway Rule.
+  name: internet_gateway_rule_id
   types:
   - <xref:str>
 - description: IPv4 Address of Internet Gateway.
@@ -56,11 +23,16 @@ variables:
   name: port
   types:
   - <xref:int>
-- description: 'Gateway Type of the resource. Required. Known values are: "Infrastructure"
-    and
-
+- description: 'Gateway Type of the resource. Known values are: "Infrastructure" and
     "Workload".'
   name: type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.GatewayType>
+- description: 'Gateway Type of the resource. Known values are: "Infrastructure"
+
+    and "Workload".'
+  name: internet_gateway_type
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.GatewayType>
@@ -68,6 +40,10 @@ variables:
   name: network_fabric_controller_id
   types:
   - <xref:str>
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
 - description: 'Provisioning state of resource. Known values are: "Accepted",
 
     "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
@@ -75,3 +51,42 @@ variables:
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.InternetGatewayProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternetGatewayProperties.internet_gateway_rule_id
+  name: internet_gateway_rule_id
+  summary: ARM Resource ID of the Internet Gateway Rule.
+  signature: 'internet_gateway_rule_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternetGatewayProperties.internet_gateway_type
+  name: internet_gateway_type
+  summary: '"Infrastructure" and "Workload".'
+  signature: 'internet_gateway_type: str | _models.GatewayType | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternetGatewayProperties.ipv4_address
+  name: ipv4_address
+  summary: IPv4 Address of Internet Gateway.
+  signature: 'ipv4_address: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternetGatewayProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternetGatewayProperties.network_fabric_controller_id
+  name: network_fabric_controller_id
+  summary: ARM Resource ID of the Network Fabric Controller. Required.
+  signature: 'network_fabric_controller_id: str'
+- uid: azure.mgmt.managednetworkfabric.models.InternetGatewayProperties.port
+  name: port
+  summary: Port number of Internet Gateway.
+  signature: 'port: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternetGatewayProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded", "Updating",
+
+    "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternetGatewayProperties.type
+  name: type
+  summary: '"Infrastructure" and "Workload".'
+  signature: 'type: str | _models.GatewayType | None'

@@ -1,0 +1,13 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.CommitBatchState
+name: CommitBatchState
+fullName: azure.mgmt.managednetworkfabric.models.CommitBatchState
+summary: Commit Batch State.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: FAILED
+  uid: azure.mgmt.managednetworkfabric.models.CommitBatchState.FAILED
+- name: PROCESSING
+  uid: azure.mgmt.managednetworkfabric.models.CommitBatchState.PROCESSING
+- name: SUCCEEDED
+  uid: azure.mgmt.managednetworkfabric.models.CommitBatchState.SUCCEEDED

@@ -1,0 +1,11 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.StationConnectionMode
+name: StationConnectionMode
+fullName: azure.mgmt.managednetworkfabric.models.StationConnectionMode
+summary: Station Connection Mode.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: ACTIVE
+  uid: azure.mgmt.managednetworkfabric.models.StationConnectionMode.ACTIVE
+- name: PASSIVE
+  uid: azure.mgmt.managednetworkfabric.models.StationConnectionMode.PASSIVE

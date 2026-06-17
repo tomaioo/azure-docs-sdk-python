@@ -1,0 +1,11 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.napsteromniagentapi.models.SingleSignOnType
+name: SingleSignOnType
+fullName: azure.mgmt.napsteromniagentapi.models.SingleSignOnType
+summary: Defines the type of Single Sign-On (SSO) mechanism being used.
+module: azure.mgmt.napsteromniagentapi.models
+fields:
+- name: OPEN_ID
+  uid: azure.mgmt.napsteromniagentapi.models.SingleSignOnType.OPEN_ID
+- name: SAML
+  uid: azure.mgmt.napsteromniagentapi.models.SingleSignOnType.SAML

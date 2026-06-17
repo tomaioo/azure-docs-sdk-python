@@ -1,0 +1,13 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclActionType
+name: ControlPlaneAclActionType
+fullName: azure.mgmt.managednetworkfabric.models.ControlPlaneAclActionType
+summary: Control Plane Access Control List (ACL) Action Types.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: DENY
+  uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclActionType.DENY
+- name: PERMIT
+  uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclActionType.PERMIT
+- name: REMARK
+  uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclActionType.REMARK

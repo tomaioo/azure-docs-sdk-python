@@ -3,35 +3,9 @@ uid: azure.mgmt.managednetworkfabric.models.L2IsolationDomainProperties
 name: L2IsolationDomainProperties
 fullName: azure.mgmt.managednetworkfabric.models.L2IsolationDomainProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'L2Isolation Domain Properties defines the properties of the resource.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: L2Isolation Domain Properties defines the properties of the resource.
 constructor:
-  syntax: 'L2IsolationDomainProperties(*, network_fabric_id: str, vlan_id: int, annotation:
-    str | None = None, mtu: int = 1500, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: network_fabric_id
-    description: ARM Resource ID of the Network Fabric. Required.
-    types:
-    - <xref:str>
-  - name: vlan_id
-    description: 'Vlan Identifier of the Network Fabric. Example: 501. Required.'
-    types:
-    - <xref:int>
-  - name: mtu
-    description: Maximum transmission unit. Default value is 1500.
-    defaultValue: '1500'
-    types:
-    - <xref:int>
+  syntax: 'L2IsolationDomainProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: Switch configuration description.
   name: annotation
@@ -49,11 +23,31 @@ variables:
   name: mtu
   types:
   - <xref:int>
+- description: 'Extended VLAN status, default value is Disabled. Known values are:
+
+    "Enabled" and "Disabled".'
+  name: extended_vlan
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ExtendedVlan>
+- description: 'ARM Resource ID of the networkToNetworkInterconnectId
+
+    of the L2 ISD resource.'
+  name: network_to_network_interconnect_id
+  types:
+  - <xref:str>
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
 - description: 'Configuration state of the resource. Known values are: "Succeeded",
 
     "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
 
-    "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
   name: configuration_state
   types:
   - <xref:str>
@@ -67,8 +61,57 @@ variables:
   - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
 - description: 'Administrative state of the resource. Known values are: "Enabled",
 
-    "Disabled", "MAT", and "RMA".'
+    "Disabled", "MAT", "RMA", "UnderMaintenance", and "EnabledDegraded".'
   name: administrative_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.L2IsolationDomainProperties.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT",
+
+    "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  signature: 'administrative_state: str | _models.AdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.L2IsolationDomainProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.L2IsolationDomainProperties.extended_vlan
+  name: extended_vlan
+  summary: '"Enabled" and
+
+    "Disabled".'
+  signature: 'extended_vlan: str | _models.ExtendedVlan | None'
+- uid: azure.mgmt.managednetworkfabric.models.L2IsolationDomainProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.L2IsolationDomainProperties.mtu
+  name: mtu
+  summary: Maximum transmission unit. Default value is 1500.
+  signature: 'mtu: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.L2IsolationDomainProperties.network_fabric_id
+  name: network_fabric_id
+  summary: ARM Resource ID of the Network Fabric. Required.
+  signature: 'network_fabric_id: str'
+- uid: azure.mgmt.managednetworkfabric.models.L2IsolationDomainProperties.network_to_network_interconnect_id
+  name: network_to_network_interconnect_id
+  summary: ARM Resource ID of the networkToNetworkInterconnectId of the L2 ISD resource.
+  signature: 'network_to_network_interconnect_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.L2IsolationDomainProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.L2IsolationDomainProperties.vlan_id
+  name: vlan_id
+  summary: '501. Required. '
+  signature: 'vlan_id: int'

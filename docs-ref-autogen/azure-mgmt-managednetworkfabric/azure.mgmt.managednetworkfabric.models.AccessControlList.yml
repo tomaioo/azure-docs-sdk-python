@@ -3,61 +3,13 @@ uid: azure.mgmt.managednetworkfabric.models.AccessControlList
 name: AccessControlList
 fullName: azure.mgmt.managednetworkfabric.models.AccessControlList
 module: azure.mgmt.managednetworkfabric.models
-summary: 'The Access Control List resource definition.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: The Access Control List resource definition.
 constructor:
-  syntax: 'AccessControlList(*, location: str, tags: Dict[str, str] | None = None,
-    annotation: str | None = None, configuration_type: str | _models.ConfigurationType
-    | None = None, acls_url: str | None = None, match_configurations: List[_models.AccessControlListMatchConfiguration]
-    | None = None, dynamic_match_configurations: List[_models.CommonDynamicMatchConfiguration]
-    | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: tags
-    description: Resource tags.
-    defaultValue: None
-    types:
-    - <xref:dict>[<xref:str>, <xref:str>]
-  - name: location
-    description: The geo-location where the resource lives. Required.
-    types:
-    - <xref:str>
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: configuration_type
-    description: 'Input method to configure Access Control List. Known values are:
-
-      "File" and "Inline".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationType>
-  - name: acls_url
-    description: Access Control List file URL.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: match_configurations
-    description: List of match configurations.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.AccessControlListMatchConfiguration>]
-  - name: dynamic_match_configurations
-    description: List of dynamic match configurations.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfiguration>]
+  syntax: 'AccessControlList(*args: Any, **kwargs: Any)'
 variables:
-- description: 'Fully qualified resource ID for the resource. E.g.
+- description: 'Fully qualified resource ID for the resource. Ex -
 
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}".'
+    /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.'
   name: id
   types:
   - <xref:str>
@@ -86,53 +38,12 @@ variables:
   name: location
   types:
   - <xref:str>
-- description: Switch configuration description.
-  name: annotation
+- description: The Access ControlList properties. Required.
+  name: properties
   types:
-  - <xref:str>
-- description: 'Input method to configure Access Control List. Known values are:
-
-    "File" and "Inline".'
-  name: configuration_type
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationType>
-- description: Access Control List file URL.
-  name: acls_url
-  types:
-  - <xref:str>
-- description: List of match configurations.
-  name: match_configurations
-  types:
-  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.AccessControlListMatchConfiguration>]
-- description: List of dynamic match configurations.
-  name: dynamic_match_configurations
-  types:
-  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfiguration>]
-- description: The last synced timestamp.
-  name: last_synced_time
-  types:
-  - <xref:datetime.datetime>
-- description: 'Configuration state of the resource. Known values are: "Succeeded",
-
-    "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
-
-    "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
-  name: configuration_state
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationState>
-- description: 'Provisioning state of the resource. Known values are: "Accepted",
-
-    "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
-  name: provisioning_state
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
-- description: 'Administrative state of the resource. Known values are: "Enabled",
-
-    "Disabled", "MAT", and "RMA".'
-  name: administrative_state
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+  - <xref:azure.mgmt.managednetworkfabric.models.AccessControlListProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlList.properties
+  name: properties
+  summary: The Access ControlList properties. Required.
+  signature: 'properties: _models.AccessControlListProperties'

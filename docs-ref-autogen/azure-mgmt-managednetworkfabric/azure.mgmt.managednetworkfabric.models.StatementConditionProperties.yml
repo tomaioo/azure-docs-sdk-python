@@ -5,43 +5,17 @@ fullName: azure.mgmt.managednetworkfabric.models.StatementConditionProperties
 module: azure.mgmt.managednetworkfabric.models
 summary: Route policy statement condition properties.
 constructor:
-  syntax: 'StatementConditionProperties(*, ip_extended_community_ids: List[str] |
-    None = None, ip_community_ids: List[str] | None = None, type: str | _models.RoutePolicyConditionType
-    = ''Or'', ip_prefix_id: str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: ip_extended_community_ids
-    description: List of IP Extended Community resource IDs.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>]
-  - name: ip_community_ids
-    description: List of IP Community resource IDs.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>]
-  - name: type
-    description: 'Type of the condition used. Known values are: "Or", "And", "Or",
-      and "And".'
-    defaultValue: Or
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.RoutePolicyConditionType>
-  - name: ip_prefix_id
-    description: Arm Resource Id of IpPrefix.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'StatementConditionProperties(*args: Any, **kwargs: Any)'
 variables:
-- description: List of IP Extended Community resource IDs.
-  name: ip_extended_community_ids
-  types:
-  - <xref:list>[<xref:str>]
 - description: List of IP Community resource IDs.
   name: ip_community_ids
   types:
   - <xref:list>[<xref:str>]
-- description: 'Type of the condition used. Known values are: "Or", "And", "Or", and
-    "And".'
+- description: List of IP Extended Community resource IDs.
+  name: ip_extended_community_ids
+  types:
+  - <xref:list>[<xref:str>]
+- description: 'Type of the condition used. Known values are: "Or" and "And".'
   name: type
   types:
   - <xref:str>
@@ -50,3 +24,20 @@ variables:
   name: ip_prefix_id
   types:
   - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.StatementConditionProperties.ip_community_ids
+  name: ip_community_ids
+  summary: List of IP Community resource IDs.
+  signature: 'ip_community_ids: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.StatementConditionProperties.ip_extended_community_ids
+  name: ip_extended_community_ids
+  summary: List of IP Extended Community resource IDs.
+  signature: 'ip_extended_community_ids: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.StatementConditionProperties.ip_prefix_id
+  name: ip_prefix_id
+  summary: Arm Resource Id of IpPrefix.
+  signature: 'ip_prefix_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.StatementConditionProperties.type
+  name: type
+  summary: '"Or" and "And".'
+  signature: 'type: str | _models.RoutePolicyConditionType | None'

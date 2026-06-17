@@ -1,0 +1,40 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceRwCommandResponseProperties
+name: NetworkDeviceRwCommandResponseProperties
+fullName: azure.mgmt.managednetworkfabric.models.NetworkDeviceRwCommandResponseProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Network Device Resource defines the properties of the resource.
+constructor:
+  syntax: 'NetworkDeviceRwCommandResponseProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Gets the configuration state. Known values are: "Succeeded",
+
+    "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
+
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
+  name: configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationState>
+- description: Predefined link containing Device Rw Command output.
+  name: output_url
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceRwCommandResponseProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceRwCommandResponseProperties.output_url
+  name: output_url
+  summary: Predefined link containing Device Rw Command output.
+  signature: 'output_url: str | None'

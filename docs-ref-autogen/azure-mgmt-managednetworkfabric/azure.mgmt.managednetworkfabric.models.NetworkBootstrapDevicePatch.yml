@@ -1,0 +1,31 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDevicePatch
+name: NetworkBootstrapDevicePatch
+fullName: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDevicePatch
+module: azure.mgmt.managednetworkfabric.models
+summary: The Network Bootstrap Device Patch Parameters defines the patch parameters
+  of the resource.
+constructor:
+  syntax: 'NetworkBootstrapDevicePatch(*args: Any, **kwargs: Any)'
+variables:
+- description: Resource tags.
+  name: tags
+  types:
+  - <xref:dict>[<xref:str>, <xref:str>]
+- description: Network Bootstrap Device Patch properties.
+  name: properties
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.NetworkBootstrapDevicePatchProperties>
+- description: The managed service identities assigned to this resource.
+  name: identity
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ManagedServiceIdentityPatch>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDevicePatch.identity
+  name: identity
+  summary: The managed service identities assigned to this resource.
+  signature: 'identity: _models.ManagedServiceIdentityPatch | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDevicePatch.properties
+  name: properties
+  summary: Network Bootstrap Device Patch properties.
+  signature: 'properties: _models.NetworkBootstrapDevicePatchProperties | None'

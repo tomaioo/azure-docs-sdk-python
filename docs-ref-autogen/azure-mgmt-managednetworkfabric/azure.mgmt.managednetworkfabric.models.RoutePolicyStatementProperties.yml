@@ -3,32 +3,9 @@ uid: azure.mgmt.managednetworkfabric.models.RoutePolicyStatementProperties
 name: RoutePolicyStatementProperties
 fullName: azure.mgmt.managednetworkfabric.models.RoutePolicyStatementProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Route Policy Statement properties.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: Route Policy Statement properties.
 constructor:
-  syntax: 'RoutePolicyStatementProperties(*, sequence_number: int, condition: _models.StatementConditionProperties,
-    action: _models.StatementActionProperties, annotation: str | None = None, **kwargs:
-    Any)'
-  keywordOnlyParameters:
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: sequence_number
-    description: Sequence to insert to/delete from existing route. Required.
-    types:
-    - <xref:int>
-  - name: condition
-    description: Route policy condition properties. Required.
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.StatementConditionProperties>
-  - name: action
-    description: Route policy action properties. Required.
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.StatementActionProperties>
+  syntax: 'RoutePolicyStatementProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: Switch configuration description.
   name: annotation
@@ -46,3 +23,16 @@ variables:
   name: action
   types:
   - <xref:azure.mgmt.managednetworkfabric.models.StatementActionProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.RoutePolicyStatementProperties.action
+  name: action
+  summary: Route policy action properties. Required.
+  signature: 'action: _models.StatementActionProperties'
+- uid: azure.mgmt.managednetworkfabric.models.RoutePolicyStatementProperties.condition
+  name: condition
+  summary: Route policy condition properties. Required.
+  signature: 'condition: _models.StatementConditionProperties'
+- uid: azure.mgmt.managednetworkfabric.models.RoutePolicyStatementProperties.sequence_number
+  name: sequence_number
+  summary: Sequence to insert to/delete from existing route. Required.
+  signature: 'sequence_number: int'

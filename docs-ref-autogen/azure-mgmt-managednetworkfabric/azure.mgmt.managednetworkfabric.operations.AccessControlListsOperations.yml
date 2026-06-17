@@ -11,10 +11,7 @@ constructor:
 methods:
 - uid: azure.mgmt.managednetworkfabric.operations.AccessControlListsOperations.begin_create
   name: begin_create
-  summary: 'Creates Access Control List.
-
-
-    Implements Access Control List PUT method.'
+  summary: Implements Access Control List PUT method.
   signature: 'begin_create(resource_group_name: str, access_control_list_name: str,
     body: _models.AccessControlList, *, content_type: str = ''application/json'',
     **kwargs: Any) -> LROPoller[_models.AccessControlList]'
@@ -32,59 +29,27 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: Request payload. Is either a AccessControlList type or a IO type.
-      Required.
+    description: 'Request payload. Is one of the following types: AccessControlList,
+      JSON, IO[bytes]
+
+      Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.AccessControlList>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be ARMPolling. Pass in False
-      for this
-
-      operation to not poll, or pass in your own initialized polling object for a
-      personal polling
-
-      strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.PollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of LROPoller that returns either AccessControlList or
-      the result of
+    description: 'An instance of LROPoller that returns AccessControlList. The AccessControlList
+      is
 
-      cls(response)'
+      compatible with MutableMapping'
     types:
     - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.AccessControlList>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.AccessControlListsOperations.begin_delete
   name: begin_delete
-  summary: 'Deletes a Access Control List.
-
-
-    Implements Access Control List DELETE method.'
+  summary: Implements Access Control List DELETE method.
   signature: 'begin_delete(resource_group_name: str, access_control_list_name: str,
     **kwargs: Any) -> LROPoller[None]'
   parameters:
@@ -100,45 +65,15 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be ARMPolling. Pass in False
-      for this
-
-      operation to not poll, or pass in your own initialized polling object for a
-      personal polling
-
-      strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.PollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
   return:
-    description: An instance of LROPoller that returns either None or the result of
-      cls(response)
+    description: An instance of LROPoller that returns None
     types:
     - <xref:azure.core.polling.LROPoller>[<xref:None>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.AccessControlListsOperations.begin_resync
   name: begin_resync
-  summary: 'Resync operation on the Access Control Lists.
-
-
-    Implements the operation to the underlying resources.'
+  summary: Implements the operation to the underlying resources.
   signature: 'begin_resync(resource_group_name: str, access_control_list_name: str,
     **kwargs: Any) -> LROPoller[CommonPostActionResponseForStateUpdate]'
   parameters:
@@ -154,47 +89,18 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be ARMPolling. Pass in False
-      for this
-
-      operation to not poll, or pass in your own initialized polling object for a
-      personal polling
-
-      strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.PollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
   return:
-    description: 'An instance of LROPoller that returns either CommonPostActionResponseForStateUpdate
-      or
+    description: 'An instance of LROPoller that returns CommonPostActionResponseForStateUpdate.
+      The
 
-      the result of cls(response)'
+      CommonPostActionResponseForStateUpdate is compatible with MutableMapping'
     types:
     - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForStateUpdate>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.AccessControlListsOperations.begin_update
   name: begin_update
-  summary: 'Updates the Access Control List.
-
-
-    API to update certain properties of the Access Control List resource.'
+  summary: API to update certain properties of the Access Control List resource.
   signature: 'begin_update(resource_group_name: str, access_control_list_name: str,
     body: _models.AccessControlListPatch, *, content_type: str = ''application/json'',
     **kwargs: Any) -> LROPoller[_models.AccessControlList]'
@@ -212,64 +118,30 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: 'Access Control List properties to update. Is either a AccessControlListPatch
-      type
+    description: 'Access Control List properties to update. Is one of the following
+      types:
 
-      or a IO type. Required.'
+      AccessControlListPatch, JSON, IO[bytes] Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.AccessControlListPatch>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be ARMPolling. Pass in False
-      for this
-
-      operation to not poll, or pass in your own initialized polling object for a
-      personal polling
-
-      strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.PollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of LROPoller that returns either AccessControlList or
-      the result of
+    description: 'An instance of LROPoller that returns AccessControlList. The AccessControlList
+      is
 
-      cls(response)'
+      compatible with MutableMapping'
     types:
     - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.AccessControlList>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.AccessControlListsOperations.begin_update_administrative_state
   name: begin_update_administrative_state
-  summary: 'Updates administrative state of Access Control Lists.
-
-
-    Implements the operation to the underlying resources.'
+  summary: Implements the operation to the underlying resources.
   signature: 'begin_update_administrative_state(resource_group_name: str, access_control_list_name:
     str, body: _models.UpdateAdministrativeState, *, content_type: str = ''application/json'',
-    **kwargs: Any) -> LROPoller[_models.CommonPostActionResponseForStateUpdate]'
+    **kwargs: Any) -> LROPoller[_models.UpdateAdministrativeStateResponse]'
   parameters:
   - name: resource_group_name
     description: 'The name of the resource group. The name is case insensitive.
@@ -284,61 +156,27 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: 'Request payload. Is either a UpdateAdministrativeState type or a
-      IO type.
+    description: 'Request payload. Is one of the following types: UpdateAdministrativeState,
+      JSON,
 
-      Required.'
+      IO[bytes] Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.UpdateAdministrativeState>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be ARMPolling. Pass in False
-      for this
-
-      operation to not poll, or pass in your own initialized polling object for a
-      personal polling
-
-      strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.PollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of LROPoller that returns either CommonPostActionResponseForStateUpdate
-      or
+    description: 'An instance of LROPoller that returns UpdateAdministrativeStateResponse.
+      The
 
-      the result of cls(response)'
+      UpdateAdministrativeStateResponse is compatible with MutableMapping'
     types:
-    - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForStateUpdate>]
+    - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.UpdateAdministrativeStateResponse>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.AccessControlListsOperations.begin_validate_configuration
   name: begin_validate_configuration
-  summary: 'Validates the configuration of the Access Control Lists.
-
-
-    Implements the operation to the underlying resources.'
+  summary: Implements the operation to the underlying resources.
   signature: 'begin_validate_configuration(resource_group_name: str, access_control_list_name:
     str, **kwargs: Any) -> LROPoller[ValidateConfigurationResponse]'
   parameters:
@@ -354,47 +192,18 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be ARMPolling. Pass in False
-      for this
-
-      operation to not poll, or pass in your own initialized polling object for a
-      personal polling
-
-      strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.PollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
   return:
-    description: 'An instance of LROPoller that returns either ValidateConfigurationResponse
-      or the
+    description: 'An instance of LROPoller that returns ValidateConfigurationResponse.
+      The
 
-      result of cls(response)'
+      ValidateConfigurationResponse is compatible with MutableMapping'
     types:
     - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.ValidateConfigurationResponse>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.AccessControlListsOperations.get
   name: get
-  summary: 'Gets a Access Control List.
-
-
-    Implements Access Control List GET method.'
+  summary: Implements Access Control List GET method.
   signature: 'get(resource_group_name: str, access_control_list_name: str, **kwargs:
     Any) -> AccessControlList'
   parameters:
@@ -410,24 +219,16 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
   return:
-    description: AccessControlList or the result of cls(response)
+    description: AccessControlList. The AccessControlList is compatible with MutableMapping
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.AccessControlList>
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.AccessControlListsOperations.list_by_resource_group
   name: list_by_resource_group
-  summary: 'List AccessControlLists by resource group.
-
-
-    Implements AccessControlLists list by resource group GET method.'
-  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> Iterable[AccessControlList]'
+  summary: Implements AccessControlLists list by resource group GET method.
+  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> ItemPaged[AccessControlList]'
   parameters:
   - name: resource_group_name
     description: 'The name of the resource group. The name is case insensitive.
@@ -436,38 +237,19 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
   return:
-    description: An iterator like instance of either AccessControlList or the result
-      of cls(response)
+    description: An iterator like instance of AccessControlList
     types:
     - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.managednetworkfabric.models.AccessControlList>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.AccessControlListsOperations.list_by_subscription
   name: list_by_subscription
-  summary: 'List AccessControlLists by subscription.
-
-
-    Implements AccessControlLists list by subscription GET method.'
-  signature: 'list_by_subscription(**kwargs: Any) -> Iterable[AccessControlList]'
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
+  summary: Implements AccessControlLists list by subscription GET method.
+  signature: 'list_by_subscription(**kwargs: Any) -> ItemPaged[AccessControlList]'
   return:
-    description: An iterator like instance of either AccessControlList or the result
-      of cls(response)
+    description: An iterator like instance of AccessControlList
     types:
     - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.managednetworkfabric.models.AccessControlList>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
-attributes:
-- uid: azure.mgmt.managednetworkfabric.operations.AccessControlListsOperations.models
-  name: models
-  signature: models = <module 'azure.mgmt.managednetworkfabric.models' from 'C:\\ToolCache\\Python\\3.12.10\\x64\\Lib\\site-packages\\py2docfx\\venv\\venv171\\Lib\\site-packages\\azure\\mgmt\\managednetworkfabric\\models\\__init__.py'>

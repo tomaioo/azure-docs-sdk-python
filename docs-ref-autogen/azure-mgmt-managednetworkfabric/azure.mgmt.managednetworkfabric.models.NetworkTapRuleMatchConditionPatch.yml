@@ -1,0 +1,41 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConditionPatch
+name: NetworkTapRuleMatchConditionPatch
+fullName: azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConditionPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: Defines the match condition that is supported to filter the traffic.
+constructor:
+  syntax: 'NetworkTapRuleMatchConditionPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: List of the protocols that need to be matched.
+  name: protocol_types
+  types:
+  - <xref:list>[<xref:str>]
+- description: Vlan match condition that needs to be matched.
+  name: vlan_match_condition
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.VlanMatchConditionPatch>
+- description: IP condition that needs to be matched.
+  name: ip_condition
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.IpMatchConditionPatch>
+- description: 'Encapsulation Type that needs to be matched. Known values are: "None"
+
+    and "GTPv1".'
+  name: encapsulation_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.EncapsulationType>
+- description: Defines the port condition that needs to be matched.
+  name: port_condition
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.PortConditionPatch>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConditionPatch.encapsulation_type
+  name: encapsulation_type
+  summary: '"None" and "GTPv1".'
+  signature: 'encapsulation_type: str | _models.EncapsulationType | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConditionPatch.port_condition
+  name: port_condition
+  summary: Defines the port condition that needs to be matched.
+  signature: 'port_condition: _models.PortConditionPatch | None'

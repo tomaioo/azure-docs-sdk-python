@@ -10,7 +10,11 @@ fields:
   uid: azure.mgmt.managednetworkfabric.models.AdministrativeState.DISABLED
 - name: ENABLED
   uid: azure.mgmt.managednetworkfabric.models.AdministrativeState.ENABLED
+- name: ENABLED_DEGRADED
+  uid: azure.mgmt.managednetworkfabric.models.AdministrativeState.ENABLED_DEGRADED
 - name: MAT
   uid: azure.mgmt.managednetworkfabric.models.AdministrativeState.MAT
 - name: RMA
   uid: azure.mgmt.managednetworkfabric.models.AdministrativeState.RMA
+- name: UNDER_MAINTENANCE
+  uid: azure.mgmt.managednetworkfabric.models.AdministrativeState.UNDER_MAINTENANCE

@@ -1,0 +1,11 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.NetworkFabricUpgradeAction
+name: NetworkFabricUpgradeAction
+fullName: azure.mgmt.managednetworkfabric.models.NetworkFabricUpgradeAction
+summary: Action to be performed while upgrading the fabric.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: COMPLETE
+  uid: azure.mgmt.managednetworkfabric.models.NetworkFabricUpgradeAction.COMPLETE
+- name: START
+  uid: azure.mgmt.managednetworkfabric.models.NetworkFabricUpgradeAction.START

@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.OptionBLayer3PrefixLimitProperties
+name: OptionBLayer3PrefixLimitProperties
+fullName: azure.mgmt.managednetworkfabric.models.OptionBLayer3PrefixLimitProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: OptionB Layer3 prefix limit properties.
+constructor:
+  syntax: 'OptionBLayer3PrefixLimitProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Maximum number of routes allowed.
+  name: maximum_routes
+  types:
+  - <xref:int>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.OptionBLayer3PrefixLimitProperties.maximum_routes
+  name: maximum_routes
+  summary: Maximum number of routes allowed.
+  signature: 'maximum_routes: int | None'

@@ -5,25 +5,7 @@ fullName: azure.mgmt.managednetworkfabric.models.CommonMatchConditions
 module: azure.mgmt.managednetworkfabric.models
 summary: Defines the common match conditions of the ACL and Network Tap Rule.
 constructor:
-  syntax: 'CommonMatchConditions(*, protocol_types: List[str] | None = None, vlan_match_condition:
-    _models.VlanMatchCondition | None = None, ip_condition: _models.IpMatchCondition
-    | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: protocol_types
-    description: List of the protocols that need to be matched.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>]
-  - name: vlan_match_condition
-    description: Vlan match condition that needs to be matched.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.VlanMatchCondition>
-  - name: ip_condition
-    description: IP condition that needs to be matched.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.IpMatchCondition>
+  syntax: 'CommonMatchConditions(*args: Any, **kwargs: Any)'
 variables:
 - description: List of the protocols that need to be matched.
   name: protocol_types
@@ -37,3 +19,16 @@ variables:
   name: ip_condition
   types:
   - <xref:azure.mgmt.managednetworkfabric.models.IpMatchCondition>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.CommonMatchConditions.ip_condition
+  name: ip_condition
+  summary: IP condition that needs to be matched.
+  signature: 'ip_condition: _models.IpMatchCondition | None'
+- uid: azure.mgmt.managednetworkfabric.models.CommonMatchConditions.protocol_types
+  name: protocol_types
+  summary: List of the protocols that need to be matched.
+  signature: 'protocol_types: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.CommonMatchConditions.vlan_match_condition
+  name: vlan_match_condition
+  summary: Vlan match condition that needs to be matched.
+  signature: 'vlan_match_condition: _models.VlanMatchCondition | None'

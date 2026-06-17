@@ -1,0 +1,65 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceSkuProperties
+name: NetworkDeviceSkuProperties
+fullName: azure.mgmt.managednetworkfabric.models.NetworkDeviceSkuProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Network Device SKU Properties defines the properties of the resource.
+constructor:
+  syntax: 'NetworkDeviceSkuProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Model of the network device. Required.
+  name: model
+  types:
+  - <xref:str>
+- description: Manufacturer of the network device.
+  name: manufacturer
+  types:
+  - <xref:str>
+- description: List of supported version details of network device.
+  name: supported_versions
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.SupportedVersionProperties>]
+- description: Available roles for the network device.
+  name: supported_role_types
+  types:
+  - <xref:list>[<xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.NetworkDeviceRoleName>]
+- description: List of network device interfaces.
+  name: interfaces
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.DeviceInterfaceProperties>]
+- description: 'Provisioning state of the resource. Known values are: "Accepted",
+
+    "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
+  name: provisioning_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceSkuProperties.interfaces
+  name: interfaces
+  summary: List of network device interfaces.
+  signature: 'interfaces: list[''_models.DeviceInterfaceProperties''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceSkuProperties.manufacturer
+  name: manufacturer
+  summary: Manufacturer of the network device.
+  signature: 'manufacturer: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceSkuProperties.model
+  name: model
+  summary: Model of the network device. Required.
+  signature: 'model: str'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceSkuProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceSkuProperties.supported_role_types
+  name: supported_role_types
+  summary: Available roles for the network device.
+  signature: 'supported_role_types: list[typing.Union[str, ForwardRef(''_models.NetworkDeviceRoleName'')]]
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceSkuProperties.supported_versions
+  name: supported_versions
+  summary: List of supported version details of network device.
+  signature: 'supported_versions: list[''_models.SupportedVersionProperties''] | None'

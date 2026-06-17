@@ -1,0 +1,28 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.BitRate
+name: BitRate
+fullName: azure.mgmt.managednetworkfabric.models.BitRate
+module: azure.mgmt.managednetworkfabric.models
+summary: Bit rate in bits per second.
+constructor:
+  syntax: 'BitRate(*args: Any, **kwargs: Any)'
+variables:
+- description: Bitrate.
+  name: rate
+  types:
+  - <xref:int>
+- description: 'Bitrate unit. Known values are: "bps", "Kbps", "Mbps", "Gbps", and
+    "Pps".'
+  name: unit
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BitRateUnit>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.BitRate.rate
+  name: rate
+  summary: Bitrate.
+  signature: 'rate: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.BitRate.unit
+  name: unit
+  summary: '"bps", "Kbps", "Mbps", "Gbps", and "Pps".'
+  signature: 'unit: str | _models.BitRateUnit | None'

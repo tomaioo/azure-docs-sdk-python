@@ -1,0 +1,132 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.BgpPatchConfiguration
+name: BgpPatchConfiguration
+fullName: azure.mgmt.managednetworkfabric.models.BgpPatchConfiguration
+module: azure.mgmt.managednetworkfabric.models
+summary: BGP configuration properties.
+constructor:
+  syntax: 'BgpPatchConfiguration(*args: Any, **kwargs: Any)'
+variables:
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
+- description: BFD configuration properties.
+  name: bfd_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.BfdPatchConfiguration>
+- description: 'Originate a defaultRoute. Ex: "True" | "False". Known values
+
+    are: "True" and "False".'
+  name: default_route_originate
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BooleanEnumProperty>
+- description: 'Allows for routes to be received and processed even if the router
+    detects its
+
+    own ASN in the AS-Path. 0 is disable, Possible values are 1-10, default is 2.'
+  name: allow_as
+  types:
+  - <xref:int>
+- description: 'Enable Or Disable state. Known values are: "Enable" and "Disable".'
+  name: allow_as_override
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.AllowASOverride>
+- description: 'ASN of Network Fabric. Example: 65048.'
+  name: fabric_asn
+  types:
+  - <xref:int>
+- description: 'Peer ASN. Example: 65047.'
+  name: peer_asn
+  types:
+  - <xref:int>
+- description: List of BGP IPv4 Listen Range prefixes.
+  name: ipv4_listen_range_prefixes
+  types:
+  - <xref:list>[<xref:str>]
+- description: List of BGP IPv6 Listen Ranges prefixes.
+  name: ipv6_listen_range_prefixes
+  types:
+  - <xref:list>[<xref:str>]
+- description: List with stringified IPv4 Neighbor Addresses.
+  name: ipv4_neighbor_address
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NeighborAddressPatch>]
+- description: List with stringified IPv6 Neighbor Address.
+  name: ipv6_neighbor_address
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NeighborAddressPatch>]
+- description: InternalNetwork BMP Configuration.
+  name: bmp_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.InternalNetworkBmpPatchProperties>
+- description: 'V4 over V6 bgp session. Known values are: "Enabled" and
+
+    "Disabled".'
+  name: v4_over_v6_bgp_session
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.V4OverV6BgpSessionState>
+- description: 'v6 over v4 bgp session. Known values are: "Enabled" and
+
+    "Disabled".'
+  name: v6_over_v4_bgp_session
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.V6OverV4BgpSessionState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.BgpPatchConfiguration.allow_as
+  name: allow_as
+  summary: 'Allows for routes to be received and processed even if the router detects
+    its own ASN in the
+
+    AS-Path. 0 is disable, Possible values are 1-10, default is 2.'
+  signature: 'allow_as: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.BgpPatchConfiguration.allow_as_override
+  name: allow_as_override
+  summary: '"Enable" and "Disable".'
+  signature: 'allow_as_override: str | _models.AllowASOverride | None'
+- uid: azure.mgmt.managednetworkfabric.models.BgpPatchConfiguration.bfd_configuration
+  name: bfd_configuration
+  summary: BFD configuration properties.
+  signature: 'bfd_configuration: _models.BfdPatchConfiguration | None'
+- uid: azure.mgmt.managednetworkfabric.models.BgpPatchConfiguration.bmp_configuration
+  name: bmp_configuration
+  summary: InternalNetwork BMP Configuration.
+  signature: 'bmp_configuration: _models.InternalNetworkBmpPatchProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.BgpPatchConfiguration.default_route_originate
+  name: default_route_originate
+  summary: '"True" and "False".'
+  signature: 'default_route_originate: str | _models.BooleanEnumProperty | None'
+- uid: azure.mgmt.managednetworkfabric.models.BgpPatchConfiguration.fabric_asn
+  name: fabric_asn
+  signature: 'fabric_asn: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.BgpPatchConfiguration.ipv4_listen_range_prefixes
+  name: ipv4_listen_range_prefixes
+  summary: List of BGP IPv4 Listen Range prefixes.
+  signature: 'ipv4_listen_range_prefixes: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.BgpPatchConfiguration.ipv4_neighbor_address
+  name: ipv4_neighbor_address
+  summary: List with stringified IPv4 Neighbor Addresses.
+  signature: 'ipv4_neighbor_address: list[''_models.NeighborAddressPatch''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.BgpPatchConfiguration.ipv6_listen_range_prefixes
+  name: ipv6_listen_range_prefixes
+  summary: List of BGP IPv6 Listen Ranges prefixes.
+  signature: 'ipv6_listen_range_prefixes: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.BgpPatchConfiguration.ipv6_neighbor_address
+  name: ipv6_neighbor_address
+  summary: List with stringified IPv6 Neighbor Address.
+  signature: 'ipv6_neighbor_address: list[''_models.NeighborAddressPatch''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.BgpPatchConfiguration.peer_asn
+  name: peer_asn
+  signature: 'peer_asn: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.BgpPatchConfiguration.v4_over_v6_bgp_session
+  name: v4_over_v6_bgp_session
+  summary: '"Enabled" and "Disabled".'
+  signature: 'v4_over_v6_bgp_session: str | _models.V4OverV6BgpSessionState | None'
+- uid: azure.mgmt.managednetworkfabric.models.BgpPatchConfiguration.v6_over_v4_bgp_session
+  name: v6_over_v4_bgp_session
+  summary: '"Enabled" and "Disabled".'
+  signature: 'v6_over_v4_bgp_session: str | _models.V6OverV4BgpSessionState | None'

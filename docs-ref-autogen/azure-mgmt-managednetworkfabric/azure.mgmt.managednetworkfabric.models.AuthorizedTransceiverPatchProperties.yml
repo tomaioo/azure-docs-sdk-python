@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.AuthorizedTransceiverPatchProperties
+name: AuthorizedTransceiverPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.AuthorizedTransceiverPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Authorized Transceiver Patch Properties.
+constructor:
+  syntax: 'AuthorizedTransceiverPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Vendor of the transceiver.
+  name: vendor
+  types:
+  - <xref:str>
+- description: Key that must be configured on the fabric.
+  name: key
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.AuthorizedTransceiverPatchProperties.key
+  name: key
+  summary: Key that must be configured on the fabric.
+  signature: 'key: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.AuthorizedTransceiverPatchProperties.vendor
+  name: vendor
+  summary: Vendor of the transceiver.
+  signature: 'vendor: str | None'

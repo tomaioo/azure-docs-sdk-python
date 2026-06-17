@@ -1,0 +1,20 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.InternalNetworkUpdateBgpAdministrativeStateResponseProperties
+name: InternalNetworkUpdateBgpAdministrativeStateResponseProperties
+fullName: azure.mgmt.managednetworkfabric.models.InternalNetworkUpdateBgpAdministrativeStateResponseProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Internal Network BGP Administrative State response properties.
+constructor:
+  syntax: 'InternalNetworkUpdateBgpAdministrativeStateResponseProperties(*args: Any,
+    **kwargs: Any)'
+variables:
+- description: NeighborAddress administrative status.
+  name: neighbor_address_administrative_status
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NeighborAddressBgpAdministrativeStatus>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkUpdateBgpAdministrativeStateResponseProperties.neighbor_address_administrative_status
+  name: neighbor_address_administrative_status
+  summary: NeighborAddress administrative status.
+  signature: 'neighbor_address_administrative_status: list[''_models.NeighborAddressBgpAdministrativeStatus'']
+    | None'

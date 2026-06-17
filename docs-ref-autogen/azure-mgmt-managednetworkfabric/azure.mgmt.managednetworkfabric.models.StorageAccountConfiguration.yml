@@ -1,0 +1,31 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.StorageAccountConfiguration
+name: StorageAccountConfiguration
+fullName: azure.mgmt.managednetworkfabric.models.StorageAccountConfiguration
+module: azure.mgmt.managednetworkfabric.models
+summary: Storage account configuration.
+constructor:
+  syntax: 'StorageAccountConfiguration(*args: Any, **kwargs: Any)'
+variables:
+- description: Network Fabric storage account resource identifier.
+  name: storage_account_id
+  types:
+  - <xref:str>
+- description: 'The selection of the managed identity to use with this storage
+
+    account. The identity type must be either system assigned or user assigned.'
+  name: storage_account_identity
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.IdentitySelector>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.StorageAccountConfiguration.storage_account_id
+  name: storage_account_id
+  summary: Network Fabric storage account resource identifier.
+  signature: 'storage_account_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.StorageAccountConfiguration.storage_account_identity
+  name: storage_account_identity
+  summary: 'The selection of the managed identity to use with this storage account.
+    The identity type must
+
+    be either system assigned or user assigned.'
+  signature: 'storage_account_identity: _models.IdentitySelector | None'

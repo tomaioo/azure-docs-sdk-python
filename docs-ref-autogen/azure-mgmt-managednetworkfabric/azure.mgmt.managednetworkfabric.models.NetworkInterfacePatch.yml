@@ -5,15 +5,22 @@ fullName: azure.mgmt.managednetworkfabric.models.NetworkInterfacePatch
 module: azure.mgmt.managednetworkfabric.models
 summary: The NetworkInterfacePatch resource definition.
 constructor:
-  syntax: 'NetworkInterfacePatch(*, annotation: str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'NetworkInterfacePatch(*args: Any, **kwargs: Any)'
 variables:
-- description: Switch configuration description.
-  name: annotation
+- description: Network Interface Patch properties.
+  name: properties
   types:
-  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.NetworkInterfacePatchProperties>
+- description: The managed service identities assigned to this resource.
+  name: identity
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ManagedServiceIdentityPatch>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkInterfacePatch.identity
+  name: identity
+  summary: The managed service identities assigned to this resource.
+  signature: 'identity: _models.ManagedServiceIdentityPatch | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkInterfacePatch.properties
+  name: properties
+  summary: Network Interface Patch properties.
+  signature: 'properties: _models.NetworkInterfacePatchProperties | None'

@@ -5,44 +5,8 @@ fullName: azure.mgmt.managednetworkfabric.models.AccessControlListPatchPropertie
 module: azure.mgmt.managednetworkfabric.models
 summary: Access Control Lists patch properties.
 constructor:
-  syntax: 'AccessControlListPatchProperties(*, annotation: str | None = None, configuration_type:
-    str | _models.ConfigurationType | None = None, acls_url: str | None = None, match_configurations:
-    List[_models.AccessControlListMatchConfiguration] | None = None, dynamic_match_configurations:
-    List[_models.CommonDynamicMatchConfiguration] | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: configuration_type
-    description: 'Input method to configure Access Control List. Known values are:
-
-      "File" and "Inline".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationType>
-  - name: acls_url
-    description: Access Control List file URL.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: match_configurations
-    description: List of match configurations.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.AccessControlListMatchConfiguration>]
-  - name: dynamic_match_configurations
-    description: List of dynamic match configurations.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfiguration>]
+  syntax: 'AccessControlListPatchProperties(*args: Any, **kwargs: Any)'
 variables:
-- description: Switch configuration description.
-  name: annotation
-  types:
-  - <xref:str>
 - description: 'Input method to configure Access Control List. Known values are:
 
     "File" and "Inline".'
@@ -54,11 +18,91 @@ variables:
   name: acls_url
   types:
   - <xref:str>
+- description: 'Default action that needs to be applied when no condition is matched.
+
+    Example: Permit | Deny. Known values are: "Permit" and "Deny".'
+  name: default_action
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.CommunityActionTypes>
 - description: List of match configurations.
   name: match_configurations
   types:
-  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.AccessControlListMatchConfiguration>]
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.AccessControlListMatchConfigurationPatch>]
 - description: List of dynamic match configurations.
   name: dynamic_match_configurations
   types:
-  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfiguration>]
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfigurationPatch>]
+- description: Access Control List (ACL) configurations.
+  name: control_plane_acl_configuration
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.ControlPlaneAclPatchProperties>]
+- description: 'Access Control List (ACL) Type. Known values are: "ControlPlaneTrafficPolicy",
+
+    "Tenant", "Management", and "ControlPlaneAcl".'
+  name: acl_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.AclType>
+- description: 'Device Role. Known values are: "CE", "ToR", "NPB", and "ManagementSwitch".'
+  name: device_role
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.DeviceRole>
+- description: Global Access Control List (ACL) actions.
+  name: global_access_control_list_actions
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.GlobalAccessControlListActionPatchProperties>
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListPatchProperties.acl_type
+  name: acl_type
+  summary: '"ControlPlaneTrafficPolicy", "Tenant",
+
+    "Management", and "ControlPlaneAcl".'
+  signature: 'acl_type: str | _models.AclType | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListPatchProperties.acls_url
+  name: acls_url
+  summary: Access Control List file URL.
+  signature: 'acls_url: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListPatchProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListPatchProperties.configuration_type
+  name: configuration_type
+  summary: '"File" and "Inline".'
+  signature: 'configuration_type: str | _models.ConfigurationType | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListPatchProperties.control_plane_acl_configuration
+  name: control_plane_acl_configuration
+  summary: Access Control List (ACL) configurations.
+  signature: 'control_plane_acl_configuration: list[''_models.ControlPlaneAclPatchProperties'']
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListPatchProperties.default_action
+  name: default_action
+  summary: 'Permit | Deny.
+
+    Known values are: "Permit" and "Deny".'
+  signature: 'default_action: str | _models.CommunityActionTypes | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListPatchProperties.device_role
+  name: device_role
+  summary: '"CE", "ToR", "NPB", and "ManagementSwitch".'
+  signature: 'device_role: str | _models.DeviceRole | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListPatchProperties.dynamic_match_configurations
+  name: dynamic_match_configurations
+  summary: List of dynamic match configurations.
+  signature: 'dynamic_match_configurations: list[''_models.CommonDynamicMatchConfigurationPatch'']
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListPatchProperties.global_access_control_list_actions
+  name: global_access_control_list_actions
+  summary: Global Access Control List (ACL) actions.
+  signature: 'global_access_control_list_actions: _models.GlobalAccessControlListActionPatchProperties
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListPatchProperties.match_configurations
+  name: match_configurations
+  summary: List of match configurations.
+  signature: 'match_configurations: list[''_models.AccessControlListMatchConfigurationPatch'']
+    | None'

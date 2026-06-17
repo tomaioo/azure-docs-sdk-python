@@ -11,3 +11,7 @@ fields:
   uid: azure.mgmt.managednetworkfabric.models.AclActionType.DROP
 - name: LOG
   uid: azure.mgmt.managednetworkfabric.models.AclActionType.LOG
+- name: POLICE_RATE
+  uid: azure.mgmt.managednetworkfabric.models.AclActionType.POLICE_RATE
+- name: REMARK
+  uid: azure.mgmt.managednetworkfabric.models.AclActionType.REMARK

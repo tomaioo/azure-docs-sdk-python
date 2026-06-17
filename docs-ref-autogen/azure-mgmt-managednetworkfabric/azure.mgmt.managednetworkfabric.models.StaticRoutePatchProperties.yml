@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.StaticRoutePatchProperties
+name: StaticRoutePatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.StaticRoutePatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Route Properties.
+constructor:
+  syntax: 'StaticRoutePatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Prefix of the route. Required.
+  name: prefix
+  types:
+  - <xref:str>
+- description: List of next hop addresses. Required.
+  name: next_hop
+  types:
+  - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.StaticRoutePatchProperties.next_hop
+  name: next_hop
+  summary: List of next hop addresses. Required.
+  signature: 'next_hop: list[str]'
+- uid: azure.mgmt.managednetworkfabric.models.StaticRoutePatchProperties.prefix
+  name: prefix
+  summary: Prefix of the route. Required.
+  signature: 'prefix: str'

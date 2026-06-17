@@ -1,0 +1,65 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.CertificateRotationStatus
+name: CertificateRotationStatus
+fullName: azure.mgmt.managednetworkfabric.models.CertificateRotationStatus
+module: azure.mgmt.managednetworkfabric.models
+summary: Status of a certificate rotation for a device (Network Device or Terminal
+  Server).
+constructor:
+  syntax: 'CertificateRotationStatus(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Time at which the certificate will expire, for certificates with a
+    limited
+
+    validity period.'
+  name: expire_time
+  types:
+  - <xref:datetime.datetime>
+- description: The date and time when the certificate was last changed.
+  name: last_rotation_time
+  types:
+  - <xref:datetime.datetime>
+- description: 'Whether the device has been configured with the latest version of
+
+    the certificate. Known values are: "InSync", "Synchronizing", and "OutOfSync".'
+  name: synchronization_status
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.SynchronizationStatus>
+- description: 'Reference to the currently configured version of the
+
+    certificate in a key vault.'
+  name: certificate_archive_reference
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.CertificateArchiveReference>
+- description: Identifies the certificate according to its purpose.
+  name: certificate_type
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.CertificateRotationStatus.certificate_archive_reference
+  name: certificate_archive_reference
+  summary: Reference to the currently configured version of the certificate in a key
+    vault.
+  signature: 'certificate_archive_reference: _models.CertificateArchiveReference |
+    None'
+- uid: azure.mgmt.managednetworkfabric.models.CertificateRotationStatus.certificate_type
+  name: certificate_type
+  summary: Identifies the certificate according to its purpose.
+  signature: 'certificate_type: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.CertificateRotationStatus.expire_time
+  name: expire_time
+  summary: Time at which the certificate will expire, for certificates with a limited
+    validity period.
+  signature: 'expire_time: datetime | None'
+- uid: azure.mgmt.managednetworkfabric.models.CertificateRotationStatus.last_rotation_time
+  name: last_rotation_time
+  summary: The date and time when the certificate was last changed.
+  signature: 'last_rotation_time: datetime | None'
+- uid: azure.mgmt.managednetworkfabric.models.CertificateRotationStatus.synchronization_status
+  name: synchronization_status
+  summary: 'Whether the device has been configured with the latest version of the
+    certificate. Known values
+
+    are: "InSync", "Synchronizing", and "OutOfSync".'
+  signature: 'synchronization_status: str | _models.SynchronizationStatus | None'

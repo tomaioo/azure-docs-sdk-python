@@ -1,0 +1,34 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.PrefixLimitPatchProperties
+name: PrefixLimitPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.PrefixLimitPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Prefix Limit Patch properties.
+constructor:
+  syntax: 'PrefixLimitPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Maximum routes allowed.
+  name: maximum_routes
+  types:
+  - <xref:int>
+- description: Limit at which route prefixes a warning is generate.
+  name: threshold
+  types:
+  - <xref:int>
+- description: Idle time expiry in seconds.
+  name: idle_time_expiry
+  types:
+  - <xref:int>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.PrefixLimitPatchProperties.idle_time_expiry
+  name: idle_time_expiry
+  summary: Idle time expiry in seconds.
+  signature: 'idle_time_expiry: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.PrefixLimitPatchProperties.maximum_routes
+  name: maximum_routes
+  summary: Maximum routes allowed.
+  signature: 'maximum_routes: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.PrefixLimitPatchProperties.threshold
+  name: threshold
+  summary: Limit at which route prefixes a warning is generate.
+  signature: 'threshold: int | None'

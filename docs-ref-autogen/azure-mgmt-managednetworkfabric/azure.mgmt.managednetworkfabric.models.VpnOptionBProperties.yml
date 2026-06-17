@@ -1,0 +1,40 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.VpnOptionBProperties
+name: VpnOptionBProperties
+fullName: azure.mgmt.managednetworkfabric.models.VpnOptionBProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Option B configuration to be used for Management VPN.
+constructor:
+  syntax: 'VpnOptionBProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Route Targets to be applied for incoming routes into CE. This is
+
+    for backward compatibility.'
+  name: import_route_targets
+  types:
+  - <xref:list>[<xref:str>]
+- description: 'Route Targets to be applied for outgoing routes from CE. This is
+
+    for backward compatibility.'
+  name: export_route_targets
+  types:
+  - <xref:list>[<xref:str>]
+- description: Route Targets to be applied.
+  name: route_targets
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.RouteTargetInformation>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.VpnOptionBProperties.export_route_targets
+  name: export_route_targets
+  summary: Route Targets to be applied for outgoing routes from CE. This is for backward
+    compatibility.
+  signature: 'export_route_targets: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.VpnOptionBProperties.import_route_targets
+  name: import_route_targets
+  summary: Route Targets to be applied for incoming routes into CE. This is for backward
+    compatibility.
+  signature: 'import_route_targets: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.VpnOptionBProperties.route_targets
+  name: route_targets
+  summary: Route Targets to be applied.
+  signature: 'route_targets: _models.RouteTargetInformation | None'

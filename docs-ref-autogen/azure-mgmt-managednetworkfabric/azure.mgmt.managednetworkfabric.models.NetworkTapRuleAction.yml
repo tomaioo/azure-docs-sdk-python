@@ -5,50 +5,7 @@ fullName: azure.mgmt.managednetworkfabric.models.NetworkTapRuleAction
 module: azure.mgmt.managednetworkfabric.models
 summary: Action that need to performed.
 constructor:
-  syntax: 'NetworkTapRuleAction(*, type: str | _models.TapRuleActionType | None =
-    None, truncate: str | None = None, is_timestamp_enabled: str | _models.BooleanEnumProperty
-    | None = None, destination_id: str | None = None, match_configuration_name: str
-    | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: type
-    description: 'Type of actions that can be performed. Known values are: "Drop",
-      "Count", "Log",
-
-      "Replicate", "Goto", "Redirect", and "Mirror".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.TapRuleActionType>
-  - name: truncate
-    description: Truncate. 0 indicates do not truncate.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: is_timestamp_enabled
-    description: 'The parameter to enable or disable the timestamp. Known values
-
-      are: "True" and "False".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.BooleanEnumProperty>
-  - name: destination_id
-    description: 'Destination Id. The ARM resource Id may be either Network To Network
-
-      Interconnect or NeighborGroup.'
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: match_configuration_name
-    description: 'The name of the match configuration. This is used when Goto
-
-      type is provided. If Goto type is selected and no match configuration name is
-      provided. It goes
-
-      to next configuration.'
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'NetworkTapRuleAction(*args: Any, **kwargs: Any)'
 variables:
 - description: 'Type of actions that can be performed. Known values are: "Drop", "Count",
     "Log",
@@ -77,10 +34,33 @@ variables:
   - <xref:str>
 - description: 'The name of the match configuration. This is used when Goto
 
-    type is provided. If Goto type is selected and no match configuration name is
-    provided. It goes
-
-    to next configuration.'
+    type is provided.'
   name: match_configuration_name
   types:
   - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleAction.destination_id
+  name: destination_id
+  summary: 'Destination Id. The ARM resource Id may be either Network To Network Interconnect
+    or
+
+    NeighborGroup.'
+  signature: 'destination_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleAction.is_timestamp_enabled
+  name: is_timestamp_enabled
+  summary: '"True" and "False".'
+  signature: 'is_timestamp_enabled: str | _models.BooleanEnumProperty | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleAction.match_configuration_name
+  name: match_configuration_name
+  summary: The name of the match configuration. This is used when Goto type is provided.
+  signature: 'match_configuration_name: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleAction.truncate
+  name: truncate
+  summary: Truncate. 0 indicates do not truncate.
+  signature: 'truncate: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleAction.type
+  name: type
+  summary: '"Drop", "Count", "Log",
+
+    "Replicate", "Goto", "Redirect", and "Mirror".'
+  signature: 'type: str | _models.TapRuleActionType | None'

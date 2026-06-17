@@ -1,0 +1,34 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfigurationPatch
+name: CommonDynamicMatchConfigurationPatch
+fullName: azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfigurationPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: Dynamic match configuration object.
+constructor:
+  syntax: 'CommonDynamicMatchConfigurationPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: List of IP Groups.
+  name: ip_groups
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.IpGroupPatchProperties>]
+- description: List of vlan groups.
+  name: vlan_groups
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.VlanGroupPatchProperties>]
+- description: List of the port groups.
+  name: port_groups
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.PortGroupPatchProperties>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfigurationPatch.ip_groups
+  name: ip_groups
+  summary: List of IP Groups.
+  signature: 'ip_groups: list[''_models.IpGroupPatchProperties''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfigurationPatch.port_groups
+  name: port_groups
+  summary: List of the port groups.
+  signature: 'port_groups: list[''_models.PortGroupPatchProperties''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfigurationPatch.vlan_groups
+  name: vlan_groups
+  summary: List of vlan groups.
+  signature: 'vlan_groups: list[''_models.VlanGroupPatchProperties''] | None'

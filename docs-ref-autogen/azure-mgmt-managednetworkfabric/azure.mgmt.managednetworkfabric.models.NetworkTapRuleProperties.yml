@@ -3,57 +3,17 @@ uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties
 name: NetworkTapRuleProperties
 fullName: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Network Tap Rule Properties defines the resource properties.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.'
+summary: Network Tap Rule Properties defines the resource properties.
 constructor:
-  syntax: 'NetworkTapRuleProperties(*, configuration_type: str | _models.ConfigurationType
-    | None = None, tap_rules_url: str | None = None, match_configurations: List[_models.NetworkTapRuleMatchConfiguration]
-    | None = None, dynamic_match_configurations: List[_models.CommonDynamicMatchConfiguration]
-    | None = None, annotation: str | None = None, polling_interval_in_seconds: int
-    | _models.PollingIntervalInSeconds = 30, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: configuration_type
-    description: 'Input method to configure Network Tap Rule. Known values are:
-
-      "File" and "Inline".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationType>
-  - name: tap_rules_url
-    description: Network Tap Rules file URL.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: match_configurations
-    description: List of match configurations.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfiguration>]
-  - name: dynamic_match_configurations
-    description: List of dynamic match configurations.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfiguration>]
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: polling_interval_in_seconds
-    description: 'Polling interval in seconds. Known values are: 30, 60,
-
-      90, and 120.'
-    defaultValue: '30'
-    types:
-    - <xref:int>
-    - <xref:azure.mgmt.managednetworkfabric.models.PollingIntervalInSeconds>
+  syntax: 'NetworkTapRuleProperties(*args: Any, **kwargs: Any)'
 variables:
-- description: 'Input method to configure Network Tap Rule. Known values are: "File"
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
+- description: 'Input method to configure Network Tap Rule. Required. Known values
 
-    and "Inline".'
+    are: "File" and "Inline".'
   name: configuration_type
   types:
   - <xref:str>
@@ -62,6 +22,12 @@ variables:
   name: tap_rules_url
   types:
   - <xref:str>
+- description: 'The selection of the managed identity to use with this storage
+
+    account. The identity type must be either system assigned or user assigned.'
+  name: identity_selector
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.IdentitySelector>
 - description: List of match configurations.
   name: match_configurations
   types:
@@ -70,30 +36,42 @@ variables:
   name: dynamic_match_configurations
   types:
   - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfiguration>]
-- description: Switch configuration description.
-  name: annotation
-  types:
-  - <xref:str>
 - description: The ARM resource Id of the NetworkTap.
   name: network_tap_id
   types:
   - <xref:str>
-- description: 'Polling interval in seconds. Known values are: 30, 60, 90,
-
-    and 120.'
+- description: The ARM resource Id of the NetworkTap Rules.
+  name: network_tap_ids
+  types:
+  - <xref:list>[<xref:str>]
+- description: Polling interval in seconds.
   name: polling_interval_in_seconds
   types:
   - <xref:int>
-  - <xref:azure.mgmt.managednetworkfabric.models.PollingIntervalInSeconds>
 - description: The last sync timestamp.
   name: last_synced_time
   types:
   - <xref:datetime.datetime>
+- description: Global network tap rule actions.
+  name: global_network_tap_rule_actions
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.GlobalNetworkTapRuleActionProperties>
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
+- description: Associated Network Fabric Resource IDs.
+  name: network_fabric_ids
+  types:
+  - <xref:list>[<xref:str>]
 - description: 'Configuration state of the resource. Known values are: "Succeeded",
 
     "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
 
-    "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
   name: configuration_state
   types:
   - <xref:str>
@@ -107,8 +85,91 @@ variables:
   - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
 - description: 'Administrative state of the resource. Known values are: "Enabled",
 
-    "Disabled", "MAT", and "RMA".'
+    "Disabled", "MAT", "RMA", "UnderMaintenance", and "EnabledDegraded".'
   name: administrative_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT",
+
+    "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  signature: 'administrative_state: str | _models.AdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties.configuration_type
+  name: configuration_type
+  summary: '"File" and
+
+    "Inline".'
+  signature: 'configuration_type: str | _models.ConfigurationType'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties.dynamic_match_configurations
+  name: dynamic_match_configurations
+  summary: List of dynamic match configurations.
+  signature: 'dynamic_match_configurations: list[''_models.CommonDynamicMatchConfiguration'']
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties.global_network_tap_rule_actions
+  name: global_network_tap_rule_actions
+  summary: Global network tap rule actions.
+  signature: 'global_network_tap_rule_actions: _models.GlobalNetworkTapRuleActionProperties
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties.identity_selector
+  name: identity_selector
+  summary: 'The selection of the managed identity to use with this storage account.
+    The identity type must
+
+    be either system assigned or user assigned.'
+  signature: 'identity_selector: _models.IdentitySelector | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties.last_synced_time
+  name: last_synced_time
+  summary: The last sync timestamp.
+  signature: 'last_synced_time: datetime | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties.match_configurations
+  name: match_configurations
+  summary: List of match configurations.
+  signature: 'match_configurations: list[''_models.NetworkTapRuleMatchConfiguration'']
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties.network_fabric_ids
+  name: network_fabric_ids
+  summary: Associated Network Fabric Resource IDs.
+  signature: 'network_fabric_ids: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties.network_tap_id
+  name: network_tap_id
+  summary: The ARM resource Id of the NetworkTap.
+  signature: 'network_tap_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties.network_tap_ids
+  name: network_tap_ids
+  summary: The ARM resource Id of the NetworkTap Rules.
+  signature: 'network_tap_ids: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties.polling_interval_in_seconds
+  name: polling_interval_in_seconds
+  summary: Polling interval in seconds.
+  signature: 'polling_interval_in_seconds: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleProperties.tap_rules_url
+  name: tap_rules_url
+  summary: Network Tap Rules file URL.
+  signature: 'tap_rules_url: str | None'

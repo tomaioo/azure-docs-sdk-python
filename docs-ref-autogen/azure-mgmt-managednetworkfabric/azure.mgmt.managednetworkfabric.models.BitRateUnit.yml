@@ -1,0 +1,17 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.BitRateUnit
+name: BitRateUnit
+fullName: azure.mgmt.managednetworkfabric.models.BitRateUnit
+summary: Bit rate unit.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: BPS
+  uid: azure.mgmt.managednetworkfabric.models.BitRateUnit.BPS
+- name: GBPS
+  uid: azure.mgmt.managednetworkfabric.models.BitRateUnit.GBPS
+- name: KBPS
+  uid: azure.mgmt.managednetworkfabric.models.BitRateUnit.KBPS
+- name: MBPS
+  uid: azure.mgmt.managednetworkfabric.models.BitRateUnit.MBPS
+- name: PPS
+  uid: azure.mgmt.managednetworkfabric.models.BitRateUnit.PPS

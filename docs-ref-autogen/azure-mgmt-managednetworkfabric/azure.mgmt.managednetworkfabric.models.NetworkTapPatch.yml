@@ -5,47 +5,26 @@ fullName: azure.mgmt.managednetworkfabric.models.NetworkTapPatch
 module: azure.mgmt.managednetworkfabric.models
 summary: The NetworkFabric resource definition.
 constructor:
-  syntax: 'NetworkTapPatch(*, tags: Dict[str, str] | None = None, annotation: str
-    | None = None, polling_type: str | _models.PollingType | None = None, destinations:
-    List[_models.NetworkTapPatchableParametersDestinationsItem] | None = None, **kwargs:
-    Any)'
-  keywordOnlyParameters:
-  - name: tags
-    description: Resource tags.
-    defaultValue: None
-    types:
-    - <xref:dict>[<xref:str>, <xref:str>]
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: polling_type
-    description: 'Polling type. Known values are: "Pull" and "Push".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.PollingType>
-  - name: destinations
-    description: List of destination properties to send the filter traffic.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NetworkTapPatchableParametersDestinationsItem>]
+  syntax: 'NetworkTapPatch(*args: Any, **kwargs: Any)'
 variables:
 - description: Resource tags.
   name: tags
   types:
   - <xref:dict>[<xref:str>, <xref:str>]
-- description: Switch configuration description.
-  name: annotation
+- description: NetworkTap resource patch properties.
+  name: properties
   types:
-  - <xref:str>
-- description: 'Polling type. Known values are: "Pull" and "Push".'
-  name: polling_type
+  - <xref:azure.mgmt.managednetworkfabric.models.NetworkTapPatchProperties>
+- description: The managed service identities assigned to this resource.
+  name: identity
   types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.PollingType>
-- description: List of destination properties to send the filter traffic.
-  name: destinations
-  types:
-  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NetworkTapPatchableParametersDestinationsItem>]
+  - <xref:azure.mgmt.managednetworkfabric.models.ManagedServiceIdentityPatch>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapPatch.identity
+  name: identity
+  summary: The managed service identities assigned to this resource.
+  signature: 'identity: _models.ManagedServiceIdentityPatch | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapPatch.properties
+  name: properties
+  summary: NetworkTap resource patch properties.
+  signature: 'properties: _models.NetworkTapPatchProperties | None'

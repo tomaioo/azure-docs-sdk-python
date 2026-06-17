@@ -1,0 +1,35 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.IpGroupPatchProperties
+name: IpGroupPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.IpGroupPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: IP Group properties.
+constructor:
+  syntax: 'IpGroupPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: IP Group name.
+  name: name
+  types:
+  - <xref:str>
+- description: 'IP Address type. Known values are: "IPv4" and "IPv6".'
+  name: ip_address_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.IPAddressType>
+- description: List of IP Prefixes.
+  name: ip_prefixes
+  types:
+  - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.IpGroupPatchProperties.ip_address_type
+  name: ip_address_type
+  summary: '"IPv4" and "IPv6".'
+  signature: 'ip_address_type: str | _models.IPAddressType | None'
+- uid: azure.mgmt.managednetworkfabric.models.IpGroupPatchProperties.ip_prefixes
+  name: ip_prefixes
+  summary: List of IP Prefixes.
+  signature: 'ip_prefixes: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.IpGroupPatchProperties.name
+  name: name
+  summary: IP Group name.
+  signature: 'name: str | None'

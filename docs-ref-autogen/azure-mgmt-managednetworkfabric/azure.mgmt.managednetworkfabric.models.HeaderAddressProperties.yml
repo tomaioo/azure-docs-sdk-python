@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.HeaderAddressProperties
+name: HeaderAddressProperties
+fullName: azure.mgmt.managednetworkfabric.models.HeaderAddressProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Header name and source addresses associated with the header.
+constructor:
+  syntax: 'HeaderAddressProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Name of the header.
+  name: header_name
+  types:
+  - <xref:str>
+- description: List of source remote IP to be allowed or denied.
+  name: address_list
+  types:
+  - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.HeaderAddressProperties.address_list
+  name: address_list
+  summary: List of source remote IP to be allowed or denied.
+  signature: 'address_list: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.HeaderAddressProperties.header_name
+  name: header_name
+  summary: Name of the header.
+  signature: 'header_name: str | None'

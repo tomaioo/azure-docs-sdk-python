@@ -1,0 +1,30 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclActionPatch
+name: ControlPlaneAclActionPatch
+fullName: azure.mgmt.managednetworkfabric.models.ControlPlaneAclActionPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: Control Plane Access Control List (ACL) Actions.
+constructor:
+  syntax: 'ControlPlaneAclActionPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Type of actions that can be performed. Known values are: "Permit",
+    "Deny", and
+
+    "Remark".'
+  name: type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ControlPlaneAclActionType>
+- description: Remark comment.
+  name: remark_comment
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclActionPatch.remark_comment
+  name: remark_comment
+  summary: Remark comment.
+  signature: 'remark_comment: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclActionPatch.type
+  name: type
+  summary: '"Permit", "Deny", and "Remark".'
+  signature: 'type: str | _models.ControlPlaneAclActionType | None'

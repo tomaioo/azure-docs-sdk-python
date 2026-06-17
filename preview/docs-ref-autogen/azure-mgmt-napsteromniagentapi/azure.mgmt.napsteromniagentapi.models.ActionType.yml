@@ -1,0 +1,12 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.napsteromniagentapi.models.ActionType
+name: ActionType
+fullName: azure.mgmt.napsteromniagentapi.models.ActionType
+summary: 'Extensible enum. Indicates the action type. "Internal" refers to actions
+  that are for internal
+
+  only APIs.'
+module: azure.mgmt.napsteromniagentapi.models
+fields:
+- name: INTERNAL
+  uid: azure.mgmt.napsteromniagentapi.models.ActionType.INTERNAL

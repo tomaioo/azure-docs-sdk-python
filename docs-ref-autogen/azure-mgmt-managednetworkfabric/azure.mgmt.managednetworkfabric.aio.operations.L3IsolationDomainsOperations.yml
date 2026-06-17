@@ -11,10 +11,7 @@ constructor:
 methods:
 - uid: azure.mgmt.managednetworkfabric.aio.operations.L3IsolationDomainsOperations.begin_commit_configuration
   name: begin_commit_configuration
-  summary: 'Execute the commit on the resources.
-
-
-    Commits the configuration of the given resources.'
+  summary: Commits the configuration of the given resources.
   signature: 'async begin_commit_configuration(resource_group_name: str, l3_isolation_domain_name:
     str, **kwargs: Any) -> AsyncLROPoller[CommonPostActionResponseForStateUpdate]'
   parameters:
@@ -30,47 +27,19 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be AsyncARMPolling. Pass in
-      False for
-
-      this operation to not poll, or pass in your own initialized polling object for
-      a personal
-
-      polling strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.AsyncPollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
   return:
-    description: 'An instance of AsyncLROPoller that returns either
+    description: 'An instance of AsyncLROPoller that returns CommonPostActionResponseForStateUpdate.
+      The
 
-      CommonPostActionResponseForStateUpdate or the result of cls(response)'
+      CommonPostActionResponseForStateUpdate is compatible with MutableMapping'
     types:
     - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForStateUpdate>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.L3IsolationDomainsOperations.begin_create
   name: begin_create
-  summary: 'Create L3 Isolation Domain.
-
-
-    Create isolation domain resources for layer 3 connectivity between compute nodes
-    and for
+  summary: 'Create isolation domain resources for layer 3 connectivity between compute
+    nodes and for
 
     communication with external services .This configuration is applied on the devices
     only after
@@ -93,60 +62,28 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: Request payload. Is either a L3IsolationDomain type or a IO type.
-      Required.
+    description: 'Request payload. Is one of the following types: L3IsolationDomain,
+      JSON, IO[bytes]
+
+      Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.L3IsolationDomain>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be AsyncARMPolling. Pass in
-      False for
-
-      this operation to not poll, or pass in your own initialized polling object for
-      a personal
-
-      polling strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.AsyncPollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of AsyncLROPoller that returns either L3IsolationDomain
-      or the result of
+    description: 'An instance of AsyncLROPoller that returns L3IsolationDomain. The
+      L3IsolationDomain is
 
-      cls(response)'
+      compatible with MutableMapping'
     types:
     - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.L3IsolationDomain>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.L3IsolationDomainsOperations.begin_delete
   name: begin_delete
-  summary: 'Deletes a L3 Isolation Domain.
-
-
-    Deletes layer 3 connectivity between compute nodes by managed by named L3 Isolation
-    name.'
+  summary: Deletes layer 3 connectivity between compute nodes by managed by named
+    L3 Isolation name.
   signature: 'async begin_delete(resource_group_name: str, l3_isolation_domain_name:
     str, **kwargs: Any) -> AsyncLROPoller[None]'
   parameters:
@@ -162,45 +99,15 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be AsyncARMPolling. Pass in
-      False for
-
-      this operation to not poll, or pass in your own initialized polling object for
-      a personal
-
-      polling strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.AsyncPollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
   return:
-    description: An instance of AsyncLROPoller that returns either None or the result
-      of cls(response)
+    description: An instance of AsyncLROPoller that returns None
     types:
     - <xref:azure.core.polling.AsyncLROPoller>[<xref:None>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.L3IsolationDomainsOperations.begin_update
   name: begin_update
-  summary: 'Updates a L3 Isolation Domain.
-
-
-    API to update certain properties of the L3 Isolation Domain resource.'
+  summary: API to update certain properties of the L3 Isolation Domain resource.
   signature: 'async begin_update(resource_group_name: str, l3_isolation_domain_name:
     str, body: _models.L3IsolationDomainPatch, *, content_type: str = ''application/json'',
     **kwargs: Any) -> AsyncLROPoller[_models.L3IsolationDomain]'
@@ -219,63 +126,29 @@ methods:
     - <xref:str>
   - name: body
     description: 'API to update certain properties of the L3 Isolation Domain resource.
-      Is either a
+      Is one of
 
-      L3IsolationDomainPatch type or a IO type. Required.'
+      the following types: L3IsolationDomainPatch, JSON, IO[bytes] Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.L3IsolationDomainPatch>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be AsyncARMPolling. Pass in
-      False for
-
-      this operation to not poll, or pass in your own initialized polling object for
-      a personal
-
-      polling strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.AsyncPollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of AsyncLROPoller that returns either L3IsolationDomain
-      or the result of
+    description: 'An instance of AsyncLROPoller that returns L3IsolationDomain. The
+      L3IsolationDomain is
 
-      cls(response)'
+      compatible with MutableMapping'
     types:
     - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.L3IsolationDomain>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.L3IsolationDomainsOperations.begin_update_administrative_state
   name: begin_update_administrative_state
-  summary: 'executes enable operation to the underlying resources.
-
-
-    Enables racks for this Isolation Domain.'
+  summary: Updates the administrative state of the L3 Isolation Domain resource.
   signature: 'async begin_update_administrative_state(resource_group_name: str, l3_isolation_domain_name:
     str, body: _models.UpdateAdministrativeState, *, content_type: str = ''application/json'',
-    **kwargs: Any) -> AsyncLROPoller[_models.CommonPostActionResponseForDeviceUpdate]'
+    **kwargs: Any) -> AsyncLROPoller[_models.UpdateAdministrativeStateResponse]'
   parameters:
   - name: resource_group_name
     description: 'The name of the resource group. The name is case insensitive.
@@ -290,52 +163,22 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: 'Request payload. Is either a UpdateAdministrativeState type or a
-      IO type.
+    description: 'Request payload. Is one of the following types: UpdateAdministrativeState,
+      JSON,
 
-      Required.'
+      IO[bytes] Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.UpdateAdministrativeState>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be AsyncARMPolling. Pass in
-      False for
-
-      this operation to not poll, or pass in your own initialized polling object for
-      a personal
-
-      polling strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.AsyncPollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of AsyncLROPoller that returns either
+    description: 'An instance of AsyncLROPoller that returns UpdateAdministrativeStateResponse.
+      The
 
-      CommonPostActionResponseForDeviceUpdate or the result of cls(response)'
+      UpdateAdministrativeStateResponse is compatible with MutableMapping'
     types:
-    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForDeviceUpdate>]
+    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.UpdateAdministrativeStateResponse>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.L3IsolationDomainsOperations.begin_validate_configuration
@@ -356,47 +199,18 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be AsyncARMPolling. Pass in
-      False for
-
-      this operation to not poll, or pass in your own initialized polling object for
-      a personal
-
-      polling strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.AsyncPollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
   return:
-    description: 'An instance of AsyncLROPoller that returns either ValidateConfigurationResponse
-      or the
+    description: 'An instance of AsyncLROPoller that returns ValidateConfigurationResponse.
+      The
 
-      result of cls(response)'
+      ValidateConfigurationResponse is compatible with MutableMapping'
     types:
     - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.ValidateConfigurationResponse>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.L3IsolationDomainsOperations.get
   name: get
-  summary: 'Gets a L3 Isolation Domain.
-
-
-    Retrieves details of this L3 Isolation Domain.'
+  summary: Retrieves details of this L3 Isolation Domain.
   signature: 'async get(resource_group_name: str, l3_isolation_domain_name: str, **kwargs:
     Any) -> L3IsolationDomain'
   parameters:
@@ -412,24 +226,16 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
   return:
-    description: L3IsolationDomain or the result of cls(response)
+    description: L3IsolationDomain. The L3IsolationDomain is compatible with MutableMapping
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.L3IsolationDomain>
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.L3IsolationDomainsOperations.list_by_resource_group
   name: list_by_resource_group
-  summary: 'List L3IsolationDomains by resource group.
-
-
-    Displays L3IsolationDomains list by resource group GET method.'
-  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> AsyncIterable[L3IsolationDomain]'
+  summary: Displays L3IsolationDomains list by resource group GET method.
+  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> AsyncItemPaged[L3IsolationDomain]'
   parameters:
   - name: resource_group_name
     description: 'The name of the resource group. The name is case insensitive.
@@ -438,38 +244,19 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
   return:
-    description: An iterator like instance of either L3IsolationDomain or the result
-      of cls(response)
+    description: An iterator like instance of L3IsolationDomain
     types:
     - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.mgmt.managednetworkfabric.models.L3IsolationDomain>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.aio.operations.L3IsolationDomainsOperations.list_by_subscription
   name: list_by_subscription
-  summary: 'List L3IsolationDomains by subscription.
-
-
-    Displays L3IsolationDomains list by subscription GET method.'
-  signature: 'list_by_subscription(**kwargs: Any) -> AsyncIterable[L3IsolationDomain]'
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
+  summary: Displays L3IsolationDomains list by subscription GET method.
+  signature: 'list_by_subscription(**kwargs: Any) -> AsyncItemPaged[L3IsolationDomain]'
   return:
-    description: An iterator like instance of either L3IsolationDomain or the result
-      of cls(response)
+    description: An iterator like instance of L3IsolationDomain
     types:
     - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.mgmt.managednetworkfabric.models.L3IsolationDomain>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
-attributes:
-- uid: azure.mgmt.managednetworkfabric.aio.operations.L3IsolationDomainsOperations.models
-  name: models
-  signature: models = <module 'azure.mgmt.managednetworkfabric.models' from 'C:\\ToolCache\\Python\\3.12.10\\x64\\Lib\\site-packages\\py2docfx\\venv\\venv171\\Lib\\site-packages\\azure\\mgmt\\managednetworkfabric\\models\\__init__.py'>

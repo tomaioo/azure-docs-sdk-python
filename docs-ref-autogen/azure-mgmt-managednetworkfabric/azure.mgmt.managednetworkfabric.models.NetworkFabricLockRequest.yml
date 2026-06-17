@@ -1,0 +1,30 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkFabricLockRequest
+name: NetworkFabricLockRequest
+fullName: azure.mgmt.managednetworkfabric.models.NetworkFabricLockRequest
+module: azure.mgmt.managednetworkfabric.models
+summary: Network Fabric Lock Request.
+constructor:
+  syntax: 'NetworkFabricLockRequest(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Type of lock to be applied. Known values are: "Administrative" and
+
+    "Configuration".'
+  name: lock_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.NetworkFabricLockType>
+- description: 'Action to be performed on the lock. Known values are: "Lock" and "Unlock".'
+  name: action
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.NetworkFabricLockAction>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricLockRequest.action
+  name: action
+  summary: '"Lock" and "Unlock".'
+  signature: 'action: str | _models.NetworkFabricLockAction | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricLockRequest.lock_type
+  name: lock_type
+  summary: '"Administrative" and "Configuration".'
+  signature: 'lock_type: str | _models.NetworkFabricLockType | None'

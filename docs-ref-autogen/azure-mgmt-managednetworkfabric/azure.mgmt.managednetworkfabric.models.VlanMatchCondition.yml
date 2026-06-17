@@ -3,36 +3,40 @@ uid: azure.mgmt.managednetworkfabric.models.VlanMatchCondition
 name: VlanMatchCondition
 fullName: azure.mgmt.managednetworkfabric.models.VlanMatchCondition
 module: azure.mgmt.managednetworkfabric.models
-summary: The vlan match conditions that needs to be matched.
+summary: The vlan match conditions that need to be matched.
 constructor:
-  syntax: 'VlanMatchCondition(*, vlans: List[str] | None = None, inner_vlans: List[str]
-    | None = None, vlan_group_names: List[str] | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: vlans
-    description: List of vlans that needs to be matched.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>]
-  - name: inner_vlans
-    description: List of inner vlans that needs to be matched.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>]
-  - name: vlan_group_names
-    description: List of vlan group names that to be matched.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>]
+  syntax: 'VlanMatchCondition(*args: Any, **kwargs: Any)'
 variables:
-- description: List of vlans that needs to be matched.
+- description: 'List of vlans that need to be matched. Inputs can be single vlan or
+    the range of
+
+    vlans.'
   name: vlans
   types:
   - <xref:list>[<xref:str>]
-- description: List of inner vlans that needs to be matched.
+- description: 'List of inner vlans that need to be matched.Inputs can be single vlan
+    or the
+
+    range of vlans.'
   name: inner_vlans
   types:
   - <xref:list>[<xref:str>]
-- description: List of vlan group names that to be matched.
+- description: List of vlan group names that need to be matched.
   name: vlan_group_names
   types:
   - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.VlanMatchCondition.inner_vlans
+  name: inner_vlans
+  summary: List of inner vlans that need to be matched.Inputs can be single vlan or
+    the range of vlans.
+  signature: 'inner_vlans: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.VlanMatchCondition.vlan_group_names
+  name: vlan_group_names
+  summary: List of vlan group names that need to be matched.
+  signature: 'vlan_group_names: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.VlanMatchCondition.vlans
+  name: vlans
+  summary: List of vlans that need to be matched. Inputs can be single vlan or the
+    range of vlans.
+  signature: 'vlans: list[str] | None'

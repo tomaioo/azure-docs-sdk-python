@@ -3,39 +3,13 @@ uid: azure.mgmt.managednetworkfabric.models.IpExtendedCommunity
 name: IpExtendedCommunity
 fullName: azure.mgmt.managednetworkfabric.models.IpExtendedCommunity
 module: azure.mgmt.managednetworkfabric.models
-summary: 'The IP Extended Community resource definition.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: The IP Extended Community resource definition.
 constructor:
-  syntax: 'IpExtendedCommunity(*, location: str, ip_extended_community_rules: List[_models.IpExtendedCommunityRule],
-    tags: Dict[str, str] | None = None, annotation: str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: tags
-    description: Resource tags.
-    defaultValue: None
-    types:
-    - <xref:dict>[<xref:str>, <xref:str>]
-  - name: location
-    description: The geo-location where the resource lives. Required.
-    types:
-    - <xref:str>
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: ip_extended_community_rules
-    description: List of IP Extended Community Rules. Required.
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.IpExtendedCommunityRule>]
+  syntax: 'IpExtendedCommunity(*args: Any, **kwargs: Any)'
 variables:
-- description: 'Fully qualified resource ID for the resource. E.g.
+- description: 'Fully qualified resource ID for the resource. Ex -
 
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}".'
+    /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.'
   name: id
   types:
   - <xref:str>
@@ -64,34 +38,12 @@ variables:
   name: location
   types:
   - <xref:str>
-- description: Switch configuration description.
-  name: annotation
+- description: The IpExtendedCommunity properties. Required.
+  name: properties
   types:
-  - <xref:str>
-- description: List of IP Extended Community Rules. Required.
-  name: ip_extended_community_rules
-  types:
-  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.IpExtendedCommunityRule>]
-- description: 'Configuration state of the resource. Known values are: "Succeeded",
-
-    "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
-
-    "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
-  name: configuration_state
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationState>
-- description: 'Provisioning state of the resource. Known values are: "Accepted",
-
-    "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
-  name: provisioning_state
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
-- description: 'Administrative state of the resource. Known values are: "Enabled",
-
-    "Disabled", "MAT", and "RMA".'
-  name: administrative_state
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+  - <xref:azure.mgmt.managednetworkfabric.models.IpExtendedCommunityProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.IpExtendedCommunity.properties
+  name: properties
+  summary: The IpExtendedCommunity properties. Required.
+  signature: 'properties: _models.IpExtendedCommunityProperties'

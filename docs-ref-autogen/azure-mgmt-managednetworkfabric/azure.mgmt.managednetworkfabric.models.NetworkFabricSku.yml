@@ -3,30 +3,13 @@ uid: azure.mgmt.managednetworkfabric.models.NetworkFabricSku
 name: NetworkFabricSku
 fullName: azure.mgmt.managednetworkfabric.models.NetworkFabricSku
 module: azure.mgmt.managednetworkfabric.models
-summary: 'The Network Fabric SKU resource definition.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.'
+summary: The Network Fabric SKU resource definition.
 constructor:
-  syntax: 'NetworkFabricSku(*, max_compute_racks: int | None = None, maximum_server_count:
-    int | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: max_compute_racks
-    description: 'Maximum number of compute racks available for this Network Fabric
-
-      SKU. The value of max count racks is 4 for 4 rack SKU and 8 for 8 rack SKU.'
-    defaultValue: None
-    types:
-    - <xref:int>
-  - name: maximum_server_count
-    description: Maximum number of servers available for this Network Fabric SKU.
-    defaultValue: None
-    types:
-    - <xref:int>
+  syntax: 'NetworkFabricSku(*args: Any, **kwargs: Any)'
 variables:
-- description: 'Fully qualified resource ID for the resource. E.g.
+- description: 'Fully qualified resource ID for the resource. Ex -
 
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}".'
+    /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.'
   name: id
   types:
   - <xref:str>
@@ -47,36 +30,12 @@ variables:
   name: system_data
   types:
   - <xref:azure.mgmt.managednetworkfabric.models.SystemData>
-- description: 'Type of Network Fabric SKU. Known values are: "SingleRack" and
-
-    "MultiRack".'
-  name: type_properties_type
+- description: The Network Fabric SKU properties. Required.
+  name: properties
   types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.FabricSkuType>
-- description: 'Maximum number of compute racks available for this Network Fabric
-    SKU.
-
-    The value of max count racks is 4 for 4 rack SKU and 8 for 8 rack SKU.'
-  name: max_compute_racks
-  types:
-  - <xref:int>
-- description: Maximum number of servers available for this Network Fabric SKU.
-  name: maximum_server_count
-  types:
-  - <xref:int>
-- description: List of supported Network Fabric SKU versions.
-  name: supported_versions
-  types:
-  - <xref:list>[<xref:str>]
-- description: URL providing detailed configuration of the fabric SKU.
-  name: details
-  types:
-  - <xref:str>
-- description: 'Provisioning state of the resource. Known values are: "Accepted",
-
-    "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
-  name: provisioning_state
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
+  - <xref:azure.mgmt.managednetworkfabric.models.NetworkFabricSkuProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricSku.properties
+  name: properties
+  summary: The Network Fabric SKU properties. Required.
+  signature: 'properties: _models.NetworkFabricSkuProperties'

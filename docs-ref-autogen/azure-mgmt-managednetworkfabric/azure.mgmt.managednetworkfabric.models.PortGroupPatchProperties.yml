@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.PortGroupPatchProperties
+name: PortGroupPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.PortGroupPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Port Group Properties.
+constructor:
+  syntax: 'PortGroupPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: The name of the port group.
+  name: name
+  types:
+  - <xref:str>
+- description: List of the ports that need to be matched.
+  name: ports
+  types:
+  - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.PortGroupPatchProperties.name
+  name: name
+  summary: The name of the port group.
+  signature: 'name: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.PortGroupPatchProperties.ports
+  name: ports
+  summary: List of the ports that need to be matched.
+  signature: 'ports: list[str] | None'

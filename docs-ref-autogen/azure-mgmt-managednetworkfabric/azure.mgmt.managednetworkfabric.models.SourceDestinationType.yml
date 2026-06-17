@@ -2,9 +2,11 @@
 uid: azure.mgmt.managednetworkfabric.models.SourceDestinationType
 name: SourceDestinationType
 fullName: azure.mgmt.managednetworkfabric.models.SourceDestinationType
-summary: IP Address type.
+summary: IP Address type that needs to be matched.
 module: azure.mgmt.managednetworkfabric.models
 fields:
+- name: BIDIRECTIONAL
+  uid: azure.mgmt.managednetworkfabric.models.SourceDestinationType.BIDIRECTIONAL
 - name: DESTINATION_IP
   uid: azure.mgmt.managednetworkfabric.models.SourceDestinationType.DESTINATION_IP
 - name: SOURCE_IP

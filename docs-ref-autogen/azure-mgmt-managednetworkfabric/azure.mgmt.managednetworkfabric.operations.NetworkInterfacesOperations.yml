@@ -11,10 +11,7 @@ constructor:
 methods:
 - uid: azure.mgmt.managednetworkfabric.operations.NetworkInterfacesOperations.begin_create
   name: begin_create
-  summary: 'Create NetworkInterface.
-
-
-    Create a Network Interface resource.'
+  summary: Create a Network Interface resource.
   signature: 'begin_create(resource_group_name: str, network_device_name: str, network_interface_name:
     str, body: _models.NetworkInterface, *, content_type: str = ''application/json'',
     **kwargs: Any) -> LROPoller[_models.NetworkInterface]'
@@ -37,59 +34,27 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: Request payload. Is either a NetworkInterface type or a IO type.
-      Required.
+    description: 'Request payload. Is one of the following types: NetworkInterface,
+      JSON, IO[bytes]
+
+      Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.NetworkInterface>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be ARMPolling. Pass in False
-      for this
-
-      operation to not poll, or pass in your own initialized polling object for a
-      personal polling
-
-      strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.PollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of LROPoller that returns either NetworkInterface or
-      the result of
+    description: 'An instance of LROPoller that returns NetworkInterface. The NetworkInterface
+      is
 
-      cls(response)'
+      compatible with MutableMapping'
     types:
     - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkInterface>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.NetworkInterfacesOperations.begin_delete
   name: begin_delete
-  summary: 'Deletes a NetworkInterface.
-
-
-    Delete the Network Interface resource.'
+  summary: Delete the Network Interface resource.
   signature: 'begin_delete(resource_group_name: str, network_device_name: str, network_interface_name:
     str, **kwargs: Any) -> LROPoller[None]'
   parameters:
@@ -110,45 +75,15 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be ARMPolling. Pass in False
-      for this
-
-      operation to not poll, or pass in your own initialized polling object for a
-      personal polling
-
-      strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.PollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
   return:
-    description: An instance of LROPoller that returns either None or the result of
-      cls(response)
+    description: An instance of LROPoller that returns None
     types:
     - <xref:azure.core.polling.LROPoller>[<xref:None>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.NetworkInterfacesOperations.begin_update
   name: begin_update
-  summary: 'Updates a NetworkInterface.
-
-
-    Update certain properties of the Network Interface resource.'
+  summary: Update certain properties of the Network Interface resource.
   signature: 'begin_update(resource_group_name: str, network_device_name: str, network_interface_name:
     str, body: _models.NetworkInterfacePatch, *, content_type: str = ''application/json'',
     **kwargs: Any) -> LROPoller[_models.NetworkInterface]'
@@ -172,63 +107,29 @@ methods:
     - <xref:str>
   - name: body
     description: 'NetworkInterface properties to update. Only tags are supported.
-      Is either a
+      Is one of the
 
-      NetworkInterfacePatch type or a IO type. Required.'
+      following types: NetworkInterfacePatch, JSON, IO[bytes] Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.NetworkInterfacePatch>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be ARMPolling. Pass in False
-      for this
-
-      operation to not poll, or pass in your own initialized polling object for a
-      personal polling
-
-      strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.PollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of LROPoller that returns either NetworkInterface or
-      the result of
+    description: 'An instance of LROPoller that returns NetworkInterface. The NetworkInterface
+      is
 
-      cls(response)'
+      compatible with MutableMapping'
     types:
     - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkInterface>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.NetworkInterfacesOperations.begin_update_administrative_state
   name: begin_update_administrative_state
-  summary: 'Updates the admin state of the network interface.
-
-
-    Update the admin state of the Network Interface.'
+  summary: Update the admin state of the Network Interface.
   signature: 'begin_update_administrative_state(resource_group_name: str, network_device_name:
     str, network_interface_name: str, body: _models.UpdateAdministrativeState, *,
-    content_type: str = ''application/json'', **kwargs: Any) -> LROPoller[_models.CommonPostActionResponseForStateUpdate]'
+    content_type: str = ''application/json'', **kwargs: Any) -> LROPoller[_models.UpdateAdministrativeStateResponse]'
   parameters:
   - name: resource_group_name
     description: 'The name of the resource group. The name is case insensitive.
@@ -248,61 +149,27 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: 'Request payload. Is either a UpdateAdministrativeState type or a
-      IO type.
+    description: 'Request payload. Is one of the following types: UpdateAdministrativeState,
+      JSON,
 
-      Required.'
+      IO[bytes] Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.UpdateAdministrativeState>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be ARMPolling. Pass in False
-      for this
-
-      operation to not poll, or pass in your own initialized polling object for a
-      personal polling
-
-      strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.PollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of LROPoller that returns either CommonPostActionResponseForStateUpdate
-      or
+    description: 'An instance of LROPoller that returns UpdateAdministrativeStateResponse.
+      The
 
-      the result of cls(response)'
+      UpdateAdministrativeStateResponse is compatible with MutableMapping'
     types:
-    - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForStateUpdate>]
+    - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.UpdateAdministrativeStateResponse>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.NetworkInterfacesOperations.get
   name: get
-  summary: 'Gets a NetworkInterface.
-
-
-    Get the Network Interface resource details.'
+  summary: Get the Network Interface resource details.
   signature: 'get(resource_group_name: str, network_device_name: str, network_interface_name:
     str, **kwargs: Any) -> NetworkInterface'
   parameters:
@@ -323,25 +190,17 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
   return:
-    description: NetworkInterface or the result of cls(response)
+    description: NetworkInterface. The NetworkInterface is compatible with MutableMapping
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.NetworkInterface>
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.NetworkInterfacesOperations.list_by_network_device
   name: list_by_network_device
-  summary: 'List all Network Interfaces that are available using an Network Device.
-
-
-    List all the Network Interface resources in a given resource group.'
+  summary: List all the Network Interface resources in a given resource group.
   signature: 'list_by_network_device(resource_group_name: str, network_device_name:
-    str, **kwargs: Any) -> Iterable[NetworkInterface]'
+    str, **kwargs: Any) -> ItemPaged[NetworkInterface]'
   parameters:
   - name: resource_group_name
     description: 'The name of the resource group. The name is case insensitive.
@@ -355,19 +214,9 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
   return:
-    description: An iterator like instance of either NetworkInterface or the result
-      of cls(response)
+    description: An iterator like instance of NetworkInterface
     types:
     - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.managednetworkfabric.models.NetworkInterface>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
-attributes:
-- uid: azure.mgmt.managednetworkfabric.operations.NetworkInterfacesOperations.models
-  name: models
-  signature: models = <module 'azure.mgmt.managednetworkfabric.models' from 'C:\\ToolCache\\Python\\3.12.10\\x64\\Lib\\site-packages\\py2docfx\\venv\\venv171\\Lib\\site-packages\\azure\\mgmt\\managednetworkfabric\\models\\__init__.py'>

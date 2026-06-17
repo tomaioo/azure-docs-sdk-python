@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.Layer2ConfigurationPatch
+name: Layer2ConfigurationPatch
+fullName: azure.mgmt.managednetworkfabric.models.Layer2ConfigurationPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: Common properties for Layer2 Configuration.
+constructor:
+  syntax: 'Layer2ConfigurationPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: MTU of the packets between PE & CE.
+  name: mtu
+  types:
+  - <xref:int>
+- description: List of network device interfaces resource IDs.
+  name: interfaces
+  types:
+  - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.Layer2ConfigurationPatch.interfaces
+  name: interfaces
+  summary: List of network device interfaces resource IDs.
+  signature: 'interfaces: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.Layer2ConfigurationPatch.mtu
+  name: mtu
+  summary: MTU of the packets between PE & CE.
+  signature: 'mtu: int | None'

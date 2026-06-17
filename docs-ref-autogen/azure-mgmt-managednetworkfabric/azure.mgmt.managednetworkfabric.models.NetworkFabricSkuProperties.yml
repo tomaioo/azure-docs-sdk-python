@@ -1,0 +1,70 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkFabricSkuProperties
+name: NetworkFabricSkuProperties
+fullName: azure.mgmt.managednetworkfabric.models.NetworkFabricSkuProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Network Fabric SKU Properties define properties of the resource.
+constructor:
+  syntax: 'NetworkFabricSkuProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Type of Network Fabric SKU. Known values are: "SingleRack" and "MultiRack".'
+  name: type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.FabricSkuType>
+- description: 'Maximum number of compute racks available for this Network Fabric
+    SKU.
+
+    The value of max count racks is 4 for 4 rack SKU and 8 for 8 rack SKU.'
+  name: max_compute_racks
+  types:
+  - <xref:int>
+- description: Maximum number of servers available for this Network Fabric SKU.
+  name: maximum_server_count
+  types:
+  - <xref:int>
+- description: List of supported Network Fabric SKU versions.
+  name: supported_versions
+  types:
+  - <xref:list>[<xref:str>]
+- description: URL providing detailed configuration of the fabric SKU.
+  name: details
+  types:
+  - <xref:str>
+- description: 'Provisioning state of the resource. Known values are: "Accepted",
+
+    "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
+  name: provisioning_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricSkuProperties.details
+  name: details
+  summary: URL providing detailed configuration of the fabric SKU.
+  signature: 'details: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricSkuProperties.max_compute_racks
+  name: max_compute_racks
+  summary: 'Maximum number of compute racks available for this Network Fabric SKU.
+    The value of max count
+
+    racks is 4 for 4 rack SKU and 8 for 8 rack SKU.'
+  signature: 'max_compute_racks: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricSkuProperties.maximum_server_count
+  name: maximum_server_count
+  summary: Maximum number of servers available for this Network Fabric SKU.
+  signature: 'maximum_server_count: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricSkuProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricSkuProperties.supported_versions
+  name: supported_versions
+  summary: List of supported Network Fabric SKU versions.
+  signature: 'supported_versions: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricSkuProperties.type
+  name: type
+  summary: '"SingleRack" and "MultiRack".'
+  signature: 'type: str | _models.FabricSkuType | None'

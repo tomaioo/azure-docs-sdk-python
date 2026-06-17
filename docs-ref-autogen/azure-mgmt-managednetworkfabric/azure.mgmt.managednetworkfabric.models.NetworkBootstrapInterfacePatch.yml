@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapInterfacePatch
+name: NetworkBootstrapInterfacePatch
+fullName: azure.mgmt.managednetworkfabric.models.NetworkBootstrapInterfacePatch
+module: azure.mgmt.managednetworkfabric.models
+summary: The NetworkBootstrapInterfacePatch resource definition.
+constructor:
+  syntax: 'NetworkBootstrapInterfacePatch(*args: Any, **kwargs: Any)'
+variables:
+- description: Network Bootstrap Interface Patch properties.
+  name: properties
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.NetworkBootstrapInterfacePatchProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapInterfacePatch.properties
+  name: properties
+  summary: Network Bootstrap Interface Patch properties.
+  signature: 'properties: _models.NetworkBootstrapInterfacePatchProperties | None'

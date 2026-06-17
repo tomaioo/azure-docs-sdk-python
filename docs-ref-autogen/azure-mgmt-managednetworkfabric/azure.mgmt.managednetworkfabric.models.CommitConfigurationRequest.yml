@@ -1,0 +1,50 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.CommitConfigurationRequest
+name: CommitConfigurationRequest
+fullName: azure.mgmt.managednetworkfabric.models.CommitConfigurationRequest
+module: azure.mgmt.managednetworkfabric.models
+summary: Commit Configuration Request.
+constructor:
+  syntax: 'CommitConfigurationRequest(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Commit stage Action to be performed. Known values are: "Start", "Continue",
+
+    and "Rollback".'
+  name: commit_stage
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.CommitStage>
+- description: 'Commit configuration Policy. Supported policy is StageCEConfiguration,
+
+    which indicates to prepare the configuration for the CE device type. "StageCEConfiguration"'
+  name: commit_policy
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.CommitConfigurationPolicy>
+- description: 'List of ARM resource IDs of devices to be included in the commit operation.
+
+    Either CE1 or CE2 is allowed.'
+  name: devices
+  types:
+  - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.CommitConfigurationRequest.commit_policy
+  name: commit_policy
+  summary: 'Commit configuration Policy. Supported policy is StageCEConfiguration,
+    which indicates to
+
+    prepare the configuration for the CE device type. "StageCEConfiguration"'
+  signature: 'commit_policy: str | _models.CommitConfigurationPolicy | None'
+- uid: azure.mgmt.managednetworkfabric.models.CommitConfigurationRequest.commit_stage
+  name: commit_stage
+  summary: '"Start", "Continue", and
+
+    "Rollback".'
+  signature: 'commit_stage: str | _models.CommitStage | None'
+- uid: azure.mgmt.managednetworkfabric.models.CommitConfigurationRequest.devices
+  name: devices
+  summary: 'List of ARM resource IDs of devices to be included in the commit operation.
+    Either CE1 or CE2
+
+    is allowed.'
+  signature: 'devices: list[str] | None'

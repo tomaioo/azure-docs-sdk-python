@@ -3,19 +3,9 @@ uid: azure.mgmt.managednetworkfabric.models.NetworkInterfaceProperties
 name: NetworkInterfaceProperties
 fullName: azure.mgmt.managednetworkfabric.models.NetworkInterfaceProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Network Interface Properties defines the properties of the resource.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.'
+summary: Network Interface Properties defines the properties of the resource.
 constructor:
-  syntax: 'NetworkInterfaceProperties(*, annotation: str | None = None, **kwargs:
-    Any)'
-  keywordOnlyParameters:
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'NetworkInterfaceProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: Switch configuration description.
   name: annotation
@@ -45,6 +35,22 @@ variables:
   name: ipv6_address
   types:
   - <xref:str>
+- description: Description of the interface.
+  name: description
+  types:
+  - <xref:str>
+- description: Additional description of the interface.
+  name: additional_description
+  types:
+  - <xref:str>
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
+- description: Associated Network Fabric Resource ID.
+  name: network_fabric_id
+  types:
+  - <xref:str>
 - description: 'Provisioning state of the resource. Known values are: "Accepted",
 
     "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
@@ -54,8 +60,79 @@ variables:
   - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
 - description: 'Administrative state of the resource. Known values are: "Enabled",
 
-    "Disabled", "MAT", and "RMA".'
+    "Disabled", "MAT", "RMA", "UnderMaintenance", and "EnabledDegraded".'
   name: administrative_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+- description: 'Configuration state of the resource. Known values are: "Succeeded",
+
+    "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
+
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
+  name: configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkInterfaceProperties.additional_description
+  name: additional_description
+  summary: Additional description of the interface.
+  signature: 'additional_description: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkInterfaceProperties.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT",
+
+    "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  signature: 'administrative_state: str | _models.AdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkInterfaceProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkInterfaceProperties.connected_to
+  name: connected_to
+  summary: The ARM resource id of the interface or compute server its connected to.
+  signature: 'connected_to: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkInterfaceProperties.description
+  name: description
+  summary: Description of the interface.
+  signature: 'description: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkInterfaceProperties.interface_type
+  name: interface_type
+  summary: '"Management" and "Data".'
+  signature: 'interface_type: str | _models.InterfaceType | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkInterfaceProperties.ipv4_address
+  name: ipv4_address
+  summary: IPv4Address of the interface.
+  signature: 'ipv4_address: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkInterfaceProperties.ipv6_address
+  name: ipv6_address
+  summary: IPv6Address of the interface.
+  signature: 'ipv6_address: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkInterfaceProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkInterfaceProperties.network_fabric_id
+  name: network_fabric_id
+  summary: Associated Network Fabric Resource ID.
+  signature: 'network_fabric_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkInterfaceProperties.physical_identifier
+  name: physical_identifier
+  summary: Physical Identifier of the network interface.
+  signature: 'physical_identifier: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkInterfaceProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'

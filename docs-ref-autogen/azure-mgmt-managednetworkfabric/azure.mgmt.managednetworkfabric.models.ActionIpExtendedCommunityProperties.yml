@@ -5,28 +5,10 @@ fullName: azure.mgmt.managednetworkfabric.models.ActionIpExtendedCommunityProper
 module: azure.mgmt.managednetworkfabric.models
 summary: IP Extended Community Properties.
 constructor:
-  syntax: 'ActionIpExtendedCommunityProperties(*, set: _models.IpExtendedCommunityIdList
-    | None = None, delete: _models.IpExtendedCommunityIdList | None = None, add: _models.IpExtendedCommunityIdList
-    | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: set
-    description: List of IP Extended Community IDs.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.IpExtendedCommunityIdList>
-  - name: delete
-    description: List of IP Extended Community IDs.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.IpExtendedCommunityIdList>
-  - name: add
-    description: List of IP Extended Community IDs.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.IpExtendedCommunityIdList>
+  syntax: 'ActionIpExtendedCommunityProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: List of IP Extended Community IDs.
-  name: set
+  name: add
   types:
   - <xref:azure.mgmt.managednetworkfabric.models.IpExtendedCommunityIdList>
 - description: List of IP Extended Community IDs.
@@ -34,6 +16,19 @@ variables:
   types:
   - <xref:azure.mgmt.managednetworkfabric.models.IpExtendedCommunityIdList>
 - description: List of IP Extended Community IDs.
-  name: add
+  name: set
   types:
   - <xref:azure.mgmt.managednetworkfabric.models.IpExtendedCommunityIdList>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ActionIpExtendedCommunityProperties.add
+  name: add
+  summary: List of IP Extended Community IDs.
+  signature: 'add: _models.IpExtendedCommunityIdList | None'
+- uid: azure.mgmt.managednetworkfabric.models.ActionIpExtendedCommunityProperties.delete
+  name: delete
+  summary: List of IP Extended Community IDs.
+  signature: 'delete: _models.IpExtendedCommunityIdList | None'
+- uid: azure.mgmt.managednetworkfabric.models.ActionIpExtendedCommunityProperties.set
+  name: set
+  summary: List of IP Extended Community IDs.
+  signature: 'set: _models.IpExtendedCommunityIdList | None'

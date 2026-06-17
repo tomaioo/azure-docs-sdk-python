@@ -3,78 +3,18 @@ uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkProperties
 name: ExternalNetworkProperties
 fullName: azure.mgmt.managednetworkfabric.models.ExternalNetworkProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'External Network Properties.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: External Network Properties.
 constructor:
-  syntax: 'ExternalNetworkProperties(*, peering_option: str | _models.PeeringOption,
-    import_route_policy_id: str | None = None, export_route_policy_id: str | None
-    = None, import_route_policy: _models.ImportRoutePolicy | None = None, export_route_policy:
-    _models.ExportRoutePolicy | None = None, annotation: str | None = None, option_b_properties:
-    _models.L3OptionBProperties | None = None, option_a_properties: _models.ExternalNetworkPropertiesOptionAProperties
-    | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: import_route_policy_id
-    description: 'ARM Resource ID of the RoutePolicy. This is used for the
-
-      backward compatibility.'
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: export_route_policy_id
-    description: 'ARM Resource ID of the RoutePolicy. This is used for the
-
-      backward compatibility.'
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: import_route_policy
-    description: Import Route Policy either IPv4 or IPv6.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ImportRoutePolicy>
-  - name: export_route_policy
-    description: Export Route Policy either IPv4 or IPv6.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ExportRoutePolicy>
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: peering_option
-    description: 'Peering option list. Required. Known values are: "OptionA" and
-
-      "OptionB".'
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.PeeringOption>
-  - name: option_b_properties
-    description: option B properties object.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.L3OptionBProperties>
-  - name: option_a_properties
-    description: option A properties object.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ExternalNetworkPropertiesOptionAProperties>
+  syntax: 'ExternalNetworkProperties(*args: Any, **kwargs: Any)'
 variables:
-- description: 'ARM Resource ID of the RoutePolicy. This is used for the backward
-
-    compatibility.'
-  name: import_route_policy_id
+- description: Switch configuration description.
+  name: annotation
   types:
   - <xref:str>
-- description: 'ARM Resource ID of the RoutePolicy. This is used for the backward
+- description: 'ARM Resource ID of the networkToNetworkInterconnectId
 
-    compatibility.'
-  name: export_route_policy_id
+    of the ExternalNetwork resource.'
+  name: network_to_network_interconnect_id
   types:
   - <xref:str>
 - description: Import Route Policy either IPv4 or IPv6.
@@ -85,16 +25,6 @@ variables:
   name: export_route_policy
   types:
   - <xref:azure.mgmt.managednetworkfabric.models.ExportRoutePolicy>
-- description: Switch configuration description.
-  name: annotation
-  types:
-  - <xref:str>
-- description: 'Gets the networkToNetworkInterconnectId of the
-
-    resource.'
-  name: network_to_network_interconnect_id
-  types:
-  - <xref:str>
 - description: 'Peering option list. Required. Known values are: "OptionA" and "OptionB".'
   name: peering_option
   types:
@@ -108,11 +38,26 @@ variables:
   name: option_a_properties
   types:
   - <xref:azure.mgmt.managednetworkfabric.models.ExternalNetworkPropertiesOptionAProperties>
+- description: Static Route Configuration.
+  name: static_route_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ExternalNetworkStaticRouteConfiguration>
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
+- description: Associated Network Fabric Resource ID.
+  name: network_fabric_id
+  types:
+  - <xref:str>
 - description: 'Configuration state of the resource. Known values are: "Succeeded",
 
     "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
 
-    "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
   name: configuration_state
   types:
   - <xref:str>
@@ -126,8 +71,74 @@ variables:
   - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
 - description: 'Administrative state of the resource. Known values are: "Enabled",
 
-    "Disabled", "MAT", and "RMA".'
+    "Disabled", "MAT", "RMA", "UnderMaintenance", and "EnabledDegraded".'
   name: administrative_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkProperties.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT",
+
+    "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  signature: 'administrative_state: str | _models.AdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkProperties.export_route_policy
+  name: export_route_policy
+  summary: Export Route Policy either IPv4 or IPv6.
+  signature: 'export_route_policy: _models.ExportRoutePolicy | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkProperties.import_route_policy
+  name: import_route_policy
+  summary: Import Route Policy either IPv4 or IPv6.
+  signature: 'import_route_policy: _models.ImportRoutePolicy | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkProperties.network_fabric_id
+  name: network_fabric_id
+  summary: Associated Network Fabric Resource ID.
+  signature: 'network_fabric_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkProperties.network_to_network_interconnect_id
+  name: network_to_network_interconnect_id
+  summary: ARM Resource ID of the networkToNetworkInterconnectId of the ExternalNetwork
+    resource.
+  signature: 'network_to_network_interconnect_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkProperties.option_a_properties
+  name: option_a_properties
+  summary: option A properties object.
+  signature: 'option_a_properties: _models.ExternalNetworkPropertiesOptionAProperties
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkProperties.option_b_properties
+  name: option_b_properties
+  summary: option B properties object.
+  signature: 'option_b_properties: _models.L3OptionBProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkProperties.peering_option
+  name: peering_option
+  summary: '"OptionA" and "OptionB".'
+  signature: 'peering_option: str | _models.PeeringOption'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkProperties.static_route_configuration
+  name: static_route_configuration
+  summary: Static Route Configuration.
+  signature: 'static_route_configuration: _models.ExternalNetworkStaticRouteConfiguration
+    | None'

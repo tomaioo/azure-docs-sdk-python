@@ -395,6 +395,29 @@ variables:
   name: is_outbound_only
   types:
   - <xref:bool>
+- description: 'Specifies whether the node type should use a
+
+    resilient ephemeral OS disk when using a supported SKU size. A resilient ephemeral
+    OS disk
+
+    provides improved reliability for ephemeral OS disks by enabling full caching.'
+  name: enable_resilient_ephemeral_os_disk
+  types:
+  - <xref:bool>
+- description: 'Specifies the scale in policy for the node type, which will be used
+    when
+
+    scale in happens on the cluster. If not specified, the default is Default which
+    means the
+
+    platform will decide which nodes to remove during scale in.'
+  name: scale_in_policy
+  types:
+  - <xref:azure.mgmt.servicefabricmanagedclusters.models.ScaleInPolicy>
+- description: Specifies the settings for the proxy agent on the node type.
+  name: proxy_agent_settings
+  types:
+  - <xref:azure.mgmt.servicefabricmanagedclusters.models.ProxyAgentSettings>
 attributes:
 - uid: azure.mgmt.servicefabricmanagedclusters.models.NodeTypeProperties.additional_data_disks
   name: additional_data_disks
@@ -490,6 +513,16 @@ attributes:
 
     node types.'
   signature: 'enable_over_provisioning: bool | None'
+- uid: azure.mgmt.servicefabricmanagedclusters.models.NodeTypeProperties.enable_resilient_ephemeral_os_disk
+  name: enable_resilient_ephemeral_os_disk
+  summary: 'Specifies whether the node type should use a resilient ephemeral OS disk
+    when using a supported
+
+    SKU size. A resilient ephemeral OS disk provides improved reliability for ephemeral
+    OS disks by
+
+    enabling full caching.'
+  signature: 'enable_resilient_ephemeral_os_disk: bool | None'
 - uid: azure.mgmt.servicefabricmanagedclusters.models.NodeTypeProperties.ephemeral_ports
   name: ephemeral_ports
   summary: The range of ephemeral ports that nodes in this node type should be configured
@@ -586,6 +619,20 @@ attributes:
     and "Other".'
   signature: 'provisioning_state: str | _models.ManagedResourceProvisioningState |
     None'
+- uid: azure.mgmt.servicefabricmanagedclusters.models.NodeTypeProperties.proxy_agent_settings
+  name: proxy_agent_settings
+  summary: Specifies the settings for the proxy agent on the node type.
+  signature: 'proxy_agent_settings: _models.ProxyAgentSettings | None'
+- uid: azure.mgmt.servicefabricmanagedclusters.models.NodeTypeProperties.scale_in_policy
+  name: scale_in_policy
+  summary: 'Specifies the scale in policy for the node type, which will be used when
+    scale in happens on
+
+    the cluster. If not specified, the default is Default which means the platform
+    will decide
+
+    which nodes to remove during scale in.'
+  signature: 'scale_in_policy: _models.ScaleInPolicy | None'
 - uid: azure.mgmt.servicefabricmanagedclusters.models.NodeTypeProperties.secure_boot_enabled
   name: secure_boot_enabled
   summary: 'Specifies whether secure boot should be enabled on the nodeType. Can only

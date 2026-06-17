@@ -5,16 +5,14 @@ fullName: azure.mgmt.managednetworkfabric.models.EnableDisableOnResources
 module: azure.mgmt.managednetworkfabric.models
 summary: Update administrative state on list of resources.
 constructor:
-  syntax: 'EnableDisableOnResources(*, resource_ids: List[str] | None = None, **kwargs:
-    Any)'
-  keywordOnlyParameters:
-  - name: resource_ids
-    description: Network Fabrics or Network Rack resource Id.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>]
+  syntax: 'EnableDisableOnResources(*args: Any, **kwargs: Any)'
 variables:
 - description: Network Fabrics or Network Rack resource Id.
   name: resource_ids
   types:
   - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.EnableDisableOnResources.resource_ids
+  name: resource_ids
+  summary: Network Fabrics or Network Rack resource Id.
+  signature: 'resource_ids: list[str] | None'

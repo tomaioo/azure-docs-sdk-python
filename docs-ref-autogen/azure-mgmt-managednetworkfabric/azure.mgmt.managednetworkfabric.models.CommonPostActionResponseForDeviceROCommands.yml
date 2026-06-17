@@ -1,0 +1,48 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForDeviceROCommands
+name: CommonPostActionResponseForDeviceROCommands
+fullName: azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForDeviceROCommands
+module: azure.mgmt.managednetworkfabric.models
+summary: Common response for device Ro Commands.
+constructor:
+  syntax: 'CommonPostActionResponseForDeviceROCommands(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Gets the configuration state. Known values are: "Succeeded",
+
+    "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
+
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
+  name: configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationState>
+- description: Predefined link containing Device RO Command output.
+  name: output_url
+  types:
+  - <xref:str>
+- description: Device RO command Response limited to 4000 characters.
+  name: device_configuration_preview
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForDeviceROCommands.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForDeviceROCommands.device_configuration_preview
+  name: device_configuration_preview
+  summary: Device RO command Response limited to 4000 characters.
+  signature: 'device_configuration_preview: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForDeviceROCommands.output_url
+  name: output_url
+  summary: Predefined link containing Device RO Command output.
+  signature: 'output_url: str | None'

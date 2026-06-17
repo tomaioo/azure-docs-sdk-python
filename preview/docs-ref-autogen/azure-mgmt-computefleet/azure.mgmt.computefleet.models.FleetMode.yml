@@ -5,7 +5,7 @@ fullName: azure.mgmt.computefleet.models.FleetMode
 summary: Modes for Compute Fleet.
 module: azure.mgmt.computefleet.models
 fields:
-- name: INSTANCE
-  uid: azure.mgmt.computefleet.models.FleetMode.INSTANCE
+- name: LAUNCH
+  uid: azure.mgmt.computefleet.models.FleetMode.LAUNCH
 - name: MANAGED
   uid: azure.mgmt.computefleet.models.FleetMode.MANAGED

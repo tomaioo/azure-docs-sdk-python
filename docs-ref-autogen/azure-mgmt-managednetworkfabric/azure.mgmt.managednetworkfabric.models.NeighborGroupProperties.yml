@@ -3,33 +3,18 @@ uid: azure.mgmt.managednetworkfabric.models.NeighborGroupProperties
 name: NeighborGroupProperties
 fullName: azure.mgmt.managednetworkfabric.models.NeighborGroupProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Neighbor Group Properties defines the properties of the resource.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.'
+summary: Neighbor Group Properties defines the properties of the resource.
 constructor:
-  syntax: 'NeighborGroupProperties(*, destination: _models.NeighborGroupDestination
-    | None = None, annotation: str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: destination
-    description: An array of destination IPv4 Addresses or IPv6 Addresses.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.NeighborGroupDestination>
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'NeighborGroupProperties(*args: Any, **kwargs: Any)'
 variables:
-- description: An array of destination IPv4 Addresses or IPv6 Addresses.
-  name: destination
-  types:
-  - <xref:azure.mgmt.managednetworkfabric.models.NeighborGroupDestination>
 - description: Switch configuration description.
   name: annotation
   types:
   - <xref:str>
+- description: An array of destination IPv4 Addresses or IPv6 Addresses. Required.
+  name: destination
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.NeighborGroupDestination>
 - description: List of NetworkTap IDs where neighbor group is associated.
   name: network_tap_ids
   types:
@@ -38,6 +23,14 @@ variables:
   name: network_tap_rule_ids
   types:
   - <xref:list>[<xref:str>]
+- description: Associated Network Fabric Resource IDs.
+  name: network_fabric_ids
+  types:
+  - <xref:list>[<xref:str>]
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
 - description: 'The provisioning state of the resource. Known values are: "Accepted",
 
     "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
@@ -45,3 +38,56 @@ variables:
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
+- description: 'Configuration state of the resource. Known values are: "Succeeded",
+
+    "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
+
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
+  name: configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NeighborGroupProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NeighborGroupProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NeighborGroupProperties.destination
+  name: destination
+  summary: An array of destination IPv4 Addresses or IPv6 Addresses. Required.
+  signature: 'destination: _models.NeighborGroupDestination'
+- uid: azure.mgmt.managednetworkfabric.models.NeighborGroupProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.NeighborGroupProperties.network_fabric_ids
+  name: network_fabric_ids
+  summary: Associated Network Fabric Resource IDs.
+  signature: 'network_fabric_ids: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NeighborGroupProperties.network_tap_ids
+  name: network_tap_ids
+  summary: List of NetworkTap IDs where neighbor group is associated.
+  signature: 'network_tap_ids: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NeighborGroupProperties.network_tap_rule_ids
+  name: network_tap_rule_ids
+  summary: List of Network Tap Rule IDs where neighbor group is associated.
+  signature: 'network_tap_rule_ids: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NeighborGroupProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'

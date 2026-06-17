@@ -1,0 +1,28 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclProperties
+name: ControlPlaneAclProperties
+fullName: azure.mgmt.managednetworkfabric.models.ControlPlaneAclProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Access Control List (ACL) configurations properties.
+constructor:
+  syntax: 'ControlPlaneAclProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: 'IP Address Type. IPv4 or IPv6. Known values are: "IPv4" and "IPv6".'
+  name: ip_address_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.IPAddressType>
+- description: Access Control List (ACL) match configurations.
+  name: match_configurations
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.ControlPlaneAclMatchConfigurationProperties>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclProperties.ip_address_type
+  name: ip_address_type
+  summary: '"IPv4" and "IPv6".'
+  signature: 'ip_address_type: str | _models.IPAddressType | None'
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclProperties.match_configurations
+  name: match_configurations
+  summary: Access Control List (ACL) match configurations.
+  signature: 'match_configurations: list[''_models.ControlPlaneAclMatchConfigurationProperties'']
+    | None'

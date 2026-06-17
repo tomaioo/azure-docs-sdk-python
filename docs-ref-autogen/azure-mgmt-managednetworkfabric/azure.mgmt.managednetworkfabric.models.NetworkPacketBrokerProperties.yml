@@ -1,0 +1,96 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkPacketBrokerProperties
+name: NetworkPacketBrokerProperties
+fullName: azure.mgmt.managednetworkfabric.models.NetworkPacketBrokerProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Network Packet Broker Properties defines the properties of the resource.
+constructor:
+  syntax: 'NetworkPacketBrokerProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: ARM resource ID of the Network Fabric. Required.
+  name: network_fabric_id
+  types:
+  - <xref:str>
+- description: List of ARM resource IDs of Network Devices [NPB].
+  name: network_device_ids
+  types:
+  - <xref:list>[<xref:str>]
+- description: 'List of network interfaces across NPB devices that are used to
+
+    mirror source traffic.'
+  name: source_interface_ids
+  types:
+  - <xref:list>[<xref:str>]
+- description: List of network Tap IDs configured on NPB.
+  name: network_tap_ids
+  types:
+  - <xref:list>[<xref:str>]
+- description: List of neighbor group IDs configured on NPB.
+  name: neighbor_group_ids
+  types:
+  - <xref:list>[<xref:str>]
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
+- description: 'Provisioning state of the resource. Known values are: "Accepted",
+
+    "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
+  name: provisioning_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
+- description: 'Configuration state of the resource. Known values are: "Succeeded",
+
+    "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
+
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
+  name: configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkPacketBrokerProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkPacketBrokerProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkPacketBrokerProperties.neighbor_group_ids
+  name: neighbor_group_ids
+  summary: List of neighbor group IDs configured on NPB.
+  signature: 'neighbor_group_ids: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkPacketBrokerProperties.network_device_ids
+  name: network_device_ids
+  summary: List of ARM resource IDs of Network Devices [NPB].
+  signature: 'network_device_ids: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkPacketBrokerProperties.network_fabric_id
+  name: network_fabric_id
+  summary: ARM resource ID of the Network Fabric. Required.
+  signature: 'network_fabric_id: str'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkPacketBrokerProperties.network_tap_ids
+  name: network_tap_ids
+  summary: List of network Tap IDs configured on NPB.
+  signature: 'network_tap_ids: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkPacketBrokerProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkPacketBrokerProperties.source_interface_ids
+  name: source_interface_ids
+  summary: List of network interfaces across NPB devices that are used to mirror source
+    traffic.
+  signature: 'source_interface_ids: list[str] | None'

@@ -5,20 +5,7 @@ fullName: azure.mgmt.managednetworkfabric.models.IsolationDomainProperties
 module: azure.mgmt.managednetworkfabric.models
 summary: Isolation Domain Properties.
 constructor:
-  syntax: 'IsolationDomainProperties(*, encapsulation: str | _models.Encapsulation
-    | None = None, neighbor_group_ids: List[str] | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: encapsulation
-    description: 'Type of encapsulation. Known values are: "None" and "GRE".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.Encapsulation>
-  - name: neighbor_group_ids
-    description: List of Neighbor Group IDs.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>]
+  syntax: 'IsolationDomainProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: 'Type of encapsulation. Known values are: "None" and "GRE".'
   name: encapsulation
@@ -29,3 +16,12 @@ variables:
   name: neighbor_group_ids
   types:
   - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.IsolationDomainProperties.encapsulation
+  name: encapsulation
+  summary: '"None" and "GRE".'
+  signature: 'encapsulation: str | _models.Encapsulation | None'
+- uid: azure.mgmt.managednetworkfabric.models.IsolationDomainProperties.neighbor_group_ids
+  name: neighbor_group_ids
+  summary: List of Neighbor Group IDs.
+  signature: 'neighbor_group_ids: list[str] | None'

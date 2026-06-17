@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.FeatureFlagProperties
+name: FeatureFlagProperties
+fullName: azure.mgmt.managednetworkfabric.models.FeatureFlagProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Feature flag properties.
+constructor:
+  syntax: 'FeatureFlagProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Feature flag name.
+  name: feature_flag_name
+  types:
+  - <xref:str>
+- description: Feature flag value.
+  name: feature_flag_value
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.FeatureFlagProperties.feature_flag_name
+  name: feature_flag_name
+  summary: Feature flag name.
+  signature: 'feature_flag_name: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.FeatureFlagProperties.feature_flag_value
+  name: feature_flag_value
+  summary: Feature flag value.
+  signature: 'feature_flag_value: str | None'

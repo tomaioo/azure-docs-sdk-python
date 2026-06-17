@@ -1,0 +1,11 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.MicroBfdState
+name: MicroBfdState
+fullName: azure.mgmt.managednetworkfabric.models.MicroBfdState
+summary: Micro Bidirectional Forwarding Detection (BFD) enabled/disabled state.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: DISABLED
+  uid: azure.mgmt.managednetworkfabric.models.MicroBfdState.DISABLED
+- name: ENABLED
+  uid: azure.mgmt.managednetworkfabric.models.MicroBfdState.ENABLED

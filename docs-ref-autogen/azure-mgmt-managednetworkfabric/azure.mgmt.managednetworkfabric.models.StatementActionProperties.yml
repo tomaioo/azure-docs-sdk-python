@@ -3,39 +3,9 @@ uid: azure.mgmt.managednetworkfabric.models.StatementActionProperties
 name: StatementActionProperties
 fullName: azure.mgmt.managednetworkfabric.models.StatementActionProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Route policy action properties.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: Route policy action properties.
 constructor:
-  syntax: 'StatementActionProperties(*, action_type: str | _models.RoutePolicyActionType,
-    local_preference: int | None = None, ip_community_properties: _models.ActionIpCommunityProperties
-    | None = None, ip_extended_community_properties: _models.ActionIpExtendedCommunityProperties
-    | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: local_preference
-    description: Local Preference of the route policy.
-    defaultValue: None
-    types:
-    - <xref:int>
-  - name: action_type
-    description: 'Action type. Example: Permit | Deny | Continue. Required. Known
-      values
-
-      are: "Permit", "Deny", "Continue", and "Continue".'
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.RoutePolicyActionType>
-  - name: ip_community_properties
-    description: IP Community Properties.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ActionIpCommunityProperties>
-  - name: ip_extended_community_properties
-    description: IP Extended Community Properties.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ActionIpExtendedCommunityProperties>
+  syntax: 'StatementActionProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: Local Preference of the route policy.
   name: local_preference
@@ -44,7 +14,7 @@ variables:
 - description: 'Action type. Example: Permit | Deny | Continue. Required. Known values
     are:
 
-    "Permit", "Deny", "Continue", and "Continue".'
+    "Permit", "Deny", and "Continue".'
   name: action_type
   types:
   - <xref:str>
@@ -57,3 +27,23 @@ variables:
   name: ip_extended_community_properties
   types:
   - <xref:azure.mgmt.managednetworkfabric.models.ActionIpExtendedCommunityProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.StatementActionProperties.action_type
+  name: action_type
+  summary: '"Permit",
+
+    "Deny", and "Continue".'
+  signature: 'action_type: str | _models.RoutePolicyActionType'
+- uid: azure.mgmt.managednetworkfabric.models.StatementActionProperties.ip_community_properties
+  name: ip_community_properties
+  summary: IP Community Properties.
+  signature: 'ip_community_properties: _models.ActionIpCommunityProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.StatementActionProperties.ip_extended_community_properties
+  name: ip_extended_community_properties
+  summary: IP Extended Community Properties.
+  signature: 'ip_extended_community_properties: _models.ActionIpExtendedCommunityProperties
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.StatementActionProperties.local_preference
+  name: local_preference
+  summary: Local Preference of the route policy.
+  signature: 'local_preference: int | None'

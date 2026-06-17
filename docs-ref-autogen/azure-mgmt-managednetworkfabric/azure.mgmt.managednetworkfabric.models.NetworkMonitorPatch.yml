@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkMonitorPatch
+name: NetworkMonitorPatch
+fullName: azure.mgmt.managednetworkfabric.models.NetworkMonitorPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: The Network Monitor Patch resource definition.
+constructor:
+  syntax: 'NetworkMonitorPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: Resource tags.
+  name: tags
+  types:
+  - <xref:dict>[<xref:str>, <xref:str>]
+- description: Network Monitor Patch properties.
+  name: properties
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.NetworkMonitorPatchProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkMonitorPatch.properties
+  name: properties
+  summary: Network Monitor Patch properties.
+  signature: 'properties: _models.NetworkMonitorPatchProperties | None'

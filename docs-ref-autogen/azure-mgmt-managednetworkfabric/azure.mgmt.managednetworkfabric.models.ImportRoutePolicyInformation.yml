@@ -5,19 +5,7 @@ fullName: azure.mgmt.managednetworkfabric.models.ImportRoutePolicyInformation
 module: azure.mgmt.managednetworkfabric.models
 summary: Import Route Policy Configuration.
 constructor:
-  syntax: 'ImportRoutePolicyInformation(*, import_ipv4_route_policy_id: str | None
-    = None, import_ipv6_route_policy_id: str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: import_ipv4_route_policy_id
-    description: Import IPv4 Route Policy Id.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: import_ipv6_route_policy_id
-    description: Import IPv6 Route Policy Id.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'ImportRoutePolicyInformation(*args: Any, **kwargs: Any)'
 variables:
 - description: Import IPv4 Route Policy Id.
   name: import_ipv4_route_policy_id
@@ -27,3 +15,12 @@ variables:
   name: import_ipv6_route_policy_id
   types:
   - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ImportRoutePolicyInformation.import_ipv4_route_policy_id
+  name: import_ipv4_route_policy_id
+  summary: Import IPv4 Route Policy Id.
+  signature: 'import_ipv4_route_policy_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ImportRoutePolicyInformation.import_ipv6_route_policy_id
+  name: import_ipv6_route_policy_id
+  summary: Import IPv6 Route Policy Id.
+  signature: 'import_ipv6_route_policy_id: str | None'

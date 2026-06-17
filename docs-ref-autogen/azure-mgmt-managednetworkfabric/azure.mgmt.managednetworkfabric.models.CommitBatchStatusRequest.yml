@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.CommitBatchStatusRequest
+name: CommitBatchStatusRequest
+fullName: azure.mgmt.managednetworkfabric.models.CommitBatchStatusRequest
+module: azure.mgmt.managednetworkfabric.models
+summary: Commit Batch Status Request.
+constructor:
+  syntax: 'CommitBatchStatusRequest(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Commit Batch Identifier. If not provided, the latest commit batch
+    status
+
+    will be returned.'
+  name: commit_batch_id
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.CommitBatchStatusRequest.commit_batch_id
+  name: commit_batch_id
+  summary: Commit Batch Identifier. If not provided, the latest commit batch status
+    will be returned.
+  signature: 'commit_batch_id: str | None'

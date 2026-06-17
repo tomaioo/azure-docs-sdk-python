@@ -3,24 +3,9 @@ uid: azure.mgmt.managednetworkfabric.models.ValidateConfigurationResponse
 name: ValidateConfigurationResponse
 fullName: azure.mgmt.managednetworkfabric.models.ValidateConfigurationResponse
 module: azure.mgmt.managednetworkfabric.models
-summary: 'The response of the action validate configuration.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.'
+summary: The response of the action validate configuration.
 constructor:
-  syntax: 'ValidateConfigurationResponse(*, error: _models.ErrorDetail | None = None,
-    url: str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: error
-    description: The error object.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ErrorDetail>
-  - name: url
-    description: URL for the details of the response.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'ValidateConfigurationResponse(*args: Any, **kwargs: Any)'
 variables:
 - description: The error object.
   name: error
@@ -30,7 +15,10 @@ variables:
 
     "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
 
-    "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
   name: configuration_state
   types:
   - <xref:str>
@@ -39,3 +27,18 @@ variables:
   name: url
   types:
   - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ValidateConfigurationResponse.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.ValidateConfigurationResponse.url
+  name: url
+  summary: URL for the details of the response.
+  signature: 'url: str | None'

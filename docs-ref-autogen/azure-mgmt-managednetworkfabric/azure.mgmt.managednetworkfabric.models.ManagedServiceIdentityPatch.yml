@@ -1,0 +1,33 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.ManagedServiceIdentityPatch
+name: ManagedServiceIdentityPatch
+fullName: azure.mgmt.managednetworkfabric.models.ManagedServiceIdentityPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: The managed service identities assigned to this resource.
+constructor:
+  syntax: 'ManagedServiceIdentityPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: 'The type of managed identity assigned to this resource. Known values
+    are: "None",
+
+    "SystemAssigned", "UserAssigned", and "SystemAssigned,UserAssigned".'
+  name: type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ManagedServiceIdentityType>
+- description: The identities assigned to this resource by the user.
+  name: user_assigned_identities
+  types:
+  - <xref:dict>[<xref:str>, <xref:azure.mgmt.managednetworkfabric.models.UserAssignedIdentity>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ManagedServiceIdentityPatch.type
+  name: type
+  summary: '"None",
+
+    "SystemAssigned", "UserAssigned", and "SystemAssigned,UserAssigned".'
+  signature: 'type: str | _models.ManagedServiceIdentityType | None'
+- uid: azure.mgmt.managednetworkfabric.models.ManagedServiceIdentityPatch.user_assigned_identities
+  name: user_assigned_identities
+  summary: The identities assigned to this resource by the user.
+  signature: 'user_assigned_identities: dict[str, ''_models.UserAssignedIdentity'']
+    | None'

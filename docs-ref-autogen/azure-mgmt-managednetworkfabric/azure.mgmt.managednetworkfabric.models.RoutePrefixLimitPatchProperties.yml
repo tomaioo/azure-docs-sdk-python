@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.RoutePrefixLimitPatchProperties
+name: RoutePrefixLimitPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.RoutePrefixLimitPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: VRP Limit patch configuration.
+constructor:
+  syntax: 'RoutePrefixLimitPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Hard limit for the routes.
+  name: hard_limit
+  types:
+  - <xref:int>
+- description: Threshold for the routes.
+  name: threshold
+  types:
+  - <xref:int>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.RoutePrefixLimitPatchProperties.hard_limit
+  name: hard_limit
+  summary: Hard limit for the routes.
+  signature: 'hard_limit: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.RoutePrefixLimitPatchProperties.threshold
+  name: threshold
+  summary: Threshold for the routes.
+  signature: 'threshold: int | None'

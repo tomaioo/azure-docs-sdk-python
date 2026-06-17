@@ -3,35 +3,9 @@ uid: azure.mgmt.managednetworkfabric.models.NetworkRackProperties
 name: NetworkRackProperties
 fullName: azure.mgmt.managednetworkfabric.models.NetworkRackProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Network Rack Properties defines the properties of the resource.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: Network Rack Properties defines the properties of the resource.
 constructor:
-  syntax: 'NetworkRackProperties(*, network_fabric_id: str, annotation: str | None
-    = None, network_rack_type: str | _models.NetworkRackType | None = None, **kwargs:
-    Any)'
-  keywordOnlyParameters:
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: network_rack_type
-    description: 'Network Rack SKU name. Known values are: "Aggregate", "Compute",
-
-      and "Combined".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.NetworkRackType>
-  - name: network_fabric_id
-    description: ARM resource ID of the Network Fabric. Required.
-    types:
-    - <xref:str>
+  syntax: 'NetworkRackProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: Switch configuration description.
   name: annotation
@@ -52,6 +26,10 @@ variables:
   name: network_devices
   types:
   - <xref:list>[<xref:str>]
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
 - description: 'Provisioning state of the resource. Known values are: "Accepted",
 
     "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
@@ -59,3 +37,48 @@ variables:
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
+- description: 'Configuration state of the resource. Known values are: "Succeeded",
+
+    "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
+
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
+  name: configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkRackProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkRackProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkRackProperties.network_devices
+  name: network_devices
+  summary: List of network device ARM resource IDs.
+  signature: 'network_devices: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkRackProperties.network_fabric_id
+  name: network_fabric_id
+  summary: ARM resource ID of the Network Fabric. Required.
+  signature: 'network_fabric_id: str'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkRackProperties.network_rack_type
+  name: network_rack_type
+  summary: '"Aggregate", "Compute", and "Combined".'
+  signature: 'network_rack_type: str | _models.NetworkRackType | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkRackProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'

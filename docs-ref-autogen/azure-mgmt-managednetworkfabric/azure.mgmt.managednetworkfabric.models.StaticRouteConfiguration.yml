@@ -5,25 +5,7 @@ fullName: azure.mgmt.managednetworkfabric.models.StaticRouteConfiguration
 module: azure.mgmt.managednetworkfabric.models
 summary: Static Route Configuration properties.
 constructor:
-  syntax: 'StaticRouteConfiguration(*, bfd_configuration: _models.BfdConfiguration
-    | None = None, ipv4_routes: List[_models.StaticRouteProperties] | None = None,
-    ipv6_routes: List[_models.StaticRouteProperties] | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: bfd_configuration
-    description: BFD configuration properties.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.BfdConfiguration>
-  - name: ipv4_routes
-    description: List of IPv4 Routes.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.StaticRouteProperties>]
-  - name: ipv6_routes
-    description: List of IPv6 Routes.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.StaticRouteProperties>]
+  syntax: 'StaticRouteConfiguration(*args: Any, **kwargs: Any)'
 variables:
 - description: BFD configuration properties.
   name: bfd_configuration
@@ -37,3 +19,28 @@ variables:
   name: ipv6_routes
   types:
   - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.StaticRouteProperties>]
+- description: 'Extension. Example: NoExtension | NPB. Known values are: "NoExtension"
+    and
+
+    "NPB".'
+  name: extension
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.Extension>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.StaticRouteConfiguration.bfd_configuration
+  name: bfd_configuration
+  summary: BFD configuration properties.
+  signature: 'bfd_configuration: _models.BfdConfiguration | None'
+- uid: azure.mgmt.managednetworkfabric.models.StaticRouteConfiguration.extension
+  name: extension
+  summary: '"NoExtension" and "NPB".'
+  signature: 'extension: str | _models.Extension | None'
+- uid: azure.mgmt.managednetworkfabric.models.StaticRouteConfiguration.ipv4_routes
+  name: ipv4_routes
+  summary: List of IPv4 Routes.
+  signature: 'ipv4_routes: list[''_models.StaticRouteProperties''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.StaticRouteConfiguration.ipv6_routes
+  name: ipv6_routes
+  summary: List of IPv6 Routes.
+  signature: 'ipv6_routes: list[''_models.StaticRouteProperties''] | None'

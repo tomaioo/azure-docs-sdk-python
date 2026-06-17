@@ -5,8 +5,10 @@ fullName: azure.mgmt.monitorslis.models.SamplingType
 summary: Defines the available sampling types.
 module: azure.mgmt.monitorslis.models
 fields:
-- name: AVG
-  uid: azure.mgmt.monitorslis.models.SamplingType.AVG
+- name: AVERAGE
+  uid: azure.mgmt.monitorslis.models.SamplingType.AVERAGE
+- name: COUNT
+  uid: azure.mgmt.monitorslis.models.SamplingType.COUNT
 - name: MAX
   uid: azure.mgmt.monitorslis.models.SamplingType.MAX
 - name: MIN

@@ -1,0 +1,30 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.GlobalNetworkTapRuleActionPatchProperties
+name: GlobalNetworkTapRuleActionPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.GlobalNetworkTapRuleActionPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Global network tap rule actions patch properties.
+constructor:
+  syntax: 'GlobalNetworkTapRuleActionPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Configuration to enable network tap rule counter. Known values are:
+    "True"
+
+    and "False".'
+  name: enable_count
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BooleanEnumProperty>
+- description: Truncate. 0 indicates do not truncate.
+  name: truncate
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.GlobalNetworkTapRuleActionPatchProperties.enable_count
+  name: enable_count
+  summary: '"True" and "False".'
+  signature: 'enable_count: str | _models.BooleanEnumProperty | None'
+- uid: azure.mgmt.managednetworkfabric.models.GlobalNetworkTapRuleActionPatchProperties.truncate
+  name: truncate
+  summary: Truncate. 0 indicates do not truncate.
+  signature: 'truncate: str | None'

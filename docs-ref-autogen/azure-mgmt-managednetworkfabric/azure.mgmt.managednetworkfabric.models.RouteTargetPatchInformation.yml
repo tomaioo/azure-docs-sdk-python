@@ -1,0 +1,42 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.RouteTargetPatchInformation
+name: RouteTargetPatchInformation
+fullName: azure.mgmt.managednetworkfabric.models.RouteTargetPatchInformation
+module: azure.mgmt.managednetworkfabric.models
+summary: Route Target Configuration.
+constructor:
+  syntax: 'RouteTargetPatchInformation(*args: Any, **kwargs: Any)'
+variables:
+- description: Route Targets to be applied for incoming routes into CE.
+  name: import_ipv4_route_targets
+  types:
+  - <xref:list>[<xref:str>]
+- description: Route Targets to be applied for incoming routes from CE.
+  name: import_ipv6_route_targets
+  types:
+  - <xref:list>[<xref:str>]
+- description: Route Targets to be applied for outgoing routes into CE.
+  name: export_ipv4_route_targets
+  types:
+  - <xref:list>[<xref:str>]
+- description: Route Targets to be applied for outgoing routes from CE.
+  name: export_ipv6_route_targets
+  types:
+  - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.RouteTargetPatchInformation.export_ipv4_route_targets
+  name: export_ipv4_route_targets
+  summary: Route Targets to be applied for outgoing routes into CE.
+  signature: 'export_ipv4_route_targets: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.RouteTargetPatchInformation.export_ipv6_route_targets
+  name: export_ipv6_route_targets
+  summary: Route Targets to be applied for outgoing routes from CE.
+  signature: 'export_ipv6_route_targets: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.RouteTargetPatchInformation.import_ipv4_route_targets
+  name: import_ipv4_route_targets
+  summary: Route Targets to be applied for incoming routes into CE.
+  signature: 'import_ipv4_route_targets: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.RouteTargetPatchInformation.import_ipv6_route_targets
+  name: import_ipv6_route_targets
+  summary: Route Targets to be applied for incoming routes from CE.
+  signature: 'import_ipv6_route_targets: list[str] | None'

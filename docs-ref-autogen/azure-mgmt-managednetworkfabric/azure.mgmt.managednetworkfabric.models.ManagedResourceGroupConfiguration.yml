@@ -5,19 +5,7 @@ fullName: azure.mgmt.managednetworkfabric.models.ManagedResourceGroupConfigurati
 module: azure.mgmt.managednetworkfabric.models
 summary: Managed Resource Group configuration properties.
 constructor:
-  syntax: 'ManagedResourceGroupConfiguration(*, name: str | None = None, location:
-    str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: name
-    description: The NFC service will be hosted in a Managed resource group.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: location
-    description: Managed resource group location.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'ManagedResourceGroupConfiguration(*args: Any, **kwargs: Any)'
 variables:
 - description: The NFC service will be hosted in a Managed resource group.
   name: name
@@ -27,3 +15,12 @@ variables:
   name: location
   types:
   - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ManagedResourceGroupConfiguration.location
+  name: location
+  summary: Managed resource group location.
+  signature: 'location: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ManagedResourceGroupConfiguration.name
+  name: name
+  summary: The NFC service will be hosted in a Managed resource group.
+  signature: 'name: str | None'

@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.ImportRoutePolicyPatch
+name: ImportRoutePolicyPatch
+fullName: azure.mgmt.managednetworkfabric.models.ImportRoutePolicyPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: Import Route Policy either IPv4 or IPv6.
+constructor:
+  syntax: 'ImportRoutePolicyPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: ARM resource ID of RoutePolicy.
+  name: import_ipv4_route_policy_id
+  types:
+  - <xref:str>
+- description: ARM resource ID of RoutePolicy.
+  name: import_ipv6_route_policy_id
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ImportRoutePolicyPatch.import_ipv4_route_policy_id
+  name: import_ipv4_route_policy_id
+  summary: ARM resource ID of RoutePolicy.
+  signature: 'import_ipv4_route_policy_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ImportRoutePolicyPatch.import_ipv6_route_policy_id
+  name: import_ipv6_route_policy_id
+  summary: ARM resource ID of RoutePolicy.
+  signature: 'import_ipv6_route_policy_id: str | None'

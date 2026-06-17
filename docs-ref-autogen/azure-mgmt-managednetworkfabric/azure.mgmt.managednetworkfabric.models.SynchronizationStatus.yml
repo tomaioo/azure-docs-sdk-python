@@ -1,0 +1,19 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.SynchronizationStatus
+name: SynchronizationStatus
+fullName: azure.mgmt.managednetworkfabric.models.SynchronizationStatus
+summary: 'Synchronization status of a secret or certificate for a device (Network
+  Device or Terminal
+
+  Server). Whether the device has been configured with the latest version of the secret
+  or
+
+  certificate.'
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: IN_SYNC
+  uid: azure.mgmt.managednetworkfabric.models.SynchronizationStatus.IN_SYNC
+- name: OUT_OF_SYNC
+  uid: azure.mgmt.managednetworkfabric.models.SynchronizationStatus.OUT_OF_SYNC
+- name: SYNCHRONIZING
+  uid: azure.mgmt.managednetworkfabric.models.SynchronizationStatus.SYNCHRONIZING

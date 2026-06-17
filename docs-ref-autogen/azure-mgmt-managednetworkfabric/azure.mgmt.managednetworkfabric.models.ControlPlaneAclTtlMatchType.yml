@@ -1,0 +1,16 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclTtlMatchType
+name: ControlPlaneAclTtlMatchType
+fullName: azure.mgmt.managednetworkfabric.models.ControlPlaneAclTtlMatchType
+summary: Control Plane Access Control List (ACL) Time To Live (TTL) match conditions
+  properties.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: EQUALS
+  uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclTtlMatchType.EQUALS
+- name: GREATER_THAN
+  uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclTtlMatchType.GREATER_THAN
+- name: LESSER_THAN
+  uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclTtlMatchType.LESSER_THAN
+- name: NOT_EQUALS
+  uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclTtlMatchType.NOT_EQUALS

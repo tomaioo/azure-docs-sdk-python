@@ -1,0 +1,200 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkMonitorsOperations
+name: NetworkMonitorsOperations
+fullName: azure.mgmt.managednetworkfabric.aio.operations.NetworkMonitorsOperations
+module: azure.mgmt.managednetworkfabric.aio.operations
+summary: "> [!WARNING]\n> DO NOT instantiate this class directly.\n>\n> \n>\n> Instead,\
+  \ you should access the following operations through\n>\n> <xref:azure.mgmt.managednetworkfabric.aio.ManagedNetworkFabricMgmtClient>'s\n\
+  >\n> <xref:network_monitors> attribute.\n>"
+constructor:
+  syntax: NetworkMonitorsOperations(*args, **kwargs)
+methods:
+- uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkMonitorsOperations.begin_create
+  name: begin_create
+  summary: Creates NetworkMonitor resource.
+  signature: 'async begin_create(resource_group_name: str, network_monitor_name: str,
+    body: _models.NetworkMonitor, *, content_type: str = ''application/json'', **kwargs:
+    Any) -> AsyncLROPoller[_models.NetworkMonitor]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_monitor_name
+    description: Name of the Network Monitor. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: body
+    description: 'Resource create parameters. Is one of the following types: NetworkMonitor,
+      JSON,
+
+      IO[bytes] Required.'
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.managednetworkfabric.models.NetworkMonitor>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
+  return:
+    description: 'An instance of AsyncLROPoller that returns NetworkMonitor. The NetworkMonitor
+      is
+
+      compatible with MutableMapping'
+    types:
+    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkMonitor>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkMonitorsOperations.begin_delete
+  name: begin_delete
+  summary: Deletes layer 2 connectivity between compute nodes by managed by named
+    NetworkMonitor name.
+  signature: 'async begin_delete(resource_group_name: str, network_monitor_name: str,
+    **kwargs: Any) -> AsyncLROPoller[None]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_monitor_name
+    description: Name of the Network Monitor. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: An instance of AsyncLROPoller that returns None
+    types:
+    - <xref:azure.core.polling.AsyncLROPoller>[<xref:None>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkMonitorsOperations.begin_update
+  name: begin_update
+  summary: API to update certain properties of the NetworkMonitor resource.
+  signature: 'async begin_update(resource_group_name: str, network_monitor_name: str,
+    body: _models.NetworkMonitorPatch, *, content_type: str = ''application/json'',
+    **kwargs: Any) -> AsyncLROPoller[_models.NetworkMonitor]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_monitor_name
+    description: Name of the Network Monitor. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: body
+    description: 'The resource properties to be updated. Is one of the following types:
+
+      NetworkMonitorPatch, JSON, IO[bytes] Required.'
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.managednetworkfabric.models.NetworkMonitorPatch>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
+  return:
+    description: 'An instance of AsyncLROPoller that returns NetworkMonitor. The NetworkMonitor
+      is
+
+      compatible with MutableMapping'
+    types:
+    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkMonitor>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkMonitorsOperations.begin_update_administrative_state
+  name: begin_update_administrative_state
+  summary: Enables isolation domain across the fabric or on specified racks.
+  signature: 'async begin_update_administrative_state(resource_group_name: str, network_monitor_name:
+    str, body: _models.UpdateAdministrativeState, *, content_type: str = ''application/json'',
+    **kwargs: Any) -> AsyncLROPoller[_models.CommonPostActionResponseForDeviceUpdate]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_monitor_name
+    description: Name of the Network Monitor. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: body
+    description: 'Request payload. Is one of the following types: UpdateAdministrativeState,
+      JSON,
+
+      IO[bytes] Required.'
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.managednetworkfabric.models.UpdateAdministrativeState>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
+  return:
+    description: 'An instance of AsyncLROPoller that returns CommonPostActionResponseForDeviceUpdate.
+
+      The CommonPostActionResponseForDeviceUpdate is compatible with MutableMapping'
+    types:
+    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForDeviceUpdate>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkMonitorsOperations.get
+  name: get
+  summary: Implements NetworkMonitor GET method.
+  signature: 'async get(resource_group_name: str, network_monitor_name: str, **kwargs:
+    Any) -> NetworkMonitor'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_monitor_name
+    description: Name of the Network Monitor. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: NetworkMonitor. The NetworkMonitor is compatible with MutableMapping
+    types:
+    - <xref:azure.mgmt.managednetworkfabric.models.NetworkMonitor>
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkMonitorsOperations.list_by_resource_group
+  name: list_by_resource_group
+  summary: Displays NetworkMonitors list by resource group GET method.
+  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> AsyncItemPaged[NetworkMonitor]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: An iterator like instance of NetworkMonitor
+    types:
+    - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.mgmt.managednetworkfabric.models.NetworkMonitor>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.aio.operations.NetworkMonitorsOperations.list_by_subscription
+  name: list_by_subscription
+  summary: Displays NetworkMonitors list by subscription GET method.
+  signature: 'list_by_subscription(**kwargs: Any) -> AsyncItemPaged[NetworkMonitor]'
+  return:
+    description: An iterator like instance of NetworkMonitor
+    types:
+    - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.mgmt.managednetworkfabric.models.NetworkMonitor>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError

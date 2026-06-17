@@ -1,0 +1,73 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.OptionBLayer3ConfigurationPatchProperties
+name: OptionBLayer3ConfigurationPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.OptionBLayer3ConfigurationPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Common properties for Layer3Configuration.
+constructor:
+  syntax: 'OptionBLayer3ConfigurationPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: IPv4 Address Prefix.
+  name: primary_ipv4_prefix
+  types:
+  - <xref:str>
+- description: IPv6 Address Prefix.
+  name: primary_ipv6_prefix
+  types:
+  - <xref:str>
+- description: Secondary IPv4 Address Prefix.
+  name: secondary_ipv4_prefix
+  types:
+  - <xref:str>
+- description: Secondary IPv6 Address Prefix.
+  name: secondary_ipv6_prefix
+  types:
+  - <xref:str>
+- description: 'ASN of PE devices for CE/PE connectivity.Example : 28.'
+  name: peer_asn
+  types:
+  - <xref:int>
+- description: 'VLAN for CE/PE Layer 3 connectivity.Example : 501.'
+  name: vlan_id
+  types:
+  - <xref:int>
+- description: ASN of CE devices for CE/PE connectivity.
+  name: fabric_asn
+  types:
+  - <xref:int>
+- description: Provider Edge (PE) Loopback IP Address.
+  name: pe_loopback_ip_address
+  types:
+  - <xref:list>[<xref:str>]
+- description: BGP Monitoring Protocol (BMP) Configuration.
+  name: bmp_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.NniBmpPatchProperties>
+- description: OptionB Layer3 prefix limit configuration.
+  name: prefix_limits
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.OptionBLayer3PrefixLimitPatchProperties>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.OptionBLayer3ConfigurationPatchProperties.bmp_configuration
+  name: bmp_configuration
+  summary: BGP Monitoring Protocol (BMP) Configuration.
+  signature: 'bmp_configuration: _models.NniBmpPatchProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.OptionBLayer3ConfigurationPatchProperties.fabric_asn
+  name: fabric_asn
+  summary: ASN of CE devices for CE/PE connectivity.
+  signature: 'fabric_asn: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.OptionBLayer3ConfigurationPatchProperties.pe_loopback_ip_address
+  name: pe_loopback_ip_address
+  summary: Provider Edge (PE) Loopback IP Address.
+  signature: 'pe_loopback_ip_address: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.OptionBLayer3ConfigurationPatchProperties.peer_asn
+  name: peer_asn
+  signature: 'peer_asn: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.OptionBLayer3ConfigurationPatchProperties.prefix_limits
+  name: prefix_limits
+  summary: OptionB Layer3 prefix limit configuration.
+  signature: 'prefix_limits: list[''_models.OptionBLayer3PrefixLimitPatchProperties'']
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.OptionBLayer3ConfigurationPatchProperties.vlan_id
+  name: vlan_id
+  signature: 'vlan_id: int | None'

@@ -3,75 +3,9 @@ uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties
 name: NetworkFabricProperties
 fullName: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Network Fabric Properties defines the properties of the resource.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: Network Fabric Properties defines the properties of the resource.
 constructor:
-  syntax: 'NetworkFabricProperties(*, network_fabric_sku: str, network_fabric_controller_id:
-    str, server_count_per_rack: int, ipv4_prefix: str, fabric_asn: int, terminal_server_configuration:
-    _models.TerminalServerConfiguration, management_network_configuration: _models.ManagementNetworkConfigurationProperties,
-    annotation: str | None = None, rack_count: int | None = None, ipv6_prefix: str
-    | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: network_fabric_sku
-    description: 'Supported Network Fabric SKU.Example: Compute / Aggregate racks.
-
-      Once the user chooses a particular SKU, only supported racks can be added to
-      the Network
-
-      Fabric. The SKU determines whether it is a single / multi rack Network Fabric.
-      Required.'
-    types:
-    - <xref:str>
-  - name: network_fabric_controller_id
-    description: 'Azure resource ID for the NetworkFabricController the
-
-      NetworkFabric belongs. Required.'
-    types:
-    - <xref:str>
-  - name: rack_count
-    description: Number of compute racks associated to Network Fabric.
-    defaultValue: None
-    types:
-    - <xref:int>
-  - name: server_count_per_rack
-    description: Number of servers.Possible values are from 1-16. Required.
-    types:
-    - <xref:int>
-  - name: ipv4_prefix
-    description: 'IPv4Prefix for Management Network. Example: 10.1.0.0/19. Required.'
-    types:
-    - <xref:str>
-  - name: ipv6_prefix
-    description: 'IPv6Prefix for Management Network. Example: 3FFE:FFFF:0:CD40::/59.'
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: fabric_asn
-    description: ASN of CE devices for CE/PE connectivity. Required.
-    types:
-    - <xref:int>
-  - name: terminal_server_configuration
-    description: 'Network and credentials configuration currently applied
-
-      to terminal server. Required.'
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.TerminalServerConfiguration>
-  - name: management_network_configuration
-    description: 'Configuration to be used to setup the management
-
-      network. Required.'
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ManagementNetworkConfigurationProperties>
+  syntax: 'NetworkFabricProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: Switch configuration description.
   name: annotation
@@ -94,6 +28,16 @@ variables:
   name: router_ids
   types:
   - <xref:list>[<xref:str>]
+- description: 'Bring your own storage account configurations for Network
+
+    Fabric.'
+  name: storage_account_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.StorageAccountConfiguration>
+- description: Network Fabric Lock details.
+  name: fabric_locks
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.FabricLockProperties>]
 - description: 'Azure resource ID for the NetworkFabricController the
 
     NetworkFabric belongs. Required.'
@@ -147,11 +91,56 @@ variables:
   name: l3_isolation_domains
   types:
   - <xref:list>[<xref:str>]
+- description: 'Hardware alert threshold percentage. Possible values are from
+
+    20 to 100.'
+  name: hardware_alert_threshold
+  types:
+  - <xref:int>
+- description: Control Plane Access Control List ARM resource IDs.
+  name: control_plane_acls
+  types:
+  - <xref:list>[<xref:str>]
+- description: NetworkFabric feature flag configuration information.
+  name: feature_flags
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.FeatureFlagProperties>]
+- description: Trusted IP Prefixes ARM resource IDs.
+  name: trusted_ip_prefixes
+  types:
+  - <xref:list>[<xref:str>]
+- description: Unique Route Distinguisher configuration.
+  name: unique_rd_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.UniqueRouteDistinguisherProperties>
+- description: Number of Storage arrays associated with the Network Fabric.
+  name: storage_array_count
+  types:
+  - <xref:int>
+- description: Active commit batch identifiers.
+  name: active_commit_batches
+  types:
+  - <xref:list>[<xref:str>]
+- description: Overview of secret rotation for the Network Fabric.
+  name: secret_rotation_summary
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.SecretRotationSummary>
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
+- description: Authorized transciever configuration for NetworkFabric.
+  name: authorized_transceiver
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.AuthorizedTransceiverProperties>
 - description: 'Configuration state of the resource. Known values are: "Succeeded",
 
     "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
 
-    "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
   name: configuration_state
   types:
   - <xref:str>
@@ -170,8 +159,161 @@ variables:
   - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
 - description: 'Administrative state of the resource. Known values are: "Enabled",
 
-    "Disabled", "MAT", and "RMA".'
+    "Disabled", "MAT", "RMA", "UnderMaintenance", and "EnabledDegraded".'
   name: administrative_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+- description: NetworkFabric QoS Configuration.
+  name: qos_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.QosProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.active_commit_batches
+  name: active_commit_batches
+  summary: Active commit batch identifiers.
+  signature: 'active_commit_batches: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT",
+
+    "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  signature: 'administrative_state: str | _models.AdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.authorized_transceiver
+  name: authorized_transceiver
+  summary: Authorized transciever configuration for NetworkFabric.
+  signature: 'authorized_transceiver: _models.AuthorizedTransceiverProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.control_plane_acls
+  name: control_plane_acls
+  summary: Control Plane Access Control List ARM resource IDs.
+  signature: 'control_plane_acls: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.fabric_asn
+  name: fabric_asn
+  summary: ASN of CE devices for CE/PE connectivity. Required.
+  signature: 'fabric_asn: int'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.fabric_locks
+  name: fabric_locks
+  summary: Network Fabric Lock details.
+  signature: 'fabric_locks: list[''_models.FabricLockProperties''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.fabric_version
+  name: fabric_version
+  summary: The version of Network Fabric.
+  signature: 'fabric_version: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.feature_flags
+  name: feature_flags
+  summary: NetworkFabric feature flag configuration information.
+  signature: 'feature_flags: list[''_models.FeatureFlagProperties''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.hardware_alert_threshold
+  name: hardware_alert_threshold
+  summary: Hardware alert threshold percentage. Possible values are from 20 to 100.
+  signature: 'hardware_alert_threshold: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.ipv4_prefix
+  name: ipv4_prefix
+  summary: 10.1.0.0/19. Required.
+  signature: 'ipv4_prefix: str'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.ipv6_prefix
+  name: ipv6_prefix
+  summary: FFFF:0:CD40::/59.
+  signature: 'ipv6_prefix: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.l2_isolation_domains
+  name: l2_isolation_domains
+  summary: List of L2 Isolation Domain resource IDs under the Network Fabric.
+  signature: 'l2_isolation_domains: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.l3_isolation_domains
+  name: l3_isolation_domains
+  summary: List of L3 Isolation Domain resource IDs under the Network Fabric.
+  signature: 'l3_isolation_domains: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.management_network_configuration
+  name: management_network_configuration
+  summary: Configuration to be used to setup the management network. Required.
+  signature: 'management_network_configuration: _models.ManagementNetworkConfigurationProperties'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.network_fabric_controller_id
+  name: network_fabric_controller_id
+  summary: Azure resource ID for the NetworkFabricController the NetworkFabric belongs.
+    Required.
+  signature: 'network_fabric_controller_id: str'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.network_fabric_sku
+  name: network_fabric_sku
+  summary: 'Compute / Aggregate racks. Once the user chooses a
+
+    particular SKU, only supported racks can be added to the Network Fabric. The SKU
+    determines
+
+    whether it is a single / multi rack Network Fabric. Required.'
+  signature: 'network_fabric_sku: str'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.provisioning_state
+  name: provisioning_state
+  summary: 'Provides you the latest status of the NFC service, whether it is Accepted,
+    updating, Succeeded
+
+    or Failed. During this process, the states keep changing based on the status of
+    NFC
+
+    provisioning. Known values are: "Accepted", "Succeeded", "Updating", "Deleting",
+
+    "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.qos_configuration
+  name: qos_configuration
+  summary: NetworkFabric QoS Configuration.
+  signature: 'qos_configuration: _models.QosProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.rack_count
+  name: rack_count
+  summary: Number of compute racks associated to Network Fabric.
+  signature: 'rack_count: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.racks
+  name: racks
+  summary: 'List of NetworkRack resource IDs under the Network Fabric. The number
+    of racks allowed depends
+
+    on the Network Fabric SKU.'
+  signature: 'racks: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.router_ids
+  name: router_ids
+  summary: Array of router IDs.
+  signature: 'router_ids: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.secret_rotation_summary
+  name: secret_rotation_summary
+  summary: Overview of secret rotation for the Network Fabric.
+  signature: 'secret_rotation_summary: _models.SecretRotationSummary | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.server_count_per_rack
+  name: server_count_per_rack
+  summary: Number of servers.Possible values are from 1-16. Required.
+  signature: 'server_count_per_rack: int'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.storage_account_configuration
+  name: storage_account_configuration
+  summary: Bring your own storage account configurations for Network Fabric.
+  signature: 'storage_account_configuration: _models.StorageAccountConfiguration |
+    None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.storage_array_count
+  name: storage_array_count
+  summary: Number of Storage arrays associated with the Network Fabric.
+  signature: 'storage_array_count: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.terminal_server_configuration
+  name: terminal_server_configuration
+  summary: Network and credentials configuration currently applied to terminal server.
+    Required.
+  signature: 'terminal_server_configuration: _models.TerminalServerConfiguration'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.trusted_ip_prefixes
+  name: trusted_ip_prefixes
+  summary: Trusted IP Prefixes ARM resource IDs.
+  signature: 'trusted_ip_prefixes: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricProperties.unique_rd_configuration
+  name: unique_rd_configuration
+  summary: Unique Route Distinguisher configuration.
+  signature: 'unique_rd_configuration: _models.UniqueRouteDistinguisherProperties
+    | None'

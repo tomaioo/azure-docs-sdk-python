@@ -1,0 +1,43 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.CertificateArchiveReference
+name: CertificateArchiveReference
+fullName: azure.mgmt.managednetworkfabric.models.CertificateArchiveReference
+module: azure.mgmt.managednetworkfabric.models
+summary: A reference to a version of a certificate in a key vault.
+constructor:
+  syntax: 'CertificateArchiveReference(*args: Any, **kwargs: Any)'
+variables:
+- description: A Uniform Resource Identifier (URI) for the certificate in the key
+    vault.
+  name: key_vault_uri
+  types:
+  - <xref:str>
+- description: The resource ID of the key vault containing the certificate.
+  name: key_vault_id
+  types:
+  - <xref:str>
+- description: The name of the certificate in the key vault.
+  name: certificate_name
+  types:
+  - <xref:str>
+- description: The version of the certificate in the key vault.
+  name: certificate_version
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.CertificateArchiveReference.certificate_name
+  name: certificate_name
+  summary: The name of the certificate in the key vault.
+  signature: 'certificate_name: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.CertificateArchiveReference.certificate_version
+  name: certificate_version
+  summary: The version of the certificate in the key vault.
+  signature: 'certificate_version: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.CertificateArchiveReference.key_vault_id
+  name: key_vault_id
+  summary: The resource ID of the key vault containing the certificate.
+  signature: 'key_vault_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.CertificateArchiveReference.key_vault_uri
+  name: key_vault_uri
+  summary: A Uniform Resource Identifier (URI) for the certificate in the key vault.
+  signature: 'key_vault_uri: str | None'

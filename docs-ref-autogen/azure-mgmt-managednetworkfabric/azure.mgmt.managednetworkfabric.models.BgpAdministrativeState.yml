@@ -1,0 +1,11 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.BgpAdministrativeState
+name: BgpAdministrativeState
+fullName: azure.mgmt.managednetworkfabric.models.BgpAdministrativeState
+summary: Border Gateway Protocol (BGP) Administrative State values.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: DISABLED
+  uid: azure.mgmt.managednetworkfabric.models.BgpAdministrativeState.DISABLED
+- name: ENABLED
+  uid: azure.mgmt.managednetworkfabric.models.BgpAdministrativeState.ENABLED

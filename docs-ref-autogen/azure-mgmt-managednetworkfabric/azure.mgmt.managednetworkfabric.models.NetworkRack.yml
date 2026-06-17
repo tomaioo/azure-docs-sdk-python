@@ -3,48 +3,13 @@ uid: azure.mgmt.managednetworkfabric.models.NetworkRack
 name: NetworkRack
 fullName: azure.mgmt.managednetworkfabric.models.NetworkRack
 module: azure.mgmt.managednetworkfabric.models
-summary: 'The Network Rack resource definition.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: The Network Rack resource definition.
 constructor:
-  syntax: 'NetworkRack(*, location: str, network_fabric_id: str, tags: Dict[str, str]
-    | None = None, annotation: str | None = None, network_rack_type: str | _models.NetworkRackType
-    | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: tags
-    description: Resource tags.
-    defaultValue: None
-    types:
-    - <xref:dict>[<xref:str>, <xref:str>]
-  - name: location
-    description: The geo-location where the resource lives. Required.
-    types:
-    - <xref:str>
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: network_rack_type
-    description: 'Network Rack SKU name. Known values are: "Aggregate", "Compute",
-
-      and "Combined".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.NetworkRackType>
-  - name: network_fabric_id
-    description: ARM resource ID of the Network Fabric. Required.
-    types:
-    - <xref:str>
+  syntax: 'NetworkRack(*args: Any, **kwargs: Any)'
 variables:
-- description: 'Fully qualified resource ID for the resource. E.g.
+- description: 'Fully qualified resource ID for the resource. Ex -
 
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}".'
+    /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.'
   name: id
   types:
   - <xref:str>
@@ -73,29 +38,12 @@ variables:
   name: location
   types:
   - <xref:str>
-- description: Switch configuration description.
-  name: annotation
+- description: Network Rack Properties. Required.
+  name: properties
   types:
-  - <xref:str>
-- description: 'Network Rack SKU name. Known values are: "Aggregate", "Compute", and
-
-    "Combined".'
-  name: network_rack_type
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.NetworkRackType>
-- description: ARM resource ID of the Network Fabric. Required.
-  name: network_fabric_id
-  types:
-  - <xref:str>
-- description: List of network device ARM resource IDs.
-  name: network_devices
-  types:
-  - <xref:list>[<xref:str>]
-- description: 'Provisioning state of the resource. Known values are: "Accepted",
-
-    "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
-  name: provisioning_state
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
+  - <xref:azure.mgmt.managednetworkfabric.models.NetworkRackProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkRack.properties
+  name: properties
+  summary: Network Rack Properties. Required.
+  signature: 'properties: _models.NetworkRackProperties'

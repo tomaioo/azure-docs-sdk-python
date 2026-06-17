@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.ViewDeviceConfigurationResponseProperties
+name: ViewDeviceConfigurationResponseProperties
+fullName: azure.mgmt.managednetworkfabric.models.ViewDeviceConfigurationResponseProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: View Device Configuration Response Properties.
+constructor:
+  syntax: 'ViewDeviceConfigurationResponseProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Storage URL to the device configuration file.
+  name: device_configuration_url
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ViewDeviceConfigurationResponseProperties.device_configuration_url
+  name: device_configuration_url
+  summary: Storage URL to the device configuration file.
+  signature: 'device_configuration_url: str | None'

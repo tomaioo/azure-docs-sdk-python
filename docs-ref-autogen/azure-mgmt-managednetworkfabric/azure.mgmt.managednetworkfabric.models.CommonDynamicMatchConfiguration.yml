@@ -5,25 +5,7 @@ fullName: azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfiguration
 module: azure.mgmt.managednetworkfabric.models
 summary: Dynamic match configuration object.
 constructor:
-  syntax: 'CommonDynamicMatchConfiguration(*, ip_groups: List[_models.IpGroupProperties]
-    | None = None, vlan_groups: List[_models.VlanGroupProperties] | None = None, port_groups:
-    List[_models.PortGroupProperties] | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: ip_groups
-    description: List of IP Groups.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.IpGroupProperties>]
-  - name: vlan_groups
-    description: List of vlan groups.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.VlanGroupProperties>]
-  - name: port_groups
-    description: List of the port group.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.PortGroupProperties>]
+  syntax: 'CommonDynamicMatchConfiguration(*args: Any, **kwargs: Any)'
 variables:
 - description: List of IP Groups.
   name: ip_groups
@@ -33,7 +15,20 @@ variables:
   name: vlan_groups
   types:
   - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.VlanGroupProperties>]
-- description: List of the port group.
+- description: List of the port groups.
   name: port_groups
   types:
   - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.PortGroupProperties>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfiguration.ip_groups
+  name: ip_groups
+  summary: List of IP Groups.
+  signature: 'ip_groups: list[''_models.IpGroupProperties''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfiguration.port_groups
+  name: port_groups
+  summary: List of the port groups.
+  signature: 'port_groups: list[''_models.PortGroupProperties''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfiguration.vlan_groups
+  name: vlan_groups
+  summary: List of vlan groups.
+  signature: 'vlan_groups: list[''_models.VlanGroupProperties''] | None'

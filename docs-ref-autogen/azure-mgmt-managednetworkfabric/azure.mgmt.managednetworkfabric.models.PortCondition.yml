@@ -3,53 +3,20 @@ uid: azure.mgmt.managednetworkfabric.models.PortCondition
 name: PortCondition
 fullName: azure.mgmt.managednetworkfabric.models.PortCondition
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Port condition that needs to be matched.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: Port condition that needs to be matched.
 constructor:
-  syntax: 'PortCondition(*, layer4_protocol: str | _models.Layer4Protocol, port_type:
-    str | _models.PortType | None = None, ports: List[str] | None = None, port_group_names:
-    List[str] | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: port_type
-    description: 'Port type that needs to be matched. Known values are: "SourcePort"
-      and
-
-      "DestinationPort".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.PortType>
-  - name: layer4_protocol
-    description: 'Layer4 protocol type that needs to be matched. Required. Known values
-
-      are: "TCP" and "UDP".'
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.Layer4Protocol>
-  - name: ports
-    description: List of the Ports that need to be matched.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>]
-  - name: port_group_names
-    description: List of the port Group Names that to be matched.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>]
+  syntax: 'PortCondition(*args: Any, **kwargs: Any)'
 variables:
-- description: 'Port type that needs to be matched. Known values are: "SourcePort"
-    and
+- description: 'Port type that needs to be matched. Known values are: "SourcePort",
 
-    "DestinationPort".'
+    "DestinationPort", and "Bidirectional".'
   name: port_type
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.PortType>
 - description: 'Layer4 protocol type that needs to be matched. Required. Known values
 
-    are: "TCP" and "UDP".'
+    are: "TCP", "UDP", and "SCTP".'
   name: layer4_protocol
   types:
   - <xref:str>
@@ -58,7 +25,28 @@ variables:
   name: ports
   types:
   - <xref:list>[<xref:str>]
-- description: List of the port Group Names that to be matched.
+- description: List of the port Group Names that need to be matched.
   name: port_group_names
   types:
   - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.PortCondition.layer4_protocol
+  name: layer4_protocol
+  summary: '"TCP", "UDP",
+
+    and "SCTP".'
+  signature: 'layer4_protocol: str | _models.Layer4Protocol'
+- uid: azure.mgmt.managednetworkfabric.models.PortCondition.port_group_names
+  name: port_group_names
+  summary: List of the port Group Names that need to be matched.
+  signature: 'port_group_names: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.PortCondition.port_type
+  name: port_type
+  summary: '"SourcePort", "DestinationPort", and
+
+    "Bidirectional".'
+  signature: 'port_type: str | _models.PortType | None'
+- uid: azure.mgmt.managednetworkfabric.models.PortCondition.ports
+  name: ports
+  summary: List of the Ports that need to be matched.
+  signature: 'ports: list[str] | None'

@@ -70,4 +70,4 @@ attributes:
 - uid: azure.mgmt.computefleet.models.Fleet.zones
   name: zones
   summary: Zones in which the Compute Fleet is available.
-  signature: 'zones: List[str] | None'
+  signature: 'zones: list[str] | None'

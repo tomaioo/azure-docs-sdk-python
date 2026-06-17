@@ -1,0 +1,11 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkRouteType
+name: ExternalNetworkRouteType
+fullName: azure.mgmt.managednetworkfabric.models.ExternalNetworkRouteType
+summary: External Network RouteType.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: OPTION_A
+  uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkRouteType.OPTION_A
+- name: STATIC
+  uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkRouteType.STATIC

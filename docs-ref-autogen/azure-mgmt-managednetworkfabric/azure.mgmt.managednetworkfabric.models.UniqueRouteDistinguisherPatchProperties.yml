@@ -1,0 +1,40 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.UniqueRouteDistinguisherPatchProperties
+name: UniqueRouteDistinguisherPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.UniqueRouteDistinguisherPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Unique Route Distinguisher configuration properties.
+constructor:
+  syntax: 'UniqueRouteDistinguisherPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Unique Route Distinguisher configuration state. Default is
+
+    Enabled. Known values are: "Enabled" and "Disabled".'
+  name: unique_rd_configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.UniqueRouteDistinguisherConfigurationState>
+- description: 'NNI derived unique Route Distinguisher state.
+
+    Default is Disabled. Known values are: "Enabled" and "Disabled".'
+  name: nni_derived_unique_rd_configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.NNIDerivedUniqueRouteDistinguisherConfigurationState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.UniqueRouteDistinguisherPatchProperties.nni_derived_unique_rd_configuration_state
+  name: nni_derived_unique_rd_configuration_state
+  summary: 'NNI derived unique Route Distinguisher state. Default is Disabled. Known
+    values are:
+
+    "Enabled" and "Disabled".'
+  signature: 'nni_derived_unique_rd_configuration_state: str | _models.NNIDerivedUniqueRouteDistinguisherConfigurationState
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.UniqueRouteDistinguisherPatchProperties.unique_rd_configuration_state
+  name: unique_rd_configuration_state
+  summary: 'Unique Route Distinguisher configuration state. Default is Enabled. Known
+    values are:
+
+    "Enabled" and "Disabled".'
+  signature: 'unique_rd_configuration_state: str | _models.UniqueRouteDistinguisherConfigurationState
+    | None'

@@ -1,0 +1,17 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.BmpMonitoredAddressFamily
+name: BmpMonitoredAddressFamily
+fullName: azure.mgmt.managednetworkfabric.models.BmpMonitoredAddressFamily
+summary: Monitored Address Family.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: ALL
+  uid: azure.mgmt.managednetworkfabric.models.BmpMonitoredAddressFamily.ALL
+- name: IPV4_UNICAST
+  uid: azure.mgmt.managednetworkfabric.models.BmpMonitoredAddressFamily.IPV4_UNICAST
+- name: IPV6_UNICAST
+  uid: azure.mgmt.managednetworkfabric.models.BmpMonitoredAddressFamily.IPV6_UNICAST
+- name: VPN_IPV4
+  uid: azure.mgmt.managednetworkfabric.models.BmpMonitoredAddressFamily.VPN_IPV4
+- name: VPN_IPV6
+  uid: azure.mgmt.managednetworkfabric.models.BmpMonitoredAddressFamily.VPN_IPV6

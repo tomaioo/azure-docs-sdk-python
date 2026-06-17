@@ -11,10 +11,7 @@ constructor:
 methods:
 - uid: azure.mgmt.managednetworkfabric.operations.L2IsolationDomainsOperations.begin_commit_configuration
   name: begin_commit_configuration
-  summary: 'Execute the commit on the resources.
-
-
-    Commits the configuration of the given resources.'
+  summary: Commits the configuration of the given resources.
   signature: 'begin_commit_configuration(resource_group_name: str, l2_isolation_domain_name:
     str, **kwargs: Any) -> LROPoller[CommonPostActionResponseForStateUpdate]'
   parameters:
@@ -30,48 +27,19 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be ARMPolling. Pass in False
-      for this
-
-      operation to not poll, or pass in your own initialized polling object for a
-      personal polling
-
-      strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.PollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
   return:
-    description: 'An instance of LROPoller that returns either CommonPostActionResponseForStateUpdate
-      or
+    description: 'An instance of LROPoller that returns CommonPostActionResponseForStateUpdate.
+      The
 
-      the result of cls(response)'
+      CommonPostActionResponseForStateUpdate is compatible with MutableMapping'
     types:
     - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForStateUpdate>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.L2IsolationDomainsOperations.begin_create
   name: begin_create
-  summary: 'Create L2 Isolation Domain.
-
-
-    Creates layer 2 network connectivity between compute nodes within a rack and across
-    racks.The
+  summary: 'Creates layer 2 network connectivity between compute nodes within a rack
+    and across racks.The
 
     configuration is applied on the devices only after the isolation domain is enabled.'
   signature: 'begin_create(resource_group_name: str, l2_isolation_domain_name: str,
@@ -91,60 +59,28 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: Request payload. Is either a L2IsolationDomain type or a IO type.
-      Required.
+    description: 'Request payload. Is one of the following types: L2IsolationDomain,
+      JSON, IO[bytes]
+
+      Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.L2IsolationDomain>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be ARMPolling. Pass in False
-      for this
-
-      operation to not poll, or pass in your own initialized polling object for a
-      personal polling
-
-      strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.PollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of LROPoller that returns either L2IsolationDomain or
-      the result of
+    description: 'An instance of LROPoller that returns L2IsolationDomain. The L2IsolationDomain
+      is
 
-      cls(response)'
+      compatible with MutableMapping'
     types:
     - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.L2IsolationDomain>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.L2IsolationDomainsOperations.begin_delete
   name: begin_delete
-  summary: 'Deletes the L2 Isolation Domain.
-
-
-    Deletes layer 2 connectivity between compute nodes by managed by named L2 Isolation
-    name.'
+  summary: Deletes layer 2 connectivity between compute nodes by managed by named
+    L2 Isolation name.
   signature: 'begin_delete(resource_group_name: str, l2_isolation_domain_name: str,
     **kwargs: Any) -> LROPoller[None]'
   parameters:
@@ -160,45 +96,15 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be ARMPolling. Pass in False
-      for this
-
-      operation to not poll, or pass in your own initialized polling object for a
-      personal polling
-
-      strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.PollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
   return:
-    description: An instance of LROPoller that returns either None or the result of
-      cls(response)
+    description: An instance of LROPoller that returns None
     types:
     - <xref:azure.core.polling.LROPoller>[<xref:None>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.L2IsolationDomainsOperations.begin_update
   name: begin_update
-  summary: 'Updates the L2 Isolation Domain.
-
-
-    API to update certain properties of the L2 Isolation Domain resource.'
+  summary: API to update certain properties of the L2 Isolation Domain resource.
   signature: 'begin_update(resource_group_name: str, l2_isolation_domain_name: str,
     body: _models.L2IsolationDomainPatch, *, content_type: str = ''application/json'',
     **kwargs: Any) -> LROPoller[_models.L2IsolationDomain]'
@@ -217,63 +123,29 @@ methods:
     - <xref:str>
   - name: body
     description: 'API to update certain properties of the L2 Isolation Domain resource..
-      Is either a
+      Is one of
 
-      L2IsolationDomainPatch type or a IO type. Required.'
+      the following types: L2IsolationDomainPatch, JSON, IO[bytes] Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.L2IsolationDomainPatch>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be ARMPolling. Pass in False
-      for this
-
-      operation to not poll, or pass in your own initialized polling object for a
-      personal polling
-
-      strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.PollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of LROPoller that returns either L2IsolationDomain or
-      the result of
+    description: 'An instance of LROPoller that returns L2IsolationDomain. The L2IsolationDomain
+      is
 
-      cls(response)'
+      compatible with MutableMapping'
     types:
     - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.L2IsolationDomain>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.L2IsolationDomainsOperations.begin_update_administrative_state
   name: begin_update_administrative_state
-  summary: 'Implements the operation to the underlying resources.
-
-
-    Enables isolation domain across the fabric or on specified racks.'
+  summary: Enables isolation domain across the fabric or on specified racks.
   signature: 'begin_update_administrative_state(resource_group_name: str, l2_isolation_domain_name:
     str, body: _models.UpdateAdministrativeState, *, content_type: str = ''application/json'',
-    **kwargs: Any) -> LROPoller[_models.CommonPostActionResponseForDeviceUpdate]'
+    **kwargs: Any) -> LROPoller[_models.UpdateAdministrativeStateResponse]'
   parameters:
   - name: resource_group_name
     description: 'The name of the resource group. The name is case insensitive.
@@ -288,52 +160,22 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: 'Request payload. Is either a UpdateAdministrativeState type or a
-      IO type.
+    description: 'Request payload. Is one of the following types: UpdateAdministrativeState,
+      JSON,
 
-      Required.'
+      IO[bytes] Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.UpdateAdministrativeState>
-    - <xref:typing.IO>
-  keywordOnlyParameters:
-  - name: content_type
-    description: 'Body Parameter content-type. Known values are: ''application/json''.
-
-      Default value is None.'
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be ARMPolling. Pass in False
-      for this
-
-      operation to not poll, or pass in your own initialized polling object for a
-      personal polling
-
-      strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.PollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
-    description: 'An instance of LROPoller that returns either CommonPostActionResponseForDeviceUpdate
+    description: 'An instance of LROPoller that returns UpdateAdministrativeStateResponse.
+      The
 
-      or the result of cls(response)'
+      UpdateAdministrativeStateResponse is compatible with MutableMapping'
     types:
-    - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForDeviceUpdate>]
+    - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.UpdateAdministrativeStateResponse>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.L2IsolationDomainsOperations.begin_validate_configuration
@@ -354,47 +196,18 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be ARMPolling. Pass in False
-      for this
-
-      operation to not poll, or pass in your own initialized polling object for a
-      personal polling
-
-      strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.PollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
   return:
-    description: 'An instance of LROPoller that returns either ValidateConfigurationResponse
-      or the
+    description: 'An instance of LROPoller that returns ValidateConfigurationResponse.
+      The
 
-      result of cls(response)'
+      ValidateConfigurationResponse is compatible with MutableMapping'
     types:
     - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.ValidateConfigurationResponse>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.L2IsolationDomainsOperations.get
   name: get
-  summary: 'Retrieves details of this L2 Isolation Domain.
-
-
-    Implements L2 Isolation Domain GET method.'
+  summary: Implements L2 Isolation Domain GET method.
   signature: 'get(resource_group_name: str, l2_isolation_domain_name: str, **kwargs:
     Any) -> L2IsolationDomain'
   parameters:
@@ -410,24 +223,16 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
   return:
-    description: L2IsolationDomain or the result of cls(response)
+    description: L2IsolationDomain. The L2IsolationDomain is compatible with MutableMapping
     types:
     - <xref:azure.mgmt.managednetworkfabric.models.L2IsolationDomain>
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.L2IsolationDomainsOperations.list_by_resource_group
   name: list_by_resource_group
-  summary: 'List L2IsolationDomains by resource group.
-
-
-    Displays L2IsolationDomains list by resource group GET method.'
-  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> Iterable[L2IsolationDomain]'
+  summary: Displays L2IsolationDomains list by resource group GET method.
+  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> ItemPaged[L2IsolationDomain]'
   parameters:
   - name: resource_group_name
     description: 'The name of the resource group. The name is case insensitive.
@@ -436,38 +241,19 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
   return:
-    description: An iterator like instance of either L2IsolationDomain or the result
-      of cls(response)
+    description: An iterator like instance of L2IsolationDomain
     types:
     - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.managednetworkfabric.models.L2IsolationDomain>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.managednetworkfabric.operations.L2IsolationDomainsOperations.list_by_subscription
   name: list_by_subscription
-  summary: 'List L2IsolationDomains by subscription.
-
-
-    Displays L2IsolationDomains list by subscription GET method.'
-  signature: 'list_by_subscription(**kwargs: Any) -> Iterable[L2IsolationDomain]'
-  keywordOnlyParameters:
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
+  summary: Displays L2IsolationDomains list by subscription GET method.
+  signature: 'list_by_subscription(**kwargs: Any) -> ItemPaged[L2IsolationDomain]'
   return:
-    description: An iterator like instance of either L2IsolationDomain or the result
-      of cls(response)
+    description: An iterator like instance of L2IsolationDomain
     types:
     - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.managednetworkfabric.models.L2IsolationDomain>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
-attributes:
-- uid: azure.mgmt.managednetworkfabric.operations.L2IsolationDomainsOperations.models
-  name: models
-  signature: models = <module 'azure.mgmt.managednetworkfabric.models' from 'C:\\ToolCache\\Python\\3.12.10\\x64\\Lib\\site-packages\\py2docfx\\venv\\venv171\\Lib\\site-packages\\azure\\mgmt\\managednetworkfabric\\models\\__init__.py'>

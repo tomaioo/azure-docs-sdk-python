@@ -9,3 +9,5 @@ fields:
   uid: azure.mgmt.managednetworkfabric.models.EnableDisableState.DISABLE
 - name: ENABLE
   uid: azure.mgmt.managednetworkfabric.models.EnableDisableState.ENABLE
+- name: UNDER_MAINTENANCE
+  uid: azure.mgmt.managednetworkfabric.models.EnableDisableState.UNDER_MAINTENANCE

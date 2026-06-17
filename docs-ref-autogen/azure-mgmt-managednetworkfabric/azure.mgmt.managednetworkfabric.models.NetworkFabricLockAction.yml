@@ -1,0 +1,11 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.NetworkFabricLockAction
+name: NetworkFabricLockAction
+fullName: azure.mgmt.managednetworkfabric.models.NetworkFabricLockAction
+summary: Network fabric lock action.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: LOCK
+  uid: azure.mgmt.managednetworkfabric.models.NetworkFabricLockAction.LOCK
+- name: UNLOCK
+  uid: azure.mgmt.managednetworkfabric.models.NetworkFabricLockAction.UNLOCK

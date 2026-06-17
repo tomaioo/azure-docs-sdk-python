@@ -3,37 +3,9 @@ uid: azure.mgmt.managednetworkfabric.models.NetworkTapProperties
 name: NetworkTapProperties
 fullName: azure.mgmt.managednetworkfabric.models.NetworkTapProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Network Tap Properties defines the properties of the resource.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: Network Tap Properties defines the properties of the resource.
 constructor:
-  syntax: 'NetworkTapProperties(*, network_packet_broker_id: str, destinations: List[_models.NetworkTapPropertiesDestinationsItem],
-    annotation: str | None = None, polling_type: str | _models.PollingType | None
-    = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: network_packet_broker_id
-    description: ARM resource ID of the Network Packet Broker. Required.
-    types:
-    - <xref:str>
-  - name: destinations
-    description: List of destinations to send the filter traffic. Required.
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NetworkTapPropertiesDestinationsItem>]
-  - name: polling_type
-    description: 'Polling type. Known values are: "Pull" and "Push".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.PollingType>
+  syntax: 'NetworkTapProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: Switch configuration description.
   name: annotation
@@ -47,20 +19,30 @@ variables:
   name: source_tap_rule_id
   types:
   - <xref:str>
+- description: Associated Network Fabric Resource IDs.
+  name: network_fabric_ids
+  types:
+  - <xref:list>[<xref:str>]
 - description: List of destinations to send the filter traffic. Required.
   name: destinations
   types:
-  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NetworkTapPropertiesDestinationsItem>]
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.DestinationProperties>]
 - description: 'Polling type. Known values are: "Pull" and "Push".'
   name: polling_type
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.PollingType>
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
 - description: 'Gets the configurations state of the resource. Known values are:
 
     "Succeeded", "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning",
 
-    "Deprovisioning", "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
+    "Deprovisioning", "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning",
+
+    "PendingCommit", and "PendingAdministrativeUpdate".'
   name: configuration_state
   types:
   - <xref:str>
@@ -80,8 +62,63 @@ variables:
   - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
 - description: 'Administrative state of the resource. Example -Enabled/Disabled.
 
-    Known values are: "Enabled", "Disabled", "MAT", and "RMA".'
+    Known values are: "Enabled", "Disabled", "MAT", "RMA", "UnderMaintenance", and
+
+    "EnabledDegraded".'
   name: administrative_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapProperties.administrative_state
+  name: administrative_state
+  summary: '"Enabled",
+
+    "Disabled", "MAT", "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  signature: 'administrative_state: str | _models.AdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed",
+
+    "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
+
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning",
+
+    "PendingCommit", and "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapProperties.destinations
+  name: destinations
+  summary: List of destinations to send the filter traffic. Required.
+  signature: 'destinations: list[''_models.DestinationProperties'']'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapProperties.network_fabric_ids
+  name: network_fabric_ids
+  summary: Associated Network Fabric Resource IDs.
+  signature: 'network_fabric_ids: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapProperties.network_packet_broker_id
+  name: network_packet_broker_id
+  summary: ARM resource ID of the Network Packet Broker. Required.
+  signature: 'network_packet_broker_id: str'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapProperties.polling_type
+  name: polling_type
+  summary: '"Pull" and "Push".'
+  signature: 'polling_type: str | _models.PollingType | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapProperties.provisioning_state
+  name: provisioning_state
+  summary: 'Provides you the latest status of the NFC service, whether it is Accepted,
+    updating, Succeeded
+
+    or Failed. During this process, the states keep changing based on the status of
+    Network Tap
+
+    provisioning. Known values are: "Accepted", "Succeeded", "Updating", "Deleting",
+
+    "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapProperties.source_tap_rule_id
+  name: source_tap_rule_id
+  summary: Source Tap Rule Id. ARM Resource ID of the Network Tap Rule.
+  signature: 'source_tap_rule_id: str | None'

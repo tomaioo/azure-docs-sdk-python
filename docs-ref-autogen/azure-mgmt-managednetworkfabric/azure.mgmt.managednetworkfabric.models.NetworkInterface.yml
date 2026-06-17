@@ -3,22 +3,13 @@ uid: azure.mgmt.managednetworkfabric.models.NetworkInterface
 name: NetworkInterface
 fullName: azure.mgmt.managednetworkfabric.models.NetworkInterface
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Defines the NetworkInterface resource.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.'
+summary: Defines the NetworkInterface resource.
 constructor:
-  syntax: 'NetworkInterface(*, annotation: str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'NetworkInterface(*args: Any, **kwargs: Any)'
 variables:
-- description: 'Fully qualified resource ID for the resource. E.g.
+- description: 'Fully qualified resource ID for the resource. Ex -
 
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}".'
+    /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.'
   name: id
   types:
   - <xref:str>
@@ -39,45 +30,20 @@ variables:
   name: system_data
   types:
   - <xref:azure.mgmt.managednetworkfabric.models.SystemData>
-- description: Switch configuration description.
-  name: annotation
+- description: The NetworkInterface properties. Required.
+  name: properties
   types:
-  - <xref:str>
-- description: Physical Identifier of the network interface.
-  name: physical_identifier
+  - <xref:azure.mgmt.managednetworkfabric.models.NetworkInterfaceProperties>
+- description: The managed service identities assigned to this resource.
+  name: identity
   types:
-  - <xref:str>
-- description: The ARM resource id of the interface or compute server its connected
-    to.
-  name: connected_to
-  types:
-  - <xref:str>
-- description: 'The Interface Type. Example: Management/Data. Known values are:
-
-    "Management" and "Data".'
-  name: interface_type
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.InterfaceType>
-- description: IPv4Address of the interface.
-  name: ipv4_address
-  types:
-  - <xref:str>
-- description: IPv6Address of the interface.
-  name: ipv6_address
-  types:
-  - <xref:str>
-- description: 'Provisioning state of the resource. Known values are: "Accepted",
-
-    "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
-  name: provisioning_state
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
-- description: 'Administrative state of the resource. Known values are: "Enabled",
-
-    "Disabled", "MAT", and "RMA".'
-  name: administrative_state
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+  - <xref:azure.mgmt.managednetworkfabric.models.ManagedServiceIdentity>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkInterface.identity
+  name: identity
+  summary: The managed service identities assigned to this resource.
+  signature: 'identity: _models.ManagedServiceIdentity | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkInterface.properties
+  name: properties
+  summary: The NetworkInterface properties. Required.
+  signature: 'properties: _models.NetworkInterfaceProperties'

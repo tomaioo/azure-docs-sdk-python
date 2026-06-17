@@ -1,0 +1,31 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkTapPatchProperties
+name: NetworkTapPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.NetworkTapPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: The Network Tap resource patch definition.
+constructor:
+  syntax: 'NetworkTapPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
+- description: 'Polling type. Known values are: "Pull" and "Push".'
+  name: polling_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.PollingType>
+- description: List of destination properties to send the filter traffic.
+  name: destinations
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.DestinationPatchProperties>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapPatchProperties.destinations
+  name: destinations
+  summary: List of destination properties to send the filter traffic.
+  signature: 'destinations: list[''_models.DestinationPatchProperties''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapPatchProperties.polling_type
+  name: polling_type
+  summary: '"Pull" and "Push".'
+  signature: 'polling_type: str | _models.PollingType | None'

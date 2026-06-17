@@ -1,0 +1,29 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.InternalNetworkBmpPatchProperties
+name: InternalNetworkBmpPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.InternalNetworkBmpPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Internal Network BMP Configuration.
+constructor:
+  syntax: 'InternalNetworkBmpPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Neighbor IP Address exclusions for BMP.
+  name: neighbor_ip_exclusions
+  types:
+  - <xref:list>[<xref:str>]
+- description: 'BMP Monitoring configuration state. Known values are: "Enabled"
+
+    and "Disabled".'
+  name: bmp_configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BmpConfigurationState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkBmpPatchProperties.bmp_configuration_state
+  name: bmp_configuration_state
+  summary: '"Enabled" and "Disabled".'
+  signature: 'bmp_configuration_state: str | _models.BmpConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkBmpPatchProperties.neighbor_ip_exclusions
+  name: neighbor_ip_exclusions
+  summary: Neighbor IP Address exclusions for BMP.
+  signature: 'neighbor_ip_exclusions: list[str] | None'

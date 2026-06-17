@@ -5,27 +5,12 @@ fullName: azure.mgmt.managednetworkfabric.models.NetworkDevicePatchParametersPro
 module: azure.mgmt.managednetworkfabric.models
 summary: Network Device Patch properties.
 constructor:
-  syntax: 'NetworkDevicePatchParametersProperties(*, host_name: str | None = None,
-    serial_number: str | None = None, annotation: str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: host_name
-    description: The host name of the device.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: serial_number
-    description: 'Serial number of the device. Format of serial Number -
-
-      Make;Model;HardwareRevisionId;SerialNumber.'
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'NetworkDevicePatchParametersProperties(*args: Any, **kwargs: Any)'
 variables:
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
 - description: The host name of the device.
   name: host_name
   types:
@@ -36,7 +21,31 @@ variables:
   name: serial_number
   types:
   - <xref:str>
-- description: Switch configuration description.
-  name: annotation
+- description: 'The selection of the managed identity to use with this storage
+
+    account. The identity type must be either system assigned or user assigned.'
+  name: identity_selector
   types:
-  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.IdentitySelectorPatch>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDevicePatchParametersProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDevicePatchParametersProperties.host_name
+  name: host_name
+  summary: The host name of the device.
+  signature: 'host_name: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDevicePatchParametersProperties.identity_selector
+  name: identity_selector
+  summary: 'The selection of the managed identity to use with this storage account.
+    The identity type must
+
+    be either system assigned or user assigned.'
+  signature: 'identity_selector: _models.IdentitySelectorPatch | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDevicePatchParametersProperties.serial_number
+  name: serial_number
+  summary: 'Serial number of the device. Format of serial Number -
+
+    Make;Model;HardwareRevisionId;SerialNumber.'
+  signature: 'serial_number: str | None'

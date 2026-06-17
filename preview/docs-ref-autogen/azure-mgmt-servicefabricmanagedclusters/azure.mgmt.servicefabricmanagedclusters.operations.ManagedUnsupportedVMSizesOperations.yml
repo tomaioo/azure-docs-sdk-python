@@ -15,7 +15,7 @@ methods:
   signature: 'get(location: str, vm_size: str, **kwargs: Any) -> ManagedVMSize'
   parameters:
   - name: location
-    description: 'The location for the cluster code versions. This is different from
+    description: 'The location for the unsupported VM sizes. This is different from
       cluster
 
       location. Required.'
@@ -39,7 +39,7 @@ methods:
   signature: 'list(location: str, **kwargs: Any) -> ItemPaged[ManagedVMSize]'
   parameters:
   - name: location
-    description: 'The location for the cluster code versions. This is different from
+    description: 'The location for the unsupported VM sizes. This is different from
       cluster
 
       location. Required.'

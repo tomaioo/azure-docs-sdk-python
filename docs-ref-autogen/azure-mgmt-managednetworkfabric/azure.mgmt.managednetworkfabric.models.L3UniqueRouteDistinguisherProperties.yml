@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.L3UniqueRouteDistinguisherProperties
+name: L3UniqueRouteDistinguisherProperties
+fullName: azure.mgmt.managednetworkfabric.models.L3UniqueRouteDistinguisherProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Unique Route Distinguisher properties.
+constructor:
+  syntax: 'L3UniqueRouteDistinguisherProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: List of Unique Route Distinguisher addresses.
+  name: unique_rds
+  types:
+  - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.L3UniqueRouteDistinguisherProperties.unique_rds
+  name: unique_rds
+  summary: List of Unique Route Distinguisher addresses.
+  signature: 'unique_rds: list[str] | None'

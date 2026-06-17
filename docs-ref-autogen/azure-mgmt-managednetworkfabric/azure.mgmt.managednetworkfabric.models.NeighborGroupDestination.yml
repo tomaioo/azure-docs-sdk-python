@@ -5,19 +5,7 @@ fullName: azure.mgmt.managednetworkfabric.models.NeighborGroupDestination
 module: azure.mgmt.managednetworkfabric.models
 summary: An array of destination IPv4 Addresses or IPv6 Addresses.
 constructor:
-  syntax: 'NeighborGroupDestination(*, ipv4_addresses: List[str] | None = None, ipv6_addresses:
-    List[str] | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: ipv4_addresses
-    description: Array of IPv4 Addresses.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>]
-  - name: ipv6_addresses
-    description: Array of IPv6 Addresses.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>]
+  syntax: 'NeighborGroupDestination(*args: Any, **kwargs: Any)'
 variables:
 - description: Array of IPv4 Addresses.
   name: ipv4_addresses
@@ -27,3 +15,12 @@ variables:
   name: ipv6_addresses
   types:
   - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NeighborGroupDestination.ipv4_addresses
+  name: ipv4_addresses
+  summary: Array of IPv4 Addresses.
+  signature: 'ipv4_addresses: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NeighborGroupDestination.ipv6_addresses
+  name: ipv6_addresses
+  summary: Array of IPv6 Addresses.
+  signature: 'ipv6_addresses: list[str] | None'

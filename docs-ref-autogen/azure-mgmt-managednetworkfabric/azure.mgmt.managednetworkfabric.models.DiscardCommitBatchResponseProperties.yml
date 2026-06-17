@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.DiscardCommitBatchResponseProperties
+name: DiscardCommitBatchResponseProperties
+fullName: azure.mgmt.managednetworkfabric.models.DiscardCommitBatchResponseProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Discard Commit Batch Response Properties.
+constructor:
+  syntax: 'DiscardCommitBatchResponseProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Commit Batch Identifier.
+  name: commit_batch_id
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.DiscardCommitBatchResponseProperties.commit_batch_id
+  name: commit_batch_id
+  summary: Commit Batch Identifier.
+  signature: 'commit_batch_id: str | None'

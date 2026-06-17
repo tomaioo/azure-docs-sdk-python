@@ -5,16 +5,14 @@ fullName: azure.mgmt.managednetworkfabric.models.IpCommunityPatchableProperties
 module: azure.mgmt.managednetworkfabric.models
 summary: IP Community patchable properties.
 constructor:
-  syntax: 'IpCommunityPatchableProperties(*, ip_community_rules: List[_models.IpCommunityRule]
-    | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: ip_community_rules
-    description: List of IP Community Rules.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.IpCommunityRule>]
+  syntax: 'IpCommunityPatchableProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: List of IP Community Rules.
   name: ip_community_rules
   types:
   - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.IpCommunityRule>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.IpCommunityPatchableProperties.ip_community_rules
+  name: ip_community_rules
+  summary: List of IP Community Rules.
+  signature: 'ip_community_rules: list[''_models.IpCommunityRule''] | None'

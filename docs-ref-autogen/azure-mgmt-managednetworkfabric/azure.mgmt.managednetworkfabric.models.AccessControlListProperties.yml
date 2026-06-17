@@ -3,48 +3,17 @@ uid: azure.mgmt.managednetworkfabric.models.AccessControlListProperties
 name: AccessControlListProperties
 fullName: azure.mgmt.managednetworkfabric.models.AccessControlListProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Access Control List Properties defines the resource properties.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.'
+summary: Access Control List Properties defines the resource properties.
 constructor:
-  syntax: 'AccessControlListProperties(*, configuration_type: str | _models.ConfigurationType
-    | None = None, acls_url: str | None = None, match_configurations: List[_models.AccessControlListMatchConfiguration]
-    | None = None, dynamic_match_configurations: List[_models.CommonDynamicMatchConfiguration]
-    | None = None, annotation: str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: configuration_type
-    description: 'Input method to configure Access Control List. Known values are:
-
-      "File" and "Inline".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationType>
-  - name: acls_url
-    description: Access Control List file URL.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: match_configurations
-    description: List of match configurations.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.AccessControlListMatchConfiguration>]
-  - name: dynamic_match_configurations
-    description: List of dynamic match configurations.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfiguration>]
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'AccessControlListProperties(*args: Any, **kwargs: Any)'
 variables:
-- description: 'Input method to configure Access Control List. Known values are:
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
+- description: 'Input method to configure Access Control List. Required. Known values
 
-    "File" and "Inline".'
+    are: "File" and "Inline".'
   name: configuration_type
   types:
   - <xref:str>
@@ -53,6 +22,13 @@ variables:
   name: acls_url
   types:
   - <xref:str>
+- description: 'Default action that needs to be applied when no condition is matched.
+
+    Example: Permit | Deny. Known values are: "Permit" and "Deny".'
+  name: default_action
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.CommunityActionTypes>
 - description: List of match configurations.
   name: match_configurations
   types:
@@ -61,19 +37,46 @@ variables:
   name: dynamic_match_configurations
   types:
   - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfiguration>]
-- description: Switch configuration description.
-  name: annotation
-  types:
-  - <xref:str>
 - description: The last synced timestamp.
   name: last_synced_time
   types:
   - <xref:datetime.datetime>
+- description: 'Access Control List (ACL) Type. Known values are: "ControlPlaneTrafficPolicy",
+
+    "Tenant", "Management", and "ControlPlaneAcl".'
+  name: acl_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.AclType>
+- description: 'Device Role. Known values are: "CE", "ToR", "NPB", and "ManagementSwitch".'
+  name: device_role
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.DeviceRole>
+- description: Global Access Control List (ACL) actions.
+  name: global_access_control_list_actions
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.GlobalAccessControlListActionProperties>
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
+- description: Associated Network Fabric Resource IDs.
+  name: network_fabric_ids
+  types:
+  - <xref:list>[<xref:str>]
+- description: Access Control List (ACL) configurations.
+  name: control_plane_acl_configuration
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.ControlPlaneAclProperties>]
 - description: 'Configuration state of the resource. Known values are: "Succeeded",
 
     "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
 
-    "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
   name: configuration_state
   types:
   - <xref:str>
@@ -87,8 +90,93 @@ variables:
   - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
 - description: 'Administrative state of the resource. Known values are: "Enabled",
 
-    "Disabled", "MAT", and "RMA".'
+    "Disabled", "MAT", "RMA", "UnderMaintenance", and "EnabledDegraded".'
   name: administrative_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListProperties.acl_type
+  name: acl_type
+  summary: '"ControlPlaneTrafficPolicy", "Tenant",
+
+    "Management", and "ControlPlaneAcl".'
+  signature: 'acl_type: str | _models.AclType | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListProperties.acls_url
+  name: acls_url
+  summary: Access Control List file URL.
+  signature: 'acls_url: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListProperties.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT",
+
+    "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  signature: 'administrative_state: str | _models.AdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListProperties.configuration_type
+  name: configuration_type
+  summary: '"File" and
+
+    "Inline".'
+  signature: 'configuration_type: str | _models.ConfigurationType'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListProperties.control_plane_acl_configuration
+  name: control_plane_acl_configuration
+  summary: Access Control List (ACL) configurations.
+  signature: 'control_plane_acl_configuration: list[''_models.ControlPlaneAclProperties'']
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListProperties.default_action
+  name: default_action
+  summary: 'Permit | Deny.
+
+    Known values are: "Permit" and "Deny".'
+  signature: 'default_action: str | _models.CommunityActionTypes | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListProperties.device_role
+  name: device_role
+  summary: '"CE", "ToR", "NPB", and "ManagementSwitch".'
+  signature: 'device_role: str | _models.DeviceRole | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListProperties.dynamic_match_configurations
+  name: dynamic_match_configurations
+  summary: List of dynamic match configurations.
+  signature: 'dynamic_match_configurations: list[''_models.CommonDynamicMatchConfiguration'']
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListProperties.global_access_control_list_actions
+  name: global_access_control_list_actions
+  summary: Global Access Control List (ACL) actions.
+  signature: 'global_access_control_list_actions: _models.GlobalAccessControlListActionProperties
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListProperties.last_synced_time
+  name: last_synced_time
+  summary: The last synced timestamp.
+  signature: 'last_synced_time: datetime | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListProperties.match_configurations
+  name: match_configurations
+  summary: List of match configurations.
+  signature: 'match_configurations: list[''_models.AccessControlListMatchConfiguration'']
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListProperties.network_fabric_ids
+  name: network_fabric_ids
+  summary: Associated Network Fabric Resource IDs.
+  signature: 'network_fabric_ids: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'

@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NativeIpv4PrefixLimitProperties
+name: NativeIpv4PrefixLimitProperties
+fullName: azure.mgmt.managednetworkfabric.models.NativeIpv4PrefixLimitProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: External Network native IPv4 prefix limit properties.
+constructor:
+  syntax: 'NativeIpv4PrefixLimitProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Prefix limits.
+  name: prefix_limits
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.PrefixLimitProperties>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NativeIpv4PrefixLimitProperties.prefix_limits
+  name: prefix_limits
+  summary: Prefix limits.
+  signature: 'prefix_limits: list[''_models.PrefixLimitProperties''] | None'

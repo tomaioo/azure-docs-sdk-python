@@ -5,6 +5,10 @@ fullName: azure.mgmt.managednetworkfabric.models.DeviceAdministrativeState
 summary: Administrative state.
 module: azure.mgmt.managednetworkfabric.models
 fields:
+- name: DISABLE
+  uid: azure.mgmt.managednetworkfabric.models.DeviceAdministrativeState.DISABLE
+- name: ENABLE
+  uid: azure.mgmt.managednetworkfabric.models.DeviceAdministrativeState.ENABLE
 - name: GRACEFUL_QUARANTINE
   uid: azure.mgmt.managednetworkfabric.models.DeviceAdministrativeState.GRACEFUL_QUARANTINE
 - name: QUARANTINE
@@ -13,3 +17,9 @@ fields:
   uid: azure.mgmt.managednetworkfabric.models.DeviceAdministrativeState.RESYNC
 - name: RMA
   uid: azure.mgmt.managednetworkfabric.models.DeviceAdministrativeState.RMA
+- name: UNDER_MAINTENANCE
+  uid: azure.mgmt.managednetworkfabric.models.DeviceAdministrativeState.UNDER_MAINTENANCE
+- name: UNGRACEFUL_QUARANTINE
+  uid: azure.mgmt.managednetworkfabric.models.DeviceAdministrativeState.UNGRACEFUL_QUARANTINE
+- name: UNGRACEFUL_RMA
+  uid: azure.mgmt.managednetworkfabric.models.DeviceAdministrativeState.UNGRACEFUL_RMA

@@ -9,30 +9,6 @@ summary: "> [!WARNING]\n> DO NOT instantiate this class directly.\n>\n> \n>\n> I
 constructor:
   syntax: FleetsOperations(*args, **kwargs)
 methods:
-- uid: azure.mgmt.computefleet.aio.operations.FleetsOperations.begin_cancel
-  name: begin_cancel
-  summary: Cancels an instance Fleet creation that is in progress.
-  signature: 'async begin_cancel(resource_group_name: str, fleet_name: str, **kwargs:
-    Any) -> AsyncLROPoller[None]'
-  parameters:
-  - name: resource_group_name
-    description: 'The name of the resource group. The name is case insensitive.
-
-      Required.'
-    isRequired: true
-    types:
-    - <xref:str>
-  - name: fleet_name
-    description: The name of the Compute Fleet. Required.
-    isRequired: true
-    types:
-    - <xref:str>
-  return:
-    description: An instance of AsyncLROPoller that returns None
-    types:
-    - <xref:azure.core.polling.AsyncLROPoller>[<xref:None>]
-  exceptions:
-  - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.computefleet.aio.operations.FleetsOperations.begin_create_or_update
   name: begin_create_or_update
   summary: Create a Fleet.
@@ -210,7 +186,7 @@ methods:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.computefleet.aio.operations.FleetsOperations.list_virtual_machines
   name: list_virtual_machines
-  summary: List VirtualMachine resources of an instance Fleet.
+  summary: List VirtualMachine resources of a Launch mode Fleet.
   signature: 'list_virtual_machines(resource_group_name: str, name: str, *, filter:
     str | None = None, skiptoken: str | None = None, **kwargs: Any) -> AsyncItemPaged[VirtualMachine]'
   parameters:

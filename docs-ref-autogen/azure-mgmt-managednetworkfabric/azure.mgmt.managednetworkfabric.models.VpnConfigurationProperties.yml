@@ -3,43 +3,9 @@ uid: azure.mgmt.managednetworkfabric.models.VpnConfigurationProperties
 name: VpnConfigurationProperties
 fullName: azure.mgmt.managednetworkfabric.models.VpnConfigurationProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Network and credential configuration currently applied on terminal server.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: Network and credential configuration currently applied on terminal server.
 constructor:
-  syntax: 'VpnConfigurationProperties(*, peering_option: str | _models.PeeringOption,
-    network_to_network_interconnect_id: str | None = None, option_b_properties: _models.OptionBProperties
-    | None = None, option_a_properties: _models.VpnConfigurationPropertiesOptionAProperties
-    | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: network_to_network_interconnect_id
-    description: 'ARM Resource ID of the Network To Network
-
-      Interconnect.'
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: peering_option
-    description: 'Peering option list. Required. Known values are: "OptionA" and
-
-      "OptionB".'
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.PeeringOption>
-  - name: option_b_properties
-    description: option B properties.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.OptionBProperties>
-  - name: option_a_properties
-    description: option A properties.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.VpnConfigurationPropertiesOptionAProperties>
+  syntax: 'VpnConfigurationProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: 'ARM Resource ID of the Network To Network
 
@@ -49,7 +15,7 @@ variables:
   - <xref:str>
 - description: 'Administrative state of the resource. Known values are: "Enabled",
 
-    "Disabled", "MAT", and "RMA".'
+    "Disabled", "MAT", "RMA", "UnderMaintenance", and "EnabledDegraded".'
   name: administrative_state
   types:
   - <xref:str>
@@ -62,8 +28,31 @@ variables:
 - description: option B properties.
   name: option_b_properties
   types:
-  - <xref:azure.mgmt.managednetworkfabric.models.OptionBProperties>
+  - <xref:azure.mgmt.managednetworkfabric.models.VpnOptionBProperties>
 - description: option A properties.
   name: option_a_properties
   types:
-  - <xref:azure.mgmt.managednetworkfabric.models.VpnConfigurationPropertiesOptionAProperties>
+  - <xref:azure.mgmt.managednetworkfabric.models.VpnOptionAProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.VpnConfigurationProperties.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT",
+
+    "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  signature: 'administrative_state: str | _models.AdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.VpnConfigurationProperties.network_to_network_interconnect_id
+  name: network_to_network_interconnect_id
+  summary: ARM Resource ID of the Network To Network Interconnect.
+  signature: 'network_to_network_interconnect_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.VpnConfigurationProperties.option_a_properties
+  name: option_a_properties
+  summary: option A properties.
+  signature: 'option_a_properties: _models.VpnOptionAProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.VpnConfigurationProperties.option_b_properties
+  name: option_b_properties
+  summary: option B properties.
+  signature: 'option_b_properties: _models.VpnOptionBProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.VpnConfigurationProperties.peering_option
+  name: peering_option
+  summary: '"OptionA" and "OptionB".'
+  signature: 'peering_option: str | _models.PeeringOption'

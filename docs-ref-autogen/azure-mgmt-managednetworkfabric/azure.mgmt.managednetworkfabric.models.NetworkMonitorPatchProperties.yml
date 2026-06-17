@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkMonitorPatchProperties
+name: NetworkMonitorPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.NetworkMonitorPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: The Network Monitor Patch Properties.
+constructor:
+  syntax: 'NetworkMonitorPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: BGP Monitoring Protocol (BMP) Configurations for the Network Monitor.
+  name: bmp_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.BmpConfigurationPatchProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkMonitorPatchProperties.bmp_configuration
+  name: bmp_configuration
+  summary: BGP Monitoring Protocol (BMP) Configurations for the Network Monitor.
+  signature: 'bmp_configuration: _models.BmpConfigurationPatchProperties | None'

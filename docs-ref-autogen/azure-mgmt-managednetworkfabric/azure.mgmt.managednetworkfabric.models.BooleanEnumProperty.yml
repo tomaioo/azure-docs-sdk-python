@@ -2,7 +2,7 @@
 uid: azure.mgmt.managednetworkfabric.models.BooleanEnumProperty
 name: BooleanEnumProperty
 fullName: azure.mgmt.managednetworkfabric.models.BooleanEnumProperty
-summary: Boolean Enum. Example- True/False.
+summary: Boolean union. Example- True/False.
 module: azure.mgmt.managednetworkfabric.models
 fields:
 - name: 'FALSE'

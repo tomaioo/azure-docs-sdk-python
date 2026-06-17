@@ -5,16 +5,14 @@ fullName: azure.mgmt.managednetworkfabric.models.IpCommunityIdList
 module: azure.mgmt.managednetworkfabric.models
 summary: IP Community ID list properties.
 constructor:
-  syntax: 'IpCommunityIdList(*, ip_community_ids: List[str] | None = None, **kwargs:
-    Any)'
-  keywordOnlyParameters:
-  - name: ip_community_ids
-    description: List of IP Community resource IDs.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>]
+  syntax: 'IpCommunityIdList(*args: Any, **kwargs: Any)'
 variables:
 - description: List of IP Community resource IDs.
   name: ip_community_ids
   types:
   - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.IpCommunityIdList.ip_community_ids
+  name: ip_community_ids
+  summary: List of IP Community resource IDs.
+  signature: 'ip_community_ids: list[str] | None'

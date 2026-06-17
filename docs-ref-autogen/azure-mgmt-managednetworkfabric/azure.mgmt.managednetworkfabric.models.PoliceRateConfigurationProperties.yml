@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.PoliceRateConfigurationProperties
+name: PoliceRateConfigurationProperties
+fullName: azure.mgmt.managednetworkfabric.models.PoliceRateConfigurationProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Police rate configuration properties.
+constructor:
+  syntax: 'PoliceRateConfigurationProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Rate limit in bits per second.
+  name: bit_rate
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.BitRate>
+- description: Burst size in packets.
+  name: burst_size
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.BurstSize>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.PoliceRateConfigurationProperties.bit_rate
+  name: bit_rate
+  summary: Rate limit in bits per second.
+  signature: 'bit_rate: _models.BitRate | None'
+- uid: azure.mgmt.managednetworkfabric.models.PoliceRateConfigurationProperties.burst_size
+  name: burst_size
+  summary: Burst size in packets.
+  signature: 'burst_size: _models.BurstSize | None'

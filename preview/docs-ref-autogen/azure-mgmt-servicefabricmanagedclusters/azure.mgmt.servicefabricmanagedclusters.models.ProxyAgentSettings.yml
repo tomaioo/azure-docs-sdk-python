@@ -1,0 +1,78 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.servicefabricmanagedclusters.models.ProxyAgentSettings
+name: ProxyAgentSettings
+fullName: azure.mgmt.servicefabricmanagedclusters.models.ProxyAgentSettings
+module: azure.mgmt.servicefabricmanagedclusters.models
+summary: Specifies ProxyAgent settings for the virtual machine or virtual machine
+  scale set.
+constructor:
+  syntax: 'ProxyAgentSettings(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Specifies whether ProxyAgent feature should be enabled on the virtual
+    machine or
+
+    virtual machine scale set.'
+  name: enabled
+  types:
+  - <xref:bool>
+- description: 'Increasing the value of this property allows users to reset the key
+
+    used for securing communication channel between guest and host.'
+  name: key_incarnation_id
+  types:
+  - <xref:int>
+- description: 'Specifies the Wire Server endpoint settings while creating the virtual
+
+    machine or virtual machine scale set.'
+  name: wire_server
+  types:
+  - <xref:azure.mgmt.servicefabricmanagedclusters.models.HostEndpointSettings>
+- description: 'Specifies the IMDS endpoint settings while creating the virtual machine
+    or virtual
+
+    machine scale set.'
+  name: imds
+  types:
+  - <xref:azure.mgmt.servicefabricmanagedclusters.models.HostEndpointSettings>
+- description: 'Specify whether to implicitly install the ProxyAgent
+
+    Extension. This option is currently applicable only for Linux Os.'
+  name: add_proxy_agent_extension
+  types:
+  - <xref:bool>
+attributes:
+- uid: azure.mgmt.servicefabricmanagedclusters.models.ProxyAgentSettings.add_proxy_agent_extension
+  name: add_proxy_agent_extension
+  summary: 'Specify whether to implicitly install the ProxyAgent Extension. This option
+    is currently
+
+    applicable only for Linux Os.'
+  signature: 'add_proxy_agent_extension: bool | None'
+- uid: azure.mgmt.servicefabricmanagedclusters.models.ProxyAgentSettings.enabled
+  name: enabled
+  summary: 'Specifies whether ProxyAgent feature should be enabled on the virtual
+    machine or virtual
+
+    machine scale set.'
+  signature: 'enabled: bool | None'
+- uid: azure.mgmt.servicefabricmanagedclusters.models.ProxyAgentSettings.imds
+  name: imds
+  summary: 'Specifies the IMDS endpoint settings while creating the virtual machine
+    or virtual machine
+
+    scale set.'
+  signature: 'imds: _models.HostEndpointSettings | None'
+- uid: azure.mgmt.servicefabricmanagedclusters.models.ProxyAgentSettings.key_incarnation_id
+  name: key_incarnation_id
+  summary: 'Increasing the value of this property allows users to reset the key used
+    for securing
+
+    communication channel between guest and host.'
+  signature: 'key_incarnation_id: int | None'
+- uid: azure.mgmt.servicefabricmanagedclusters.models.ProxyAgentSettings.wire_server
+  name: wire_server
+  summary: 'Specifies the Wire Server endpoint settings while creating the virtual
+    machine or virtual
+
+    machine scale set.'
+  signature: 'wire_server: _models.HostEndpointSettings | None'

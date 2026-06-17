@@ -5,16 +5,18 @@ fullName: azure.mgmt.managednetworkfabric.models.NetworkPacketBrokerPatch
 module: azure.mgmt.managednetworkfabric.models
 summary: The NetworkPacketBroker patch resource definition.
 constructor:
-  syntax: 'NetworkPacketBrokerPatch(*, tags: Dict[str, str] | None = None, **kwargs:
-    Any)'
-  keywordOnlyParameters:
-  - name: tags
-    description: Resource tags.
-    defaultValue: None
-    types:
-    - <xref:dict>[<xref:str>, <xref:str>]
+  syntax: 'NetworkPacketBrokerPatch(*args: Any, **kwargs: Any)'
 variables:
 - description: Resource tags.
   name: tags
   types:
   - <xref:dict>[<xref:str>, <xref:str>]
+- description: The managed service identities assigned to this resource.
+  name: identity
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ManagedServiceIdentityPatch>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkPacketBrokerPatch.identity
+  name: identity
+  summary: The managed service identities assigned to this resource.
+  signature: 'identity: _models.ManagedServiceIdentityPatch | None'

@@ -1,0 +1,13 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.servicefabricmanagedclusters.models.ScaleInPolicyMode
+name: ScaleInPolicyMode
+fullName: azure.mgmt.servicefabricmanagedclusters.models.ScaleInPolicyMode
+summary: Specifies the scale in policy mode for a node type.
+module: azure.mgmt.servicefabricmanagedclusters.models
+fields:
+- name: DEFAULT
+  uid: azure.mgmt.servicefabricmanagedclusters.models.ScaleInPolicyMode.DEFAULT
+- name: NEWEST_NODE_FIRST
+  uid: azure.mgmt.servicefabricmanagedclusters.models.ScaleInPolicyMode.NEWEST_NODE_FIRST
+- name: OLDEST_NODE_FIRST
+  uid: azure.mgmt.servicefabricmanagedclusters.models.ScaleInPolicyMode.OLDEST_NODE_FIRST

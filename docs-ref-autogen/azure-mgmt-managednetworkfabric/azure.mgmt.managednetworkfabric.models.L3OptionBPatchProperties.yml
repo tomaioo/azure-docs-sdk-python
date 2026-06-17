@@ -1,0 +1,38 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.L3OptionBPatchProperties
+name: L3OptionBPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.L3OptionBPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Option B configuration.
+constructor:
+  syntax: 'L3OptionBPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: 'RouteTargets to be applied. This is used for the backward
+
+    compatibility.'
+  name: import_route_targets
+  types:
+  - <xref:list>[<xref:str>]
+- description: 'RouteTargets to be applied. This is used for the backward
+
+    compatibility.'
+  name: export_route_targets
+  types:
+  - <xref:list>[<xref:str>]
+- description: RouteTargets to be applied.
+  name: route_targets
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.RouteTargetPatchInformation>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.L3OptionBPatchProperties.export_route_targets
+  name: export_route_targets
+  summary: RouteTargets to be applied. This is used for the backward compatibility.
+  signature: 'export_route_targets: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3OptionBPatchProperties.import_route_targets
+  name: import_route_targets
+  summary: RouteTargets to be applied. This is used for the backward compatibility.
+  signature: 'import_route_targets: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3OptionBPatchProperties.route_targets
+  name: route_targets
+  summary: RouteTargets to be applied.
+  signature: 'route_targets: _models.RouteTargetPatchInformation | None'

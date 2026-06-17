@@ -5,45 +5,12 @@ fullName: azure.mgmt.managednetworkfabric.models.L3IsolationDomainPatchPropertie
 module: azure.mgmt.managednetworkfabric.models
 summary: Resource properties.
 constructor:
-  syntax: 'L3IsolationDomainPatchProperties(*, redistribute_connected_subnets: str
-    | _models.RedistributeConnectedSubnets = ''True'', redistribute_static_routes:
-    str | _models.RedistributeStaticRoutes = ''False'', aggregate_route_configuration:
-    _models.AggregateRouteConfiguration | None = None, connected_subnet_route_policy:
-    _models.ConnectedSubnetRoutePolicy | None = None, annotation: str | None = None,
-    **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: redistribute_connected_subnets
-    description: 'Advertise Connected Subnets. Ex: "True" | "False".
-
-      Known values are: "True" and "False".'
-    defaultValue: 'True'
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.RedistributeConnectedSubnets>
-  - name: redistribute_static_routes
-    description: 'Advertise Static Routes. Ex: "True" | "False". Known
-
-      values are: "True" and "False".'
-    defaultValue: 'False'
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.RedistributeStaticRoutes>
-  - name: aggregate_route_configuration
-    description: Aggregate route configurations.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.AggregateRouteConfiguration>
-  - name: connected_subnet_route_policy
-    description: Connected Subnet RoutePolicy.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ConnectedSubnetRoutePolicy>
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'L3IsolationDomainPatchProperties(*args: Any, **kwargs: Any)'
 variables:
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
 - description: 'Advertise Connected Subnets. Ex: "True" | "False". Known
 
     values are: "True" and "False".'
@@ -61,12 +28,68 @@ variables:
 - description: Aggregate route configurations.
   name: aggregate_route_configuration
   types:
-  - <xref:azure.mgmt.managednetworkfabric.models.AggregateRouteConfiguration>
+  - <xref:azure.mgmt.managednetworkfabric.models.AggregateRoutePatchConfiguration>
 - description: Connected Subnet RoutePolicy.
   name: connected_subnet_route_policy
   types:
-  - <xref:azure.mgmt.managednetworkfabric.models.ConnectedSubnetRoutePolicy>
-- description: Switch configuration description.
-  name: annotation
+  - <xref:azure.mgmt.managednetworkfabric.models.ConnectedSubnetRoutePolicyPatch>
+- description: Static Route - route policy.
+  name: static_route_policy
   types:
-  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.StaticRoutePolicyPatch>
+- description: IPv4 VRF Limit configuration.
+  name: v4_route_prefix_limit
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.RoutePrefixLimitPatchProperties>
+- description: IPv6 VRF Limit configuration.
+  name: v6_route_prefix_limit
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.RoutePrefixLimitPatchProperties>
+- description: BMP Export Policy configuration.
+  name: export_policy_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.BmpExportPolicyPatchProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainPatchProperties.aggregate_route_configuration
+  name: aggregate_route_configuration
+  summary: Aggregate route configurations.
+  signature: 'aggregate_route_configuration: _models.AggregateRoutePatchConfiguration
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainPatchProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainPatchProperties.connected_subnet_route_policy
+  name: connected_subnet_route_policy
+  summary: Connected Subnet RoutePolicy.
+  signature: 'connected_subnet_route_policy: _models.ConnectedSubnetRoutePolicyPatch
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainPatchProperties.export_policy_configuration
+  name: export_policy_configuration
+  summary: BMP Export Policy configuration.
+  signature: 'export_policy_configuration: _models.BmpExportPolicyPatchProperties
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainPatchProperties.redistribute_connected_subnets
+  name: redistribute_connected_subnets
+  summary: '"True" and
+
+    "False".'
+  signature: 'redistribute_connected_subnets: str | _models.RedistributeConnectedSubnets
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainPatchProperties.redistribute_static_routes
+  name: redistribute_static_routes
+  summary: '"True" and "False".'
+  signature: 'redistribute_static_routes: str | _models.RedistributeStaticRoutes |
+    None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainPatchProperties.static_route_policy
+  name: static_route_policy
+  summary: Static Route - route policy.
+  signature: 'static_route_policy: _models.StaticRoutePolicyPatch | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainPatchProperties.v4_route_prefix_limit
+  name: v4_route_prefix_limit
+  summary: IPv4 VRF Limit configuration.
+  signature: 'v4_route_prefix_limit: _models.RoutePrefixLimitPatchProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainPatchProperties.v6_route_prefix_limit
+  name: v6_route_prefix_limit
+  summary: IPv6 VRF Limit configuration.
+  signature: 'v6_route_prefix_limit: _models.RoutePrefixLimitPatchProperties | None'

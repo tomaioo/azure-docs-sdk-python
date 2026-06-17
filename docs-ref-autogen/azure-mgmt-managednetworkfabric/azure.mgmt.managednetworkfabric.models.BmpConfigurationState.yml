@@ -1,0 +1,11 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.BmpConfigurationState
+name: BmpConfigurationState
+fullName: azure.mgmt.managednetworkfabric.models.BmpConfigurationState
+summary: BGP Monitoring Protocol (BMP) configuration state.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: DISABLED
+  uid: azure.mgmt.managednetworkfabric.models.BmpConfigurationState.DISABLED
+- name: ENABLED
+  uid: azure.mgmt.managednetworkfabric.models.BmpConfigurationState.ENABLED

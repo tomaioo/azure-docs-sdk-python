@@ -1,0 +1,12 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.CommitConfigurationPolicy
+name: CommitConfigurationPolicy
+fullName: azure.mgmt.managednetworkfabric.models.CommitConfigurationPolicy
+summary: 'Indicates Commit configuration staging policy. Supported policy is StageCEConfiguration,
+  which
+
+  indicates to prepare the configuration for the CE device type.'
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: STAGE_CE_CONFIGURATION
+  uid: azure.mgmt.managednetworkfabric.models.CommitConfigurationPolicy.STAGE_CE_CONFIGURATION

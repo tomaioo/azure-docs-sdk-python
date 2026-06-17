@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclPortMatchConditionPatch
+name: ControlPlaneAclPortMatchConditionPatch
+fullName: azure.mgmt.managednetworkfabric.models.ControlPlaneAclPortMatchConditionPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: Control Plane Access Control List (ACL) Port Match conditions properties.
+constructor:
+  syntax: 'ControlPlaneAclPortMatchConditionPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: List of the ports that need to be matched.
+  name: source_ports
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ControlPlaneAclPortCondition>
+- description: List of the destination ports that need to be matched.
+  name: destination_ports
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ControlPlaneAclPortCondition>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclPortMatchConditionPatch.destination_ports
+  name: destination_ports
+  summary: List of the destination ports that need to be matched.
+  signature: 'destination_ports: _models.ControlPlaneAclPortCondition | None'
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclPortMatchConditionPatch.source_ports
+  name: source_ports
+  summary: List of the ports that need to be matched.
+  signature: 'source_ports: _models.ControlPlaneAclPortCondition | None'

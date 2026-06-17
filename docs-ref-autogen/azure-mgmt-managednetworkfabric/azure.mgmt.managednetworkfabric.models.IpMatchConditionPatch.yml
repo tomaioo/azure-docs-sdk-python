@@ -1,0 +1,51 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.IpMatchConditionPatch
+name: IpMatchConditionPatch
+fullName: azure.mgmt.managednetworkfabric.models.IpMatchConditionPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: Defines the condition that can be filtered using the selected IPs.
+constructor:
+  syntax: 'IpMatchConditionPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: 'IP Address type that needs to be matched. Known values are: "SourceIP",
+
+    "DestinationIP", and "Bidirectional".'
+  name: type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.SourceDestinationType>
+- description: 'IP Prefix Type that needs to be matched. Known values are: "Prefix"
+    and
+
+    "LongestPrefix".'
+  name: prefix_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.PrefixType>
+- description: The list of IP Prefixes that need to be matched.
+  name: ip_prefix_values
+  types:
+  - <xref:list>[<xref:str>]
+- description: The List of IP Group Names that need to be matched.
+  name: ip_group_names
+  types:
+  - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.IpMatchConditionPatch.ip_group_names
+  name: ip_group_names
+  summary: The List of IP Group Names that need to be matched.
+  signature: 'ip_group_names: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.IpMatchConditionPatch.ip_prefix_values
+  name: ip_prefix_values
+  summary: The list of IP Prefixes that need to be matched.
+  signature: 'ip_prefix_values: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.IpMatchConditionPatch.prefix_type
+  name: prefix_type
+  summary: '"Prefix" and "LongestPrefix".'
+  signature: 'prefix_type: str | _models.PrefixType | None'
+- uid: azure.mgmt.managednetworkfabric.models.IpMatchConditionPatch.type
+  name: type
+  summary: '"SourceIP", "DestinationIP",
+
+    and "Bidirectional".'
+  signature: 'type: str | _models.SourceDestinationType | None'

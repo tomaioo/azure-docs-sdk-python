@@ -1,0 +1,49 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.AccessControlListActionPatch
+name: AccessControlListActionPatch
+fullName: azure.mgmt.managednetworkfabric.models.AccessControlListActionPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: Action that need to be performed.
+constructor:
+  syntax: 'AccessControlListActionPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Type of actions that can be performed. Known values are: "Drop", "Count",
+    "Log",
+
+    "Remark", and "PoliceRate".'
+  name: type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.AclActionType>
+- description: Name of the counter block to get match count information.
+  name: counter_name
+  types:
+  - <xref:str>
+- description: Remark comment.
+  name: remark_comment
+  types:
+  - <xref:str>
+- description: Police rate configuration.
+  name: police_rate_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.PoliceRateConfigurationProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListActionPatch.counter_name
+  name: counter_name
+  summary: Name of the counter block to get match count information.
+  signature: 'counter_name: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListActionPatch.police_rate_configuration
+  name: police_rate_configuration
+  summary: Police rate configuration.
+  signature: 'police_rate_configuration: _models.PoliceRateConfigurationProperties
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListActionPatch.remark_comment
+  name: remark_comment
+  summary: Remark comment.
+  signature: 'remark_comment: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListActionPatch.type
+  name: type
+  summary: '"Drop", "Count", "Log",
+
+    "Remark", and "PoliceRate".'
+  signature: 'type: str | _models.AclActionType | None'

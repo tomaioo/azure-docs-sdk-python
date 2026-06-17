@@ -1,0 +1,19 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkBmpPatchProperties
+name: ExternalNetworkBmpPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.ExternalNetworkBmpPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: BMP Monitoring Configuration patch properties.
+constructor:
+  syntax: 'ExternalNetworkBmpPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: 'BMP Configuration State. Known values are: "Enabled" and "Disabled".'
+  name: configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BmpConfigurationState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkBmpPatchProperties.configuration_state
+  name: configuration_state
+  summary: '"Enabled" and "Disabled".'
+  signature: 'configuration_state: str | _models.BmpConfigurationState | None'

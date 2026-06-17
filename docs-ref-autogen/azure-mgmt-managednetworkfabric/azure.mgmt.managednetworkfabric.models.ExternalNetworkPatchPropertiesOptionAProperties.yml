@@ -3,69 +3,26 @@ uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOption
 name: ExternalNetworkPatchPropertiesOptionAProperties
 fullName: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'option A properties object.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.'
+summary: option A properties object.
 constructor:
-  syntax: 'ExternalNetworkPatchPropertiesOptionAProperties(*, mtu: int = 1500, vlan_id:
-    int | None = None, peer_asn: int | None = None, bfd_configuration: _models.BfdConfiguration
-    | None = None, ingress_acl_id: str | None = None, egress_acl_id: str | None =
-    None, primary_ipv4_prefix: str | None = None, primary_ipv6_prefix: str | None
-    = None, secondary_ipv4_prefix: str | None = None, secondary_ipv6_prefix: str |
-    None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: mtu
-    description: MTU to use for option A peering.
-    defaultValue: '1500'
-    types:
-    - <xref:int>
-  - name: vlan_id
-    description: 'Vlan identifier. Example : 501.'
-    defaultValue: None
-    types:
-    - <xref:int>
-  - name: peer_asn
-    description: 'Peer ASN number.Example : 28.'
-    defaultValue: None
-    types:
-    - <xref:int>
-  - name: bfd_configuration
-    description: BFD configuration properties.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.BfdConfiguration>
-  - name: ingress_acl_id
-    description: Ingress Acl. ARM resource ID of Access Control Lists.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: egress_acl_id
-    description: Egress Acl. ARM resource ID of Access Control Lists.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: primary_ipv4_prefix
-    description: IPv4 Address Prefix.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: primary_ipv6_prefix
-    description: IPv6 Address Prefix.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: secondary_ipv4_prefix
-    description: Secondary IPv4 Address Prefix.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: secondary_ipv6_prefix
-    description: Secondary IPv6 Address Prefix.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'ExternalNetworkPatchPropertiesOptionAProperties(*args: Any, **kwargs: Any)'
 variables:
+- description: IPv4 Address Prefix.
+  name: primary_ipv4_prefix
+  types:
+  - <xref:str>
+- description: IPv6 Address Prefix.
+  name: primary_ipv6_prefix
+  types:
+  - <xref:str>
+- description: Secondary IPv4 Address Prefix.
+  name: secondary_ipv4_prefix
+  types:
+  - <xref:str>
+- description: Secondary IPv6 Address Prefix.
+  name: secondary_ipv6_prefix
+  types:
+  - <xref:str>
 - description: MTU to use for option A peering.
   name: mtu
   types:
@@ -85,7 +42,7 @@ variables:
 - description: BFD configuration properties.
   name: bfd_configuration
   types:
-  - <xref:azure.mgmt.managednetworkfabric.models.BfdConfiguration>
+  - <xref:azure.mgmt.managednetworkfabric.models.BfdPatchConfiguration>
 - description: Ingress Acl. ARM resource ID of Access Control Lists.
   name: ingress_acl_id
   types:
@@ -94,19 +51,94 @@ variables:
   name: egress_acl_id
   types:
   - <xref:str>
-- description: IPv4 Address Prefix.
+- description: BMP Monitor Configuration.
+  name: bmp_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ExternalNetworkBmpPatchProperties>
+- description: 'V4OverV6 BGP Session state. Known values are: "Enabled" and
+
+    "Disabled".'
+  name: v4_over_v6_bgp_session
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.V4OverV6BgpSessionState>
+- description: 'V6OverV4 BGP Session state. Known values are: "Enabled" and
+
+    "Disabled".'
+  name: v6_over_v4_bgp_session
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.V6OverV4BgpSessionState>
+- description: Native IPv4 prefix limit configuration.
+  name: native_ipv4_prefix_limit
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.NativeIpv4PrefixLimitPatchProperties>
+- description: Native IPv6 prefix limit configuration.
+  name: native_ipv6_prefix_limit
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.NativeIpv6PrefixLimitPatchProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties.bfd_configuration
+  name: bfd_configuration
+  summary: BFD configuration properties.
+  signature: 'bfd_configuration: _models.BfdPatchConfiguration | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties.bmp_configuration
+  name: bmp_configuration
+  summary: BMP Monitor Configuration.
+  signature: 'bmp_configuration: _models.ExternalNetworkBmpPatchProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties.egress_acl_id
+  name: egress_acl_id
+  summary: Egress Acl. ARM resource ID of Access Control Lists.
+  signature: 'egress_acl_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties.fabric_asn
+  name: fabric_asn
+  summary: Fabric ASN number. Example 65001.
+  signature: 'fabric_asn: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties.ingress_acl_id
+  name: ingress_acl_id
+  summary: Ingress Acl. ARM resource ID of Access Control Lists.
+  signature: 'ingress_acl_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties.mtu
+  name: mtu
+  summary: MTU to use for option A peering.
+  signature: 'mtu: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties.native_ipv4_prefix_limit
+  name: native_ipv4_prefix_limit
+  summary: Native IPv4 prefix limit configuration.
+  signature: 'native_ipv4_prefix_limit: _models.NativeIpv4PrefixLimitPatchProperties
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties.native_ipv6_prefix_limit
+  name: native_ipv6_prefix_limit
+  summary: Native IPv6 prefix limit configuration.
+  signature: 'native_ipv6_prefix_limit: _models.NativeIpv6PrefixLimitPatchProperties
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties.peer_asn
+  name: peer_asn
+  signature: 'peer_asn: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties.primary_ipv4_prefix
   name: primary_ipv4_prefix
-  types:
-  - <xref:str>
-- description: IPv6 Address Prefix.
+  summary: IPv4 Address Prefix.
+  signature: 'primary_ipv4_prefix: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties.primary_ipv6_prefix
   name: primary_ipv6_prefix
-  types:
-  - <xref:str>
-- description: Secondary IPv4 Address Prefix.
+  summary: IPv6 Address Prefix.
+  signature: 'primary_ipv6_prefix: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties.secondary_ipv4_prefix
   name: secondary_ipv4_prefix
-  types:
-  - <xref:str>
-- description: Secondary IPv6 Address Prefix.
+  summary: Secondary IPv4 Address Prefix.
+  signature: 'secondary_ipv4_prefix: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties.secondary_ipv6_prefix
   name: secondary_ipv6_prefix
-  types:
-  - <xref:str>
+  summary: Secondary IPv6 Address Prefix.
+  signature: 'secondary_ipv6_prefix: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties.v4_over_v6_bgp_session
+  name: v4_over_v6_bgp_session
+  summary: '"Enabled" and "Disabled".'
+  signature: 'v4_over_v6_bgp_session: str | _models.V4OverV6BgpSessionState | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties.v6_over_v4_bgp_session
+  name: v6_over_v4_bgp_session
+  summary: '"Enabled" and "Disabled".'
+  signature: 'v6_over_v4_bgp_session: str | _models.V6OverV4BgpSessionState | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties.vlan_id
+  name: vlan_id
+  signature: 'vlan_id: int | None'

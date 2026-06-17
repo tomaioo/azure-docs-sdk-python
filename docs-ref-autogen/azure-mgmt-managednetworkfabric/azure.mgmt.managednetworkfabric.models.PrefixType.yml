@@ -2,7 +2,7 @@
 uid: azure.mgmt.managednetworkfabric.models.PrefixType
 name: PrefixType
 fullName: azure.mgmt.managednetworkfabric.models.PrefixType
-summary: IP Prefix Type.
+summary: IP Prefix Type that needs to be matched.
 module: azure.mgmt.managednetworkfabric.models
 fields:
 - name: LONGEST_PREFIX

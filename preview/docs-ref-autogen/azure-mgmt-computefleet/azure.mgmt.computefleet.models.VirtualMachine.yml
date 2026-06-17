@@ -3,7 +3,7 @@ uid: azure.mgmt.computefleet.models.VirtualMachine
 name: VirtualMachine
 fullName: azure.mgmt.computefleet.models.VirtualMachine
 module: azure.mgmt.computefleet.models
-summary: An instant Fleet's virtual machine.
+summary: A Launch mode Fleet's virtual machine.
 constructor:
   syntax: 'VirtualMachine(*args: Any, **kwargs: Any)'
 variables:
@@ -28,7 +28,7 @@ variables:
     to the last operation that was performed on it by Azure Fleet resource. Required.
     Known values
 
-    are: "Creating", "Canceled", "CancelFailedStatusUnknown", "Failed", and "Succeeded".'
+    are: "Launching", "Creating", "Failed", and "Succeeded".'
   name: operation_status
   types:
   - <xref:str>
@@ -60,9 +60,9 @@ attributes:
     to the last operation
 
     that was performed on it by Azure Fleet resource. Required. Known values are:
-    "Creating",
+    "Launching",
 
-    "Canceled", "CancelFailedStatusUnknown", "Failed", and "Succeeded".'
+    "Creating", "Failed", and "Succeeded".'
   signature: 'operation_status: str | _models.VMOperationStatus'
 - uid: azure.mgmt.computefleet.models.VirtualMachine.type
   name: type

@@ -1,0 +1,78 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkMonitorProperties
+name: NetworkMonitorProperties
+fullName: azure.mgmt.managednetworkfabric.models.NetworkMonitorProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Network Monitor Properties defines the properties of the resource.
+constructor:
+  syntax: 'NetworkMonitorProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
+- description: BMP Configurations for the Network Fabric.
+  name: bmp_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.BmpConfigurationProperties>
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
+- description: 'Configuration state of the resource. Known values are: "Succeeded",
+
+    "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
+
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
+  name: configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationState>
+- description: 'Provides you the latest status of the NetworkMonitor resource. Known
+
+    values are: "Accepted", "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
+  name: provisioning_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
+- description: 'Administrative state of the resource. Known values are: "Enabled",
+
+    "Disabled", "MAT", "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  name: administrative_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkMonitorProperties.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT",
+
+    "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  signature: 'administrative_state: str | _models.AdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkMonitorProperties.bmp_configuration
+  name: bmp_configuration
+  summary: BMP Configurations for the Network Fabric.
+  signature: 'bmp_configuration: _models.BmpConfigurationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkMonitorProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkMonitorProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkMonitorProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted",
+
+    "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'

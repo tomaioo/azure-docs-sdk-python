@@ -1,0 +1,52 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.PortConditionPatch
+name: PortConditionPatch
+fullName: azure.mgmt.managednetworkfabric.models.PortConditionPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: Port condition that needs to be matched.
+constructor:
+  syntax: 'PortConditionPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Port type that needs to be matched. Known values are: "SourcePort",
+
+    "DestinationPort", and "Bidirectional".'
+  name: port_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.PortType>
+- description: 'Layer4 protocol type that needs to be matched. Known values are: "TCP",
+
+    "UDP", and "SCTP".'
+  name: layer4_protocol
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.Layer4Protocol>
+- description: List of the Ports that need to be matched.
+  name: ports
+  types:
+  - <xref:list>[<xref:str>]
+- description: List of the port Group Names that need to be matched.
+  name: port_group_names
+  types:
+  - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.PortConditionPatch.layer4_protocol
+  name: layer4_protocol
+  summary: '"TCP", "UDP", and
+
+    "SCTP".'
+  signature: 'layer4_protocol: str | _models.Layer4Protocol | None'
+- uid: azure.mgmt.managednetworkfabric.models.PortConditionPatch.port_group_names
+  name: port_group_names
+  summary: List of the port Group Names that need to be matched.
+  signature: 'port_group_names: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.PortConditionPatch.port_type
+  name: port_type
+  summary: '"SourcePort", "DestinationPort", and
+
+    "Bidirectional".'
+  signature: 'port_type: str | _models.PortType | None'
+- uid: azure.mgmt.managednetworkfabric.models.PortConditionPatch.ports
+  name: ports
+  summary: List of the Ports that need to be matched.
+  signature: 'ports: list[str] | None'

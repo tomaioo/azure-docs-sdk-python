@@ -3,49 +3,25 @@ uid: azure.mgmt.managednetworkfabric.models.RoutePolicyProperties
 name: RoutePolicyProperties
 fullName: azure.mgmt.managednetworkfabric.models.RoutePolicyProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'RoutePolicyProperties defines the resource properties.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: RoutePolicyProperties defines the resource properties.
 constructor:
-  syntax: 'RoutePolicyProperties(*, network_fabric_id: str, statements: List[_models.RoutePolicyStatementProperties]
-    | None = None, annotation: str | None = None, address_family_type: str | _models.AddressFamilyType
-    = ''IPv4'', **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: statements
-    description: Route Policy statements.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.RoutePolicyStatementProperties>]
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: network_fabric_id
-    description: Arm Resource ID of Network Fabric. Required.
-    types:
-    - <xref:str>
-  - name: address_family_type
-    description: 'AddressFamilyType. This parameter decides whether the given ipv4
-
-      or ipv6 route policy. Known values are: "IPv4" and "IPv6".'
-    defaultValue: IPv4
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.AddressFamilyType>
+  syntax: 'RoutePolicyProperties(*args: Any, **kwargs: Any)'
 variables:
-- description: Route Policy statements.
-  name: statements
-  types:
-  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.RoutePolicyStatementProperties>]
 - description: Switch configuration description.
   name: annotation
   types:
   - <xref:str>
+- description: 'Default action that needs to be applied when no condition is matched.
+
+    Example: Permit | Deny. Known values are: "Permit" and "Deny".'
+  name: default_action
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.CommunityActionTypes>
+- description: Route Policy statements. Required.
+  name: statements
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.RoutePolicyStatementProperties>]
 - description: Arm Resource ID of Network Fabric. Required.
   name: network_fabric_id
   types:
@@ -57,11 +33,18 @@ variables:
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.AddressFamilyType>
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
 - description: 'Configuration state of the resource. Known values are: "Succeeded",
 
     "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
 
-    "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
   name: configuration_state
   types:
   - <xref:str>
@@ -75,8 +58,60 @@ variables:
   - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
 - description: 'Administrative state of the resource. Known values are: "Enabled",
 
-    "Disabled", "MAT", and "RMA".'
+    "Disabled", "MAT", "RMA", "UnderMaintenance", and "EnabledDegraded".'
   name: administrative_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.RoutePolicyProperties.address_family_type
+  name: address_family_type
+  summary: 'AddressFamilyType. This parameter decides whether the given ipv4 or ipv6
+    route policy. Known
+
+    values are: "IPv4" and "IPv6".'
+  signature: 'address_family_type: str | _models.AddressFamilyType | None'
+- uid: azure.mgmt.managednetworkfabric.models.RoutePolicyProperties.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT",
+
+    "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  signature: 'administrative_state: str | _models.AdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.RoutePolicyProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.RoutePolicyProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.RoutePolicyProperties.default_action
+  name: default_action
+  summary: 'Permit | Deny.
+
+    Known values are: "Permit" and "Deny".'
+  signature: 'default_action: str | _models.CommunityActionTypes | None'
+- uid: azure.mgmt.managednetworkfabric.models.RoutePolicyProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.RoutePolicyProperties.network_fabric_id
+  name: network_fabric_id
+  summary: Arm Resource ID of Network Fabric. Required.
+  signature: 'network_fabric_id: str'
+- uid: azure.mgmt.managednetworkfabric.models.RoutePolicyProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.RoutePolicyProperties.statements
+  name: statements
+  summary: Route Policy statements. Required.
+  signature: 'statements: list[''_models.RoutePolicyStatementProperties'']'

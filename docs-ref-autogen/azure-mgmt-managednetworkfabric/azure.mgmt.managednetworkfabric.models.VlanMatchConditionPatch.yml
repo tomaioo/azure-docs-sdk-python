@@ -1,0 +1,42 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.VlanMatchConditionPatch
+name: VlanMatchConditionPatch
+fullName: azure.mgmt.managednetworkfabric.models.VlanMatchConditionPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: The vlan match conditions that need to be matched.
+constructor:
+  syntax: 'VlanMatchConditionPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: 'List of vlans that need to be matched. Inputs can be single vlan or
+    the range of
+
+    vlans.'
+  name: vlans
+  types:
+  - <xref:list>[<xref:str>]
+- description: 'List of inner vlans that need to be matched.Inputs can be single vlan
+    or the
+
+    range of vlans.'
+  name: inner_vlans
+  types:
+  - <xref:list>[<xref:str>]
+- description: List of vlan group names that need to be matched.
+  name: vlan_group_names
+  types:
+  - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.VlanMatchConditionPatch.inner_vlans
+  name: inner_vlans
+  summary: List of inner vlans that need to be matched.Inputs can be single vlan or
+    the range of vlans.
+  signature: 'inner_vlans: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.VlanMatchConditionPatch.vlan_group_names
+  name: vlan_group_names
+  summary: List of vlan group names that need to be matched.
+  signature: 'vlan_group_names: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.VlanMatchConditionPatch.vlans
+  name: vlans
+  summary: List of vlans that need to be matched. Inputs can be single vlan or the
+    range of vlans.
+  signature: 'vlans: list[str] | None'

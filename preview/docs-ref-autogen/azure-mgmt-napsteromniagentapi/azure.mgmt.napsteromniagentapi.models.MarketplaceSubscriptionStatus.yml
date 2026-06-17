@@ -1,0 +1,15 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.napsteromniagentapi.models.MarketplaceSubscriptionStatus
+name: MarketplaceSubscriptionStatus
+fullName: azure.mgmt.napsteromniagentapi.models.MarketplaceSubscriptionStatus
+summary: Marketplace subscription status of a resource.
+module: azure.mgmt.napsteromniagentapi.models
+fields:
+- name: PENDING_FULFILLMENT_START
+  uid: azure.mgmt.napsteromniagentapi.models.MarketplaceSubscriptionStatus.PENDING_FULFILLMENT_START
+- name: SUBSCRIBED
+  uid: azure.mgmt.napsteromniagentapi.models.MarketplaceSubscriptionStatus.SUBSCRIBED
+- name: SUSPENDED
+  uid: azure.mgmt.napsteromniagentapi.models.MarketplaceSubscriptionStatus.SUSPENDED
+- name: UNSUBSCRIBED
+  uid: azure.mgmt.napsteromniagentapi.models.MarketplaceSubscriptionStatus.UNSUBSCRIBED

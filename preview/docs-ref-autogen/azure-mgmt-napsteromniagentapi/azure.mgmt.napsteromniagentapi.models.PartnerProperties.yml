@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.napsteromniagentapi.models.PartnerProperties
+name: PartnerProperties
+fullName: azure.mgmt.napsteromniagentapi.models.PartnerProperties
+module: azure.mgmt.napsteromniagentapi.models
+summary: Partner's specific Properties.
+constructor:
+  syntax: 'PartnerProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Application name. Required.
+  name: application
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.napsteromniagentapi.models.PartnerProperties.application
+  name: application
+  summary: Application name. Required.
+  signature: 'application: str'

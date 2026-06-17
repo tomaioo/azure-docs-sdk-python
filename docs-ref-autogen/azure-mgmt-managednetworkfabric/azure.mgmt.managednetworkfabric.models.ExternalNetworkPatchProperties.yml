@@ -5,84 +5,26 @@ fullName: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchProperties
 module: azure.mgmt.managednetworkfabric.models
 summary: External Network Patch properties.
 constructor:
-  syntax: 'ExternalNetworkPatchProperties(*, import_route_policy_id: str | None =
-    None, export_route_policy_id: str | None = None, import_route_policy: _models.ImportRoutePolicy
-    | None = None, export_route_policy: _models.ExportRoutePolicy | None = None, annotation:
-    str | None = None, peering_option: str | _models.PeeringOption | None = None,
-    option_b_properties: _models.L3OptionBProperties | None = None, option_a_properties:
-    _models.ExternalNetworkPatchPropertiesOptionAProperties | None = None, **kwargs:
-    Any)'
-  keywordOnlyParameters:
-  - name: import_route_policy_id
-    description: 'ARM Resource ID of the RoutePolicy. This is used for the
-
-      backward compatibility.'
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: export_route_policy_id
-    description: 'ARM Resource ID of the RoutePolicy. This is used for the
-
-      backward compatibility.'
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: import_route_policy
-    description: Import Route Policy either IPv4 or IPv6.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ImportRoutePolicy>
-  - name: export_route_policy
-    description: Export Route Policy either IPv4 or IPv6.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ExportRoutePolicy>
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: peering_option
-    description: 'Peering option list. Known values are: "OptionA" and "OptionB".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.PeeringOption>
-  - name: option_b_properties
-    description: option B properties object.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.L3OptionBProperties>
-  - name: option_a_properties
-    description: option A properties object.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties>
+  syntax: 'ExternalNetworkPatchProperties(*args: Any, **kwargs: Any)'
 variables:
-- description: 'ARM Resource ID of the RoutePolicy. This is used for the backward
-
-    compatibility.'
-  name: import_route_policy_id
+- description: Switch configuration description.
+  name: annotation
   types:
   - <xref:str>
-- description: 'ARM Resource ID of the RoutePolicy. This is used for the backward
+- description: 'ARM Resource ID of the networkToNetworkInterconnectId
 
-    compatibility.'
-  name: export_route_policy_id
+    of the ExternalNetwork resource.'
+  name: network_to_network_interconnect_id
   types:
   - <xref:str>
 - description: Import Route Policy either IPv4 or IPv6.
   name: import_route_policy
   types:
-  - <xref:azure.mgmt.managednetworkfabric.models.ImportRoutePolicy>
+  - <xref:azure.mgmt.managednetworkfabric.models.ImportRoutePolicyPatch>
 - description: Export Route Policy either IPv4 or IPv6.
   name: export_route_policy
   types:
-  - <xref:azure.mgmt.managednetworkfabric.models.ExportRoutePolicy>
-- description: Switch configuration description.
-  name: annotation
-  types:
-  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ExportRoutePolicyPatch>
 - description: 'Peering option list. Known values are: "OptionA" and "OptionB".'
   name: peering_option
   types:
@@ -91,8 +33,48 @@ variables:
 - description: option B properties object.
   name: option_b_properties
   types:
-  - <xref:azure.mgmt.managednetworkfabric.models.L3OptionBProperties>
+  - <xref:azure.mgmt.managednetworkfabric.models.L3OptionBPatchProperties>
 - description: option A properties object.
   name: option_a_properties
   types:
   - <xref:azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchPropertiesOptionAProperties>
+- description: Static Route Configuration.
+  name: static_route_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ExternalNetworkStaticRoutePatchConfiguration>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchProperties.export_route_policy
+  name: export_route_policy
+  summary: Export Route Policy either IPv4 or IPv6.
+  signature: 'export_route_policy: _models.ExportRoutePolicyPatch | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchProperties.import_route_policy
+  name: import_route_policy
+  summary: Import Route Policy either IPv4 or IPv6.
+  signature: 'import_route_policy: _models.ImportRoutePolicyPatch | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchProperties.network_to_network_interconnect_id
+  name: network_to_network_interconnect_id
+  summary: ARM Resource ID of the networkToNetworkInterconnectId of the ExternalNetwork
+    resource.
+  signature: 'network_to_network_interconnect_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchProperties.option_a_properties
+  name: option_a_properties
+  summary: option A properties object.
+  signature: 'option_a_properties: _models.ExternalNetworkPatchPropertiesOptionAProperties
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchProperties.option_b_properties
+  name: option_b_properties
+  summary: option B properties object.
+  signature: 'option_b_properties: _models.L3OptionBPatchProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchProperties.peering_option
+  name: peering_option
+  summary: '"OptionA" and "OptionB".'
+  signature: 'peering_option: str | _models.PeeringOption | None'
+- uid: azure.mgmt.managednetworkfabric.models.ExternalNetworkPatchProperties.static_route_configuration
+  name: static_route_configuration
+  summary: Static Route Configuration.
+  signature: 'static_route_configuration: _models.ExternalNetworkStaticRoutePatchConfiguration
+    | None'

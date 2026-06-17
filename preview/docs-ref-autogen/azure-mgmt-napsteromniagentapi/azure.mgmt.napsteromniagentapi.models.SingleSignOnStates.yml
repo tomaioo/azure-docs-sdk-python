@@ -1,0 +1,13 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.napsteromniagentapi.models.SingleSignOnStates
+name: SingleSignOnStates
+fullName: azure.mgmt.napsteromniagentapi.models.SingleSignOnStates
+summary: Various states of the SSO resource.
+module: azure.mgmt.napsteromniagentapi.models
+fields:
+- name: DISABLE
+  uid: azure.mgmt.napsteromniagentapi.models.SingleSignOnStates.DISABLE
+- name: ENABLE
+  uid: azure.mgmt.napsteromniagentapi.models.SingleSignOnStates.ENABLE
+- name: INITIAL
+  uid: azure.mgmt.napsteromniagentapi.models.SingleSignOnStates.INITIAL

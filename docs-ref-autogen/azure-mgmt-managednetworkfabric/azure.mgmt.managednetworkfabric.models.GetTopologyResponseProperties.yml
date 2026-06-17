@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.GetTopologyResponseProperties
+name: GetTopologyResponseProperties
+fullName: azure.mgmt.managednetworkfabric.models.GetTopologyResponseProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Properties of the GetTopology Response.
+constructor:
+  syntax: 'GetTopologyResponseProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Topology JSON string.
+  name: url
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.GetTopologyResponseProperties.url
+  name: url
+  summary: Topology JSON string.
+  signature: 'url: str | None'

@@ -1,0 +1,28 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.ManagementNetworkPatchConfiguration
+name: ManagementNetworkPatchConfiguration
+fullName: azure.mgmt.managednetworkfabric.models.ManagementNetworkPatchConfiguration
+module: azure.mgmt.managednetworkfabric.models
+summary: Configuration to be used to setup the management network.
+constructor:
+  syntax: 'ManagementNetworkPatchConfiguration(*args: Any, **kwargs: Any)'
+variables:
+- description: VPN Configuration properties.
+  name: infrastructure_vpn_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.VpnConfigurationPatchableProperties>
+- description: VPN Configuration properties.
+  name: workload_vpn_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.VpnConfigurationPatchableProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ManagementNetworkPatchConfiguration.infrastructure_vpn_configuration
+  name: infrastructure_vpn_configuration
+  summary: VPN Configuration properties.
+  signature: 'infrastructure_vpn_configuration: _models.VpnConfigurationPatchableProperties
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.ManagementNetworkPatchConfiguration.workload_vpn_configuration
+  name: workload_vpn_configuration
+  summary: VPN Configuration properties.
+  signature: 'workload_vpn_configuration: _models.VpnConfigurationPatchableProperties
+    | None'

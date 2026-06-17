@@ -3,45 +3,9 @@ uid: azure.mgmt.managednetworkfabric.models.IpCommunityRule
 name: IpCommunityRule
 fullName: azure.mgmt.managednetworkfabric.models.IpCommunityRule
 module: azure.mgmt.managednetworkfabric.models
-summary: 'IP Community patchable properties.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: IP Community patchable properties.
 constructor:
-  syntax: 'IpCommunityRule(*, action: str | _models.CommunityActionTypes, sequence_number:
-    int, community_members: List[str], well_known_communities: List[str | _models.WellKnownCommunities]
-    | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: action
-    description: 'Action to be taken on the configuration. Example: Permit | Deny.
-      Required.
-
-      Known values are: "Permit" and "Deny".'
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.CommunityActionTypes>
-  - name: sequence_number
-    description: 'Sequence to insert to/delete from existing route. Prefix lists are
-
-      evaluated starting with the lowest sequence number and continue down the list
-      until a match is
-
-      made. Once a match is made, the permit or deny statement is applied to that
-      network and the
-
-      rest of the list is ignored. Required.'
-    types:
-    - <xref:int>
-  - name: well_known_communities
-    description: Supported well known Community List.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.WellKnownCommunities>]
-  - name: community_members
-    description: List the community members of IP Community. Required.
-    types:
-    - <xref:list>[<xref:str>]
+  syntax: 'IpCommunityRule(*args: Any, **kwargs: Any)'
 variables:
 - description: 'Action to be taken on the configuration. Example: Permit | Deny. Required.
     Known
@@ -72,3 +36,32 @@ variables:
   name: community_members
   types:
   - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.IpCommunityRule.action
+  name: action
+  summary: 'Permit | Deny. Required. Known values are:
+
+    "Permit" and "Deny".'
+  signature: 'action: str | _models.CommunityActionTypes'
+- uid: azure.mgmt.managednetworkfabric.models.IpCommunityRule.community_members
+  name: community_members
+  summary: List the community members of IP Community. Required.
+  signature: 'community_members: list[str]'
+- uid: azure.mgmt.managednetworkfabric.models.IpCommunityRule.sequence_number
+  name: sequence_number
+  summary: 'Sequence to insert to/delete from existing route. Prefix lists are evaluated
+    starting with the
+
+    lowest sequence number and continue down the list until a match is made. Once
+    a match is made,
+
+    the permit or deny statement is applied to that network and the rest of the list
+    is ignored.
+
+    Required.'
+  signature: 'sequence_number: int'
+- uid: azure.mgmt.managednetworkfabric.models.IpCommunityRule.well_known_communities
+  name: well_known_communities
+  summary: Supported well known Community List.
+  signature: 'well_known_communities: list[typing.Union[str, ForwardRef(''_models.WellKnownCommunities'')]]
+    | None'

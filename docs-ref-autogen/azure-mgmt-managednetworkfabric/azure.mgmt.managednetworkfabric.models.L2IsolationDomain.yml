@@ -3,49 +3,13 @@ uid: azure.mgmt.managednetworkfabric.models.L2IsolationDomain
 name: L2IsolationDomain
 fullName: azure.mgmt.managednetworkfabric.models.L2IsolationDomain
 module: azure.mgmt.managednetworkfabric.models
-summary: 'The L2 Isolation Domain resource definition.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: The L2 Isolation Domain resource definition.
 constructor:
-  syntax: 'L2IsolationDomain(*, location: str, network_fabric_id: str, vlan_id: int,
-    tags: Dict[str, str] | None = None, annotation: str | None = None, mtu: int =
-    1500, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: tags
-    description: Resource tags.
-    defaultValue: None
-    types:
-    - <xref:dict>[<xref:str>, <xref:str>]
-  - name: location
-    description: The geo-location where the resource lives. Required.
-    types:
-    - <xref:str>
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: network_fabric_id
-    description: ARM Resource ID of the Network Fabric. Required.
-    types:
-    - <xref:str>
-  - name: vlan_id
-    description: 'Vlan Identifier of the Network Fabric. Example: 501. Required.'
-    types:
-    - <xref:int>
-  - name: mtu
-    description: Maximum transmission unit. Default value is 1500.
-    defaultValue: '1500'
-    types:
-    - <xref:int>
+  syntax: 'L2IsolationDomain(*args: Any, **kwargs: Any)'
 variables:
-- description: 'Fully qualified resource ID for the resource. E.g.
+- description: 'Fully qualified resource ID for the resource. Ex -
 
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}".'
+    /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.'
   name: id
   types:
   - <xref:str>
@@ -74,42 +38,20 @@ variables:
   name: location
   types:
   - <xref:str>
-- description: Switch configuration description.
-  name: annotation
+- description: The L2IsolationDomain properties. Required.
+  name: properties
   types:
-  - <xref:str>
-- description: ARM Resource ID of the Network Fabric. Required.
-  name: network_fabric_id
+  - <xref:azure.mgmt.managednetworkfabric.models.L2IsolationDomainProperties>
+- description: The managed service identities assigned to this resource.
+  name: identity
   types:
-  - <xref:str>
-- description: 'Vlan Identifier of the Network Fabric. Example: 501. Required.'
-  name: vlan_id
-  types:
-  - <xref:int>
-- description: Maximum transmission unit. Default value is 1500.
-  name: mtu
-  types:
-  - <xref:int>
-- description: 'Configuration state of the resource. Known values are: "Succeeded",
-
-    "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
-
-    "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
-  name: configuration_state
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationState>
-- description: 'Provisioning state of the resource. Known values are: "Accepted",
-
-    "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
-  name: provisioning_state
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
-- description: 'Administrative state of the resource. Known values are: "Enabled",
-
-    "Disabled", "MAT", and "RMA".'
-  name: administrative_state
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+  - <xref:azure.mgmt.managednetworkfabric.models.ManagedServiceIdentity>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.L2IsolationDomain.identity
+  name: identity
+  summary: The managed service identities assigned to this resource.
+  signature: 'identity: _models.ManagedServiceIdentity | None'
+- uid: azure.mgmt.managednetworkfabric.models.L2IsolationDomain.properties
+  name: properties
+  summary: The L2IsolationDomain properties. Required.
+  signature: 'properties: _models.L2IsolationDomainProperties'

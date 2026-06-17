@@ -11,11 +11,12 @@ constructor:
 methods:
 - uid: azure.mgmt.servicefabricmanagedclusters.operations.ManagedApplyMaintenanceWindowOperations.post
   name: post
-  summary: 'Action to Apply Maintenance window on the Service Fabric Managed Clusters,
-    right now. Any
+  summary: 'Action to Apply Maintenance window on the Service Fabric Managed Clusters.
+    Any pending update
 
-    pending update will be applied.'
-  signature: 'post(resource_group_name: str, cluster_name: str, **kwargs: Any) ->
+    will be applied.'
+  signature: 'post(resource_group_name: str, cluster_name: str, body: _models.ApplyMaintenanceWindowRequest
+    | None = None, *, content_type: str = ''application/json'', **kwargs: Any) ->
     None'
   parameters:
   - name: resource_group_name
@@ -30,6 +31,15 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: body
+    description: 'The content of the action request. Is one of the following types:
+
+      ApplyMaintenanceWindowRequest, JSON, IO[bytes] Default value is None.'
+    defaultValue: None
+    types:
+    - <xref:azure.mgmt.servicefabricmanagedclusters.models.ApplyMaintenanceWindowRequest>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
   return:
     description: None
     types:

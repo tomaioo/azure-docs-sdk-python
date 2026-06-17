@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.IcmpConfigurationProperties
+name: IcmpConfigurationProperties
+fullName: azure.mgmt.managednetworkfabric.models.IcmpConfigurationProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Internet Control Message Protocol (ICMP) configuration.
+constructor:
+  syntax: 'IcmpConfigurationProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Internet Control Message Protocol (ICMP) types.
+  name: icmp_types
+  types:
+  - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.IcmpConfigurationProperties.icmp_types
+  name: icmp_types
+  summary: Internet Control Message Protocol (ICMP) types.
+  signature: 'icmp_types: list[str] | None'

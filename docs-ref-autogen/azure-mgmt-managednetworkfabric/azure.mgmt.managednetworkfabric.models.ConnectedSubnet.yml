@@ -3,23 +3,9 @@ uid: azure.mgmt.managednetworkfabric.models.ConnectedSubnet
 name: ConnectedSubnet
 fullName: azure.mgmt.managednetworkfabric.models.ConnectedSubnet
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Connected Subnet properties.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: Connected Subnet properties.
 constructor:
-  syntax: 'ConnectedSubnet(*, prefix: str, annotation: str | None = None, **kwargs:
-    Any)'
-  keywordOnlyParameters:
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: prefix
-    description: Prefix of the Connected Subnet. Required.
-    types:
-    - <xref:str>
+  syntax: 'ConnectedSubnet(*args: Any, **kwargs: Any)'
 variables:
 - description: Switch configuration description.
   name: annotation
@@ -29,3 +15,8 @@ variables:
   name: prefix
   types:
   - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ConnectedSubnet.prefix
+  name: prefix
+  summary: Prefix of the Connected Subnet. Required.
+  signature: 'prefix: str'

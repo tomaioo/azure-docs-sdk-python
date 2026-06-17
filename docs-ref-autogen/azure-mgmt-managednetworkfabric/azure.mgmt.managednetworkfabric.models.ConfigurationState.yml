@@ -19,8 +19,14 @@ fields:
   uid: azure.mgmt.managednetworkfabric.models.ConfigurationState.ERROR_PROVISIONING
 - name: FAILED
   uid: azure.mgmt.managednetworkfabric.models.ConfigurationState.FAILED
+- name: PENDING_ADMINISTRATIVE_UPDATE
+  uid: azure.mgmt.managednetworkfabric.models.ConfigurationState.PENDING_ADMINISTRATIVE_UPDATE
+- name: PENDING_COMMIT
+  uid: azure.mgmt.managednetworkfabric.models.ConfigurationState.PENDING_COMMIT
 - name: PROVISIONED
   uid: azure.mgmt.managednetworkfabric.models.ConfigurationState.PROVISIONED
+- name: PROVISIONING
+  uid: azure.mgmt.managednetworkfabric.models.ConfigurationState.PROVISIONING
 - name: REJECTED
   uid: azure.mgmt.managednetworkfabric.models.ConfigurationState.REJECTED
 - name: SUCCEEDED

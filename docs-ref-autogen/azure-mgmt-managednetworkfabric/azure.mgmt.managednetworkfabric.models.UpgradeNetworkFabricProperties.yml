@@ -1,0 +1,28 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.UpgradeNetworkFabricProperties
+name: UpgradeNetworkFabricProperties
+fullName: azure.mgmt.managednetworkfabric.models.UpgradeNetworkFabricProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Model used for Upgrade Network Fabric Properties.
+constructor:
+  syntax: 'UpgradeNetworkFabricProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Specify the version.
+  name: version
+  types:
+  - <xref:str>
+- description: 'Action to be performed while upgrading the fabric. Known values are:
+    "Start" and
+
+    "Complete".'
+  name: action
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.NetworkFabricUpgradeAction>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.UpgradeNetworkFabricProperties.action
+  name: action
+  summary: '"Start" and
+
+    "Complete".'
+  signature: 'action: str | _models.NetworkFabricUpgradeAction | None'

@@ -5,40 +5,7 @@ fullName: azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfiguratio
 module: azure.mgmt.managednetworkfabric.models
 summary: Defines the match configuration that are supported to filter the traffic.
 constructor:
-  syntax: 'NetworkTapRuleMatchConfiguration(*, match_configuration_name: str | None
-    = None, sequence_number: int | None = None, ip_address_type: str | _models.IPAddressType
-    | None = None, match_conditions: List[_models.NetworkTapRuleMatchCondition] |
-    None = None, actions: List[_models.NetworkTapRuleAction] | None = None, **kwargs:
-    Any)'
-  keywordOnlyParameters:
-  - name: match_configuration_name
-    description: The name of the match configuration.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: sequence_number
-    description: Sequence Number of the match configuration..
-    defaultValue: None
-    types:
-    - <xref:int>
-  - name: ip_address_type
-    description: 'Type of IP Address. IPv4 or IPv6. Known values are: "IPv4" and
-
-      "IPv6".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.IPAddressType>
-  - name: match_conditions
-    description: List of the match conditions.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchCondition>]
-  - name: actions
-    description: List of actions that need to be performed for the matched conditions.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NetworkTapRuleAction>]
+  syntax: 'NetworkTapRuleMatchConfiguration(*args: Any, **kwargs: Any)'
 variables:
 - description: The name of the match configuration.
   name: match_configuration_name
@@ -61,3 +28,24 @@ variables:
   name: actions
   types:
   - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NetworkTapRuleAction>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfiguration.actions
+  name: actions
+  summary: List of actions that need to be performed for the matched conditions.
+  signature: 'actions: list[''_models.NetworkTapRuleAction''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfiguration.ip_address_type
+  name: ip_address_type
+  summary: '"IPv4" and "IPv6".'
+  signature: 'ip_address_type: str | _models.IPAddressType | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfiguration.match_conditions
+  name: match_conditions
+  summary: List of the match conditions.
+  signature: 'match_conditions: list[''_models.NetworkTapRuleMatchCondition''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfiguration.match_configuration_name
+  name: match_configuration_name
+  summary: The name of the match configuration.
+  signature: 'match_configuration_name: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfiguration.sequence_number
+  name: sequence_number
+  summary: Sequence Number of the match configuration..
+  signature: 'sequence_number: int | None'

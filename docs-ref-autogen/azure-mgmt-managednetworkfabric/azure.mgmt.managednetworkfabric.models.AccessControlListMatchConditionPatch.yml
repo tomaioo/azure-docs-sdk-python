@@ -1,0 +1,86 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.AccessControlListMatchConditionPatch
+name: AccessControlListMatchConditionPatch
+fullName: azure.mgmt.managednetworkfabric.models.AccessControlListMatchConditionPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: Defines the match condition that is supported to filter the traffic.
+constructor:
+  syntax: 'AccessControlListMatchConditionPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: List of the protocols that need to be matched.
+  name: protocol_types
+  types:
+  - <xref:list>[<xref:str>]
+- description: Vlan match condition that needs to be matched.
+  name: vlan_match_condition
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.VlanMatchConditionPatch>
+- description: IP condition that needs to be matched.
+  name: ip_condition
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.IpMatchConditionPatch>
+- description: List of ether type values that need to be matched.
+  name: ether_types
+  types:
+  - <xref:list>[<xref:str>]
+- description: List of IP fragment packets that need to be matched.
+  name: fragments
+  types:
+  - <xref:list>[<xref:str>]
+- description: List of IP Lengths that need to be matched.
+  name: ip_lengths
+  types:
+  - <xref:list>[<xref:str>]
+- description: List of TTL [Time To Live] values that need to be matched.
+  name: ttl_values
+  types:
+  - <xref:list>[<xref:str>]
+- description: List of DSCP Markings that need to be matched.
+  name: dscp_markings
+  types:
+  - <xref:list>[<xref:str>]
+- description: Defines the port condition that needs to be matched.
+  name: port_condition
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.AccessControlListPortConditionPatch>
+- description: Protocol neighbors that need to be matched.
+  name: protocol_neighbors
+  types:
+  - <xref:list>[<xref:str>]
+- description: Internet Control Message Protocol (ICMP) configuration.
+  name: icmp_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.IcmpConfigurationPatchProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListMatchConditionPatch.dscp_markings
+  name: dscp_markings
+  summary: List of DSCP Markings that need to be matched.
+  signature: 'dscp_markings: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListMatchConditionPatch.ether_types
+  name: ether_types
+  summary: List of ether type values that need to be matched.
+  signature: 'ether_types: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListMatchConditionPatch.fragments
+  name: fragments
+  summary: List of IP fragment packets that need to be matched.
+  signature: 'fragments: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListMatchConditionPatch.icmp_configuration
+  name: icmp_configuration
+  summary: Internet Control Message Protocol (ICMP) configuration.
+  signature: 'icmp_configuration: _models.IcmpConfigurationPatchProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListMatchConditionPatch.ip_lengths
+  name: ip_lengths
+  summary: List of IP Lengths that need to be matched.
+  signature: 'ip_lengths: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListMatchConditionPatch.port_condition
+  name: port_condition
+  summary: Defines the port condition that needs to be matched.
+  signature: 'port_condition: _models.AccessControlListPortConditionPatch | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListMatchConditionPatch.protocol_neighbors
+  name: protocol_neighbors
+  summary: Protocol neighbors that need to be matched.
+  signature: 'protocol_neighbors: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListMatchConditionPatch.ttl_values
+  name: ttl_values
+  summary: List of TTL [Time To Live] values that need to be matched.
+  signature: 'ttl_values: list[str] | None'

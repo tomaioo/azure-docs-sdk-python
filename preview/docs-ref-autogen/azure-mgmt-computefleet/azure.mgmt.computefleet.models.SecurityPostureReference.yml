@@ -4,9 +4,9 @@ name: SecurityPostureReference
 fullName: azure.mgmt.computefleet.models.SecurityPostureReference
 module: azure.mgmt.computefleet.models
 summary: 'Specifies the security posture to be used for all virtual machines in the
-  scale
+  scale set. Minimum
 
-  set. Minimum api-version: 2023-03-01.'
+  api-version: 2023-03-01.'
 constructor:
   syntax: 'SecurityPostureReference(*args: Any, **kwargs: Any)'
 variables:
@@ -18,9 +18,7 @@ variables:
   - <xref:str>
 - description: 'List of virtual machine extension names to exclude when applying the
 
-    security
-
-    posture.'
+    security posture.'
   name: exclude_extensions
   types:
   - <xref:list>[<xref:str>]
@@ -31,10 +29,9 @@ variables:
 attributes:
 - uid: azure.mgmt.computefleet.models.SecurityPostureReference.exclude_extensions
   name: exclude_extensions
-  summary: 'List of virtual machine extension names to exclude when applying the security
-
-    posture.'
-  signature: 'exclude_extensions: List[str] | None'
+  summary: List of virtual machine extension names to exclude when applying the security
+    posture.
+  signature: 'exclude_extensions: list[str] | None'
 - uid: azure.mgmt.computefleet.models.SecurityPostureReference.id
   name: id
   summary: 'The security posture reference id in the form of

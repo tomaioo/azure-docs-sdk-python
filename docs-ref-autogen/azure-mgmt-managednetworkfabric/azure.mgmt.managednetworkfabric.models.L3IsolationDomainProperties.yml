@@ -3,57 +3,14 @@ uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties
 name: L3IsolationDomainProperties
 fullName: azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'L3 Isolation Domain Properties defines the properties of the resource.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: L3 Isolation Domain Properties defines the properties of the resource.
 constructor:
-  syntax: 'L3IsolationDomainProperties(*, network_fabric_id: str, redistribute_connected_subnets:
-    str | _models.RedistributeConnectedSubnets = ''True'', redistribute_static_routes:
-    str | _models.RedistributeStaticRoutes = ''False'', aggregate_route_configuration:
-    _models.AggregateRouteConfiguration | None = None, connected_subnet_route_policy:
-    _models.ConnectedSubnetRoutePolicy | None = None, annotation: str | None = None,
-    **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: redistribute_connected_subnets
-    description: 'Advertise Connected Subnets. Ex: "True" | "False".
-
-      Known values are: "True" and "False".'
-    defaultValue: 'True'
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.RedistributeConnectedSubnets>
-  - name: redistribute_static_routes
-    description: 'Advertise Static Routes. Ex: "True" | "False". Known
-
-      values are: "True" and "False".'
-    defaultValue: 'False'
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.RedistributeStaticRoutes>
-  - name: aggregate_route_configuration
-    description: Aggregate route configurations.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.AggregateRouteConfiguration>
-  - name: connected_subnet_route_policy
-    description: Connected Subnet RoutePolicy.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ConnectedSubnetRoutePolicy>
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: network_fabric_id
-    description: ARM Resource ID of the Network Fabric. Required.
-    types:
-    - <xref:str>
+  syntax: 'L3IsolationDomainProperties(*args: Any, **kwargs: Any)'
 variables:
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
 - description: 'Advertise Connected Subnets. Ex: "True" | "False". Known
 
     values are: "True" and "False".'
@@ -76,19 +33,42 @@ variables:
   name: connected_subnet_route_policy
   types:
   - <xref:azure.mgmt.managednetworkfabric.models.ConnectedSubnetRoutePolicy>
-- description: Switch configuration description.
-  name: annotation
-  types:
-  - <xref:str>
 - description: ARM Resource ID of the Network Fabric. Required.
   name: network_fabric_id
   types:
   - <xref:str>
+- description: Static Route - route policy.
+  name: static_route_policy
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.StaticRoutePolicy>
+- description: Unique Route Distinguisher configuration.
+  name: unique_rd_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.L3UniqueRouteDistinguisherProperties>
+- description: IPv4 VRF Limit configuration.
+  name: v4_route_prefix_limit
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.RoutePrefixLimitProperties>
+- description: IPv6 VRF Limit configuration.
+  name: v6_route_prefix_limit
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.RoutePrefixLimitProperties>
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
+- description: BMP Export Policy configuration.
+  name: export_policy_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.BmpExportPolicyProperties>
 - description: 'Configuration state of the resource. Known values are: "Succeeded",
 
     "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
 
-    "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
   name: configuration_state
   types:
   - <xref:str>
@@ -102,8 +82,86 @@ variables:
   - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
 - description: 'Administrative state of the resource. Known values are: "Enabled",
 
-    "Disabled", "MAT", and "RMA".'
+    "Disabled", "MAT", "RMA", "UnderMaintenance", and "EnabledDegraded".'
   name: administrative_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT",
+
+    "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  signature: 'administrative_state: str | _models.AdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties.aggregate_route_configuration
+  name: aggregate_route_configuration
+  summary: Aggregate route configurations.
+  signature: 'aggregate_route_configuration: _models.AggregateRouteConfiguration |
+    None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties.connected_subnet_route_policy
+  name: connected_subnet_route_policy
+  summary: Connected Subnet RoutePolicy.
+  signature: 'connected_subnet_route_policy: _models.ConnectedSubnetRoutePolicy |
+    None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties.export_policy_configuration
+  name: export_policy_configuration
+  summary: BMP Export Policy configuration.
+  signature: 'export_policy_configuration: _models.BmpExportPolicyProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties.network_fabric_id
+  name: network_fabric_id
+  summary: ARM Resource ID of the Network Fabric. Required.
+  signature: 'network_fabric_id: str'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties.redistribute_connected_subnets
+  name: redistribute_connected_subnets
+  summary: '"True" and
+
+    "False".'
+  signature: 'redistribute_connected_subnets: str | _models.RedistributeConnectedSubnets
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties.redistribute_static_routes
+  name: redistribute_static_routes
+  summary: '"True" and "False".'
+  signature: 'redistribute_static_routes: str | _models.RedistributeStaticRoutes |
+    None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties.static_route_policy
+  name: static_route_policy
+  summary: Static Route - route policy.
+  signature: 'static_route_policy: _models.StaticRoutePolicy | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties.unique_rd_configuration
+  name: unique_rd_configuration
+  summary: Unique Route Distinguisher configuration.
+  signature: 'unique_rd_configuration: _models.L3UniqueRouteDistinguisherProperties
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties.v4_route_prefix_limit
+  name: v4_route_prefix_limit
+  summary: IPv4 VRF Limit configuration.
+  signature: 'v4_route_prefix_limit: _models.RoutePrefixLimitProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties.v6_route_prefix_limit
+  name: v6_route_prefix_limit
+  summary: IPv6 VRF Limit configuration.
+  signature: 'v6_route_prefix_limit: _models.RoutePrefixLimitProperties | None'

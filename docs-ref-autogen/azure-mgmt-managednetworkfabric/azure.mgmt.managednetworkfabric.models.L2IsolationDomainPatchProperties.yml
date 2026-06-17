@@ -6,19 +6,7 @@ module: azure.mgmt.managednetworkfabric.models
 summary: L2 Isolation Domain Patch Properties defines the patchable properties of
   the resource.
 constructor:
-  syntax: 'L2IsolationDomainPatchProperties(*, annotation: str | None = None, mtu:
-    int = 1500, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: mtu
-    description: Maximum transmission unit. Default value is 1500.
-    defaultValue: '1500'
-    types:
-    - <xref:int>
+  syntax: 'L2IsolationDomainPatchProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: Switch configuration description.
   name: annotation
@@ -28,3 +16,27 @@ variables:
   name: mtu
   types:
   - <xref:int>
+- description: 'Extended VLAN status. Known values are: "Enabled" and "Disabled".'
+  name: extended_vlan
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ExtendedVlan>
+- description: 'ARM Resource ID of the networkToNetworkInterconnectId
+
+    of the L2 ISD resource.'
+  name: network_to_network_interconnect_id
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.L2IsolationDomainPatchProperties.extended_vlan
+  name: extended_vlan
+  summary: '"Enabled" and "Disabled".'
+  signature: 'extended_vlan: str | _models.ExtendedVlan | None'
+- uid: azure.mgmt.managednetworkfabric.models.L2IsolationDomainPatchProperties.mtu
+  name: mtu
+  summary: Maximum transmission unit. Default value is 1500.
+  signature: 'mtu: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.L2IsolationDomainPatchProperties.network_to_network_interconnect_id
+  name: network_to_network_interconnect_id
+  summary: ARM Resource ID of the networkToNetworkInterconnectId of the L2 ISD resource.
+  signature: 'network_to_network_interconnect_id: str | None'

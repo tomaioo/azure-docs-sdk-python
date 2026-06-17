@@ -1,0 +1,65 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclMatchCondition
+name: ControlPlaneAclMatchCondition
+fullName: azure.mgmt.managednetworkfabric.models.ControlPlaneAclMatchCondition
+module: azure.mgmt.managednetworkfabric.models
+summary: Control Plane Access Control List (ACL) match conditions properties.
+constructor:
+  syntax: 'ControlPlaneAclMatchCondition(*args: Any, **kwargs: Any)'
+variables:
+- description: Protocols that need to be matched.
+  name: protocol_types
+  types:
+  - <xref:str>
+- description: IP condition that needs to be matched.
+  name: ip_condition
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ControlPlanAclIpMatchCondition>
+- description: TTL [Time To Live] values that need to be matched.
+  name: ttl_match_condition
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ControlPlaneAclTtlMatchCondition>
+- description: Port condition that needs to be matched.
+  name: port_condition
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ControlPlaneAclPortMatchCondition>
+- description: 'Flags that need to be matched. Example: established | initial |
+
+    <List-of-TCP-flags>. List of eligible TCP Flags are ack, cwr, ece, fin, psh, rst,
+    syn, urg,
+
+    established.'
+  name: flags
+  types:
+  - <xref:list>[<xref:str>]
+- description: Internet Control Message Protocol (ICMP) configuration.
+  name: icmp_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.IcmpConfigurationProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclMatchCondition.flags
+  name: flags
+  summary: 'established | initial | <List-of-TCP-flags>. List of
+
+    eligible TCP Flags are ack, cwr, ece, fin, psh, rst, syn, urg, established.'
+  signature: 'flags: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclMatchCondition.icmp_configuration
+  name: icmp_configuration
+  summary: Internet Control Message Protocol (ICMP) configuration.
+  signature: 'icmp_configuration: _models.IcmpConfigurationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclMatchCondition.ip_condition
+  name: ip_condition
+  summary: IP condition that needs to be matched.
+  signature: 'ip_condition: _models.ControlPlanAclIpMatchCondition | None'
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclMatchCondition.port_condition
+  name: port_condition
+  summary: Port condition that needs to be matched.
+  signature: 'port_condition: _models.ControlPlaneAclPortMatchCondition | None'
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclMatchCondition.protocol_types
+  name: protocol_types
+  summary: Protocols that need to be matched.
+  signature: 'protocol_types: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclMatchCondition.ttl_match_condition
+  name: ttl_match_condition
+  summary: TTL [Time To Live] values that need to be matched.
+  signature: 'ttl_match_condition: _models.ControlPlaneAclTtlMatchCondition | None'

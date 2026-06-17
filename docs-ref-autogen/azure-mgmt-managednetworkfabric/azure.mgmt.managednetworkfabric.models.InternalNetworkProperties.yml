@@ -3,111 +3,14 @@ uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties
 name: InternalNetworkProperties
 fullName: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Internal Network Properties defines the properties of the resource.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: Internal Network Properties defines the properties of the resource.
 constructor:
-  syntax: 'InternalNetworkProperties(*, vlan_id: int, extension: str | _models.Extension
-    = ''NoExtension'', mtu: int = 1500, connected_i_pv4_subnets: List[_models.ConnectedSubnet]
-    | None = None, connected_i_pv6_subnets: List[_models.ConnectedSubnet] | None =
-    None, import_route_policy_id: str | None = None, export_route_policy_id: str |
-    None = None, import_route_policy: _models.ImportRoutePolicy | None = None, export_route_policy:
-    _models.ExportRoutePolicy | None = None, ingress_acl_id: str | None = None, egress_acl_id:
-    str | None = None, is_monitoring_enabled: str | _models.IsMonitoringEnabled =
-    ''False'', annotation: str | None = None, bgp_configuration: _models.InternalNetworkPropertiesBgpConfiguration
-    | None = None, static_route_configuration: _models.InternalNetworkPropertiesStaticRouteConfiguration
-    | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: extension
-    description: 'Extension. Example: NoExtension | NPB. Known values are: "NoExtension"
-      and
-
-      "NPB".'
-    defaultValue: NoExtension
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.Extension>
-  - name: mtu
-    description: Maximum transmission unit. Default value is 1500.
-    defaultValue: '1500'
-    types:
-    - <xref:int>
-  - name: connected_i_pv4_subnets
-    description: List of Connected IPv4 Subnets.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.ConnectedSubnet>]
-  - name: connected_i_pv6_subnets
-    description: List of connected IPv6 Subnets.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.ConnectedSubnet>]
-  - name: import_route_policy_id
-    description: 'ARM Resource ID of the RoutePolicy. This is used for the
-
-      backward compatibility.'
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: export_route_policy_id
-    description: 'ARM Resource ID of the RoutePolicy. This is used for the
-
-      backward compatibility.'
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: import_route_policy
-    description: Import Route Policy either IPv4 or IPv6.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ImportRoutePolicy>
-  - name: export_route_policy
-    description: Export Route Policy either IPv4 or IPv6.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ExportRoutePolicy>
-  - name: ingress_acl_id
-    description: Ingress Acl. ARM resource ID of Access Control Lists.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: egress_acl_id
-    description: Egress Acl. ARM resource ID of Access Control Lists.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: is_monitoring_enabled
-    description: 'To check whether monitoring of internal network is enabled or
-
-      not. Known values are: "True" and "False".'
-    defaultValue: 'False'
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.IsMonitoringEnabled>
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: vlan_id
-    description: 'Vlan identifier. Example: 1001. Required.'
-    types:
-    - <xref:int>
-  - name: bgp_configuration
-    description: BGP configuration properties.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.InternalNetworkPropertiesBgpConfiguration>
-  - name: static_route_configuration
-    description: Static Route Configuration properties.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.InternalNetworkPropertiesStaticRouteConfiguration>
+  syntax: 'InternalNetworkProperties(*args: Any, **kwargs: Any)'
 variables:
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
 - description: 'Extension. Example: NoExtension | NPB. Known values are: "NoExtension"
     and
 
@@ -128,18 +31,6 @@ variables:
   name: connected_i_pv6_subnets
   types:
   - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.ConnectedSubnet>]
-- description: 'ARM Resource ID of the RoutePolicy. This is used for the backward
-
-    compatibility.'
-  name: import_route_policy_id
-  types:
-  - <xref:str>
-- description: 'ARM Resource ID of the RoutePolicy. This is used for the backward
-
-    compatibility.'
-  name: export_route_policy_id
-  types:
-  - <xref:str>
 - description: Import Route Policy either IPv4 or IPv6.
   name: import_route_policy
   types:
@@ -163,10 +54,6 @@ variables:
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.IsMonitoringEnabled>
-- description: Switch configuration description.
-  name: annotation
-  types:
-  - <xref:str>
 - description: 'Vlan identifier. Example: 1001. Required.'
   name: vlan_id
   types:
@@ -174,16 +61,35 @@ variables:
 - description: BGP configuration properties.
   name: bgp_configuration
   types:
-  - <xref:azure.mgmt.managednetworkfabric.models.InternalNetworkPropertiesBgpConfiguration>
+  - <xref:azure.mgmt.managednetworkfabric.models.BgpConfiguration>
 - description: Static Route Configuration properties.
   name: static_route_configuration
   types:
-  - <xref:azure.mgmt.managednetworkfabric.models.InternalNetworkPropertiesStaticRouteConfiguration>
+  - <xref:azure.mgmt.managednetworkfabric.models.StaticRouteConfiguration>
+- description: Native IPv4 Prefix Limit Configuration properties.
+  name: native_ipv4_prefix_limit
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.NativeIpv4PrefixLimitProperties>
+- description: Native IPv6 Prefix Limit Configuration properties.
+  name: native_ipv6_prefix_limit
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.NativeIpv6PrefixLimitProperties>
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
+- description: Associated Network Fabric Resource ID.
+  name: network_fabric_id
+  types:
+  - <xref:str>
 - description: 'Configuration state of the resource. Known values are: "Succeeded",
 
     "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
 
-    "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
   name: configuration_state
   types:
   - <xref:str>
@@ -197,8 +103,103 @@ variables:
   - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
 - description: 'Administrative state of the resource. Known values are: "Enabled",
 
-    "Disabled", "MAT", and "RMA".'
+    "Disabled", "MAT", "RMA", "UnderMaintenance", and "EnabledDegraded".'
   name: administrative_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT",
+
+    "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  signature: 'administrative_state: str | _models.AdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.bgp_configuration
+  name: bgp_configuration
+  summary: BGP configuration properties.
+  signature: 'bgp_configuration: _models.BgpConfiguration | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.connected_i_pv4_subnets
+  name: connected_i_pv4_subnets
+  summary: List of Connected IPv4 Subnets.
+  signature: 'connected_i_pv4_subnets: list[''_models.ConnectedSubnet''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.connected_i_pv6_subnets
+  name: connected_i_pv6_subnets
+  summary: List of connected IPv6 Subnets.
+  signature: 'connected_i_pv6_subnets: list[''_models.ConnectedSubnet''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.egress_acl_id
+  name: egress_acl_id
+  summary: Egress Acl. ARM resource ID of Access Control Lists.
+  signature: 'egress_acl_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.export_route_policy
+  name: export_route_policy
+  summary: Export Route Policy either IPv4 or IPv6.
+  signature: 'export_route_policy: _models.ExportRoutePolicy | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.extension
+  name: extension
+  summary: '"NoExtension" and "NPB".'
+  signature: 'extension: str | _models.Extension | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.import_route_policy
+  name: import_route_policy
+  summary: Import Route Policy either IPv4 or IPv6.
+  signature: 'import_route_policy: _models.ImportRoutePolicy | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.ingress_acl_id
+  name: ingress_acl_id
+  summary: Ingress Acl. ARM resource ID of Access Control Lists.
+  signature: 'ingress_acl_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.is_monitoring_enabled
+  name: is_monitoring_enabled
+  summary: '"True"
+
+    and "False".'
+  signature: 'is_monitoring_enabled: str | _models.IsMonitoringEnabled | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.mtu
+  name: mtu
+  summary: Maximum transmission unit. Default value is 1500.
+  signature: 'mtu: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.native_ipv4_prefix_limit
+  name: native_ipv4_prefix_limit
+  summary: Native IPv4 Prefix Limit Configuration properties.
+  signature: 'native_ipv4_prefix_limit: _models.NativeIpv4PrefixLimitProperties |
+    None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.native_ipv6_prefix_limit
+  name: native_ipv6_prefix_limit
+  summary: Native IPv6 Prefix Limit Configuration properties.
+  signature: 'native_ipv6_prefix_limit: _models.NativeIpv6PrefixLimitProperties |
+    None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.network_fabric_id
+  name: network_fabric_id
+  summary: Associated Network Fabric Resource ID.
+  signature: 'network_fabric_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.static_route_configuration
+  name: static_route_configuration
+  summary: Static Route Configuration properties.
+  signature: 'static_route_configuration: _models.StaticRouteConfiguration | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkProperties.vlan_id
+  name: vlan_id
+  summary: '1001. Required. '
+  signature: 'vlan_id: int'

@@ -1,0 +1,11 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.V4OverV6BgpSessionState
+name: V4OverV6BgpSessionState
+fullName: azure.mgmt.managednetworkfabric.models.V4OverV6BgpSessionState
+summary: V4 over V6 BGP session state.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: DISABLED
+  uid: azure.mgmt.managednetworkfabric.models.V4OverV6BgpSessionState.DISABLED
+- name: ENABLED
+  uid: azure.mgmt.managednetworkfabric.models.V4OverV6BgpSessionState.ENABLED

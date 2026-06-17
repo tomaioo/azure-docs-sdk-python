@@ -1,0 +1,11 @@
+### YamlMime:PythonPackage
+uid: azure.mgmt.napsteromniagentapi
+name: napsteromniagentapi
+fullName: azure.mgmt.napsteromniagentapi
+type: rootImport
+classes:
+- azure.mgmt.napsteromniagentapi.NapsterOmniAgentApiMgmtClient
+packages:
+- azure.mgmt.napsteromniagentapi.aio
+- azure.mgmt.napsteromniagentapi.models
+- azure.mgmt.napsteromniagentapi.operations

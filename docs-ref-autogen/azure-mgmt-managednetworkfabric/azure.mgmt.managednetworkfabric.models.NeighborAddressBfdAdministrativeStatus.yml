@@ -1,0 +1,41 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NeighborAddressBfdAdministrativeStatus
+name: NeighborAddressBfdAdministrativeStatus
+fullName: azure.mgmt.managednetworkfabric.models.NeighborAddressBfdAdministrativeStatus
+module: azure.mgmt.managednetworkfabric.models
+summary: Neighbor Address Bidirectional Forwarding Detection (BFD) Administrative
+  Status.
+constructor:
+  syntax: 'NeighborAddressBfdAdministrativeStatus(*args: Any, **kwargs: Any)'
+variables:
+- description: 'NeighborAddress - Input should be either All or Specific Ipv4 Address
+
+    or Specific Ipv6 Address.'
+  name: neighbor_address
+  types:
+  - <xref:str>
+- description: 'BFD Administrative state. Known values are: "Enabled", "Disabled",
+
+    "MAT", and "RMA".'
+  name: administrative_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BfdAdministrativeState>
+- description: Error message.
+  name: error
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NeighborAddressBfdAdministrativeStatus.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT", and "RMA".'
+  signature: 'administrative_state: str | _models.BfdAdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NeighborAddressBfdAdministrativeStatus.error
+  name: error
+  summary: Error message.
+  signature: 'error: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NeighborAddressBfdAdministrativeStatus.neighbor_address
+  name: neighbor_address
+  summary: NeighborAddress - Input should be either All or Specific Ipv4 Address or
+    Specific Ipv6 Address.
+  signature: 'neighbor_address: str | None'

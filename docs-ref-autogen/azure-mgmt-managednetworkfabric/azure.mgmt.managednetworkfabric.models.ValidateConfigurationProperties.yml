@@ -5,17 +5,7 @@ fullName: azure.mgmt.managednetworkfabric.models.ValidateConfigurationProperties
 module: azure.mgmt.managednetworkfabric.models
 summary: Validation configuration properties.
 constructor:
-  syntax: 'ValidateConfigurationProperties(*, validate_action: str | _models.ValidateAction
-    | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: validate_action
-    description: 'Validate action that to be performed. Known values are: "Cabling",
-
-      "Configuration", and "Connectivity".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.ValidateAction>
+  syntax: 'ValidateConfigurationProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: 'Validate action that to be performed. Known values are: "Cabling",
 
@@ -24,3 +14,10 @@ variables:
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.ValidateAction>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ValidateConfigurationProperties.validate_action
+  name: validate_action
+  summary: '"Cabling", "Configuration", and
+
+    "Connectivity".'
+  signature: 'validate_action: str | _models.ValidateAction | None'

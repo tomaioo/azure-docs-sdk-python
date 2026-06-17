@@ -31,4 +31,4 @@ attributes:
 - uid: azure.mgmt.computefleet.models.ZoneAllocationPolicy.zone_preferences
   name: zone_preferences
   summary: Zone preferences, required when zone distribution strategy is Prioritized.
-  signature: 'zone_preferences: List[_models.ZonePreference] | None'
+  signature: 'zone_preferences: list[''_models.ZonePreference''] | None'

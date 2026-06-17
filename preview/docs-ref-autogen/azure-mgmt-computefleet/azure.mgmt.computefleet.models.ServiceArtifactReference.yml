@@ -4,11 +4,10 @@ name: ServiceArtifactReference
 fullName: azure.mgmt.computefleet.models.ServiceArtifactReference
 module: azure.mgmt.computefleet.models
 summary: 'Specifies the service artifact reference id used to set same image version
-  for
+  for all virtual
 
-  all virtual machines in the scale set when using ''latest'' image version.
-
-  Minimum api-version: 2022-11-01.'
+  machines in the scale set when using ''latest'' image version. Minimum api-version:
+  2022-11-01.'
 constructor:
   syntax: 'ServiceArtifactReference(*args: Any, **kwargs: Any)'
 variables:

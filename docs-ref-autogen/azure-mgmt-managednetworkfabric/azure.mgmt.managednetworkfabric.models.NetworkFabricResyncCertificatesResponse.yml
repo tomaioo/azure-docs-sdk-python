@@ -1,0 +1,85 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkFabricResyncCertificatesResponse
+name: NetworkFabricResyncCertificatesResponse
+fullName: azure.mgmt.managednetworkfabric.models.NetworkFabricResyncCertificatesResponse
+module: azure.mgmt.managednetworkfabric.models
+summary: Response body for a ResyncCertificates request on a Network Fabric.
+constructor:
+  syntax: 'NetworkFabricResyncCertificatesResponse(*args: Any, **kwargs: Any)'
+variables:
+- description: Fully qualified ID for the async operation.
+  name: id
+  types:
+  - <xref:str>
+- description: Name of the async operation.
+  name: name
+  types:
+  - <xref:str>
+- description: Operation status. Required.
+  name: status
+  types:
+  - <xref:str>
+- description: Percent of the operation that is complete.
+  name: percent_complete
+  types:
+  - <xref:float>
+- description: The start time of the operation.
+  name: start_time
+  types:
+  - <xref:datetime.datetime>
+- description: The end time of the operation.
+  name: end_time
+  types:
+  - <xref:datetime.datetime>
+- description: The operations list.
+  name: operations
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.OperationStatusResult>]
+- description: If present, details of the operation error.
+  name: error
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ErrorDetail>
+- description: 'Fully qualified ID of the resource against which the original async
+
+    operation was started.'
+  name: resource_id
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricResyncCertificatesResponse.end_time
+  name: end_time
+  summary: The end time of the operation.
+  signature: 'end_time: datetime | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricResyncCertificatesResponse.error
+  name: error
+  summary: If present, details of the operation error.
+  signature: 'error: _models.ErrorDetail | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricResyncCertificatesResponse.id
+  name: id
+  summary: Fully qualified ID for the async operation.
+  signature: 'id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricResyncCertificatesResponse.name
+  name: name
+  summary: Name of the async operation.
+  signature: 'name: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricResyncCertificatesResponse.operations
+  name: operations
+  summary: The operations list.
+  signature: 'operations: list[''_models.OperationStatusResult''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricResyncCertificatesResponse.percent_complete
+  name: percent_complete
+  summary: Percent of the operation that is complete.
+  signature: 'percent_complete: float | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricResyncCertificatesResponse.resource_id
+  name: resource_id
+  summary: Fully qualified ID of the resource against which the original async operation
+    was started.
+  signature: 'resource_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricResyncCertificatesResponse.start_time
+  name: start_time
+  summary: The start time of the operation.
+  signature: 'start_time: datetime | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricResyncCertificatesResponse.status
+  name: status
+  summary: Operation status. Required.
+  signature: 'status: str'

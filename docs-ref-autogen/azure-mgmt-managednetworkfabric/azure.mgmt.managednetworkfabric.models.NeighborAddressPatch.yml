@@ -1,0 +1,66 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NeighborAddressPatch
+name: NeighborAddressPatch
+fullName: azure.mgmt.managednetworkfabric.models.NeighborAddressPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: Neighbor Address properties.
+constructor:
+  syntax: 'NeighborAddressPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: IP Address.
+  name: address
+  types:
+  - <xref:str>
+- description: 'BFD Administrative State for each Neighbor Address. Example:
+
+    Enabled | Disabled. Known values are: "Enabled", "Disabled", "MAT", and "RMA".'
+  name: bfd_administrative_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BfdAdministrativeState>
+- description: 'BGP Administrative State for each Neighbor Address. Example:
+
+    Enabled | Disabled. Known values are: "Enabled" and "Disabled".'
+  name: bgp_administrative_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BgpAdministrativeState>
+- description: 'Configuration state of the resource. Known values are: "Succeeded",
+
+    "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
+
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
+  name: configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NeighborAddressPatch.address
+  name: address
+  summary: IP Address.
+  signature: 'address: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NeighborAddressPatch.bfd_administrative_state
+  name: bfd_administrative_state
+  summary: 'Enabled | Disabled. Known values
+
+    are: "Enabled", "Disabled", "MAT", and "RMA".'
+  signature: 'bfd_administrative_state: str | _models.BfdAdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NeighborAddressPatch.bgp_administrative_state
+  name: bgp_administrative_state
+  summary: 'Enabled | Disabled. Known values
+
+    are: "Enabled" and "Disabled".'
+  signature: 'bgp_administrative_state: str | _models.BgpAdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NeighborAddressPatch.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'

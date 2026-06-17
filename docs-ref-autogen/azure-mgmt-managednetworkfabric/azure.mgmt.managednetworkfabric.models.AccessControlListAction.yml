@@ -5,28 +5,12 @@ fullName: azure.mgmt.managednetworkfabric.models.AccessControlListAction
 module: azure.mgmt.managednetworkfabric.models
 summary: Action that need to performed.
 constructor:
-  syntax: 'AccessControlListAction(*, type: str | _models.AclActionType | None = None,
-    counter_name: str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: type
-    description: 'Type of actions that can be performed. Known values are: "Drop",
-      "Count", and
-
-      "Log".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.AclActionType>
-  - name: counter_name
-    description: Name of the counter block to get match count information.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'AccessControlListAction(*args: Any, **kwargs: Any)'
 variables:
 - description: 'Type of actions that can be performed. Known values are: "Drop", "Count",
-    and
+    "Log",
 
-    "Log".'
+    "Remark", and "PoliceRate".'
   name: type
   types:
   - <xref:str>
@@ -35,3 +19,31 @@ variables:
   name: counter_name
   types:
   - <xref:str>
+- description: Remark comment.
+  name: remark_comment
+  types:
+  - <xref:str>
+- description: Police rate configuration.
+  name: police_rate_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.PoliceRateConfigurationProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListAction.counter_name
+  name: counter_name
+  summary: Name of the counter block to get match count information.
+  signature: 'counter_name: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListAction.police_rate_configuration
+  name: police_rate_configuration
+  summary: Police rate configuration.
+  signature: 'police_rate_configuration: _models.PoliceRateConfigurationProperties
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListAction.remark_comment
+  name: remark_comment
+  summary: Remark comment.
+  signature: 'remark_comment: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListAction.type
+  name: type
+  summary: '"Drop", "Count", "Log",
+
+    "Remark", and "PoliceRate".'
+  signature: 'type: str | _models.AclActionType | None'

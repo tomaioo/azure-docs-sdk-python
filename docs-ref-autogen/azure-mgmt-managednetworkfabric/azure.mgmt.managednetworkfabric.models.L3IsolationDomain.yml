@@ -3,69 +3,13 @@ uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomain
 name: L3IsolationDomain
 fullName: azure.mgmt.managednetworkfabric.models.L3IsolationDomain
 module: azure.mgmt.managednetworkfabric.models
-summary: 'The L3 Isolation Domain resource definition.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: The L3 Isolation Domain resource definition.
 constructor:
-  syntax: 'L3IsolationDomain(*, location: str, network_fabric_id: str, tags: Dict[str,
-    str] | None = None, annotation: str | None = None, redistribute_connected_subnets:
-    str | _models.RedistributeConnectedSubnets = ''True'', redistribute_static_routes:
-    str | _models.RedistributeStaticRoutes = ''False'', aggregate_route_configuration:
-    _models.AggregateRouteConfiguration | None = None, connected_subnet_route_policy:
-    _models.ConnectedSubnetRoutePolicy | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: tags
-    description: Resource tags.
-    defaultValue: None
-    types:
-    - <xref:dict>[<xref:str>, <xref:str>]
-  - name: location
-    description: The geo-location where the resource lives. Required.
-    types:
-    - <xref:str>
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: redistribute_connected_subnets
-    description: 'Advertise Connected Subnets. Ex: "True" | "False".
-
-      Known values are: "True" and "False".'
-    defaultValue: 'True'
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.RedistributeConnectedSubnets>
-  - name: redistribute_static_routes
-    description: 'Advertise Static Routes. Ex: "True" | "False". Known
-
-      values are: "True" and "False".'
-    defaultValue: 'False'
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.RedistributeStaticRoutes>
-  - name: aggregate_route_configuration
-    description: Aggregate route configurations.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.AggregateRouteConfiguration>
-  - name: connected_subnet_route_policy
-    description: Connected Subnet RoutePolicy.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ConnectedSubnetRoutePolicy>
-  - name: network_fabric_id
-    description: ARM Resource ID of the Network Fabric. Required.
-    types:
-    - <xref:str>
+  syntax: 'L3IsolationDomain(*args: Any, **kwargs: Any)'
 variables:
-- description: 'Fully qualified resource ID for the resource. E.g.
+- description: 'Fully qualified resource ID for the resource. Ex -
 
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}".'
+    /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.'
   name: id
   types:
   - <xref:str>
@@ -94,56 +38,20 @@ variables:
   name: location
   types:
   - <xref:str>
-- description: Switch configuration description.
-  name: annotation
+- description: The L3 Isolation Domain Properties. Required.
+  name: properties
   types:
-  - <xref:str>
-- description: 'Advertise Connected Subnets. Ex: "True" | "False". Known
-
-    values are: "True" and "False".'
-  name: redistribute_connected_subnets
+  - <xref:azure.mgmt.managednetworkfabric.models.L3IsolationDomainProperties>
+- description: The managed service identities assigned to this resource.
+  name: identity
   types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.RedistributeConnectedSubnets>
-- description: 'Advertise Static Routes. Ex: "True" | "False". Known values
-
-    are: "True" and "False".'
-  name: redistribute_static_routes
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.RedistributeStaticRoutes>
-- description: Aggregate route configurations.
-  name: aggregate_route_configuration
-  types:
-  - <xref:azure.mgmt.managednetworkfabric.models.AggregateRouteConfiguration>
-- description: Connected Subnet RoutePolicy.
-  name: connected_subnet_route_policy
-  types:
-  - <xref:azure.mgmt.managednetworkfabric.models.ConnectedSubnetRoutePolicy>
-- description: ARM Resource ID of the Network Fabric. Required.
-  name: network_fabric_id
-  types:
-  - <xref:str>
-- description: 'Configuration state of the resource. Known values are: "Succeeded",
-
-    "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
-
-    "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
-  name: configuration_state
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationState>
-- description: 'Provisioning state of the resource. Known values are: "Accepted",
-
-    "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
-  name: provisioning_state
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
-- description: 'Administrative state of the resource. Known values are: "Enabled",
-
-    "Disabled", "MAT", and "RMA".'
-  name: administrative_state
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+  - <xref:azure.mgmt.managednetworkfabric.models.ManagedServiceIdentity>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomain.identity
+  name: identity
+  summary: The managed service identities assigned to this resource.
+  signature: 'identity: _models.ManagedServiceIdentity | None'
+- uid: azure.mgmt.managednetworkfabric.models.L3IsolationDomain.properties
+  name: properties
+  summary: The L3 Isolation Domain Properties. Required.
+  signature: 'properties: _models.L3IsolationDomainProperties'

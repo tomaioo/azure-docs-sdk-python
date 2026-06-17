@@ -5,16 +5,14 @@ fullName: azure.mgmt.managednetworkfabric.models.InternetGatewayRulePatch
 module: azure.mgmt.managednetworkfabric.models
 summary: The Internet Gateway Rules patch resource definition.
 constructor:
-  syntax: 'InternetGatewayRulePatch(*, tags: Dict[str, str] | None = None, **kwargs:
-    Any)'
-  keywordOnlyParameters:
-  - name: tags
-    description: Resource tags.
-    defaultValue: None
-    types:
-    - <xref:dict>[<xref:str>, <xref:str>]
+  syntax: 'InternetGatewayRulePatch(*args: Any, **kwargs: Any)'
 variables:
 - description: Resource tags.
   name: tags
   types:
   - <xref:dict>[<xref:str>, <xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.InternetGatewayRulePatch.tags
+  name: tags
+  summary: Resource tags.
+  signature: 'tags: dict[str, str] | None'

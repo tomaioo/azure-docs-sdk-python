@@ -5,55 +5,26 @@ fullName: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerPatch
 module: azure.mgmt.managednetworkfabric.models
 summary: The Network Fabric Controller Patch payload definition.
 constructor:
-  syntax: 'NetworkFabricControllerPatch(*, tags: Dict[str, str] | None = None, infrastructure_express_route_connections:
-    List[_models.ExpressRouteConnectionInformation] | None = None, workload_express_route_connections:
-    List[_models.ExpressRouteConnectionInformation] | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: tags
-    description: Resource tags.
-    defaultValue: None
-    types:
-    - <xref:dict>[<xref:str>, <xref:str>]
-  - name: infrastructure_express_route_connections
-    description: 'As part of an update, the Infrastructure
-
-      ExpressRoute CircuitID should be provided to create and Provision a NFC. This
-      Express route is
-
-      dedicated for Infrastructure services. (This is a Mandatory attribute).'
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.ExpressRouteConnectionInformation>]
-  - name: workload_express_route_connections
-    description: 'As part of an update, the workload ExpressRoute
-
-      CircuitID should be provided to create and Provision a NFC. This Express route
-      is dedicated for
-
-      Workload services. (This is a Mandatory attribute).'
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.ExpressRouteConnectionInformation>]
+  syntax: 'NetworkFabricControllerPatch(*args: Any, **kwargs: Any)'
 variables:
 - description: Resource tags.
   name: tags
   types:
   - <xref:dict>[<xref:str>, <xref:str>]
-- description: 'As part of an update, the Infrastructure
-
-    ExpressRoute CircuitID should be provided to create and Provision a NFC. This
-    Express route is
-
-    dedicated for Infrastructure services. (This is a Mandatory attribute).'
-  name: infrastructure_express_route_connections
+- description: Network Fabric Controller patch properties.
+  name: properties
   types:
-  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.ExpressRouteConnectionInformation>]
-- description: 'As part of an update, the workload ExpressRoute
-
-    CircuitID should be provided to create and Provision a NFC. This Express route
-    is dedicated for
-
-    Workload services. (This is a Mandatory attribute).'
-  name: workload_express_route_connections
+  - <xref:azure.mgmt.managednetworkfabric.models.NetworkFabricControllerPatchProperties>
+- description: The managed service identities assigned to this resource.
+  name: identity
   types:
-  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.ExpressRouteConnectionInformation>]
+  - <xref:azure.mgmt.managednetworkfabric.models.ManagedServiceIdentityPatch>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerPatch.identity
+  name: identity
+  summary: The managed service identities assigned to this resource.
+  signature: 'identity: _models.ManagedServiceIdentityPatch | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricControllerPatch.properties
+  name: properties
+  summary: Network Fabric Controller patch properties.
+  signature: 'properties: _models.NetworkFabricControllerPatchProperties | None'

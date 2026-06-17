@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.ArmConfigurationDiffResponseProperties
+name: ArmConfigurationDiffResponseProperties
+fullName: azure.mgmt.managednetworkfabric.models.ArmConfigurationDiffResponseProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Arm Configuration Diff Response Properties.
+constructor:
+  syntax: 'ArmConfigurationDiffResponseProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Storage URL to the diff file.
+  name: configuration_diff_url
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ArmConfigurationDiffResponseProperties.configuration_diff_url
+  name: configuration_diff_url
+  summary: Storage URL to the diff file.
+  signature: 'configuration_diff_url: str | None'

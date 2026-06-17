@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.DeviceRoCommand
+name: DeviceRoCommand
+fullName: azure.mgmt.managednetworkfabric.models.DeviceRoCommand
+module: azure.mgmt.managednetworkfabric.models
+summary: Provide the RO command.
+constructor:
+  syntax: 'DeviceRoCommand(*args: Any, **kwargs: Any)'
+variables:
+- description: Specify the command.
+  name: command
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.DeviceRoCommand.command
+  name: command
+  summary: Specify the command.
+  signature: 'command: str | None'

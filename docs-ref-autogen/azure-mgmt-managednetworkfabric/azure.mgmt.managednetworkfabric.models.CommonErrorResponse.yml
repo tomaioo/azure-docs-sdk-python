@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.CommonErrorResponse
+name: CommonErrorResponse
+fullName: azure.mgmt.managednetworkfabric.models.CommonErrorResponse
+module: azure.mgmt.managednetworkfabric.models
+summary: The error message.
+constructor:
+  syntax: 'CommonErrorResponse(*args: Any, **kwargs: Any)'
+variables:
+- description: The error object.
+  name: error
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ErrorDetail>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.CommonErrorResponse.error
+  name: error
+  summary: The error object.
+  signature: 'error: _models.ErrorDetail | None'

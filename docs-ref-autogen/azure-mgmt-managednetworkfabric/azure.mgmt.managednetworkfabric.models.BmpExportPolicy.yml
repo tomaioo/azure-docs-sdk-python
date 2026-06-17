@@ -1,0 +1,15 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.BmpExportPolicy
+name: BmpExportPolicy
+fullName: azure.mgmt.managednetworkfabric.models.BmpExportPolicy
+summary: Export Policy for the BGP Monitoring Protocol (BMP) Configuration.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: ALL
+  uid: azure.mgmt.managednetworkfabric.models.BmpExportPolicy.ALL
+- name: LOCAL_RIB
+  uid: azure.mgmt.managednetworkfabric.models.BmpExportPolicy.LOCAL_RIB
+- name: POST_POLICY
+  uid: azure.mgmt.managednetworkfabric.models.BmpExportPolicy.POST_POLICY
+- name: PRE_POLICY
+  uid: azure.mgmt.managednetworkfabric.models.BmpExportPolicy.PRE_POLICY

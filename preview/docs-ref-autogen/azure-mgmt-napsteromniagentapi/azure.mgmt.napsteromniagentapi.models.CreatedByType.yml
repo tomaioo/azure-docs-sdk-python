@@ -1,0 +1,15 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.napsteromniagentapi.models.CreatedByType
+name: CreatedByType
+fullName: azure.mgmt.napsteromniagentapi.models.CreatedByType
+summary: The kind of entity that created the resource.
+module: azure.mgmt.napsteromniagentapi.models
+fields:
+- name: APPLICATION
+  uid: azure.mgmt.napsteromniagentapi.models.CreatedByType.APPLICATION
+- name: KEY
+  uid: azure.mgmt.napsteromniagentapi.models.CreatedByType.KEY
+- name: MANAGED_IDENTITY
+  uid: azure.mgmt.napsteromniagentapi.models.CreatedByType.MANAGED_IDENTITY
+- name: USER
+  uid: azure.mgmt.napsteromniagentapi.models.CreatedByType.USER

@@ -1,0 +1,328 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.operations.NetworkBootstrapDevicesOperations
+name: NetworkBootstrapDevicesOperations
+fullName: azure.mgmt.managednetworkfabric.operations.NetworkBootstrapDevicesOperations
+module: azure.mgmt.managednetworkfabric.operations
+summary: "> [!WARNING]\n> DO NOT instantiate this class directly.\n>\n> \n>\n> Instead,\
+  \ you should access the following operations through\n>\n> <xref:azure.mgmt.managednetworkfabric.ManagedNetworkFabricMgmtClient>'s\n\
+  >\n> <xref:network_bootstrap_devices> attribute.\n>"
+constructor:
+  syntax: NetworkBootstrapDevicesOperations(*args, **kwargs)
+methods:
+- uid: azure.mgmt.managednetworkfabric.operations.NetworkBootstrapDevicesOperations.begin_create
+  name: begin_create
+  summary: Creates a Network Bootstrap Device resource.
+  signature: 'begin_create(resource_group_name: str, network_bootstrap_device_name:
+    str, body: _models.NetworkBootstrapDevice, *, content_type: str = ''application/json'',
+    **kwargs: Any) -> LROPoller[_models.NetworkBootstrapDevice]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_bootstrap_device_name
+    description: Name of the Network Bootstrap Device. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: body
+    description: 'Request payload. Is one of the following types: NetworkBootstrapDevice,
+      JSON,
+
+      IO[bytes] Required.'
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.managednetworkfabric.models.NetworkBootstrapDevice>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
+  return:
+    description: 'An instance of LROPoller that returns NetworkBootstrapDevice. The
+
+      NetworkBootstrapDevice is compatible with MutableMapping'
+    types:
+    - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkBootstrapDevice>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.operations.NetworkBootstrapDevicesOperations.begin_delete
+  name: begin_delete
+  summary: Deletes a Network Bootstrap Device resource.
+  signature: 'begin_delete(resource_group_name: str, network_bootstrap_device_name:
+    str, **kwargs: Any) -> LROPoller[None]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_bootstrap_device_name
+    description: Name of the Network Bootstrap Device. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: An instance of LROPoller that returns None
+    types:
+    - <xref:azure.core.polling.LROPoller>[<xref:None>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.operations.NetworkBootstrapDevicesOperations.begin_reboot
+  name: begin_reboot
+  summary: Reboot the Network Bootstrap Device.
+  signature: 'begin_reboot(resource_group_name: str, network_bootstrap_device_name:
+    str, **kwargs: Any) -> LROPoller[NetworkBootstrapDeviceRebootResponse]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_bootstrap_device_name
+    description: Name of the Network Bootstrap Device. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: 'An instance of LROPoller that returns NetworkBootstrapDeviceRebootResponse.
+      The
+
+      NetworkBootstrapDeviceRebootResponse is compatible with MutableMapping'
+    types:
+    - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceRebootResponse>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.operations.NetworkBootstrapDevicesOperations.begin_refresh_configuration
+  name: begin_refresh_configuration
+  summary: Refreshes the configuration of Network Bootstrap Device.
+  signature: 'begin_refresh_configuration(resource_group_name: str, network_bootstrap_device_name:
+    str, **kwargs: Any) -> LROPoller[NetworkBootstrapDeviceRefreshConfigurationResponse]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_bootstrap_device_name
+    description: Name of the Network Bootstrap Device. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: 'An instance of LROPoller that returns
+
+      NetworkBootstrapDeviceRefreshConfigurationResponse. The
+
+      NetworkBootstrapDeviceRefreshConfigurationResponse is compatible with MutableMapping'
+    types:
+    - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceRefreshConfigurationResponse>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.operations.NetworkBootstrapDevicesOperations.begin_resync_passwords
+  name: begin_resync_passwords
+  summary: 'Resync the latest passwords to the Network Bootstrap Device.
+
+
+    Updates the Network Bootstrap Device to use the latest passwords. Does not generate
+    new
+
+    passwords. Allows network bootstrap devices missed during a previous password
+    rotation to be
+
+    brought back into sync.'
+  signature: 'begin_resync_passwords(resource_group_name: str, network_bootstrap_device_name:
+    str, **kwargs: Any) -> LROPoller[NetworkBootstrapDeviceResyncPasswordsResponse]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_bootstrap_device_name
+    description: Name of the Network Bootstrap Device. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: 'An instance of LROPoller that returns NetworkBootstrapDeviceResyncPasswordsResponse.
+
+      The NetworkBootstrapDeviceResyncPasswordsResponse is compatible with MutableMapping'
+    types:
+    - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceResyncPasswordsResponse>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.operations.NetworkBootstrapDevicesOperations.begin_update
+  name: begin_update
+  summary: Update certain properties of the Network Bootstrap Device resource.
+  signature: 'begin_update(resource_group_name: str, network_bootstrap_device_name:
+    str, body: _models.NetworkBootstrapDevicePatch, *, content_type: str = ''application/json'',
+    **kwargs: Any) -> LROPoller[_models.NetworkBootstrapDevice]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_bootstrap_device_name
+    description: Name of the Network Bootstrap Device. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: body
+    description: 'Network Bootstrap Device properties to update. Is one of the following
+      types:
+
+      NetworkBootstrapDevicePatch, JSON, IO[bytes] Required.'
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.managednetworkfabric.models.NetworkBootstrapDevicePatch>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
+  return:
+    description: 'An instance of LROPoller that returns NetworkBootstrapDevice. The
+
+      NetworkBootstrapDevice is compatible with MutableMapping'
+    types:
+    - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkBootstrapDevice>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.operations.NetworkBootstrapDevicesOperations.begin_update_administrative_state
+  name: begin_update_administrative_state
+  summary: Updates the Administrative state of the Network Bootstrap Device.
+  signature: 'begin_update_administrative_state(resource_group_name: str, network_bootstrap_device_name:
+    str, body: _models.UpdateDeviceAdministrativeState, *, content_type: str = ''application/json'',
+    **kwargs: Any) -> LROPoller[_models.NetworkBootstrapDeviceUpdateAdministrativeStateResponse]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_bootstrap_device_name
+    description: Name of the Network Bootstrap Device. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: body
+    description: 'Request payload. Is one of the following types: UpdateDeviceAdministrativeState,
+
+      JSON, IO[bytes] Required.'
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.managednetworkfabric.models.UpdateDeviceAdministrativeState>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
+  return:
+    description: 'An instance of LROPoller that returns
+
+      NetworkBootstrapDeviceUpdateAdministrativeStateResponse. The
+
+      NetworkBootstrapDeviceUpdateAdministrativeStateResponse is compatible with MutableMapping'
+    types:
+    - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceUpdateAdministrativeStateResponse>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.operations.NetworkBootstrapDevicesOperations.begin_upgrade
+  name: begin_upgrade
+  summary: Upgrades the version of the Network Bootstrap Device.
+  signature: 'begin_upgrade(resource_group_name: str, network_bootstrap_device_name:
+    str, body: _models.UpdateVersion, *, content_type: str = ''application/json'',
+    **kwargs: Any) -> LROPoller[_models.NetworkBootstrapDeviceUpgradeResponse]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_bootstrap_device_name
+    description: Name of the Network Bootstrap Device. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: body
+    description: 'Request payload. Is one of the following types: UpdateVersion, JSON,
+      IO[bytes]
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.managednetworkfabric.models.UpdateVersion>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
+  return:
+    description: 'An instance of LROPoller that returns NetworkBootstrapDeviceUpgradeResponse.
+      The
+
+      NetworkBootstrapDeviceUpgradeResponse is compatible with MutableMapping'
+    types:
+    - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceUpgradeResponse>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.operations.NetworkBootstrapDevicesOperations.get
+  name: get
+  summary: Gets a Network Bootstrap Device resource details.
+  signature: 'get(resource_group_name: str, network_bootstrap_device_name: str, **kwargs:
+    Any) -> NetworkBootstrapDevice'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: network_bootstrap_device_name
+    description: Name of the Network Bootstrap Device. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: NetworkBootstrapDevice. The NetworkBootstrapDevice is compatible
+      with MutableMapping
+    types:
+    - <xref:azure.mgmt.managednetworkfabric.models.NetworkBootstrapDevice>
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.operations.NetworkBootstrapDevicesOperations.list_by_resource_group
+  name: list_by_resource_group
+  summary: Lists all the Network Bootstrap Device resources in a given resource group.
+  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> ItemPaged[NetworkBootstrapDevice]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: An iterator like instance of NetworkBootstrapDevice
+    types:
+    - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.managednetworkfabric.models.NetworkBootstrapDevice>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.managednetworkfabric.operations.NetworkBootstrapDevicesOperations.list_by_subscription
+  name: list_by_subscription
+  summary: List all the Network Bootstrap Device resources in a given subscription.
+  signature: 'list_by_subscription(**kwargs: Any) -> ItemPaged[NetworkBootstrapDevice]'
+  return:
+    description: An iterator like instance of NetworkBootstrapDevice
+    types:
+    - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.managednetworkfabric.models.NetworkBootstrapDevice>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError

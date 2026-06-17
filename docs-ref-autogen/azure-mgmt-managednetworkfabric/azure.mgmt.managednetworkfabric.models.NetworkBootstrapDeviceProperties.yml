@@ -1,0 +1,150 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceProperties
+name: NetworkBootstrapDeviceProperties
+fullName: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Network Bootstrap Device Properties defines the properties of the resource.
+constructor:
+  syntax: 'NetworkBootstrapDeviceProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
+- description: The host name of the device.
+  name: host_name
+  types:
+  - <xref:str>
+- description: 'Serial number of the device. Format of serial Number -
+
+    Make;Model;HardwareRevisionId;SerialNumber.'
+  name: serial_number
+  types:
+  - <xref:str>
+- description: Current version of the device as defined in SKU.
+  name: version
+  types:
+  - <xref:str>
+- description: Network Bootstrap Device SKU name.
+  name: network_device_sku
+  types:
+  - <xref:str>
+- description: Associated Network Fabric Resource ID.
+  name: network_fabric_id
+  types:
+  - <xref:str>
+- description: Secondary Management IPv4 Address.
+  name: secondary_management_ipv4_address
+  types:
+  - <xref:str>
+- description: Dhcp server IPv4 Address.
+  name: dhcp_v4_server_ip_address
+  types:
+  - <xref:str>
+- description: Primary Management IPv6 Address.
+  name: primary_management_ipv6_address
+  types:
+  - <xref:str>
+- description: Secondary Management IPv6 Address.
+  name: secondary_management_ipv6_address
+  types:
+  - <xref:str>
+- description: 'Provisioning state of the resource. Known values are: "Accepted",
+
+    "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
+  name: provisioning_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
+- description: Primary Management IPv4 Address.
+  name: primary_management_ipv4_address
+  types:
+  - <xref:str>
+- description: 'Administrative state of the resource. Known values are: "Enabled",
+
+    "Disabled", "MAT", "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  name: administrative_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+- description: 'Configuration state of the resource. Known values are: "Succeeded",
+
+    "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
+
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
+  name: configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceProperties.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT",
+
+    "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  signature: 'administrative_state: str | _models.AdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceProperties.dhcp_v4_server_ip_address
+  name: dhcp_v4_server_ip_address
+  summary: Dhcp server IPv4 Address.
+  signature: 'dhcp_v4_server_ip_address: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceProperties.host_name
+  name: host_name
+  summary: The host name of the device.
+  signature: 'host_name: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceProperties.network_device_sku
+  name: network_device_sku
+  summary: Network Bootstrap Device SKU name.
+  signature: 'network_device_sku: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceProperties.network_fabric_id
+  name: network_fabric_id
+  summary: Associated Network Fabric Resource ID.
+  signature: 'network_fabric_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceProperties.primary_management_ipv4_address
+  name: primary_management_ipv4_address
+  summary: Primary Management IPv4 Address.
+  signature: 'primary_management_ipv4_address: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceProperties.primary_management_ipv6_address
+  name: primary_management_ipv6_address
+  summary: Primary Management IPv6 Address.
+  signature: 'primary_management_ipv6_address: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceProperties.secondary_management_ipv4_address
+  name: secondary_management_ipv4_address
+  summary: Secondary Management IPv4 Address.
+  signature: 'secondary_management_ipv4_address: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceProperties.secondary_management_ipv6_address
+  name: secondary_management_ipv6_address
+  summary: Secondary Management IPv6 Address.
+  signature: 'secondary_management_ipv6_address: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceProperties.serial_number
+  name: serial_number
+  summary: 'Serial number of the device. Format of serial Number -
+
+    Make;Model;HardwareRevisionId;SerialNumber.'
+  signature: 'serial_number: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkBootstrapDeviceProperties.version
+  name: version
+  summary: Current version of the device as defined in SKU.
+  signature: 'version: str | None'

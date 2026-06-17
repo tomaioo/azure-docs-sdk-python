@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.StaticRoutePolicy
+name: StaticRoutePolicy
+fullName: azure.mgmt.managednetworkfabric.models.StaticRoutePolicy
+module: azure.mgmt.managednetworkfabric.models
+summary: Static Route - route policy properties.
+constructor:
+  syntax: 'StaticRoutePolicy(*args: Any, **kwargs: Any)'
+variables:
+- description: Array of ARM Resource ID of the RoutePolicies.
+  name: export_route_policy
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.L3ExportRoutePolicy>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.StaticRoutePolicy.export_route_policy
+  name: export_route_policy
+  summary: Array of ARM Resource ID of the RoutePolicies.
+  signature: 'export_route_policy: _models.L3ExportRoutePolicy | None'

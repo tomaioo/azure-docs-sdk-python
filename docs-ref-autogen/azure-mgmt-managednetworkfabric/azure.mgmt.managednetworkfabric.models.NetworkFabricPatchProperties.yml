@@ -5,57 +5,12 @@ fullName: azure.mgmt.managednetworkfabric.models.NetworkFabricPatchProperties
 module: azure.mgmt.managednetworkfabric.models
 summary: Network Fabric Patch properties.
 constructor:
-  syntax: 'NetworkFabricPatchProperties(*, rack_count: int | None = None, server_count_per_rack:
-    int | None = None, ipv4_prefix: str | None = None, ipv6_prefix: str | None = None,
-    fabric_asn: int | None = None, terminal_server_configuration: _models.NetworkFabricPatchablePropertiesTerminalServerConfiguration
-    | None = None, management_network_configuration: _models.ManagementNetworkConfigurationPatchableProperties
-    | None = None, annotation: str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: rack_count
-    description: Number of compute racks associated to Network Fabric.
-    defaultValue: None
-    types:
-    - <xref:int>
-  - name: server_count_per_rack
-    description: Number of servers.Possible values are from 1-16.
-    defaultValue: None
-    types:
-    - <xref:int>
-  - name: ipv4_prefix
-    description: 'IPv4Prefix for Management Network. Example: 10.1.0.0/19.'
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: ipv6_prefix
-    description: 'IPv6Prefix for Management Network. Example: 3FFE:FFFF:0:CD40::/59.'
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: fabric_asn
-    description: ASN of CE devices for CE/PE connectivity.
-    defaultValue: None
-    types:
-    - <xref:int>
-  - name: terminal_server_configuration
-    description: 'Network and credentials configuration already applied
-
-      to terminal server.'
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.NetworkFabricPatchablePropertiesTerminalServerConfiguration>
-  - name: management_network_configuration
-    description: 'Configuration to be used to setup the management
-
-      network.'
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ManagementNetworkConfigurationPatchableProperties>
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'NetworkFabricPatchProperties(*args: Any, **kwargs: Any)'
 variables:
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
 - description: Number of compute racks associated to Network Fabric.
   name: rack_count
   types:
@@ -81,14 +36,116 @@ variables:
     terminal server.'
   name: terminal_server_configuration
   types:
-  - <xref:azure.mgmt.managednetworkfabric.models.NetworkFabricPatchablePropertiesTerminalServerConfiguration>
+  - <xref:azure.mgmt.managednetworkfabric.models.TerminalServerPatchConfiguration>
 - description: 'Configuration to be used to setup the management
 
     network.'
   name: management_network_configuration
   types:
-  - <xref:azure.mgmt.managednetworkfabric.models.ManagementNetworkConfigurationPatchableProperties>
-- description: Switch configuration description.
-  name: annotation
+  - <xref:azure.mgmt.managednetworkfabric.models.ManagementNetworkPatchConfiguration>
+- description: 'Bring your own storage account configurations for Network
+
+    Fabric.'
+  name: storage_account_configuration
   types:
-  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.StorageAccountPatchConfiguration>
+- description: 'Hardware alert threshold percentage. Possible values are from
+
+    20 to 100.'
+  name: hardware_alert_threshold
+  types:
+  - <xref:int>
+- description: Control Plane Access Control List ARM resource IDs.
+  name: control_plane_acls
+  types:
+  - <xref:list>[<xref:str>]
+- description: Trusted IP Prefix ARM resource IDs.
+  name: trusted_ip_prefixes
+  types:
+  - <xref:list>[<xref:str>]
+- description: Unique Route Distinguisher configuration.
+  name: unique_rd_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.UniqueRouteDistinguisherPatchProperties>
+- description: NetworkFabric QoS Configuration.
+  name: qos_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.QosPatchProperties>
+- description: NetworkFabric feature flag configuration information.
+  name: feature_flags
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.FeatureFlagProperties>]
+- description: Authorized transciever configuration for NetworkFabric.
+  name: authorized_transceiver
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.AuthorizedTransceiverPatchProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricPatchProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricPatchProperties.authorized_transceiver
+  name: authorized_transceiver
+  summary: Authorized transciever configuration for NetworkFabric.
+  signature: 'authorized_transceiver: _models.AuthorizedTransceiverPatchProperties
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricPatchProperties.control_plane_acls
+  name: control_plane_acls
+  summary: Control Plane Access Control List ARM resource IDs.
+  signature: 'control_plane_acls: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricPatchProperties.fabric_asn
+  name: fabric_asn
+  summary: ASN of CE devices for CE/PE connectivity.
+  signature: 'fabric_asn: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricPatchProperties.feature_flags
+  name: feature_flags
+  summary: NetworkFabric feature flag configuration information.
+  signature: 'feature_flags: list[''_models.FeatureFlagProperties''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricPatchProperties.hardware_alert_threshold
+  name: hardware_alert_threshold
+  summary: Hardware alert threshold percentage. Possible values are from 20 to 100.
+  signature: 'hardware_alert_threshold: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricPatchProperties.ipv4_prefix
+  name: ipv4_prefix
+  summary: 10.1.0.0/19.
+  signature: 'ipv4_prefix: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricPatchProperties.ipv6_prefix
+  name: ipv6_prefix
+  summary: FFFF:0:CD40::/59.
+  signature: 'ipv6_prefix: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricPatchProperties.management_network_configuration
+  name: management_network_configuration
+  summary: Configuration to be used to setup the management network.
+  signature: 'management_network_configuration: _models.ManagementNetworkPatchConfiguration
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricPatchProperties.qos_configuration
+  name: qos_configuration
+  summary: NetworkFabric QoS Configuration.
+  signature: 'qos_configuration: _models.QosPatchProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricPatchProperties.rack_count
+  name: rack_count
+  summary: Number of compute racks associated to Network Fabric.
+  signature: 'rack_count: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricPatchProperties.server_count_per_rack
+  name: server_count_per_rack
+  summary: Number of servers.Possible values are from 1-16.
+  signature: 'server_count_per_rack: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricPatchProperties.storage_account_configuration
+  name: storage_account_configuration
+  summary: Bring your own storage account configurations for Network Fabric.
+  signature: 'storage_account_configuration: _models.StorageAccountPatchConfiguration
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricPatchProperties.terminal_server_configuration
+  name: terminal_server_configuration
+  summary: Network and credentials configuration already applied to terminal server.
+  signature: 'terminal_server_configuration: _models.TerminalServerPatchConfiguration
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricPatchProperties.trusted_ip_prefixes
+  name: trusted_ip_prefixes
+  summary: Trusted IP Prefix ARM resource IDs.
+  signature: 'trusted_ip_prefixes: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkFabricPatchProperties.unique_rd_configuration
+  name: unique_rd_configuration
+  summary: Unique Route Distinguisher configuration.
+  signature: 'unique_rd_configuration: _models.UniqueRouteDistinguisherPatchProperties
+    | None'

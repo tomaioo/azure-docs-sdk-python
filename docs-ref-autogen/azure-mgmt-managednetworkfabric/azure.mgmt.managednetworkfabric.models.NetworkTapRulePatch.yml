@@ -5,70 +5,26 @@ fullName: azure.mgmt.managednetworkfabric.models.NetworkTapRulePatch
 module: azure.mgmt.managednetworkfabric.models
 summary: The NetworkTapRule resource definition.
 constructor:
-  syntax: 'NetworkTapRulePatch(*, tags: Dict[str, str] | None = None, annotation:
-    str | None = None, configuration_type: str | _models.ConfigurationType | None
-    = None, tap_rules_url: str | None = None, match_configurations: List[_models.NetworkTapRuleMatchConfiguration]
-    | None = None, dynamic_match_configurations: List[_models.CommonDynamicMatchConfiguration]
-    | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: tags
-    description: Resource tags.
-    defaultValue: None
-    types:
-    - <xref:dict>[<xref:str>, <xref:str>]
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: configuration_type
-    description: 'Input method to configure Network Tap Rule. Known values are:
-
-      "File" and "Inline".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationType>
-  - name: tap_rules_url
-    description: Network Tap Rules file URL.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: match_configurations
-    description: List of match configurations.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfiguration>]
-  - name: dynamic_match_configurations
-    description: List of dynamic match configurations.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfiguration>]
+  syntax: 'NetworkTapRulePatch(*args: Any, **kwargs: Any)'
 variables:
 - description: Resource tags.
   name: tags
   types:
   - <xref:dict>[<xref:str>, <xref:str>]
-- description: Switch configuration description.
-  name: annotation
+- description: Network Tap Rule Patch properties.
+  name: properties
   types:
-  - <xref:str>
-- description: 'Input method to configure Network Tap Rule. Known values are: "File"
-
-    and "Inline".'
-  name: configuration_type
+  - <xref:azure.mgmt.managednetworkfabric.models.NetworkTapRulePatchProperties>
+- description: The managed service identities assigned to this resource.
+  name: identity
   types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationType>
-- description: Network Tap Rules file URL.
-  name: tap_rules_url
-  types:
-  - <xref:str>
-- description: List of match configurations.
-  name: match_configurations
-  types:
-  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.NetworkTapRuleMatchConfiguration>]
-- description: List of dynamic match configurations.
-  name: dynamic_match_configurations
-  types:
-  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.CommonDynamicMatchConfiguration>]
+  - <xref:azure.mgmt.managednetworkfabric.models.ManagedServiceIdentityPatch>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRulePatch.identity
+  name: identity
+  summary: The managed service identities assigned to this resource.
+  signature: 'identity: _models.ManagedServiceIdentityPatch | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkTapRulePatch.properties
+  name: properties
+  summary: Network Tap Rule Patch properties.
+  signature: 'properties: _models.NetworkTapRulePatchProperties | None'

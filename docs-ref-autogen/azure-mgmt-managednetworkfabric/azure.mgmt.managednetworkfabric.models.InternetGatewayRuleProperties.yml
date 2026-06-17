@@ -3,26 +3,9 @@ uid: azure.mgmt.managednetworkfabric.models.InternetGatewayRuleProperties
 name: InternetGatewayRuleProperties
 fullName: azure.mgmt.managednetworkfabric.models.InternetGatewayRuleProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Internet Gateway Rule Properties defines the resource properties.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: Internet Gateway Rule Properties defines the resource properties.
 constructor:
-  syntax: 'InternetGatewayRuleProperties(*, rule_properties: _models.RuleProperties,
-    annotation: str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: rule_properties
-    description: Rules for the InternetGateways. Required.
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.RuleProperties>
+  syntax: 'InternetGatewayRuleProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: Switch configuration description.
   name: annotation
@@ -32,6 +15,10 @@ variables:
   name: rule_properties
   types:
   - <xref:azure.mgmt.managednetworkfabric.models.RuleProperties>
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
 - description: 'Provisioning state of the resource. Known values are: "Accepted",
 
     "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
@@ -43,3 +30,22 @@ variables:
   name: internet_gateway_ids
   types:
   - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.InternetGatewayRuleProperties.internet_gateway_ids
+  name: internet_gateway_ids
+  summary: List of Internet Gateway resource Id.
+  signature: 'internet_gateway_ids: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternetGatewayRuleProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternetGatewayRuleProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternetGatewayRuleProperties.rule_properties
+  name: rule_properties
+  summary: Rules for the InternetGateways. Required.
+  signature: 'rule_properties: _models.RuleProperties'

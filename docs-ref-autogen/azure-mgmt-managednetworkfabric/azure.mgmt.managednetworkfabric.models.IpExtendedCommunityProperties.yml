@@ -3,40 +3,34 @@ uid: azure.mgmt.managednetworkfabric.models.IpExtendedCommunityProperties
 name: IpExtendedCommunityProperties
 fullName: azure.mgmt.managednetworkfabric.models.IpExtendedCommunityProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'IP Extended Community Properties defines the resource properties.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: IP Extended Community Properties defines the resource properties.
 constructor:
-  syntax: 'IpExtendedCommunityProperties(*, ip_extended_community_rules: List[_models.IpExtendedCommunityRule],
-    annotation: str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: ip_extended_community_rules
-    description: List of IP Extended Community Rules. Required.
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.IpExtendedCommunityRule>]
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'IpExtendedCommunityProperties(*args: Any, **kwargs: Any)'
 variables:
-- description: List of IP Extended Community Rules. Required.
-  name: ip_extended_community_rules
-  types:
-  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.IpExtendedCommunityRule>]
 - description: Switch configuration description.
   name: annotation
   types:
   - <xref:str>
+- description: List of IP Extended Community Rules. Required.
+  name: ip_extended_community_rules
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.IpExtendedCommunityRule>]
+- description: ARM Resource ID of the Network Fabric.
+  name: network_fabric_id
+  types:
+  - <xref:str>
+- description: Details of the last operation performed on the resource.
+  name: last_operation
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.LastOperationProperties>
 - description: 'Configuration state of the resource. Known values are: "Succeeded",
 
     "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
 
-    "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
   name: configuration_state
   types:
   - <xref:str>
@@ -50,8 +44,47 @@ variables:
   - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
 - description: 'Administrative state of the resource. Known values are: "Enabled",
 
-    "Disabled", "MAT", and "RMA".'
+    "Disabled", "MAT", "RMA", "UnderMaintenance", and "EnabledDegraded".'
   name: administrative_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.AdministrativeState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.IpExtendedCommunityProperties.administrative_state
+  name: administrative_state
+  summary: '"Enabled", "Disabled", "MAT",
+
+    "RMA", "UnderMaintenance", and "EnabledDegraded".'
+  signature: 'administrative_state: str | _models.AdministrativeState | None'
+- uid: azure.mgmt.managednetworkfabric.models.IpExtendedCommunityProperties.annotation
+  name: annotation
+  summary: Switch configuration description.
+  signature: 'annotation: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.IpExtendedCommunityProperties.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.IpExtendedCommunityProperties.ip_extended_community_rules
+  name: ip_extended_community_rules
+  summary: List of IP Extended Community Rules. Required.
+  signature: 'ip_extended_community_rules: list[''_models.IpExtendedCommunityRule'']'
+- uid: azure.mgmt.managednetworkfabric.models.IpExtendedCommunityProperties.last_operation
+  name: last_operation
+  summary: Details of the last operation performed on the resource.
+  signature: 'last_operation: _models.LastOperationProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.IpExtendedCommunityProperties.network_fabric_id
+  name: network_fabric_id
+  summary: ARM Resource ID of the Network Fabric.
+  signature: 'network_fabric_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.IpExtendedCommunityProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Accepted", "Succeeded",
+
+    "Updating", "Deleting", "Failed", and "Canceled".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'

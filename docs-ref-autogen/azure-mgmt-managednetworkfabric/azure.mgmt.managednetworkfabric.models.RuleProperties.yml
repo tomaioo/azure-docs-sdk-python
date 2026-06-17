@@ -3,30 +3,58 @@ uid: azure.mgmt.managednetworkfabric.models.RuleProperties
 name: RuleProperties
 fullName: azure.mgmt.managednetworkfabric.models.RuleProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Rules for the InternetGateways.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: Rules for the InternetGateways.
 constructor:
-  syntax: 'RuleProperties(*, action: str | _models.Action, address_list: List[str],
-    **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: action
-    description: 'Specify action. Required. Known values are: "Allow" and "Deny".'
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.Action>
-  - name: address_list
-    description: List of Addresses to be allowed or denied. Required.
-    types:
-    - <xref:list>[<xref:str>]
+  syntax: 'RuleProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: 'Specify action. Required. Known values are: "Allow" and "Deny".'
   name: action
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.Action>
-- description: List of Addresses to be allowed or denied. Required.
+- description: List of Addresses to be allowed or denied.
   name: address_list
   types:
   - <xref:list>[<xref:str>]
+- description: 'Specify rule condition. Known values are: "And" and "Or".'
+  name: condition
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.RuleCondition>
+- description: List of Addresses to be allowed or denied.
+  name: destination_address_list
+  types:
+  - <xref:list>[<xref:str>]
+- description: List of source IPv4 and IPv6 address to be allowed or denied.
+  name: source_address_list
+  types:
+  - <xref:list>[<xref:str>]
+- description: List of header Name and source addresses associated with the header.
+  name: header_address_list
+  types:
+  - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.HeaderAddressProperties>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.RuleProperties.action
+  name: action
+  summary: '"Allow" and "Deny".'
+  signature: 'action: str | _models.Action'
+- uid: azure.mgmt.managednetworkfabric.models.RuleProperties.address_list
+  name: address_list
+  summary: List of Addresses to be allowed or denied.
+  signature: 'address_list: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.RuleProperties.condition
+  name: condition
+  summary: '"And" and "Or".'
+  signature: 'condition: str | _models.RuleCondition | None'
+- uid: azure.mgmt.managednetworkfabric.models.RuleProperties.destination_address_list
+  name: destination_address_list
+  summary: List of Addresses to be allowed or denied.
+  signature: 'destination_address_list: list[str] | None'
+- uid: azure.mgmt.managednetworkfabric.models.RuleProperties.header_address_list
+  name: header_address_list
+  summary: List of header Name and source addresses associated with the header.
+  signature: 'header_address_list: list[''_models.HeaderAddressProperties''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.RuleProperties.source_address_list
+  name: source_address_list
+  summary: List of source IPv4 and IPv6 address to be allowed or denied.
+  signature: 'source_address_list: list[str] | None'

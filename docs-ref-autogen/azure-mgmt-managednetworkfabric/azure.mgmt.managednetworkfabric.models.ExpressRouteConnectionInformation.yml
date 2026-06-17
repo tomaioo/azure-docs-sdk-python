@@ -6,32 +6,9 @@ module: azure.mgmt.managednetworkfabric.models
 summary: 'The ExpressRoute circuit ID and the Auth Key are required for you to successfully
   deploy NFC
 
-  service.
-
-
-  All required parameters must be populated in order to send to Azure.'
+  service.'
 constructor:
-  syntax: 'ExpressRouteConnectionInformation(*, express_route_circuit_id: str, express_route_authorization_key:
-    str, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: express_route_circuit_id
-    description: 'The express route circuit Azure resource ID, must be of type
-
-      Microsoft.Network/expressRouteCircuits/circuitName. The ExpressRoute Circuit
-      is a mandatory
-
-      attribute. Required.'
-    types:
-    - <xref:str>
-  - name: express_route_authorization_key
-    description: 'Authorization key for the circuit, must be of type
-
-      Microsoft.Network/expressRouteCircuits/authorizations. The Auth Key is a mandatory
-      attribute.
-
-      Required.'
-    types:
-    - <xref:str>
+  syntax: 'ExpressRouteConnectionInformation(*args: Any, **kwargs: Any)'
 variables:
 - description: 'The express route circuit Azure resource ID, must be of type
 
@@ -51,3 +28,22 @@ variables:
   name: express_route_authorization_key
   types:
   - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ExpressRouteConnectionInformation.express_route_authorization_key
+  name: express_route_authorization_key
+  summary: 'Authorization key for the circuit, must be of type
+
+    Microsoft.Network/expressRouteCircuits/authorizations. The Auth Key is a mandatory
+    attribute.
+
+    Required.'
+  signature: 'express_route_authorization_key: str'
+- uid: azure.mgmt.managednetworkfabric.models.ExpressRouteConnectionInformation.express_route_circuit_id
+  name: express_route_circuit_id
+  summary: 'The express route circuit Azure resource ID, must be of type
+
+    Microsoft.Network/expressRouteCircuits/circuitName. The ExpressRoute Circuit is
+    a mandatory
+
+    attribute. Required.'
+  signature: 'express_route_circuit_id: str'

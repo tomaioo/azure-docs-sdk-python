@@ -1,0 +1,27 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.IsolationDomainPatchProperties
+name: IsolationDomainPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.IsolationDomainPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Isolation Domain Properties.
+constructor:
+  syntax: 'IsolationDomainPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Type of encapsulation. Known values are: "None" and "GRE".'
+  name: encapsulation
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.Encapsulation>
+- description: List of Neighbor Group IDs.
+  name: neighbor_group_ids
+  types:
+  - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.IsolationDomainPatchProperties.encapsulation
+  name: encapsulation
+  summary: '"None" and "GRE".'
+  signature: 'encapsulation: str | _models.Encapsulation | None'
+- uid: azure.mgmt.managednetworkfabric.models.IsolationDomainPatchProperties.neighbor_group_ids
+  name: neighbor_group_ids
+  summary: List of Neighbor Group IDs.
+  signature: 'neighbor_group_ids: list[str] | None'

@@ -12,10 +12,12 @@ variables:
   types:
   - <xref:str>
 - description: 'The rank of the zone. This is used with ''Prioritized'' ZoneDistributionStrategy.
+    The
 
-    The lower the number, the higher the priority, starting with 0.
+    lower the number, the higher the priority, starting with 0. 0 is the highest rank.
+    If not
 
-    0 is the highest rank. If not specified, defaults to lowest rank.'
+    specified, defaults to lowest rank.'
   name: rank
   types:
   - <xref:int>
@@ -23,10 +25,12 @@ attributes:
 - uid: azure.mgmt.computefleet.models.ZonePreference.rank
   name: rank
   summary: 'The rank of the zone. This is used with ''Prioritized'' ZoneDistributionStrategy.
+    The lower the
 
-    The lower the number, the higher the priority, starting with 0.
+    number, the higher the priority, starting with 0. 0 is the highest rank. If not
+    specified,
 
-    0 is the highest rank. If not specified, defaults to lowest rank.'
+    defaults to lowest rank.'
   signature: 'rank: int | None'
 - uid: azure.mgmt.computefleet.models.ZonePreference.zone
   name: zone

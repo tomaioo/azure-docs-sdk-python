@@ -5,32 +5,28 @@ fullName: azure.mgmt.managednetworkfabric.models.UpdateDeviceAdministrativeState
 module: azure.mgmt.managednetworkfabric.models
 summary: Update the administrative state on list of resources.
 constructor:
-  syntax: 'UpdateDeviceAdministrativeState(*, resource_ids: List[str] | None = None,
-    state: str | _models.DeviceAdministrativeState | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: resource_ids
-    description: Network Fabrics or Network Rack resource Id.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:str>]
-  - name: state
-    description: 'Administrative state. Known values are: "RMA", "Resync", "GracefulQuarantine",
-
-      and "Quarantine".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.DeviceAdministrativeState>
+  syntax: 'UpdateDeviceAdministrativeState(*args: Any, **kwargs: Any)'
 variables:
 - description: Network Fabrics or Network Rack resource Id.
   name: resource_ids
   types:
   - <xref:list>[<xref:str>]
-- description: 'Administrative state. Known values are: "RMA", "Resync", "GracefulQuarantine",
-    and
+- description: 'Administrative state. Known values are: "RMA", "UngracefulRMA", "Resync",
 
-    "Quarantine".'
+    "GracefulQuarantine", "UngracefulQuarantine", "Quarantine", "UnderMaintenance",
+    "Enable", and
+
+    "Disable".'
   name: state
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.DeviceAdministrativeState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.UpdateDeviceAdministrativeState.state
+  name: state
+  summary: '"RMA", "UngracefulRMA", "Resync",
+
+    "GracefulQuarantine", "UngracefulQuarantine", "Quarantine", "UnderMaintenance",
+
+    "Enable", and "Disable".'
+  signature: 'state: str | _models.DeviceAdministrativeState | None'

@@ -3,54 +3,13 @@ uid: azure.mgmt.managednetworkfabric.models.InternetGateway
 name: InternetGateway
 fullName: azure.mgmt.managednetworkfabric.models.InternetGateway
 module: azure.mgmt.managednetworkfabric.models
-summary: 'The Internet Gateway resource definition.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: The Internet Gateway resource definition.
 constructor:
-  syntax: 'InternetGateway(*, location: str, type_properties_type: str | _models.GatewayType,
-    network_fabric_controller_id: str, tags: Dict[str, str] | None = None, annotation:
-    str | None = None, internet_gateway_rule_id: str | None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: tags
-    description: Resource tags.
-    defaultValue: None
-    types:
-    - <xref:dict>[<xref:str>, <xref:str>]
-  - name: location
-    description: The geo-location where the resource lives. Required.
-    types:
-    - <xref:str>
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: internet_gateway_rule_id
-    description: ARM Resource ID of the Internet Gateway Rule.
-    defaultValue: None
-    types:
-    - <xref:str>
-  - name: type_properties_type
-    description: 'Gateway Type of the resource. Required. Known values are:
-
-      "Infrastructure" and "Workload".'
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.GatewayType>
-  - name: network_fabric_controller_id
-    description: 'ARM Resource ID of the Network Fabric Controller.
-
-      Required.'
-    types:
-    - <xref:str>
+  syntax: 'InternetGateway(*args: Any, **kwargs: Any)'
 variables:
-- description: 'Fully qualified resource ID for the resource. E.g.
+- description: 'Fully qualified resource ID for the resource. Ex -
 
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}".'
+    /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}.'
   name: id
   types:
   - <xref:str>
@@ -79,37 +38,12 @@ variables:
   name: location
   types:
   - <xref:str>
-- description: Switch configuration description.
-  name: annotation
+- description: The Internet Gateway Properties. Required.
+  name: properties
   types:
-  - <xref:str>
-- description: ARM Resource ID of the Internet Gateway Rule.
-  name: internet_gateway_rule_id
-  types:
-  - <xref:str>
-- description: IPv4 Address of Internet Gateway.
-  name: ipv4_address
-  types:
-  - <xref:str>
-- description: Port number of Internet Gateway.
-  name: port
-  types:
-  - <xref:int>
-- description: 'Gateway Type of the resource. Required. Known values are:
-
-    "Infrastructure" and "Workload".'
-  name: type_properties_type
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.GatewayType>
-- description: ARM Resource ID of the Network Fabric Controller. Required.
-  name: network_fabric_controller_id
-  types:
-  - <xref:str>
-- description: 'Provisioning state of resource. Known values are: "Accepted",
-
-    "Succeeded", "Updating", "Deleting", "Failed", and "Canceled".'
-  name: provisioning_state
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.managednetworkfabric.models.ProvisioningState>
+  - <xref:azure.mgmt.managednetworkfabric.models.InternetGatewayProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.InternetGateway.properties
+  name: properties
+  summary: The Internet Gateway Properties. Required.
+  signature: 'properties: _models.InternetGatewayProperties'

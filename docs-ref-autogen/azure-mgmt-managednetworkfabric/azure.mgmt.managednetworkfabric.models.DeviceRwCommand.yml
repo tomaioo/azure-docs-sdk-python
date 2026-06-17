@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.DeviceRwCommand
+name: DeviceRwCommand
+fullName: azure.mgmt.managednetworkfabric.models.DeviceRwCommand
+module: azure.mgmt.managednetworkfabric.models
+summary: Provide the Rw command.
+constructor:
+  syntax: 'DeviceRwCommand(*args: Any, **kwargs: Any)'
+variables:
+- description: Specify the command.
+  name: command
+  types:
+  - <xref:str>
+- description: Specify the commands file URL.
+  name: command_url
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.DeviceRwCommand.command
+  name: command
+  summary: Specify the command.
+  signature: 'command: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.DeviceRwCommand.command_url
+  name: command_url
+  summary: Specify the commands file URL.
+  signature: 'command_url: str | None'

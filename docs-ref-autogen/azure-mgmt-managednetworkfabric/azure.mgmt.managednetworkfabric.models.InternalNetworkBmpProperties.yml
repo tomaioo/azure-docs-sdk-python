@@ -1,0 +1,37 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.InternalNetworkBmpProperties
+name: InternalNetworkBmpProperties
+fullName: azure.mgmt.managednetworkfabric.models.InternalNetworkBmpProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Internal Network BMP Configuration.
+constructor:
+  syntax: 'InternalNetworkBmpProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: BMP Collector Address.
+  name: neighbor_ip_exclusions
+  types:
+  - <xref:list>[<xref:str>]
+- description: 'BMP Monitoring configuration state. Known values are: "Enabled"
+
+    and "Disabled".'
+  name: bmp_configuration_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.BmpConfigurationState>
+- description: BMP Export Policy configuration.
+  name: export_policy_configuration
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.BmpExportPolicyProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkBmpProperties.bmp_configuration_state
+  name: bmp_configuration_state
+  summary: '"Enabled" and "Disabled".'
+  signature: 'bmp_configuration_state: str | _models.BmpConfigurationState | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkBmpProperties.export_policy_configuration
+  name: export_policy_configuration
+  summary: BMP Export Policy configuration.
+  signature: 'export_policy_configuration: _models.BmpExportPolicyProperties | None'
+- uid: azure.mgmt.managednetworkfabric.models.InternalNetworkBmpProperties.neighbor_ip_exclusions
+  name: neighbor_ip_exclusions
+  summary: BMP Collector Address.
+  signature: 'neighbor_ip_exclusions: list[str] | None'

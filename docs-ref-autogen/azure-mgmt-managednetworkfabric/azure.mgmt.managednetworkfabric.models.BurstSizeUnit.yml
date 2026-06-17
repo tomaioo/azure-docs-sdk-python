@@ -1,0 +1,17 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.BurstSizeUnit
+name: BurstSizeUnit
+fullName: azure.mgmt.managednetworkfabric.models.BurstSizeUnit
+summary: Burst size unit in packets.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: BYTES
+  uid: azure.mgmt.managednetworkfabric.models.BurstSizeUnit.BYTES
+- name: G_BYTES
+  uid: azure.mgmt.managednetworkfabric.models.BurstSizeUnit.G_BYTES
+- name: K_BYTES
+  uid: azure.mgmt.managednetworkfabric.models.BurstSizeUnit.K_BYTES
+- name: M_BYTES
+  uid: azure.mgmt.managednetworkfabric.models.BurstSizeUnit.M_BYTES
+- name: PACKETS
+  uid: azure.mgmt.managednetworkfabric.models.BurstSizeUnit.PACKETS

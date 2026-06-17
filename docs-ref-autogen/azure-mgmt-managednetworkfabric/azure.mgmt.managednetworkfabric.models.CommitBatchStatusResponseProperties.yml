@@ -1,0 +1,37 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.CommitBatchStatusResponseProperties
+name: CommitBatchStatusResponseProperties
+fullName: azure.mgmt.managednetworkfabric.models.CommitBatchStatusResponseProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Commit Batch Status Response Properties.
+constructor:
+  syntax: 'CommitBatchStatusResponseProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Commit Batch Identifier.
+  name: commit_batch_id
+  types:
+  - <xref:str>
+- description: 'Commit Batch State. Known values are: "Processing", "Succeeded", and
+
+    "Failed".'
+  name: commit_batch_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.CommitBatchState>
+- description: Commit Batch Details.
+  name: commit_batch_details
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.CommitBatchDetails>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.CommitBatchStatusResponseProperties.commit_batch_details
+  name: commit_batch_details
+  summary: Commit Batch Details.
+  signature: 'commit_batch_details: _models.CommitBatchDetails | None'
+- uid: azure.mgmt.managednetworkfabric.models.CommitBatchStatusResponseProperties.commit_batch_id
+  name: commit_batch_id
+  summary: Commit Batch Identifier.
+  signature: 'commit_batch_id: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.CommitBatchStatusResponseProperties.commit_batch_state
+  name: commit_batch_state
+  summary: '"Processing", "Succeeded", and "Failed".'
+  signature: 'commit_batch_state: str | _models.CommitBatchState | None'

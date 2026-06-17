@@ -1,0 +1,15 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.managednetworkfabric.models.DeviceRole
+name: DeviceRole
+fullName: azure.mgmt.managednetworkfabric.models.DeviceRole
+summary: Device Role.
+module: azure.mgmt.managednetworkfabric.models
+fields:
+- name: CE
+  uid: azure.mgmt.managednetworkfabric.models.DeviceRole.CE
+- name: MANAGEMENT_SWITCH
+  uid: azure.mgmt.managednetworkfabric.models.DeviceRole.MANAGEMENT_SWITCH
+- name: NPB
+  uid: azure.mgmt.managednetworkfabric.models.DeviceRole.NPB
+- name: TO_R
+  uid: azure.mgmt.managednetworkfabric.models.DeviceRole.TO_R

@@ -1,0 +1,29 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceUpgradeRequest
+name: NetworkDeviceUpgradeRequest
+fullName: azure.mgmt.managednetworkfabric.models.NetworkDeviceUpgradeRequest
+module: azure.mgmt.managednetworkfabric.models
+summary: NetworkDevice Upgrade Request Properties.
+constructor:
+  syntax: 'NetworkDeviceUpgradeRequest(*args: Any, **kwargs: Any)'
+variables:
+- description: Version to which the device needs to be upgraded. Required.
+  name: version
+  types:
+  - <xref:str>
+- description: 'URL to the file containing Read-write configuration to be applied
+
+    on the device during upgrade.'
+  name: rw_device_config_url
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceUpgradeRequest.rw_device_config_url
+  name: rw_device_config_url
+  summary: URL to the file containing Read-write configuration to be applied on the
+    device during upgrade.
+  signature: 'rw_device_config_url: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.NetworkDeviceUpgradeRequest.version
+  name: version
+  summary: Version to which the device needs to be upgraded. Required.
+  signature: 'version: str'

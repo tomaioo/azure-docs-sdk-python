@@ -1,0 +1,34 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.StationConnectionPatchProperties
+name: StationConnectionPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.StationConnectionPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Station Connection PATCH Properties.
+constructor:
+  syntax: 'StationConnectionPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Connection keepalive idle time in seconds.
+  name: keepalive_idle_time
+  types:
+  - <xref:int>
+- description: Probe interval in seconds, default value is 60.
+  name: probe_interval
+  types:
+  - <xref:int>
+- description: Probe count, default value is 10.
+  name: probe_count
+  types:
+  - <xref:int>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.StationConnectionPatchProperties.keepalive_idle_time
+  name: keepalive_idle_time
+  summary: Connection keepalive idle time in seconds.
+  signature: 'keepalive_idle_time: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.StationConnectionPatchProperties.probe_count
+  name: probe_count
+  summary: Probe count, default value is 10.
+  signature: 'probe_count: int | None'
+- uid: azure.mgmt.managednetworkfabric.models.StationConnectionPatchProperties.probe_interval
+  name: probe_interval
+  summary: Probe interval in seconds, default value is 60.
+  signature: 'probe_interval: int | None'

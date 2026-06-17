@@ -5,21 +5,7 @@ fullName: azure.mgmt.managednetworkfabric.models.RebootProperties
 module: azure.mgmt.managednetworkfabric.models
 summary: Reboot properties.
 constructor:
-  syntax: 'RebootProperties(*, reboot_type: str | _models.RebootType | None = None,
-    **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: reboot_type
-    description: 'Type of reboot to be performed. Example: GracefulRebootWithZTP.
-      Known
-
-      values are: "GracefulRebootWithZTP", "GracefulRebootWithoutZTP", "UngracefulRebootWithZTP",
-      and
-
-      "UngracefulRebootWithoutZTP".'
-    defaultValue: None
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.managednetworkfabric.models.RebootType>
+  syntax: 'RebootProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: 'Type of reboot to be performed. Example: GracefulRebootWithZTP. Known
     values
@@ -32,3 +18,13 @@ variables:
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.RebootType>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.RebootProperties.reboot_type
+  name: reboot_type
+  summary: 'GracefulRebootWithZTP. Known values are:
+
+    "GracefulRebootWithZTP", "GracefulRebootWithoutZTP", "UngracefulRebootWithZTP",
+    and
+
+    "UngracefulRebootWithoutZTP".'
+  signature: 'reboot_type: str | _models.RebootType | None'

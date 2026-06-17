@@ -3,23 +3,9 @@ uid: azure.mgmt.managednetworkfabric.models.ManagementNetworkConfigurationProper
 name: ManagementNetworkConfigurationProperties
 fullName: azure.mgmt.managednetworkfabric.models.ManagementNetworkConfigurationProperties
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Configuration to be used to setup the management network.
-
-
-  All required parameters must be populated in order to send to Azure.'
+summary: Configuration to be used to setup the management network.
 constructor:
-  syntax: 'ManagementNetworkConfigurationProperties(*, infrastructure_vpn_configuration:
-    _models.VpnConfigurationProperties, workload_vpn_configuration: _models.VpnConfigurationProperties,
-    **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: infrastructure_vpn_configuration
-    description: VPN Configuration properties. Required.
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.VpnConfigurationProperties>
-  - name: workload_vpn_configuration
-    description: VPN Configuration properties. Required.
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.VpnConfigurationProperties>
+  syntax: 'ManagementNetworkConfigurationProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: VPN Configuration properties. Required.
   name: infrastructure_vpn_configuration
@@ -29,3 +15,12 @@ variables:
   name: workload_vpn_configuration
   types:
   - <xref:azure.mgmt.managednetworkfabric.models.VpnConfigurationProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ManagementNetworkConfigurationProperties.infrastructure_vpn_configuration
+  name: infrastructure_vpn_configuration
+  summary: VPN Configuration properties. Required.
+  signature: 'infrastructure_vpn_configuration: _models.VpnConfigurationProperties'
+- uid: azure.mgmt.managednetworkfabric.models.ManagementNetworkConfigurationProperties.workload_vpn_configuration
+  name: workload_vpn_configuration
+  summary: VPN Configuration properties. Required.
+  signature: 'workload_vpn_configuration: _models.VpnConfigurationProperties'

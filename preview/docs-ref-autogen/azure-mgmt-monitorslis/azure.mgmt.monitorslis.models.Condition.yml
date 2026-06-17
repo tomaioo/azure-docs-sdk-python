@@ -18,26 +18,33 @@ variables:
   types:
   - <xref:str>
   - <xref:azure.mgmt.monitorslis.models.ScalarFunction>
-- description: 'Defines the sampling type. Known values are: "max", "min", "avg",
-    and
+- description: 'Defines the sampling type. Known values are: "Average", "Sum", "Count",
 
-    "sum".'
+    "Min", and "Max".'
   name: sampling_type
   types:
   - <xref:str>
   - <xref:azure.mgmt.monitorslis.models.SamplingType>
 - description: 'Operator used in the filtering condition. Required. Known values are:
-    "==",
+    "eq",
 
-    "!=", "<", "<=", ">", ">=", "@in", "!in", "startswith", "!startswith", "contains",
-    and
+    "ne", "lt", "lte", "gt", "gte", "in", "notin", "startswith", "notstartswith",
+    "contains", and
 
-    "!contains".'
+    "notcontains".'
   name: operator
   types:
   - <xref:str>
   - <xref:azure.mgmt.monitorslis.models.ConditionOperator>
-- description: Value used in filtering. Required.
+- description: 'Value used in filtering. For most operators (eq, ne, lt, lte, gt,
+    gte, startswith,
+
+    notstartswith, contains, notcontains) this is a single value (for example "GetContosoUsers").
+
+    For the `in` and `notin` operators, multiple values must be joined by the delimiter
+    `^^`
+
+    (for example "east^^west^^north"). Required.'
   name: value
   types:
   - <xref:str>
@@ -48,15 +55,17 @@ attributes:
   signature: 'dimension_name: str | None'
 - uid: azure.mgmt.monitorslis.models.Condition.operator
   name: operator
-  summary: '"==", "!=", "<",
+  summary: '"eq", "ne", "lt",
 
-    "<=", ">", ">=", "@in", "!in", "startswith", "!startswith", "contains", and
+    "lte", "gt", "gte", "in", "notin", "startswith", "notstartswith", "contains",
 
-    "!contains".'
+    and "notcontains".'
   signature: 'operator: str | _models.ConditionOperator'
 - uid: azure.mgmt.monitorslis.models.Condition.sampling_type
   name: sampling_type
-  summary: '"max", "min", "avg", and "sum".'
+  summary: '"Average", "Sum", "Count", "Min", and
+
+    "Max".'
   signature: 'sampling_type: str | _models.SamplingType | None'
 - uid: azure.mgmt.monitorslis.models.Condition.scalar_function
   name: scalar_function
@@ -66,5 +75,13 @@ attributes:
   signature: 'scalar_function: str | _models.ScalarFunction | None'
 - uid: azure.mgmt.monitorslis.models.Condition.value
   name: value
-  summary: Value used in filtering. Required.
+  summary: 'Value used in filtering. For most operators (eq, ne, lt, lte, gt, gte,
+    startswith,
+
+    notstartswith, contains, notcontains) this is a single value (for example "GetContosoUsers").
+
+    For the `in` and `notin` operators, multiple values must be joined by the delimiter
+    `^^`
+
+    (for example "east^^west^^north"). Required.'
   signature: 'value: str'

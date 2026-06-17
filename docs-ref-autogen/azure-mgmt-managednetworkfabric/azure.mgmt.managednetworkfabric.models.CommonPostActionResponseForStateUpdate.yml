@@ -3,19 +3,9 @@ uid: azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForStateUpda
 name: CommonPostActionResponseForStateUpdate
 fullName: azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForStateUpdate
 module: azure.mgmt.managednetworkfabric.models
-summary: 'Common response for the state updates.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.'
+summary: Common response for the state updates.
 constructor:
-  syntax: 'CommonPostActionResponseForStateUpdate(*, error: _models.ErrorDetail |
-    None = None, **kwargs: Any)'
-  keywordOnlyParameters:
-  - name: error
-    description: The error object.
-    defaultValue: None
-    types:
-    - <xref:azure.mgmt.managednetworkfabric.models.ErrorDetail>
+  syntax: 'CommonPostActionResponseForStateUpdate(*args: Any, **kwargs: Any)'
 variables:
 - description: The error object.
   name: error
@@ -25,8 +15,22 @@ variables:
 
     "Failed", "Rejected", "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning",
 
-    "Deprovisioned", "ErrorDeprovisioning", and "DeferredControl".'
+    "Deprovisioned", "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit",
+    and
+
+    "PendingAdministrativeUpdate".'
   name: configuration_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.managednetworkfabric.models.ConfigurationState>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.CommonPostActionResponseForStateUpdate.configuration_state
+  name: configuration_state
+  summary: '"Succeeded", "Failed", "Rejected",
+
+    "Accepted", "Provisioned", "ErrorProvisioning", "Deprovisioning", "Deprovisioned",
+
+    "ErrorDeprovisioning", "DeferredControl", "Provisioning", "PendingCommit", and
+
+    "PendingAdministrativeUpdate".'
+  signature: 'configuration_state: str | _models.ConfigurationState | None'

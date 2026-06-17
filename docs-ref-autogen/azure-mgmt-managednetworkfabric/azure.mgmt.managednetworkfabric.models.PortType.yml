@@ -5,6 +5,8 @@ fullName: azure.mgmt.managednetworkfabric.models.PortType
 summary: Port type that needs to be matched.
 module: azure.mgmt.managednetworkfabric.models
 fields:
+- name: BIDIRECTIONAL
+  uid: azure.mgmt.managednetworkfabric.models.PortType.BIDIRECTIONAL
 - name: DESTINATION_PORT
   uid: azure.mgmt.managednetworkfabric.models.PortType.DESTINATION_PORT
 - name: SOURCE_PORT

@@ -1,0 +1,37 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.IdentitySelectorPatch
+name: IdentitySelectorPatch
+fullName: azure.mgmt.managednetworkfabric.models.IdentitySelectorPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: IdentitySelector represents the selection of a managed identity for use.
+constructor:
+  syntax: 'IdentitySelectorPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: 'The type of managed identity that is being selected. Known values
+    are:
+
+    "SystemAssignedIdentity" and "UserAssignedIdentity".'
+  name: identity_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ManagedServiceIdentitySelectorType>
+- description: 'The user assigned managed identity resource ID to
+
+    use. Mutually exclusive with a system assigned identity type.'
+  name: user_assigned_identity_resource_id
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.IdentitySelectorPatch.identity_type
+  name: identity_type
+  summary: 'The type of managed identity that is being selected. Known values are:
+
+    "SystemAssignedIdentity" and "UserAssignedIdentity".'
+  signature: 'identity_type: str | _models.ManagedServiceIdentitySelectorType | None'
+- uid: azure.mgmt.managednetworkfabric.models.IdentitySelectorPatch.user_assigned_identity_resource_id
+  name: user_assigned_identity_resource_id
+  summary: 'The user assigned managed identity resource ID to use. Mutually exclusive
+    with a system
+
+    assigned identity type.'
+  signature: 'user_assigned_identity_resource_id: str | None'

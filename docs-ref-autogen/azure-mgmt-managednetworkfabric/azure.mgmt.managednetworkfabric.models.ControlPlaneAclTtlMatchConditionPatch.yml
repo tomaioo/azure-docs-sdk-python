@@ -1,0 +1,32 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclTtlMatchConditionPatch
+name: ControlPlaneAclTtlMatchConditionPatch
+fullName: azure.mgmt.managednetworkfabric.models.ControlPlaneAclTtlMatchConditionPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: TTL [Time To Live] match conditions patch properties.
+constructor:
+  syntax: 'ControlPlaneAclTtlMatchConditionPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: TTL [Time To Live] values that need to be matched.
+  name: ttl_value
+  types:
+  - <xref:str>
+- description: 'TTL [Time To Live] match type. Example: eq | neq | gt | lt | range.
+    Known
+
+    values are: "eq", "neq", "gt", and "lt".'
+  name: ttl_match_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.ControlPlaneAclTtlMatchType>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclTtlMatchConditionPatch.ttl_match_type
+  name: ttl_match_type
+  summary: '"eq",
+
+    "neq", "gt", and "lt".'
+  signature: 'ttl_match_type: str | _models.ControlPlaneAclTtlMatchType | None'
+- uid: azure.mgmt.managednetworkfabric.models.ControlPlaneAclTtlMatchConditionPatch.ttl_value
+  name: ttl_value
+  summary: TTL [Time To Live] values that need to be matched.
+  signature: 'ttl_value: str | None'

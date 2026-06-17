@@ -1,0 +1,38 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.RoutePolicyStatementPatchProperties
+name: RoutePolicyStatementPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.RoutePolicyStatementPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Route Policy Statement properties.
+constructor:
+  syntax: 'RoutePolicyStatementPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Switch configuration description.
+  name: annotation
+  types:
+  - <xref:str>
+- description: Sequence to insert to/delete from existing route. Required.
+  name: sequence_number
+  types:
+  - <xref:int>
+- description: Route policy condition properties. Required.
+  name: condition
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.StatementConditionPatchProperties>
+- description: Route policy action properties. Required.
+  name: action
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.StatementActionPatchProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.RoutePolicyStatementPatchProperties.action
+  name: action
+  summary: Route policy action properties. Required.
+  signature: 'action: _models.StatementActionPatchProperties'
+- uid: azure.mgmt.managednetworkfabric.models.RoutePolicyStatementPatchProperties.condition
+  name: condition
+  summary: Route policy condition properties. Required.
+  signature: 'condition: _models.StatementConditionPatchProperties'
+- uid: azure.mgmt.managednetworkfabric.models.RoutePolicyStatementPatchProperties.sequence_number
+  name: sequence_number
+  summary: Sequence to insert to/delete from existing route. Required.
+  signature: 'sequence_number: int'

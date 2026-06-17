@@ -1,0 +1,22 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.DiscardCommitBatchRequest
+name: DiscardCommitBatchRequest
+fullName: azure.mgmt.managednetworkfabric.models.DiscardCommitBatchRequest
+module: azure.mgmt.managednetworkfabric.models
+summary: Discard Commit Batch Request.
+constructor:
+  syntax: 'DiscardCommitBatchRequest(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Commit Batch Identifier. If not provided, the latest commit batch
+    status
+
+    will be returned.'
+  name: commit_batch_id
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.DiscardCommitBatchRequest.commit_batch_id
+  name: commit_batch_id
+  summary: Commit Batch Identifier. If not provided, the latest commit batch status
+    will be returned.
+  signature: 'commit_batch_id: str | None'

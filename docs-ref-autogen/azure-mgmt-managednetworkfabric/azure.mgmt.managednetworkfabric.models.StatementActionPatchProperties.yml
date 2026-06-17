@@ -1,0 +1,50 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.StatementActionPatchProperties
+name: StatementActionPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.StatementActionPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Route policy action properties.
+constructor:
+  syntax: 'StatementActionPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Local Preference of the route policy.
+  name: local_preference
+  types:
+  - <xref:int>
+- description: 'Action type. Example: Permit | Deny | Continue. Required. Known values
+    are:
+
+    "Permit", "Deny", and "Continue".'
+  name: action_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.RoutePolicyActionType>
+- description: IP Community Properties.
+  name: ip_community_properties
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ActionIpCommunityPatchProperties>
+- description: IP Extended Community Properties.
+  name: ip_extended_community_properties
+  types:
+  - <xref:azure.mgmt.managednetworkfabric.models.ActionIpExtendedCommunityPatchProperties>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.StatementActionPatchProperties.action_type
+  name: action_type
+  summary: '"Permit",
+
+    "Deny", and "Continue".'
+  signature: 'action_type: str | _models.RoutePolicyActionType'
+- uid: azure.mgmt.managednetworkfabric.models.StatementActionPatchProperties.ip_community_properties
+  name: ip_community_properties
+  summary: IP Community Properties.
+  signature: 'ip_community_properties: _models.ActionIpCommunityPatchProperties |
+    None'
+- uid: azure.mgmt.managednetworkfabric.models.StatementActionPatchProperties.ip_extended_community_properties
+  name: ip_extended_community_properties
+  summary: IP Extended Community Properties.
+  signature: 'ip_extended_community_properties: _models.ActionIpExtendedCommunityPatchProperties
+    | None'
+- uid: azure.mgmt.managednetworkfabric.models.StatementActionPatchProperties.local_preference
+  name: local_preference
+  summary: Local Preference of the route policy.
+  signature: 'local_preference: int | None'

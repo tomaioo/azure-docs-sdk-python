@@ -1,0 +1,51 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.AccessControlListPortConditionPatch
+name: AccessControlListPortConditionPatch
+fullName: azure.mgmt.managednetworkfabric.models.AccessControlListPortConditionPatch
+module: azure.mgmt.managednetworkfabric.models
+summary: Defines the port condition that needs to be matched.
+constructor:
+  syntax: 'AccessControlListPortConditionPatch(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Port type that needs to be matched. Known values are: "SourcePort",
+
+    "DestinationPort", and "Bidirectional".'
+  name: port_type
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.PortType>
+- description: 'Layer4 protocol type that needs to be matched. Known values are: "TCP",
+
+    "UDP", and "SCTP".'
+  name: layer4_protocol
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.managednetworkfabric.models.Layer4Protocol>
+- description: List of the Ports that need to be matched.
+  name: ports
+  types:
+  - <xref:list>[<xref:str>]
+- description: List of the port Group Names that need to be matched.
+  name: port_group_names
+  types:
+  - <xref:list>[<xref:str>]
+- description: 'List of protocol flags that need to be matched. Example: established
+    | initial |
+
+    <List-of-TCP-flags>. List of eligible TCP Flags are ack, fin, not-ack, not-fin,
+    not-psh,
+
+    not-rst, not-syn, not-urg, psh, rst, syn, urg.'
+  name: flags
+  types:
+  - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.AccessControlListPortConditionPatch.flags
+  name: flags
+  summary: 'established | initial |
+
+    <List-of-TCP-flags>. List of eligible TCP Flags are ack, fin, not-ack, not-fin,
+    not-psh,
+
+    not-rst, not-syn, not-urg, psh, rst, syn, urg.'
+  signature: 'flags: list[str] | None'

@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.managednetworkfabric.models.VlanGroupPatchProperties
+name: VlanGroupPatchProperties
+fullName: azure.mgmt.managednetworkfabric.models.VlanGroupPatchProperties
+module: azure.mgmt.managednetworkfabric.models
+summary: Vlan group properties.
+constructor:
+  syntax: 'VlanGroupPatchProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: Vlan group name.
+  name: name
+  types:
+  - <xref:str>
+- description: List of vlans.
+  name: vlans
+  types:
+  - <xref:list>[<xref:str>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.VlanGroupPatchProperties.name
+  name: name
+  summary: Vlan group name.
+  signature: 'name: str | None'
+- uid: azure.mgmt.managednetworkfabric.models.VlanGroupPatchProperties.vlans
+  name: vlans
+  summary: List of vlans.
+  signature: 'vlans: list[str] | None'

@@ -5,20 +5,7 @@ fullName: azure.mgmt.managednetworkfabric.models.AggregateRouteConfiguration
 module: azure.mgmt.managednetworkfabric.models
 summary: List of IPv4 and IPv6 aggregate routes.
 constructor:
-  syntax: 'AggregateRouteConfiguration(*, ipv4_routes: List[_models.AggregateRoute]
-    | None = None, ipv6_routes: List[_models.AggregateRoute] | None = None, **kwargs:
-    Any)'
-  keywordOnlyParameters:
-  - name: ipv4_routes
-    description: List of IPv4 Route prefixes.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.AggregateRoute>]
-  - name: ipv6_routes
-    description: List of Ipv6Routes prefixes.
-    defaultValue: None
-    types:
-    - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.AggregateRoute>]
+  syntax: 'AggregateRouteConfiguration(*args: Any, **kwargs: Any)'
 variables:
 - description: List of IPv4 Route prefixes.
   name: ipv4_routes
@@ -28,3 +15,12 @@ variables:
   name: ipv6_routes
   types:
   - <xref:list>[<xref:azure.mgmt.managednetworkfabric.models.AggregateRoute>]
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.AggregateRouteConfiguration.ipv4_routes
+  name: ipv4_routes
+  summary: List of IPv4 Route prefixes.
+  signature: 'ipv4_routes: list[''_models.AggregateRoute''] | None'
+- uid: azure.mgmt.managednetworkfabric.models.AggregateRouteConfiguration.ipv6_routes
+  name: ipv6_routes
+  summary: List of Ipv6Routes prefixes.
+  signature: 'ipv6_routes: list[''_models.AggregateRoute''] | None'

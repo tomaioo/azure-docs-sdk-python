@@ -5,16 +5,18 @@ fullName: azure.mgmt.managednetworkfabric.models.NetworkInterfacePatchProperties
 module: azure.mgmt.managednetworkfabric.models
 summary: Network Interface Patch properties.
 constructor:
-  syntax: 'NetworkInterfacePatchProperties(*, annotation: str | None = None, **kwargs:
-    Any)'
-  keywordOnlyParameters:
-  - name: annotation
-    description: Switch configuration description.
-    defaultValue: None
-    types:
-    - <xref:str>
+  syntax: 'NetworkInterfacePatchProperties(*args: Any, **kwargs: Any)'
 variables:
 - description: Switch configuration description.
   name: annotation
   types:
   - <xref:str>
+- description: Additional description of the interface.
+  name: additional_description
+  types:
+  - <xref:str>
+attributes:
+- uid: azure.mgmt.managednetworkfabric.models.NetworkInterfacePatchProperties.additional_description
+  name: additional_description
+  summary: Additional description of the interface.
+  signature: 'additional_description: str | None'

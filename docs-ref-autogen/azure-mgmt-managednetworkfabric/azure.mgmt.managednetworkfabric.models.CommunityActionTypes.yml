@@ -2,7 +2,7 @@
 uid: azure.mgmt.managednetworkfabric.models.CommunityActionTypes
 name: CommunityActionTypes
 fullName: azure.mgmt.managednetworkfabric.models.CommunityActionTypes
-summary: 'community action types. Example: Permit | Deny.'
+summary: 'Community action types. Example: Permit | Deny.'
 module: azure.mgmt.managednetworkfabric.models
 fields:
 - name: DENY
