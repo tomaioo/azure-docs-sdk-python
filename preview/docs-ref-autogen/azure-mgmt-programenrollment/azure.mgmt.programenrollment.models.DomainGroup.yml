@@ -1,0 +1,51 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.programenrollment.models.DomainGroup
+name: DomainGroup
+fullName: azure.mgmt.programenrollment.models.DomainGroup
+module: azure.mgmt.programenrollment.models
+summary: A group of edu domains scoped to an Entra tenant.
+constructor:
+  syntax: 'DomainGroup(*args: Any, **kwargs: Any)'
+variables:
+- description: The edu domain names in this group. Required.
+  name: domain_names
+  types:
+  - <xref:list>[<xref:str>]
+- description: 'The Entra tenant ID that owns these domains. Defaults to the caller''s
+    tenant
+
+    if omitted.'
+  name: tenant_id
+  types:
+  - <xref:str>
+- description: 'The assessment state of this domain group. Known values are: "Pending",
+
+    "ActionRequired", "Failed", and "Succeeded".'
+  name: state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.programenrollment.models.DomainGroupState>
+- description: Failure detail when state is Failed or ActionRequired. Omitted otherwise.
+  name: failure_reason
+  types:
+  - <xref:azure.mgmt.programenrollment.models.ErrorDetail>
+attributes:
+- uid: azure.mgmt.programenrollment.models.DomainGroup.domain_names
+  name: domain_names
+  summary: The edu domain names in this group. Required.
+  signature: 'domain_names: list[str]'
+- uid: azure.mgmt.programenrollment.models.DomainGroup.failure_reason
+  name: failure_reason
+  summary: Failure detail when state is Failed or ActionRequired. Omitted otherwise.
+  signature: 'failure_reason: _models.ErrorDetail | None'
+- uid: azure.mgmt.programenrollment.models.DomainGroup.state
+  name: state
+  summary: '"Pending", "ActionRequired",
+
+    "Failed", and "Succeeded".'
+  signature: 'state: str | _models.DomainGroupState | None'
+- uid: azure.mgmt.programenrollment.models.DomainGroup.tenant_id
+  name: tenant_id
+  summary: The Entra tenant ID that owns these domains. Defaults to the caller's tenant
+    if omitted.
+  signature: 'tenant_id: str | None'

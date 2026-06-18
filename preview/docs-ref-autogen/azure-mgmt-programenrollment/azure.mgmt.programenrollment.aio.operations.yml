@@ -1,0 +1,8 @@
+### YamlMime:PythonPackage
+uid: azure.mgmt.programenrollment.aio.operations
+name: operations
+fullName: azure.mgmt.programenrollment.aio.operations
+type: import
+classes:
+- azure.mgmt.programenrollment.aio.operations.EduEnrollmentsOperations
+- azure.mgmt.programenrollment.aio.operations.Operations

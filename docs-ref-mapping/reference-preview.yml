@@ -22,7 +22,7 @@
         href: ~/docs-ref-services/preview/mgmt-agricultureplatform-readme.md
         children:
         - azure.mgmt.agricultureplatform
-  - name: AgriFood
+  - name: Agrifood
     href: ~/docs-ref-services/preview/agrifood.md
     landingPageType: Service
     items:
@@ -912,6 +912,16 @@
         href: ~/docs-ref-services/preview/mgmt-disconnectedoperations-readme.md
         children:
         - azure.mgmt.disconnectedoperations
+  - name: Discovery
+    href: ~/docs-ref-services/preview/discovery.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Discovery
+        href: ~/docs-ref-services/preview/mgmt-discovery-readme.md
+        children:
+        - azure.mgmt.discovery
   - name: DNS Resolver
     href: ~/docs-ref-services/preview/dns-resolver.md
     landingPageType: Service
@@ -1600,6 +1610,16 @@
         href: ~/docs-ref-services/preview/mgmt-monitor-readme.md
         children:
         - azure.mgmt.monitor
+  - name: Monitorworkspaces
+    href: ~/docs-ref-services/preview/monitorworkspaces.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Monitorworkspaces
+        href: ~/docs-ref-services/preview/mgmt-monitorworkspaces-readme.md
+        children:
+        - azure.mgmt.monitorworkspaces
   - name: MySQL Flexible Servers
     href: ~/docs-ref-services/preview/mysql-flexible-servers.md
     landingPageType: Service
@@ -1610,6 +1630,16 @@
         href: ~/docs-ref-services/preview/mgmt-mysqlflexibleservers-readme.md
         children:
         - azure.mgmt.mysqlflexibleservers
+  - name: Napsteromniagentapi
+    href: ~/docs-ref-services/preview/napsteromniagentapi.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Napsteromniagentapi
+        href: ~/docs-ref-services/preview/mgmt-napsteromniagentapi-readme.md
+        children:
+        - azure.mgmt.napsteromniagentapi
   - name: Neon Postgres
     href: ~/docs-ref-services/preview/neon-postgres.md
     landingPageType: Service
@@ -1868,6 +1898,16 @@
         href: ~/docs-ref-services/preview/mgmt-powerbidedicated-readme.md
         children:
         - azure.mgmt.powerbidedicated
+  - name: Programenrollment
+    href: ~/docs-ref-services/preview/programenrollment.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Programenrollment
+        href: ~/docs-ref-services/preview/mgmt-programenrollment-readme.md
+        children:
+        - azure.mgmt.programenrollment
   - name: Purestorageblock
     href: ~/docs-ref-services/preview/purestorageblock.md
     landingPageType: Service
@@ -2584,6 +2624,14 @@
     href: ~/docs-ref-services/preview/unknown.md
     landingPageType: Service
     items:
+    - name: unknown
+      href: ~/docs-ref-services/preview/ai-agentserver-optimization-readme.md
+      children:
+      - azure.ai.agentserver.optimization
+    - name: unknown
+      href: ~/docs-ref-services/preview/ai-discovery-readme.md
+      children:
+      - azure.ai.discovery
     - name: Management
       items:
       - name: unknown

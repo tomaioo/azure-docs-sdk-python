@@ -1,0 +1,11 @@
+### YamlMime:PythonPackage
+uid: azure.mgmt.programenrollment
+name: programenrollment
+fullName: azure.mgmt.programenrollment
+type: rootImport
+classes:
+- azure.mgmt.programenrollment.ProgramEnrollmentMgmtClient
+packages:
+- azure.mgmt.programenrollment.aio
+- azure.mgmt.programenrollment.models
+- azure.mgmt.programenrollment.operations

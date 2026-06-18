@@ -1,0 +1,158 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.programenrollment.aio.operations.EduEnrollmentsOperations
+name: EduEnrollmentsOperations
+fullName: azure.mgmt.programenrollment.aio.operations.EduEnrollmentsOperations
+module: azure.mgmt.programenrollment.aio.operations
+summary: "> [!WARNING]\n> DO NOT instantiate this class directly.\n>\n> \n>\n> Instead,\
+  \ you should access the following operations through\n>\n> <xref:azure.mgmt.programenrollment.aio.ProgramEnrollmentMgmtClient>'s\n\
+  >\n> <xref:edu_enrollments> attribute.\n>"
+constructor:
+  syntax: EduEnrollmentsOperations(*args, **kwargs)
+methods:
+- uid: azure.mgmt.programenrollment.aio.operations.EduEnrollmentsOperations.begin_create_or_update
+  name: begin_create_or_update
+  summary: Creates or updates the specified edu enrollment.
+  signature: 'async begin_create_or_update(resource_group_name: str, enrollment_name:
+    str, resource: _models.EduEnrollment, *, content_type: str = ''application/json'',
+    **kwargs: Any) -> AsyncLROPoller[_models.EduEnrollment]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: enrollment_name
+    description: The name of the edu enrollment. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: resource
+    description: 'Resource create parameters. Is one of the following types: EduEnrollment,
+
+      JSON, IO[bytes] Required.'
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.programenrollment.models.EduEnrollment>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
+  return:
+    description: 'An instance of AsyncLROPoller that returns EduEnrollment. The EduEnrollment
+      is
+
+      compatible with MutableMapping'
+    types:
+    - <xref:azure.core.polling.AsyncLROPoller>[<xref:azure.mgmt.programenrollment.models.EduEnrollment>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.programenrollment.aio.operations.EduEnrollmentsOperations.begin_delete
+  name: begin_delete
+  summary: Deletes the specified edu enrollment.
+  signature: 'async begin_delete(resource_group_name: str, enrollment_name: str, **kwargs:
+    Any) -> AsyncLROPoller[None]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: enrollment_name
+    description: The name of the edu enrollment. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: An instance of AsyncLROPoller that returns None
+    types:
+    - <xref:azure.core.polling.AsyncLROPoller>[<xref:None>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.programenrollment.aio.operations.EduEnrollmentsOperations.get
+  name: get
+  summary: Gets the specified edu enrollment.
+  signature: 'async get(resource_group_name: str, enrollment_name: str, **kwargs:
+    Any) -> EduEnrollment'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: enrollment_name
+    description: The name of the edu enrollment. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: EduEnrollment. The EduEnrollment is compatible with MutableMapping
+    types:
+    - <xref:azure.mgmt.programenrollment.models.EduEnrollment>
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.programenrollment.aio.operations.EduEnrollmentsOperations.list_by_resource_group
+  name: list_by_resource_group
+  summary: Lists the edu enrollments in a resource group.
+  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> AsyncItemPaged[EduEnrollment]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: An iterator like instance of EduEnrollment
+    types:
+    - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.mgmt.programenrollment.models.EduEnrollment>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.programenrollment.aio.operations.EduEnrollmentsOperations.list_by_subscription
+  name: list_by_subscription
+  summary: Lists the edu enrollments in a subscription.
+  signature: 'list_by_subscription(**kwargs: Any) -> AsyncItemPaged[EduEnrollment]'
+  return:
+    description: An iterator like instance of EduEnrollment
+    types:
+    - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.mgmt.programenrollment.models.EduEnrollment>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.programenrollment.aio.operations.EduEnrollmentsOperations.update
+  name: update
+  summary: Updates the specified edu enrollment.
+  signature: 'async update(resource_group_name: str, enrollment_name: str, properties:
+    _models.EduEnrollmentPatch, *, content_type: str = ''application/json'', **kwargs:
+    Any) -> _models.EduEnrollment'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: enrollment_name
+    description: The name of the edu enrollment. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: properties
+    description: 'The resource properties to be updated. Is one of the following types:
+
+      EduEnrollmentPatch, JSON, IO[bytes] Required.'
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.programenrollment.models.EduEnrollmentPatch>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
+  return:
+    description: EduEnrollment. The EduEnrollment is compatible with MutableMapping
+    types:
+    - <xref:azure.mgmt.programenrollment.models.EduEnrollment>
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError

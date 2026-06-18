@@ -1,0 +1,24 @@
+### YamlMime:PythonPackage
+uid: azure.mgmt.programenrollment.models
+name: models
+fullName: azure.mgmt.programenrollment.models
+type: import
+classes:
+- azure.mgmt.programenrollment.models.DomainGroup
+- azure.mgmt.programenrollment.models.EduEnrollment
+- azure.mgmt.programenrollment.models.EduEnrollmentPatch
+- azure.mgmt.programenrollment.models.EduEnrollmentProperties
+- azure.mgmt.programenrollment.models.ErrorAdditionalInfo
+- azure.mgmt.programenrollment.models.ErrorDetail
+- azure.mgmt.programenrollment.models.ErrorResponse
+- azure.mgmt.programenrollment.models.Operation
+- azure.mgmt.programenrollment.models.OperationDisplay
+- azure.mgmt.programenrollment.models.Resource
+- azure.mgmt.programenrollment.models.SystemData
+- azure.mgmt.programenrollment.models.TrackedResource
+enums:
+- azure.mgmt.programenrollment.models.ActionType
+- azure.mgmt.programenrollment.models.CreatedByType
+- azure.mgmt.programenrollment.models.DomainGroupState
+- azure.mgmt.programenrollment.models.Origin
+- azure.mgmt.programenrollment.models.ProvisioningState

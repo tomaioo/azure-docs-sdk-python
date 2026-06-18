@@ -311,7 +311,7 @@ methods:
 
       skill''s default version will resolve to this version instead of the latest.
       Required.'
-    defaultValue: <object object at 0x000002719D7E4120>
+    defaultValue: <object object at 0x000001D370F5C060>
     types:
     - <xref:str>
   return:

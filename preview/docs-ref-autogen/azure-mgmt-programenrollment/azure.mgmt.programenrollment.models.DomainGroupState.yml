@@ -1,0 +1,15 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.programenrollment.models.DomainGroupState
+name: DomainGroupState
+fullName: azure.mgmt.programenrollment.models.DomainGroupState
+summary: The assessment state of a domain group.
+module: azure.mgmt.programenrollment.models
+fields:
+- name: ACTION_REQUIRED
+  uid: azure.mgmt.programenrollment.models.DomainGroupState.ACTION_REQUIRED
+- name: FAILED
+  uid: azure.mgmt.programenrollment.models.DomainGroupState.FAILED
+- name: PENDING
+  uid: azure.mgmt.programenrollment.models.DomainGroupState.PENDING
+- name: SUCCEEDED
+  uid: azure.mgmt.programenrollment.models.DomainGroupState.SUCCEEDED

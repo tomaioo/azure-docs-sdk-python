@@ -1,0 +1,15 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.programenrollment.models.CreatedByType
+name: CreatedByType
+fullName: azure.mgmt.programenrollment.models.CreatedByType
+summary: The kind of entity that created the resource.
+module: azure.mgmt.programenrollment.models
+fields:
+- name: APPLICATION
+  uid: azure.mgmt.programenrollment.models.CreatedByType.APPLICATION
+- name: KEY
+  uid: azure.mgmt.programenrollment.models.CreatedByType.KEY
+- name: MANAGED_IDENTITY
+  uid: azure.mgmt.programenrollment.models.CreatedByType.MANAGED_IDENTITY
+- name: USER
+  uid: azure.mgmt.programenrollment.models.CreatedByType.USER

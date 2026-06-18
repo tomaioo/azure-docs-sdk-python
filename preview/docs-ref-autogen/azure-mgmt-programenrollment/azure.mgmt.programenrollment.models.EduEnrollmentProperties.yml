@@ -1,0 +1,39 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.programenrollment.models.EduEnrollmentProperties
+name: EduEnrollmentProperties
+fullName: azure.mgmt.programenrollment.models.EduEnrollmentProperties
+module: azure.mgmt.programenrollment.models
+summary: Details of the Program EduEnrollment.
+constructor:
+  syntax: 'EduEnrollmentProperties(*args: Any, **kwargs: Any)'
+variables:
+- description: 'The status of the last operation. Known values are: "Succeeded",
+
+    "Failed", "Canceled", "Provisioning", "Updating", and "Deleting".'
+  name: provisioning_state
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.programenrollment.models.ProvisioningState>
+- description: The domain groups associated with this enrollment. Required.
+  name: domains
+  types:
+  - <xref:list>[<xref:azure.mgmt.programenrollment.models.DomainGroup>]
+- description: Failure detail when provisioningState is Failed. Omitted otherwise.
+  name: failure_reason
+  types:
+  - <xref:azure.mgmt.programenrollment.models.ErrorDetail>
+attributes:
+- uid: azure.mgmt.programenrollment.models.EduEnrollmentProperties.domains
+  name: domains
+  summary: The domain groups associated with this enrollment. Required.
+  signature: 'domains: list[''_models.DomainGroup'']'
+- uid: azure.mgmt.programenrollment.models.EduEnrollmentProperties.failure_reason
+  name: failure_reason
+  summary: Failure detail when provisioningState is Failed. Omitted otherwise.
+  signature: 'failure_reason: _models.ErrorDetail | None'
+- uid: azure.mgmt.programenrollment.models.EduEnrollmentProperties.provisioning_state
+  name: provisioning_state
+  summary: '"Succeeded", "Failed", "Canceled",
+
+    "Provisioning", "Updating", and "Deleting".'
+  signature: 'provisioning_state: str | _models.ProvisioningState | None'

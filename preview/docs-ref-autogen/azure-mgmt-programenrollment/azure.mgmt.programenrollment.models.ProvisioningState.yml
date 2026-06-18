@@ -1,0 +1,19 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.programenrollment.models.ProvisioningState
+name: ProvisioningState
+fullName: azure.mgmt.programenrollment.models.ProvisioningState
+summary: The status of the current operation.
+module: azure.mgmt.programenrollment.models
+fields:
+- name: CANCELED
+  uid: azure.mgmt.programenrollment.models.ProvisioningState.CANCELED
+- name: DELETING
+  uid: azure.mgmt.programenrollment.models.ProvisioningState.DELETING
+- name: FAILED
+  uid: azure.mgmt.programenrollment.models.ProvisioningState.FAILED
+- name: PROVISIONING
+  uid: azure.mgmt.programenrollment.models.ProvisioningState.PROVISIONING
+- name: SUCCEEDED
+  uid: azure.mgmt.programenrollment.models.ProvisioningState.SUCCEEDED
+- name: UPDATING
+  uid: azure.mgmt.programenrollment.models.ProvisioningState.UPDATING
