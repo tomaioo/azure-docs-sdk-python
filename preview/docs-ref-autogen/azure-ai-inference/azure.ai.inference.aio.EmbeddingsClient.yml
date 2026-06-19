@@ -110,7 +110,7 @@ methods:
       To embed multiple inputs in a single request, pass an array
 
       of strings or array of token arrays. Required.'
-    defaultValue: <object object at 0x00000167AB82AF70>
+    defaultValue: <object object at 0x0000014E4C40BB40>
     types:
     - <xref:list>[<xref:str>]
   - name: dimensions
