@@ -62,6 +62,12 @@ variables:
   name: hardware_profile
   types:
   - <xref:azure.mgmt.compute.models.VirtualMachineScaleSetHardwareProfile>
+- description: 'Specifies the Interconnect Block related details of a scale
+
+    set. Minimum api-version: 2026-03-01.'
+  name: interconnect_block_profile
+  types:
+  - <xref:azure.mgmt.compute.models.InterconnectBlockProfile>
 attributes:
 - uid: azure.mgmt.compute.models.VirtualMachineScaleSetUpdateVMProfile.billing_profile
   name: billing_profile
@@ -80,6 +86,13 @@ attributes:
   name: hardware_profile
   summary: 2021-11-01.
   signature: 'hardware_profile: _models.VirtualMachineScaleSetHardwareProfile | None'
+- uid: azure.mgmt.compute.models.VirtualMachineScaleSetUpdateVMProfile.interconnect_block_profile
+  name: interconnect_block_profile
+  summary: 'Specifies the Interconnect Block related details of a scale set. Minimum
+    api-version:
+
+    2026-03-01.'
+  signature: 'interconnect_block_profile: _models.InterconnectBlockProfile | None'
 - uid: azure.mgmt.compute.models.VirtualMachineScaleSetUpdateVMProfile.license_type
   name: license_type
   summary: The license type, which is for bring your own license scenario.

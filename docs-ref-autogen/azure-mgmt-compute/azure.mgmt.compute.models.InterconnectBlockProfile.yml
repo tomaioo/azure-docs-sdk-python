@@ -1,0 +1,26 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.compute.models.InterconnectBlockProfile
+name: InterconnectBlockProfile
+fullName: azure.mgmt.compute.models.InterconnectBlockProfile
+module: azure.mgmt.compute.models
+summary: The parameters of an Interconnect Block Profile.
+constructor:
+  syntax: 'InterconnectBlockProfile(*args: Any, **kwargs: Any)'
+variables:
+- description: 'Specifies the Interconnect Block resource ID that should be used for
+
+    allocating the Virtual Machine or Scale Set VM instances provided enough capacity
+    has been
+
+    reserved.'
+  name: interconnect_block
+  types:
+  - <xref:azure.mgmt.compute.models.ApiEntityReference>
+attributes:
+- uid: azure.mgmt.compute.models.InterconnectBlockProfile.interconnect_block
+  name: interconnect_block
+  summary: 'Specifies the Interconnect Block resource ID that should be used for allocating
+    the Virtual
+
+    Machine or Scale Set VM instances provided enough capacity has been reserved.'
+  signature: 'interconnect_block: _models.ApiEntityReference | None'

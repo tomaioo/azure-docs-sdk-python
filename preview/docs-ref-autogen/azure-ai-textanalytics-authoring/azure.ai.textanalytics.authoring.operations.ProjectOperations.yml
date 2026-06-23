@@ -238,7 +238,7 @@ methods:
 
       "CustomAbstractiveSummarization", "CustomHealthcare", and "CustomTextSentiment".
       Required.'
-    defaultValue: <object object at 0x00000255836E8330>
+    defaultValue: <object object at 0x000001805BA08330>
     types:
     - <xref:str>
     - <xref:azure.ai.textanalytics.authoring.models.ProjectKind>

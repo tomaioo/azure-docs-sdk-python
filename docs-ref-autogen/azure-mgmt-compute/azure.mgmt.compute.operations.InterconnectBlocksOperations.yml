@@ -1,0 +1,192 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.compute.operations.InterconnectBlocksOperations
+name: InterconnectBlocksOperations
+fullName: azure.mgmt.compute.operations.InterconnectBlocksOperations
+module: azure.mgmt.compute.operations
+summary: "> [!WARNING]\n> DO NOT instantiate this class directly.\n>\n> \n>\n> Instead,\
+  \ you should access the following operations through\n>\n> <xref:azure.mgmt.compute.ComputeManagementClient>'s\n\
+  >\n> <xref:interconnect_blocks> attribute.\n>"
+constructor:
+  syntax: InterconnectBlocksOperations(*args, **kwargs)
+methods:
+- uid: azure.mgmt.compute.operations.InterconnectBlocksOperations.begin_create_or_update
+  name: begin_create_or_update
+  summary: 'Creates or updates an Interconnect Block. When updating an Interconnect
+    Block, only tags and
+
+    sku.capacity may be modified.'
+  signature: 'begin_create_or_update(resource_group_name: str, interconnect_block_name:
+    str, resource: _models.InterconnectBlock, *, content_type: str = ''application/json'',
+    **kwargs: Any) -> LROPoller[_models.InterconnectBlock]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: interconnect_block_name
+    description: The name of the Interconnect Block. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: resource
+    description: 'Parameters supplied to the Create Interconnect Block. Is one of
+      the following
+
+      types: InterconnectBlock, JSON, IO[bytes] Required.'
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.compute.models.InterconnectBlock>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
+  return:
+    description: 'An instance of LROPoller that returns InterconnectBlock. The InterconnectBlock
+      is
+
+      compatible with MutableMapping'
+    types:
+    - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.compute.models.InterconnectBlock>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.compute.operations.InterconnectBlocksOperations.begin_delete
+  name: begin_delete
+  summary: 'Deletes an Interconnect Block. The operation is only allowed when there
+    are no virtual machines
+
+    or VMSS VM instances associated with the Interconnect Block.'
+  signature: 'begin_delete(resource_group_name: str, interconnect_block_name: str,
+    **kwargs: Any) -> LROPoller[None]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: interconnect_block_name
+    description: The name of the Interconnect Block. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: An instance of LROPoller that returns None
+    types:
+    - <xref:azure.core.polling.LROPoller>[<xref:None>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.compute.operations.InterconnectBlocksOperations.begin_update
+  name: begin_update
+  summary: 'Updates an Interconnect Block. When updating an Interconnect Block, only
+    tags and sku.capacity
+
+    may be modified.'
+  signature: 'begin_update(resource_group_name: str, interconnect_block_name: str,
+    properties: _models.InterconnectBlockUpdate, *, content_type: str = ''application/json'',
+    **kwargs: Any) -> LROPoller[_models.InterconnectBlock]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: interconnect_block_name
+    description: The name of the Interconnect Block. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: properties
+    description: 'Parameters supplied to the Update Interconnect Block operation.
+      Is one of
+
+      the following types: InterconnectBlockUpdate, JSON, IO[bytes] Required.'
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.compute.models.InterconnectBlockUpdate>
+    - <xref:JSON>
+    - <xref:typing.IO>[<xref:bytes>]
+  return:
+    description: 'An instance of LROPoller that returns InterconnectBlock. The InterconnectBlock
+      is
+
+      compatible with MutableMapping'
+    types:
+    - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.compute.models.InterconnectBlock>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.compute.operations.InterconnectBlocksOperations.get
+  name: get
+  summary: Retrieves information about an Interconnect Block.
+  signature: 'get(resource_group_name: str, interconnect_block_name: str, *, expand:
+    str | InterconnectBlockExpandTypes | None = None, **kwargs: Any) -> InterconnectBlock'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: interconnect_block_name
+    description: The name of the Interconnect Block. Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  keywordOnlyParameters:
+  - name: expand
+    description: 'The expand expression to apply on the operation. ''instanceView''
+      retrieves a
+
+      snapshot of the runtime properties of the Interconnect Block that is managed
+      by the platform
+
+      and can change outside of control plane operations. "instanceView" Default value
+      is None.'
+    defaultValue: None
+    types:
+    - <xref:str>
+    - <xref:azure.mgmt.compute.models.InterconnectBlockExpandTypes>
+  return:
+    description: InterconnectBlock. The InterconnectBlock is compatible with MutableMapping
+    types:
+    - <xref:azure.mgmt.compute.models.InterconnectBlock>
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.compute.operations.InterconnectBlocksOperations.list_by_resource_group
+  name: list_by_resource_group
+  summary: 'Lists all of the Interconnect Blocks in the specified resource group.
+    Use the nextLink property
+
+    in the response to get the next page of Interconnect Blocks.'
+  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> ItemPaged[InterconnectBlock]'
+  parameters:
+  - name: resource_group_name
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
+    isRequired: true
+    types:
+    - <xref:str>
+  return:
+    description: An iterator like instance of InterconnectBlock
+    types:
+    - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.compute.models.InterconnectBlock>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError
+- uid: azure.mgmt.compute.operations.InterconnectBlocksOperations.list_by_subscription
+  name: list_by_subscription
+  summary: 'Lists all of the Interconnect Blocks in the subscription. Use the nextLink
+    property in the
+
+    response to get the next page of Interconnect Blocks.'
+  signature: 'list_by_subscription(**kwargs: Any) -> ItemPaged[InterconnectBlock]'
+  return:
+    description: An iterator like instance of InterconnectBlock
+    types:
+    - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.compute.models.InterconnectBlock>]
+  exceptions:
+  - type: azure.core.exceptions.HttpResponseError

@@ -90,6 +90,12 @@ variables:
   name: is_vm_in_standby_pool
   types:
   - <xref:bool>
+- description: 'The Interconnect runtime view of the Virtual Machine. Minimum
+
+    api-version: 2026-03-01.'
+  name: interconnect_instance_view
+  types:
+  - <xref:azure.mgmt.compute.models.InterconnectInstanceView>
 attributes:
 - uid: azure.mgmt.compute.models.VirtualMachineInstanceView.assigned_host
   name: assigned_host
@@ -130,6 +136,10 @@ attributes:
 
     "V2".'
   signature: 'hyper_v_generation: str | _models.HyperVGenerationType | None'
+- uid: azure.mgmt.compute.models.VirtualMachineInstanceView.interconnect_instance_view
+  name: interconnect_instance_view
+  summary: 2026-03-01.
+  signature: 'interconnect_instance_view: _models.InterconnectInstanceView | None'
 - uid: azure.mgmt.compute.models.VirtualMachineInstanceView.is_vm_in_standby_pool
   name: is_vm_in_standby_pool
   summary: '[Preview Feature] Specifies whether the VM is currently in or out of the

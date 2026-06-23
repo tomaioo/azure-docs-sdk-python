@@ -217,6 +217,12 @@ variables:
   name: capacity_reservation
   types:
   - <xref:azure.mgmt.compute.models.CapacityReservationProfile>
+- description: 'Specifies information about the Interconnect Block that is
+
+    used to allocate the Virtual Machine. Minimum api-version: 2026-03-01.'
+  name: interconnect_block_profile
+  types:
+  - <xref:azure.mgmt.compute.models.InterconnectBlockProfile>
 - description: 'Specifies the gallery applications that should be made available to
 
     the VM/VMSS.'
@@ -342,6 +348,13 @@ attributes:
   name: instance_view
   summary: The virtual machine instance view.
   signature: 'instance_view: _models.VirtualMachineInstanceView | None'
+- uid: azure.mgmt.compute.models.VirtualMachineProperties.interconnect_block_profile
+  name: interconnect_block_profile
+  summary: 'Specifies information about the Interconnect Block that is used to allocate
+    the Virtual
+
+    Machine. Minimum api-version: 2026-03-01.'
+  signature: 'interconnect_block_profile: _models.InterconnectBlockProfile | None'
 - uid: azure.mgmt.compute.models.VirtualMachineProperties.license_type
   name: license_type
   summary: 'Specifies that the image or disk that is being used was licensed on-premises.

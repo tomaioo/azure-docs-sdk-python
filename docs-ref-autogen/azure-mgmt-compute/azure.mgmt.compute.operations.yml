@@ -27,6 +27,7 @@ classes:
 - azure.mgmt.compute.operations.GalleryScriptsOperations
 - azure.mgmt.compute.operations.GallerySharingProfileOperations
 - azure.mgmt.compute.operations.ImagesOperations
+- azure.mgmt.compute.operations.InterconnectBlocksOperations
 - azure.mgmt.compute.operations.LogAnalyticsOperations
 - azure.mgmt.compute.operations.Operations
 - azure.mgmt.compute.operations.ProximityPlacementGroupsOperations

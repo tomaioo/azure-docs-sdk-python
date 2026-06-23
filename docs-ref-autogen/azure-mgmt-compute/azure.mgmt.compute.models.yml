@@ -23,6 +23,7 @@ classes:
 - azure.mgmt.compute.models.AutomaticOSUpgradePolicy
 - azure.mgmt.compute.models.AutomaticOSUpgradeProperties
 - azure.mgmt.compute.models.AutomaticRepairsPolicy
+- azure.mgmt.compute.models.AutomaticSkuMigrationPolicy
 - azure.mgmt.compute.models.AutomaticZoneRebalancingPolicy
 - azure.mgmt.compute.models.AvailabilityPolicy
 - azure.mgmt.compute.models.AvailabilitySet
@@ -189,6 +190,13 @@ classes:
 - azure.mgmt.compute.models.ImageVersionSecurityProfile
 - azure.mgmt.compute.models.InnerError
 - azure.mgmt.compute.models.InstanceViewStatus
+- azure.mgmt.compute.models.InterconnectBlock
+- azure.mgmt.compute.models.InterconnectBlockInstanceView
+- azure.mgmt.compute.models.InterconnectBlockProfile
+- azure.mgmt.compute.models.InterconnectBlockProperties
+- azure.mgmt.compute.models.InterconnectBlockUpdate
+- azure.mgmt.compute.models.InterconnectGroupProfile
+- azure.mgmt.compute.models.InterconnectInstanceView
 - azure.mgmt.compute.models.KeyForDiskEncryptionSet
 - azure.mgmt.compute.models.KeyVaultAndKeyReference
 - azure.mgmt.compute.models.KeyVaultAndSecretReference
@@ -555,6 +563,7 @@ enums:
 - azure.mgmt.compute.models.IPVersions
 - azure.mgmt.compute.models.ImageState
 - azure.mgmt.compute.models.InstanceViewTypes
+- azure.mgmt.compute.models.InterconnectBlockExpandTypes
 - azure.mgmt.compute.models.IntervalInMins
 - azure.mgmt.compute.models.LifecycleHookAction
 - azure.mgmt.compute.models.LifecycleHookActionState

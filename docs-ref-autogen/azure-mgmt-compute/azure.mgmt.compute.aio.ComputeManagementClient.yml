@@ -112,6 +112,10 @@ variables:
   name: capacity_reservations
   types:
   - <xref:azure.mgmt.compute.aio.operations.CapacityReservationsOperations>
+- description: InterconnectBlocksOperations operations
+  name: interconnect_blocks
+  types:
+  - <xref:azure.mgmt.compute.aio.operations.InterconnectBlocksOperations>
 - description: VirtualMachineRunCommandsOperations operations
   name: virtual_machine_run_commands
   types:

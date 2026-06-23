@@ -152,6 +152,12 @@ variables:
   name: virtual_machine_resource_id
   types:
   - <xref:str>
+- description: 'Specifies the Interconnect Block related details of a Scale
+
+    Set VM instance. Minimum api-version: 2026-03-01.'
+  name: interconnect_block_profile
+  types:
+  - <xref:azure.mgmt.compute.models.InterconnectBlockProfile>
 attributes:
 - uid: azure.mgmt.compute.models.VirtualMachineScaleSetVMProperties.additional_capabilities
   name: additional_capabilities
@@ -200,6 +206,13 @@ attributes:
   name: instance_view
   summary: The virtual machine instance view.
   signature: 'instance_view: _models.VirtualMachineScaleSetVMInstanceView | None'
+- uid: azure.mgmt.compute.models.VirtualMachineScaleSetVMProperties.interconnect_block_profile
+  name: interconnect_block_profile
+  summary: 'Specifies the Interconnect Block related details of a Scale Set VM instance.
+    Minimum
+
+    api-version: 2026-03-01.'
+  signature: 'interconnect_block_profile: _models.InterconnectBlockProfile | None'
 - uid: azure.mgmt.compute.models.VirtualMachineScaleSetVMProperties.latest_model_applied
   name: latest_model_applied
   summary: Specifies whether the latest model has been applied to the virtual machine.
